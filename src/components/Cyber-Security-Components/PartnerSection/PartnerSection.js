@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Fade } from "react-awesome-reveal";
-// import { EvervaultCard, Icon } from "../../../ui/evervault-card";
+import EvervaultCard from '../../../ui/evervault-card'
 import icon from '../../../images/icon/magic02.svg';
 import pimg1 from "../../../images/brand/cs-brd01.png";
 import pimg2 from "../../../images/brand/cs-brd02.png";
@@ -93,31 +93,22 @@ const PartnerSection = () => {
     <section className="brand mt-90 scecond">
       <div className="container">
         <div className="sec-title--two sec-title--three brand-title">
-          {/* <div className=" flex flex-col bg-red items-start  p-4 relative ">
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
- 
-      <EvervaultCard text="hover" />
- 
-    
-    </div> */}
 
+      <EvervaultCard />
           <div className="cs-service-item mt-30" >
                   <div className="xb-item--inner">
-                   
+                    
                      <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
                                               <div className="btn-brand">
-                                                  <span className="sub-title  wow fadeInUp" data-wow-duration="600ms"><img src={icon} alt="" /><span>About us</span></span>
+                                                  <span className="sub-title  wow " data-wow-duration="600ms"><img src={icon} alt="" /><span>About us</span></span>
                                               </div>
                                               
                                           </Fade>
                                          
                                           <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
                                               <div className="brand-text">
-                                                  <p className="content about-sec wow fadeInUp" data-wow-delay="300ms" data-wow-duration="600ms">With over 35 years of experience, innomax is a trusted leader in cybersecurity solutions, providing customized strategies to protect sensitive data. Our commitment to innovation and customer satisfaction makes us a reliable in safeguarding your digital assets.</p>
-                                                  <p className="content about-sec wow fadeInUp" data-wow-delay="300ms" data-wow-duration="600ms">With over 35 years of experience, innomax is a trusted leader in cybersecurity solutions, providing customized strategies to protect sensitive data. Our commitment to innovation and customer satisfaction makes us a reliable in safeguarding your digital assets.</p>
+                                                  <p className="content about-sec wow " data-wow-delay="300ms" data-wow-duration="600ms">With over 35 years of experience, innomax is a trusted leader in cybersecurity solutions, providing customized strategies to protect sensitive data. Our commitment to innovation and customer satisfaction makes us a reliable in safeguarding your digital assets.</p>
+                                                  <p className="content about-sec wow " data-wow-delay="300ms" data-wow-duration="600ms">With over 35 years of experience, innomax is a trusted leader in cybersecurity solutions, providing customized strategies to protect sensitive data. Our commitment to innovation and customer satisfaction makes us a reliable in safeguarding your digital assets.</p>
                                               </div>
                                              
                                           </Fade>

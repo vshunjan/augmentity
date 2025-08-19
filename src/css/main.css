@@ -8567,7 +8567,7 @@ body[data-aos-easing=ease] [data-aos] {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  background: #000000;
+  background: #00000000;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -22058,7 +22058,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
    transform: rotate(-45deg) translateX(-6px) translateY(-3px);
  }
   
- p.content.about-sec.wow.fadeInUp {
+ p.content.about-sec.wow {
     font-size: 34px;
     line-height: 46px;
     text-align: center;
@@ -22085,11 +22085,304 @@ rect{
   width: 100%;
 }
 
-.sec-title--two.sec-title--three.brand-title .evervault-card {
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+.evervault-wrapper {
+  display: flex;
+      width: 100%;
+    height: 100%;
+    position: absolute;
+  justify-content: center;
+  align-items: center;
 }
 
-.sec-title--two.sec-title--three.brand-title .evervault-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(103, 128, 210, 0.5);
+.evervault-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+}
+
+.evervault-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    200px at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(0, 255, 200, 0.7),
+    transparent 80%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.evervault-card:hover::before {
+  opacity: 1;
+}
+
+.evervault-pattern {
+  position: absolute;
+  inset: 0;
+  font-size: 17px;
+  font-family: monospace;
+  color: white;
+  opacity: 0;
+  mix-blend-mode: overlay;
+  padding: 10px;
+  line-height: 1.2;
+  white-space: pre-wrap;
+  word-break: break-word;
+  transition: opacity 0.3s ease;
+}
+
+.evervault-card:hover .evervault-pattern {
+  opacity: 1;
+}
+
+.evervault-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.circle {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: transparent;
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 28px;
+  color: black;
+}
+section.brand.mt-90.scecond {
+    position: relative;
+}
+
+
+
+/* Section container */
+.service-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: black;
+  color: black;
+  width: 100%;
+  padding: 5rem 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .service-section {
+    flex-direction: row;
+  }
+}
+
+/* Cards */
+.card {
+  position: relative;
+  max-width: 24rem;
+  width: 100%;
+  height: 30rem;
+  padding: 1rem;
+  margin: 0 auto;
+    border: 1px solid rgb(255 255 255);
+    display: flex;
+    align-items: center;
+    background: black;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 39px;
+    justify-content: center;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Corners */
+.corner-icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: black;
+}
+
+.top-left {
+  top: -0.75rem;
+  left: -0.75rem;
+}
+
+.bottom-left {
+  bottom: -0.75rem;
+  left: -0.75rem;
+}
+
+.top-right {
+  top: -0.75rem;
+  right: -0.75rem;
+}
+
+.bottom-right {
+  bottom: -0.75rem;
+  right: -0.75rem;
+}
+
+/* Card content */
+.card-content {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-icon.hidden {
+  opacity: 0;
+  transform: translateY(-1rem);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.2s ease-in-out;
+  color: black;
+}
+
+.card-title.visible {
+  opacity: 1;
+  color: white;
+  transform: translateY(-0.5rem);
+}
+
+/* Icon SVGs */
+.aceternity-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: black;
+}
+
+/* Backgrounds for CanvasRevealEffect */
+.emerald-bg {
+  background: #064e3b; /* emerald-900 */
+}
+
+.black-bg {
+  background: black;
+}
+
+.sky-bg {
+  background: #0284c7; /* sky-600 */
+}
+
+/* Radial mask */
+.radial-mask {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-mask-image: radial-gradient(400px at center, white, transparent);
+  mask-image: radial-gradient(400px at center, white, transparent);
+}
+
+.parent-matrix {
+    height: 100%;
+}
+.main-dot-grid.bg-black {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+}
+h2.dot-grid-title {
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+    font-size: 32px;
+}
+img.card-logo {
+    width: 100px;
+    height: auto;
+    position: relative;
+    z-index: 9;
+}
+
+.card-out-content p{
+    position: relative;
+    z-index: 9;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.service-head .border-bg1 {
+    height: 20px;
+    /* position: absolute; */
+}
+.service-head .border-bg2 {
+    height: 20px;
+}
+h1.service-card-title {
+    text-align: center;
+    font-weight: 400;
+        margin-top: 10px;
+    margin-bottom: 30px;
+}
+section.work {
+    margin-bottom: 50px;
+}
+section.work .container {
+    height: 500px;
+    border-radius: 15px;
+        position: relative;
+}
+.silk-canvas {
+    position: absolute !important;
+    border-radius: 15px;
+}
+.work-content {
+      position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.work-content .hero-btn  {
+    padding: 26px 36px 26px 50px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+}
+p.work-content-p {
+    font-size: 22px;
+    font-weight: 400;
+}
+section.service-sect {
+    margin: 100px 0;
 }

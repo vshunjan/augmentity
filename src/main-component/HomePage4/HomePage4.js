@@ -25,7 +25,7 @@ const HomePage4 = () => {
                     <PartnerSection />
                     <ServiceSection />
                     {/* <About /> */}
-                    {/* <WorkFlow /> */}
+                    <WorkFlow />
                     {/* <IndustrieSection /> */}
                     {/* <TestimonialSection /> */}
                     {/* <Achievements /> */}
