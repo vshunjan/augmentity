@@ -29,7 +29,8 @@ const WorkFlow = (props) => {
 
           <div className="hero-btn">
             <span>
-              Explore solutions <i className="far fa-angle-right"></i>
+                <i className="far fa-angle-right"></i>
+              Explore solutions 
             </span>
           </div>
         </div>
