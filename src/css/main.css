@@ -4241,13 +4241,8 @@ body[data-aos-easing=ease] [data-aos] {
 
 .header-style-three .xb-header {
         padding: 25px 3%;
-    width: 70%;
-    border-radius: 50px;
-      background: rgba(255, 255, 255, 0.09);
-    /* border-radius: 16px; */
-    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-    backdrop-filter: blur(5.7px);
-    -webkit-backdrop-filter: blur(10.7px);
+    width: 80%;
+
 }
 
 .header-style-three.header-transparent {
@@ -4360,10 +4355,10 @@ body[data-aos-easing=ease] [data-aos] {
   color: var(--color-white);
 }
 
-.header-style-three .header-bar-mobile {
+/* .header-style-three .header-bar-mobile {
   margin-left: auto;
   margin-right: 30px;
-}
+} */
 
 @media (max-width: 767px) {
   .header-style-three .header-bar-mobile {
@@ -8096,13 +8091,15 @@ body[data-aos-easing=ease] [data-aos] {
 }
 
 .sa-process_left .process-item {
-  max-width: 450px;
-  min-height: 236px;
-  background: #fff;
+     max-width: 80%;
+    min-height: 316px;
+  background: #000000;
   padding: 40px 30px;
+  margin-left: 10%;
+  margin-right :10%;
   position: sticky;
   top: 150px;
-  border: 1px solid #0f55dc;
+  border: 1px solid #5f5f5f78;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -8146,7 +8143,7 @@ body[data-aos-easing=ease] [data-aos] {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-heading-two);
+  color: #7e9ff0;
   background-color: rgba(15, 83, 220, 0.1);
   border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -8250,6 +8247,7 @@ body[data-aos-easing=ease] [data-aos] {
 
 .sa-process_left {
   z-index: 2;
+  overflow: visible;
   position: relative;
 }
 
@@ -18097,7 +18095,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 
 .hero-style-three {
-  min-height: 1010px;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
 }
@@ -18133,7 +18131,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   /* padding: 0 107px 0 75px; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   z-index: 2;
   position: relative;
   flex-wrap: wrap;
@@ -18154,7 +18152,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 .hero-style-three .xb-hero .xb-item--title {
   font-weight: 500;
-  font-size: 80px;
+  font-size: 60px;
   letter-spacing: 0.3px;
   margin-bottom: 46px;
   display: inline-block;
@@ -18169,8 +18167,8 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     padding-top: 140px;
 }
 .hero-style-three .xb-hero .xb-item--title span{
-  font-weight: 500;
-  font-size: 95px;
+    font-weight: 300;
+    font-size: 65px;
   letter-spacing: 0.3px;
   margin-bottom: 0px;
   display: inline-block;
@@ -18259,6 +18257,8 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     left: 47%;
   }
 }
+
+
 
 .hero-style-three .xb-shape .shape--two img {
   animation: updown-3 5s linear infinite;
@@ -18620,9 +18620,12 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   left: 0;
   z-index: -1;
   opacity: .5;
+  width: 100%;
   height: 100%;
 }
-
+canvas.letter-glitch-canvas {
+    width: 100% !important;
+}
 .sc_hero_video video {
   width: 100%;
   height: 100%;
@@ -22110,7 +22113,7 @@ rect{
   position: absolute;
   inset: 0;
   background: radial-gradient(
-    200px at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    250px at var(--mouse-x, 50%) var(--mouse-y, 50%),
     rgba(0, 255, 200, 0.7),
     transparent 80%
   );
@@ -22193,7 +22196,7 @@ section.brand.mt-90.scecond {
 /* Cards */
 .card {
   position: relative;
-  max-width: 24rem;
+  max-width: 100%;
   width: 100%;
   height: 30rem;
   padding: 1rem;
@@ -22350,8 +22353,11 @@ h1.service-card-title {
         margin-top: 10px;
     margin-bottom: 30px;
 }
+h1.service-card-title span{
+    color: #656363;
+}
 section.work {
-    margin-bottom: 50px;
+    padding-bottom: 150px;
 }
 section.work .container {
     height: 500px;
@@ -22385,4 +22391,18 @@ p.work-content-p {
 }
 section.service-sect {
     margin: 100px 0;
+}
+
+
+/* scroll stack */
+
+.col-lg-6.sa-scroll-lock-card {
+    width: 100%;
+}
+
+hr.header-hr {
+       width: 70%;
+    background: #21f5f5;
+    border: none;
+    height: 5px;
 }

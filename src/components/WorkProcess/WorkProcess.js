@@ -8,6 +8,7 @@ import sIcon2 from '../../images/icon/user-icon.png'
 import sIcon3 from '../../images/icon/clipboar02.svg'
 import sIcon4 from '../../images/icon/medal-star.svg'
 
+
 const Process = [
     {
         id:"01",
@@ -45,24 +46,52 @@ const Process = [
 const WorkProcess = (props) => {
 
     return (
-        <section className="process pt-130 pb-100 pos-rel" style={{ backgroundColor: "#0F55DC" }}>
+        <section className="process pt-130 pb-100 pos-rel" style={{ backgroundColor: "#000000" }}>
             <div className="container">
-                <div className="sec-title--two text-center mb-90">
-                    <Fade direction='down' triggerOnce={'false'} duration={1000} delay={9}>
-                        <div>
-                            <div className="sub-title sub-title--strock wow fadeInDown" data-wow-duration="600ms"><img
-                                src={hicon} alt="" />Our working process</div>
-                        </div>
-                    </Fade>
-                    <Fade direction='up' triggerOnce={'false'} duration={1200} delay={9}>
-                        <div>
-                            <h2 className="title clr-white wow fadeInDown" data-wow-delay="150ms" data-wow-duration="600ms">Our
-                                SEO workflow</h2>
-                        </div>
-                    </Fade>
+                <div className="text-center sec-title--two mb-90">
+                   <div className="service-head">
+      <div className="border-bg1">
+                    <svg  viewBox="0 0 330 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    
+                      <rect opacity="0.5"   height="1" fill="url(#paint1_radial_1685_896345)" />
+                      <defs>
+                        <radialGradient id="paint0_radial_1685_8961" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(205) scale(288.23 306.36)">
+                          <stop offset="0" stopColor="white" stopOpacity="0.05" />
+                          <stop offset="1" stopColor="#050014" stopOpacity="0" />
+                        </radialGradient>
+                        <radialGradient id="paint1_radial_1685_896345" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(158 0.5) scale(95 0.5)">
+                          <stop offset="0" stopColor="white" />
+                          <stop offset="1" stopColor="white" stopOpacity="0" />
+                        </radialGradient>
+                      </defs>
+                    </svg>
+                  </div>
+
+                  <h1 className="service-card-title"> <span>Our</span> Services</h1>
+                  <div className="border-bg2">
+                    <svg  viewBox="0 0 330 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                   
+                      <defs>
+                        <radialGradient id="paint0_radial_1685_8952" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(205) scale(288.23 306.36)">
+                          <stop offset="0" stopColor="white" stopOpacity="0.05" />
+                          <stop offset="1" stopColor="#050014" stopOpacity="0" />
+                        </radialGradient>
+                        <linearGradient id="paint1_linear_1685_895" x1="410" y1="369.333" x2="221.101" y2="288.747" gradientUnits="userSpaceOnUse">
+                          <stop offset="0" stopColor="#6780D2" />
+                          <stop offset="1" stopColor="#2F3B8D" />
+                        </linearGradient>
+                        <radialGradient id="paint2_radial_1685_8951" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(158 0.5) scale(95 0.5)">
+                          <stop offset="0" stopColor="white" />
+                          <stop offset="1" stopColor="white" stopOpacity="0" />
+                        </radialGradient>
+                      </defs>
+                     <rect opacity="0.5" x="63" width="50" height="1" fill="url(#paint1_radial_1685_896345)" />
+                    </svg>
+                  </div>
+  </div>
                 </div>
-                <div className="row flex-row-reverse">
-                    <div className="col-lg-6">
+                <div className="flex-row-reverse row">
+                    {/* <div className="col-lg-6">
                         <div className="sa-process_right">
                             <Fade direction='right' triggerOnce={'false'} duration={1200} delay={9}>
                                 <div>
@@ -73,8 +102,10 @@ const WorkProcess = (props) => {
                             </Fade>
                             <div className="process_shape"><img src={pImg2} alt="" /></div>
                         </div>
-                    </div>
-                    <div className="col-lg-6">
+                    </div> */}
+                    <div className="col-lg-6 sa-scroll-lock-card">
+                                                    
+                        
                         <div className="sa-process_left">
                             {Process.map((process, pitem) => (
                                 <div className={`process-item process-item--${process.direction}`} key={pitem}>

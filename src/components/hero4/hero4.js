@@ -14,7 +14,7 @@ const Hero4 = () => {
         <section className="hero hero-style-three pos-rel pt-120 bg_img" style={{ backgroundImage: `url(${Bg})` }}>
             <div className="container">
                 <div className="hero_wrap pt-90">
-                    <div className="xb-hero text-center">
+                    <div className="text-left xb-hero">
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
                             <div>
                                 <h1 className="xb-item--title wow skewIn" data-wow-delay="000ms" data-wow-duration="900ms">

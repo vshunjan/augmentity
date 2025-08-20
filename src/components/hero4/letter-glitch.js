@@ -238,7 +238,7 @@ const LetterGlitch = ({
 
   return (
     <div style={containerStyle} className={className}>
-      <canvas ref={canvasRef} style={canvasStyle} />
+      <canvas ref={canvasRef} style={canvasStyle} className='letter-glitch-canvas'/>
       {outerVignette && <div style={outerVignetteStyle}></div>}
       {centerVignette && <div style={centerVignetteStyle}></div>}
     </div>
