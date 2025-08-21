@@ -6,6 +6,7 @@ import simg from '../../../images/shape/ser-shape01.png'
 import simg2 from '../../../images/shape/ser-shape02.png'
 import MagicBento from './magicBento'
 
+
 const ServiceSection = () => {
 
   const ClickHandler = () => {
@@ -58,20 +59,7 @@ const ServiceSection = () => {
   </div>
         </div>
         <div className="row">
-          {/* {Services.slice(19, 28).map((service, srv) => (
-            <div className="col-lg-4 col-md-6" key={srv}>
-              <div className="cd-service-item">
-                <div className="xb-item--icon"><img src={service.sIcon} alt="" /></div>
-                <h2 className="xb-item--title">{service.title}</h2>
-                <div className={`xb-item--dot ${service.bgClass}`}>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-               
-              </div>
-            </div>
-          ))} */}
+       
           
           <MagicBento 
   textAutoHide={true}

@@ -3135,3 +3135,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp;
 }
+
+
+.colour6 {
+     position: absolute;
+    background-image: radial-gradient(closest-side, rgb(77 94 172 / 30%), #00000000);
+   height: 719px;
+    width: 1125px;
+    right: -34%;
+    bottom: 76%;
+    z-index: 2;;
+}

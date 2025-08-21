@@ -1,6 +1,11 @@
 import { useRef, useEffect, useCallback, useState } from "react";
 import { gsap } from "gsap";
 import "./magicBento.css";
+import bgimg1 from '../../../images/bg/gridimg-1.avif'
+import bgimg2 from '../../../images/bg/gridimg-2.jpg'
+import bgimg3 from '../../../images/bg/gridimg-3.avif'
+import bgimg4 from '../../../images/bg/gridimg-4.jpg'
+import bgimg5 from '../../../images/bg/gridimg-5.avif'
 
 
 const CounterTitle = ({ target }) => {
@@ -31,34 +36,30 @@ const DEFAULT_GLOW_COLOR = "132, 0, 255";
 const MOBILE_BREAKPOINT = 768;
 
 const cardData = [
-  {
-     color: "#060010",
-    title:50.5 ,
-    description: "Track user behavior",
-  },
+ 
   {
     color: "#060010",
     title: 110,
     description: "Centralized data view",
-
+    img: bgimg2
   },
   {
     color: "#060010",
     title: 21,
     description: "Work together seamlessly",
-   
+   img: bgimg3
   },
   {
     color: "#060010",
     title: 445,
     description: "Streamline workflows",
-  
+  img: bgimg4
   },
   {
     color: "#060010",
     title: 32,
     description: "Connect favorite tools",
-  
+  img: bgimg5
   },
  
 ];
@@ -506,14 +507,24 @@ const GlobalSpotlight = ({
   return null;
 };
 
-const BentoCardGrid = ({
-  children,
-  gridRef
-}) => (
+const BentoCardGrid = ({ gridRef }) => (
   <div className="card-grid bento-section" ref={gridRef}>
-    {children}
+    {cardData.map((card, index) => (
+      <ParticleCard key={index} className="card"   style={{
+            backgroundImage: `url(${card.img})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}>
+        <div
+          className="card-content">
+          <CounterTitle target={card.title} />
+          <p>{card.description}</p>
+        </div>
+      </ParticleCard>
+    ))}
   </div>
 );
+
 
 const useMobileDetection = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -705,7 +716,9 @@ const MagicBento = ({
                 el.addEventListener("mouseleave", handleMouseLeave);
                 el.addEventListener("click", handleClick);
               }}
+              
             >
+            
               <div className="card__header">
                 <div className="card__label">{card.label}</div>
               </div>

@@ -4,7 +4,7 @@ export default function EvervaultCard({ text = "Hover" }) {
   const [randomString, setRandomString] = useState("");
 
   useEffect(() => {
-    setRandomString(generateRandomString(8000)); // more chars for full coverage
+    setRandomString(generateRandomString(7500)); // more chars for full coverage
   }, []);
 
   function onMouseMove(e) {
@@ -39,8 +39,10 @@ export default function EvervaultCard({ text = "Hover" }) {
   );
 }
 
-const characters =
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+const characters = 
+  'iSYAAiLYNLiSENAiAUGMENTiTyiOVGGiRENRiOCNGiiSUiiiRULRiSEii';
+
+
 
 function generateRandomString(length) {
   let result = "";

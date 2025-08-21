@@ -7,34 +7,35 @@ import sIcon1 from '../../images/icon/search01.svg'
 import sIcon2 from '../../images/icon/user-icon.png'
 import sIcon3 from '../../images/icon/clipboar02.svg'
 import sIcon4 from '../../images/icon/medal-star.svg'
-
+import bgimg  from '../../images/bg/scroll-lockimg.svg'
+import DarkVeil from './Darkveil';
 
 const Process = [
     {
         id:"01",
-        title: 'Research niche',
-        subTitle: 'Identify your target market and understand customer needs to find competitive',
+        title: 'Analyse',
+        subTitle: 'A clear picture of your risk profile and a prioritised roadmap for remediation—before attackers get there first.',
         icon: sIcon1,
         direction:'one',
     },
     {
         id:"02",
-        title: 'Set up your team',
-        subTitle: 'Assemble a skilled team aligned with your business goals and objectives.',
+        title: 'Govern',
+        subTitle: 'A mature, future-ready security posture that inspires trust—from boardroom to regulator.',
         icon: sIcon2,
         direction:'two',
     },
     {
         id:"03",
-        title: 'Create a game plan',
-        subTitle: 'Develop a detailed strategy objectives, audiences, and marketing approaches.',
+        title: 'Insure',
+        subTitle: 'Lower cyber insurance premiums, faster underwriting, and better alignment between finance and security.',
         icon: sIcon3,
         direction:'three',
     },
     {
         id:"04",
-        title: 'Review and scale',
-        subTitle: 'Analyze performance metrics regularly to optimize and grow your strategy effectively.',
+        title: 'Defend',
+        subTitle: 'Continuous verification, rapid recovery, minimal business disruption—powered by real-world threat engineering.',
         icon: sIcon4,
         direction:'four',
     },
@@ -47,8 +48,10 @@ const WorkProcess = (props) => {
 
     return (
         <section className="process pt-130 pb-100 pos-rel" style={{ backgroundColor: "#000000" }}>
+          {/* <DarkVeil /> */}
+          <div className='colour6'></div>    
             <div className="container">
-                <div className="text-center sec-title--two mb-90">
+                <div className="text-center sec-title--two mb-90" >
                    <div className="service-head">
       <div className="border-bg1">
                     <svg  viewBox="0 0 330 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,32 +93,46 @@ const WorkProcess = (props) => {
                   </div>
   </div>
                 </div>
-                <div className="flex-row-reverse row">
-                    {/* <div className="col-lg-6">
-                        <div className="sa-process_right">
-                            <Fade direction='right' triggerOnce={'false'} duration={1200} delay={9}>
-                                <div>
-                                    <div className="sa-process-image wow fadeInRight" data-wow-duration="600ms">
-                                        <img className="updown" src={pImg} alt="" />
-                                    </div>
-                                </div>
-                            </Fade>
-                            <div className="process_shape"><img src={pImg2} alt="" /></div>
-                        </div>
-                    </div> */}
+                <div className="flex-row-reverse row " >
+                   
                     <div className="col-lg-6 sa-scroll-lock-card">
                                                     
                         
                         <div className="sa-process_left">
+                        
                             {Process.map((process, pitem) => (
-                                <div className={`process-item process-item--${process.direction}`} key={pitem}>
+                                <div className={`process-item process-item--${process.direction}`} key={pitem}>  
+                                                <div className='folder-svg'>
+                             <svg
+        className="svg-folder-decor"
+        viewBox="0 0 940 227"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1.3042e-06 20C1.37396e-06 8.95431 8.95431 0 20 0H303.176C314.41 0 325.419 3.15428 334.949 9.10375L388.306 42.4135C396.248 47.3714 405.422 50 414.784 50H768.23H920C931.046 50 940 58.9543 940 70V206.5C940 217.546 931.046 226.5 920 226.5H20C8.9543 226.5 5.65529e-08 217.546 1.26314e-07 206.5L1.3042e-06 20Z"
+          fill="#020723"
+        />
+      </svg>
+                          </div>   
+                          
+                          <div className='bg-img'>
+                            <img src={bgimg} alt="" />
+                            </div>    
+                          <div className='process-content'>           
                                     <div className="xb-item--icon">
                                         <img src={process.icon} alt="" />
                                     </div>
                                     <h4 className="xb-item--title">{process.title}</h4>
                                     <p className="xb-item--contact">{process.subTitle}</p>
+                                      <div className="hero-btn">
+            <span>
+             Discover more
+            </span>
+          </div>
+                                    </div>
                                     <span className="xb-item--number">{process.id}</span>
                                 </div>
+                                
                             ))}
                         </div>
                     </div>

@@ -100,15 +100,15 @@ const PartnerSection = () => {
                     
                      <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
                                               <div className="btn-brand">
-                                                  <span className="sub-title  wow " data-wow-duration="600ms"><img src={icon} alt="" /><span>About us</span></span>
+                                                  <span className="sub-title wow " data-wow-duration="600ms"><img src={icon} alt="" /><span>About us</span></span>
                                               </div>
                                               
                                           </Fade>
                                          
                                           <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
                                               <div className="brand-text">
-                                                  <p className="content about-sec wow " data-wow-delay="300ms" data-wow-duration="600ms">With over 35 years of experience, innomax is a trusted leader in cybersecurity solutions, providing customized strategies to protect sensitive data. Our commitment to innovation and customer satisfaction makes us a reliable in safeguarding your digital assets.</p>
-                                                  <p className="content about-sec wow " data-wow-delay="300ms" data-wow-duration="600ms">With over 35 years of experience, innomax is a trusted leader in cybersecurity solutions, providing customized strategies to protect sensitive data. Our commitment to innovation and customer satisfaction makes us a reliable in safeguarding your digital assets.</p>
+                                                  <p className="content about-sec wow first" data-wow-delay="300ms" data-wow-duration="600ms">Secure your cyber and AI transformation by augmenting your team with our elite consultants to detect risks, architect resilience, and build a bulletproof strategy.</p>
+                                                  <p className="content about-sec wow " data-wow-delay="300ms" data-wow-duration="600ms"> In today's world, cyber confidence is a true business advantage.</p>
                                               </div>
                                              
                                           </Fade>

@@ -24,8 +24,8 @@ const HomePage4 = () => {
                     <Header4 />
                     <Hero4 />
                     <PartnerSection />
-                     <WorkProcess />
                     <ServiceSection />
+                     <WorkProcess />
                     {/* <About /> */}
                     <WorkFlow />
                     {/* <IndustrieSection /> */}
@@ -35,7 +35,7 @@ const HomePage4 = () => {
                     {/* <ContactSection /> */}
                     {/* <Scrollbar /> */}
                 </main>
-                {/* <Footer/> */}
+                <Footer/>
             </div>
         </Fragment>
     )
