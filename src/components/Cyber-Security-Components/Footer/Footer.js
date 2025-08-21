@@ -35,15 +35,11 @@ const Footer = (props) => {
             <div className="social-item">
               <Link onClick={ClickHandler} to="/home-4" className="xb-icon"><img src={icon2} alt="" /></Link>
             </div>
-            <div className="social-item">
-              <Link onClick={ClickHandler} to="/home-4" className="xb-icon"><img src={icon3} alt="" /></Link>
-            </div>
+          
             <div className="social-item">
               <Link onClick={ClickHandler} to="/home-4" className="xb-icon"><img src={icon4} alt="" /></Link>
             </div>
-            <div className="social-item">
-              <Link onClick={ClickHandler} to="/home-4" className="xb-icon"><img src={icon5} alt="" /></Link>
-            </div>
+           
           </div>
         
           </div>

@@ -18182,15 +18182,28 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
 }
+.hero-style-three .xb-hero .xb-item--title span.c-suite{
+  font-weight: 500;
+  font-size: 51px;
+  letter-spacing: 0.3px;
+  margin-bottom: 46px;
+  display: inline-block;
+  text-transform: capitalize;
+      line-height: 1.1;
+     /* background: #f03099; */
+  /* background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
 .hero_wrap.pt-90 {
         padding-top: 0px;
     display: flex;
     padding-bottom: 20vh;
     height: 100%;
 }
-.hero-style-three .xb-hero .xb-item--title span{
+.hero-style-three .xb-hero .xb-item--title span.cyber{
     font-weight: 300;
-    font-size: 55px;
+    font-size: 64px;
   letter-spacing: 0.3px;
   margin-bottom: 0px;
   display: inline-block;
@@ -22291,6 +22304,8 @@ section.brand.mt-90.scecond {
     z-index: 20;
     color: white;
     display: flex;
+    
+    height: 150px;
     flex-direction: column;
     gap: 12px;
     text-align: left;
@@ -22516,4 +22531,23 @@ h2.trusted-br {
     z-index: 99;
     right: 108px;
     top: 31%;
+}
+h1.work-content-title {
+    font-size: 56px;
+    font-weight: 400;
+}
+.nuber-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nuber-card h2 {
+    font-weight: 500;
+}
+p.srcCrd-title {
+    font-size: 21px;
+}
+p.card-para {
+    font-size: 17px;
+    font-style: italic;
 }

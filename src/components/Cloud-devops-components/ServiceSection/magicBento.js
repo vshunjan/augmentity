@@ -1,11 +1,11 @@
 import { useRef, useEffect, useCallback, useState } from "react";
 import { gsap } from "gsap";
 import "./magicBento.css";
-import bgimg1 from '../../../images/bg/gridimg-1.avif'
-import bgimg2 from '../../../images/bg/gridimg-2.jpg'
-import bgimg3 from '../../../images/bg/gridimg-3.avif'
-import bgimg4 from '../../../images/bg/gridimg-4.jpg'
-import bgimg5 from '../../../images/bg/gridimg-5.avif'
+// import bgimg1 from '../../../images/bg/grid2.jpg'
+import bgimg2 from '../../../images/bg/gridcrime.jpg'
+// import bgimg3 from '../../../'
+import bgimg4 from '../../../images/bg/grid1.jpg'
+
 
 
 const CounterTitle = ({ target }) => {
@@ -39,27 +39,38 @@ const cardData = [
  
   {
     color: "#060010",
-    title: 110,
-    description: "Centralized data view",
-    img: bgimg2
+    rite:'',
+    title: 48 ,
+    type:'minutes',
+    description: "is the average eCrime breakout time in 2024",
+    // img: bgimg1
   },
   {
     color: "#060010",
-    title: 21,
-    description: "Work together seamlessly",
-   img: bgimg3
+    rite:'$',
+    title: 4.45,
+    type:"million ",
+    description: "The average global cost of a data breach in 2024.",
+    para:'(IBM Cost of a Data Breach Report 2024)',
+   img: bgimg2
   },
   {
     color: "#060010",
-    title: 445,
-    description: "Streamline workflows",
+    title: 82,
+    rite:'',
+    type:'% of enterprises ',
+    description: "deploying AI admit they haven’t fully assessed security risks.",
+    para:'(Gartner, 2024)',
+  // img: bgimg3
+  },
+  {
+    color: "#060010",
+    rite:'',
+    title: 52,
+    type:'% of CEOs ',
+    description: "believe they’re cyber-resilient, while only 29% of their CISOs agree. ",
+    para:'(PwC Digital Trust Survey, 2024)',
   img: bgimg4
-  },
-  {
-    color: "#060010",
-    title: 32,
-    description: "Connect favorite tools",
-  img: bgimg5
   },
  
 ];
@@ -517,8 +528,14 @@ const BentoCardGrid = ({ gridRef }) => (
           }}>
         <div
           className="card-content">
+            <div className="nuber-card">
+            <h2>{card.rite}</h2>
           <CounterTitle target={card.title} />
-          <p>{card.description}</p>
+          <h2>{card.type}</h2>
+          </div>
+          <p className="srcCrd-title">{card.description}</p>
+          <p className="card-para">{card.para}</p>
+          
         </div>
       </ParticleCard>
     ))}

@@ -19,8 +19,9 @@ const Hero4 = () => {
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
                             <div>
                                 <h1 className="xb-item--title wow skewIn" data-wow-delay="000ms" data-wow-duration="900ms">
-                                    <span > Cyber Confidence, </span> <br/>
-                                     Engineered for the <br/> C-Suite  
+                                    <span className='cyber'> Cyber Confidence, </span> <br/>
+                                     Engineered for the   <br/>
+                                      <span className='c-suite'> C-Suite  </span>
 {/* <GradientText
   colors={["#010a26", " #f03099", "#93e2e6", "#f03099", "#f03099"]}
   animationSpeed={3}

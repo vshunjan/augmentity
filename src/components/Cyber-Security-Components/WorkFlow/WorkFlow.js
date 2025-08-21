@@ -6,11 +6,11 @@ const WorkFlow = (props) => {
     <section className="work">
       <div className="container">
         <Silk
-          speed={5}
-          scale={1}
-          color="#29F1FF"
-          noiseIntensity={1.5}
-          rotation={0}
+          speed={4}
+  scale={0.5}
+  color="#21f5f5"
+  noiseIntensity={3.4}
+  rotation={0}
           className="silk-work"
         />
 
@@ -20,12 +20,12 @@ const WorkFlow = (props) => {
             data-wow-delay="000ms"
             data-wow-duration="900ms"
           >
-            We would Love to hear from you
+            Under Attack?
           </h1>
-          <p className="work-content-p">
+          {/* <p className="work-content-p">
            
-            We would Love to hear from you we would love to hear from you
-          </p>
+            Transform with Confidence in the AI Era
+          </p> */}
 
           <div className="hero-btn">
             <span>
