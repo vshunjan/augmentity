@@ -51,7 +51,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Righteous&display=swap");
 
 :root {
-  --font-body: "Inter", sans-serif;
+  --font-body:  'Robert';
   --font-heading: 'Aeonik';
   --font-heading-two: 'TransducerTest';
   --font-heading-three: 'GT-Super-Text';
@@ -89,6 +89,35 @@
     url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/f1fcc5aed1e20fc0cdb9f8a7573625bd.svg#Integral CF Regular")format("svg");
 }
+@font-face {
+    font-family: "Robert";
+    src:url("../fonts/Roobert/Roobert/RoobertTRIAL-Regular-BF67243fd53fdf2.otf")format("woff2");
+    src:  url("../fonts/Roobert/Roobert/RoobertTRIAL-Regular-BF67243fd53fdf2.otf")format("woff");
+    src:url("../fonts/Roobert/Roobert/RoobertTRIAL-Regular-BF67243fd53fdf2.otf")format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Robert";
+    src:url("../fonts/Roobert/Roobert/RoobertTRIAL-Medium-BF67243fd53e059.otf")format("woff2");
+    src:  url("../fonts/Roobert/Roobert/RoobertTRIAL-Medium-BF67243fd53e059.otf")format("woff");
+    src:url("../fonts/Roobert/Roobert/RoobertTRIAL-Medium-BF67243fd53e059.otf")format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Robert";
+    src:url("../fonts/Roobert/Roobert/RoobertTRIAL-SemiBold-BF67243fd54213d.otf")format("woff2");
+    src:  url("../fonts/Roobert/Roobert/RoobertTRIAL-SemiBold-BF67243fd54213d.otf")format("woff");
+    src:url("../fonts/Roobert/Roobert/RoobertTRIAL-SemiBold-BF67243fd54213d.otf")format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Robert";
+    src:url("../fonts/Roobert/Roobert/RoobertTRIAL-Light-BF67243fd502239.otf")format("woff2");
+    src:  url("../fonts/Roobert/Roobert/RoobertTRIAL-Light-BF67243fd502239.otf")format("woff");
+    src:url("../fonts/Roobert/Roobert/RoobertTRIAL-Light-BF67243fd502239.otf")format("truetype");
+    font-weight: 300;
+}
+
 
 /* reset css start */
 :root {
@@ -18171,11 +18200,11 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 .hero-style-three .xb-hero .xb-item--title {
   font-weight: 500;
-  font-size: 51px;
-  letter-spacing: 0.3px;
-  margin-bottom: 46px;
+  font-size: 76px;
+  letter-spacing: 0px;
+  /* margin-bottom: 46px; */
   display: inline-block;
-  text-transform: capitalize;
+  text-transform: none;
       line-height: 1;
      /* background: #f03099; */
   /* background-clip: text;
@@ -18184,11 +18213,11 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 .hero-style-three .xb-hero .xb-item--title span.c-suite{
   font-weight: 500;
-  font-size: 51px;
-  letter-spacing: 0.3px;
+  font-size: 76px;
+  letter-spacing: 0px;
   margin-bottom: 46px;
   display: inline-block;
-  text-transform: capitalize;
+  text-transform: none;
       line-height: 1.1;
      /* background: #f03099; */
   /* background-clip: text;
@@ -18202,12 +18231,12 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     height: 100%;
 }
 .hero-style-three .xb-hero .xb-item--title span.cyber{
-    font-weight: 300;
-    font-size: 64px;
-  letter-spacing: 0.3px;
+       font-weight: 400;
+    font-size: 76px;
+  letter-spacing: 0px;
   margin-bottom: 0px;
   display: inline-block;
-  text-transform: capitalize;
+  text-transform: none;
      background: #6a6a6a;
   background-clip: text;
   -webkit-background-clip: text;
@@ -18655,7 +18684,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: .2;
+  opacity: 1;
   width: 100%;
   height: 100%;
 }
@@ -19977,7 +20006,7 @@ canvas.letter-glitch-canvas {
 
 .xb-header-menu.active {
   visibility: visible;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateX(0%);
   -khtml-transform: translateX(0%);
   -moz-transform: translateX(0%);
@@ -21981,7 +22010,7 @@ a.xb-logo {
 
 .cs-brand-item {
   flex-shrink: 0;
-  margin-right: 20px;
+  margin-right: 67px;
 }
 
 .cs-brand-inner.marquee-right .da-brand_marquee {
@@ -22109,10 +22138,11 @@ a.xb-logo {
  }
   
  p.content.about-sec.wow {
-    font-size: 34px;
+       font-size: 34px;
     line-height: 46px;
     text-align: center;
-        font-weight: 300;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
     letter-spacing: .6px;
     width: 75%;
 }
@@ -22163,7 +22193,7 @@ width: 100%;
   content: "";
   position: absolute;
   inset: 0;
-background:  radial-gradient(250px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgb(15 40 35 / 70%), #33272700 80%);
+background:  radial-gradient(350px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgb(15 40 35 / 70%), #33272700 80%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -22219,6 +22249,7 @@ section.brand.mt-90.scecond {
     position: relative;
         background: black;
     z-index: 2;
+        margin-top: 0;
     padding-top: 57px;
 }
 
@@ -22303,11 +22334,10 @@ section.brand.mt-90.scecond {
     position: relative;
     z-index: 20;
     color: white;
-    display: flex;
-    
+    display: flex; 
     height: 150px;
     flex-direction: column;
-    gap: 12px;
+    gap: 4px;
     text-align: left;
 }
 .card-content h3{
@@ -22408,8 +22438,12 @@ img.card-logo {
     height: 20px;
 }
 h1.service-card-title {
-    text-align: center;
+    text-align: left;
+        font-size: 4rem;
+        width:58%;
     font-weight: 400;
+        font-family: 'Robert';
+    text-transform: none;
         margin-top: 10px;
     margin-bottom: 30px;
 }
@@ -22420,9 +22454,10 @@ section.work {
     padding-bottom: 150px;
 }
 section.work .container {
-    height: 500px;
-    border-radius: 15px;
-        position: relative;
+        height: 600px;
+    /* border-radius: 20px !important; */
+    border-radius: 20px;
+    position: relative;
 }
 .silk-canvas {
     position: absolute !important;
@@ -22439,7 +22474,7 @@ section.work .container {
     gap: 5%;
 }
 .work-content .hero-btn  {
-    padding: 26px 36px 26px 50px;
+    padding: 26px 36px 26px 36px;
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.09);
     backdrop-filter: blur(10.7px);
@@ -22484,10 +22519,11 @@ hr.header-hr {
 }
 
 .text-left.xb-hero {
-    width: 100%;
+       width: 100%;
+    flex-direction: column;
     display: flex;
-    justify-content: space-between;
-    align-items: end;
+    justify-content: end;
+    align-items: flex-start;
 }
 .hero-style-three .container {
     height: 100vh;
@@ -22511,20 +22547,26 @@ p.privacy {
 }
 
 p.content.about-sec.wow.first {
-    font-size: 43px;
+       font-size: 43px;
     line-height: 1.3;
     width: 76%;
-        font-weight: 200;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
 }
 h2.trusted-br {
-      font-weight: 600;
-    font-size: 32px;
-    letter-spacing: 1.3px;
-    text-transform: uppercase;
-    color: #000068;
+        font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0px;
+    text-transform: capitalise;
+    color: #565656;
 
 }
 
+
+.cs-brand-inner.marquee-left {
+    width: 67%;
+    mask-image: linear-gradient(to right, hsl(0 0% 0% / 0), hsl(0 0% 0% / 1) 20%, hsl(0 0% 0% / 1) 80%, hsl(0 0% 0% / 0));
+}
 .bg-img {
     width: 200px;
     position: absolute;
@@ -22539,15 +22581,89 @@ h1.work-content-title {
 .nuber-card {
     display: flex;
     gap: 10px;
+    margin-bottom: 8px;
     align-items: center;
 }
 .nuber-card h2 {
-    font-weight: 500;
+    font-weight: 400;
+    
+    text-transform: none;
+     font-family: 'inter',sanserif;
+}
+p.sub-title-sec.heighlight-text {
+      font-size: 1.125rem;
+    line-height: 1.8;
 }
 p.srcCrd-title {
-    font-size: 21px;
+  font-family: 'inter',sanserif;
+    font-size: 15px;
 }
 p.card-para {
-    font-size: 17px;
+    font-size: 12px;
     font-style: italic;
 }
+.sc_hero_video::before{
+  content:'';
+  position:absolute;
+  height:100%;
+  z-index:2;
+  WIDTH:100%;
+  background-color: #000000b3;
+}
+
+.sub-title-div {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+p.sub-title-sec {
+    width: 40%;
+        font-family: 'Robert';
+            /* font-size: .9375rem; */
+            line-height: 1.8;
+}
+
+
+.faulty-terminal-container {
+  width: 100%;
+  height: 100%;
+     position: absolute;
+    border-radius: 20px;
+  overflow: hidden;
+}
+
+.sec-title--two.sec-title--three.double-text {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+.sec-title--two.sec-title--three.double-text .content {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.sub-para-main-text {
+    width: 55%;
+}
+.aug-ment-sub-div {
+    width: 40%;
+}
+.aug-ment-sub-div .content {
+  color:grey;
+}
+.cs-about-wrap.pos-rel {
+    padding-bottom: 150px;
+}
+
+
+.text-left.xb-hero.video-banner {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+
+

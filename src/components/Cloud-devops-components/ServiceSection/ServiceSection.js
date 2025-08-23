@@ -16,7 +16,7 @@ const ServiceSection = () => {
   return (
     <section className="service pos-rel z-1 pb-150">
       <div className="container">
-        <div className="row justify-content-center">
+        {/* <div className="row justify-content-center">
              <div className="service-head">
       <div className="border-bg1">
                     <svg  viewBox="0 0 330 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@ const ServiceSection = () => {
                     </svg>
                   </div>
   </div>
-        </div>
+        </div> */}
         <div className="row">
        
           

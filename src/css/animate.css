@@ -3146,3 +3146,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     bottom: 76%;
     z-index: 2;;
 }
+.colour7{
+     position: absolute;
+    background-image: radial-gradient(closest-side, rgb(33 245 245 / 16%), #00000000);
+   height: 719px;
+    width: 1125px;
+    right: 16%;
+    top: 50%;
+    z-index: 2;;
+}

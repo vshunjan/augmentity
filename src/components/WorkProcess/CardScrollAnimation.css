@@ -1,0 +1,82 @@
+   #card-pin-section {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Base Container Style */
+        .card-container {
+            position: relative;
+            height: 550px; /* CONFIG: Adjust overall height */
+           /* background: rgba(0, 0, 255, 0.1); /* Debug layout */
+            width: 400px; /* Default (Mobile) width */
+        }
+
+        /* Base Card Style */
+        .card {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px; /* CONFIG: Base card width */
+            height: 420px; /* CONFIG: Base card height */
+            background-color: rgba(20, 20, 20, 0.65);
+            border: 1px solid rgba(100, 100, 100, 0.4);
+            border-radius: 15px;
+            backdrop-filter: blur(12px); /* CONFIG: Adjust background blur */
+            -webkit-backdrop-filter: blur(12px);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+        }
+
+        /* --- Content Styling --- */
+        .card-content { display: flex; flex-direction: column; align-items: center; justify-content: space-between; height: 90%; width: 90%; padding: 15px 0; box-sizing: border-box; }
+        .symbol {
+            font-size: 6rem; /* CONFIG: Base letter size */
+            font-weight: 700;
+            flex-grow: 1; display: flex; align-items: center; justify-content: center; line-height: 1;
+            color: #ffffff;
+            /* text-shadow: 0 0 18px rgba(255, 255, 255, 0.6); /* REMOVED: Text shadow/blur */
+            font-family: 'Arial Black', Gadget, sans-serif; /* Fallback font */
+            padding-bottom: 20px;
+            box-sizing: border-box;
+        }
+        /* --- Assign Unique Fonts --- */
+        .card-5 .symbol { font-family: 'Montserrat', sans-serif; }        /* n */
+        .card-4 .symbol { font-family: 'Playfair Display', serif; }     /* e */
+        .card-3 .symbol { font-family: 'Orbitron', sans-serif; }        /* x */
+        .card-2 .symbol { font-family: 'Lobster', cursive; font-weight: 400;} /* o */
+        .card-1 .symbol { font-family: 'Roboto Mono', monospace; }     /* r */
+        .label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.2px; color: #bbb; align-self: center; text-align: center; margin-bottom: 10px; }
+
+        /* --- Spacer Styling --- */
+        .spacer { height: 100vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; background-color: #1a1a1a; }
+
+        /* --- Responsive Adjustments --- */
+        @media (min-width: 768px) { /* Desktop */
+            .card-container {
+                /* CONFIG: Adjust Desktop container width to fit spread */
+                 width: 1250px;
+            }
+        }
+        @media (max-width: 767px) { /* Mobile */
+            .card-container {
+                 height: 500px; /* CONFIG: Adjust Mobile container height */
+             }
+            .card {
+                 width: 260px; /* CONFIG: Mobile card width */
+                 height: 390px; /* CONFIG: Mobile card height */
+             }
+            .symbol {
+                 font-size: 9rem; /* CONFIG: Mobile letter size */
+             }
+            /* CONFIG: Specific font size adjustments if needed */
+            .card-2 .symbol { font-size: 10rem; }
+            .label { font-size: 0.75rem; }
+        }

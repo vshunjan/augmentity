@@ -1,3 +1,4 @@
 
 # .gitignore for React
 node_modules
+build

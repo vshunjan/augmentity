@@ -3,7 +3,7 @@ import React from 'react';
 import { useRef, useEffect } from 'react';
 
 const LetterGlitch = ({
-  glitchColors = ['#010a26', '#f03099', '#010a26'],
+  glitchColors = ['#21F5F5', '#f03099', '#21F5F5'],
   className = '',
   glitchSpeed = 25,
   centerVignette = false,
@@ -17,9 +17,9 @@ const LetterGlitch = ({
   const context = useRef(null);
   const lastGlitchTime = useRef(Date.now());
 
-  const fontSize = 16;
-  const charWidth = 10;
-  const charHeight = 20;
+  const fontSize = 18;
+  const charWidth = 15;
+  const charHeight = 25;
 
   const lettersAndSymbols = [
     'i', 'S', 'Y', 'A', 'A', 'i', 'L', 'Y', 'N', 'L', 'i', 'S', 'E',

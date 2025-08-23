@@ -1,14 +1,17 @@
 import React, { Fragment } from 'react';
-import Header5 from '../../components/header5/Header5';
-import Hero5 from '../../components/hero5/hero5';
-import FunFactSection from '../../components/Cloud-devops-components/FunFact/FunFact';
+import Header4 from '../../components/header4/Header4';
+import Hero44 from '../../components/hero4/hero44';
+import PartnerSection from '../../components/Cyber-Security-Components/PartnerSection/PartnerSection';
 import ServiceSection from '../../components/Cloud-devops-components/ServiceSection/ServiceSection';
-import CtaSection from '../../components/Cloud-devops-components/CtaSection/CtaSection';
-import WorkFlow from '../../components/Cloud-devops-components/WorkFlow/WorkFlow';
-import CtaSection2 from '../../components/Cloud-devops-components/CtaSection2/CtaSection2';
-import FeaturesSection from '../../components/Cloud-devops-components/FeaturesSection/FeaturesSection';
-import CloudBlogSection from '../../components/Cloud-devops-components/CloudBlogSection/CloudBlogSection';
-import Footer from '../../components/Cloud-devops-components/Footer/Footer';
+import About from '../../components/Cyber-Security-Components/about/about';
+import WorkProcess from '../../components/WorkProcess/WorkProcess';
+import WorkFlow from '../../components/Cyber-Security-Components/WorkFlow/WorkFlow';
+import IndustrieSection from '../../components/Cyber-Security-Components/IndustrieSection/IndustrieSection';
+import TestimonialSection from '../../components/Cyber-Security-Components/TestimonialSection/TestimonialSection';
+import Achievements from '../../components/Cyber-Security-Components/Achievements/Achievements';
+import CyberBlogSection from '../../components/Cyber-Security-Components/CyberBlogSection/CyberBlogSection';
+import ContactSection from '../../components/Cyber-Security-Components/ContactSection';
+import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 
 
@@ -16,18 +19,21 @@ const HomePage5 = () => {
 
     return (
         <Fragment>
-            <div className='cloud-and-devops'>
-                <main className="page_content">
-                    <Header5 />
-                    <Hero5 />
-                    <FunFactSection />
+            <div className='cybersecurity body_wrap sco_agency'>
+                <main className=" page_content">
+                    <Header4 />
+                    <Hero44 />
+                    <PartnerSection />
                     <ServiceSection />
-                    <CtaSection />
+                     <WorkProcess />
+                    <About />
                     <WorkFlow />
-                    <CtaSection2 />
-                    <FeaturesSection />
-                    <CloudBlogSection />
-                    <Scrollbar />
+                    {/* <IndustrieSection /> */}
+                    {/* <TestimonialSection /> */}
+                    {/* <Achievements /> */}
+                    {/* <CyberBlogSection /> */}
+                    {/* <ContactSection /> */}
+                    {/* <Scrollbar /> */}
                 </main>
                 <Footer/>
             </div>

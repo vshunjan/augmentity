@@ -70,16 +70,11 @@ const Header4 = (props) => {
                                     <div className="xb-header-menu-scroll lenis lenis-smooth">
                                         <div className="xb-menu-close xb-hide-xl xb-close" onClick={() => setMobailState(!mobailActive)}></div>
                                         <div className="xb-logo-mobile xb-hide-xl">
-                                            <Link onClick={ClickHandler} to="/" rel="home"><img src={logo2}
+                                            <Link onClick={ClickHandler} to="/" rel="home"><img src={logo}
                                                 alt="" /></Link>
                                         </div>
                                         <div className="xb-header-mobile-search xb-hide-xl">
-                                            <form role="search" onSubmit={SubmitHandler}>
-                                                <input type="text" placeholder="Search..." name="s"
-                                                    className="search-field" />
-                                                <button className="search-submit" type="submit"><i
-                                                    className="far fa-search"></i></button>
-                                            </form>
+                                          
                                         </div>
                                         <nav className="xb-header-nav">
                                             <MobileMenu />

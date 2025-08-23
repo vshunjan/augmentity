@@ -91,6 +91,7 @@ const PartnerSection = () => {
 
   return (
     <section className="brand mt-90 scecond">
+      <div className='colour7'></div> 
       <div className="container">
         <div className="sec-title--two sec-title--three brand-title">
 

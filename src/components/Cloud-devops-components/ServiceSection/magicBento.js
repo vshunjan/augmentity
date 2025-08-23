@@ -41,15 +41,15 @@ const cardData = [
     color: "#060010",
     rite:'',
     title: 48 ,
-    type:'minutes',
+    type:'Minutes',
     description: "is the average eCrime breakout time in 2024",
     // img: bgimg1
   },
   {
     color: "#060010",
     rite:'$',
-    title: 4.45,
-    type:"million ",
+    title: '4.45',
+    type:"Million ",
     description: "The average global cost of a data breach in 2024.",
     para:'(IBM Cost of a Data Breach Report 2024)',
    img: bgimg2
@@ -58,7 +58,7 @@ const cardData = [
     color: "#060010",
     title: 82,
     rite:'',
-    type:'% of enterprises ',
+    type:'% of Enterprises ',
     description: "deploying AI admit they haven’t fully assessed security risks.",
     para:'(Gartner, 2024)',
   // img: bgimg3

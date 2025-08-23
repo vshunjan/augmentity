@@ -55,13 +55,13 @@ const Hero4 = () => {
             </div>
             
             <div className="sc_hero_video">
-    {/* <LetterGlitch
+    <LetterGlitch
   glitchSpeed={10}
   centerVignette={true}
   outerVignette={false}
   smooth={true}
-/> */}
-<BackgroundVideo />
+/>
+{/* <BackgroundVideo /> */}
             </div>
         </section>
     );
