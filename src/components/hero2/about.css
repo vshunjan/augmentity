@@ -1,0 +1,32 @@
+.about-banner .sc_hero_video::before {
+  display: none;
+}
+.hero-style-three .xb-hero .xb-item--title {
+    color: white;
+}
+.hero-style-three .xb-hero .xb-item--title span.c-suite {
+    position: relative;
+}
+hr.crossed-line {
+     position: absolute;
+    top: 15px;
+    /* height: 0px; */
+    left: 19px;
+    z-index: 9999;
+    width: 100%;
+    /* background-color: #ffffff; */
+    /* background-image: radial-gradient(circle, #00000045 0%, #000000 100%); */
+    border-color: white;
+    border-top: 5px solid #ffffff;
+    transform: rotate(155deg);
+}
+.about-banner.hero-style-three .xb-hero .xb-item--title span.c-suite {
+    display: inline;
+}
+.about-banner.hero-style-three .text-left.xb-hero.video-banner {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}

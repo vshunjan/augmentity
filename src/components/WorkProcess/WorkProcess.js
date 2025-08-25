@@ -53,17 +53,21 @@ const WorkProcess = (props) => {
             <div className="container">
                 <div className="text-left sec-title--two mb-90" >
                    <div className="service-head">
-
+ <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
                   <h1 className="service-card-title">  Transform with Confidence  in the AI Era</h1>
-              
+             </Fade> 
   </div>
   <div className='sub-title-div'>
+     <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
     <p className='sub-title-sec'> 
     As digital transformation accelerates and AI reshapes the enterprise, cyber risk has become a top boardroom priority. Expert consultants at Augmentity empower forward-thinking organizations to move fast without compromising security, trust, or compliance.
   </p>
+  </Fade>
+   <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
     <p className='sub-title-sec heighlight-text'> 
 We stand by you, as your trusted advisors - an extra layer of confidence.
 Our approach is built around four strategic pillars—Analyse, Govern, Insure, and Defend—designed to give you full-spectrum protection, tailored to the realities of today’s threat landscape.  </p>
+</Fade>
   </div>
   
                 </div>
@@ -72,10 +76,11 @@ Our approach is built around four strategic pillars—Analyse, Govern, Insure, a
                    
                     <div className="col-lg-6 sa-scroll-lock-card">
                                                     
-                        
+                         <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
                         <div className="sa-process_left">
                         
                             {Process.map((process, pitem) => (
+                               
                                 <div className={`process-item process-item--${process.direction}`} key={pitem}>  
                                                 <div className='folder-svg'>
                              <svg
@@ -94,9 +99,9 @@ Our approach is built around four strategic pillars—Analyse, Govern, Insure, a
                             <img src={bgimg} alt="" />
                             </div>    
                           <div className='process-content'>           
-                                    <div className="xb-item--icon">
+                                    {/* <div className="xb-item--icon">
                                         <img src={process.icon} alt="" />
-                                    </div>
+                                    </div> */}
                                     <h4 className="xb-item--title">{process.title}</h4>
                                     <p className="xb-item--contact">{process.subTitle}</p>
                                       <div className="hero-btn">
@@ -110,7 +115,7 @@ Our approach is built around four strategic pillars—Analyse, Govern, Insure, a
                                 
                             ))}
                         </div>
-
+</Fade>
                     </div>
                 </div>
             </div>

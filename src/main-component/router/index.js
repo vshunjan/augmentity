@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Homepage from '../HomePage/HomePage'
-import HomePage2 from '../HomePage2/HomePage2';
+import HomePage2 from '../aboutpage/About';
 import HomePage3 from '../HomePage3/HomePage3';
 import HomePage4 from '../HomePage4/HomePage4';
 import HomePage5 from '../HomePage5/HomePage5';
@@ -28,10 +28,11 @@ const AllRoute = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage4 />} />
-          <Route path="home" element={<HomePage5/>} />
-          <Route path="home-2" element={<HomePage2 />} />
-          <Route path="home-3" element={<HomePage3 />} />
+          <Route path="/" element={<HomePage5 />} />
+          <Route path="home" element={<HomePage4/>} />
+          <Route path="about" element={<HomePage2 />} />
+          
+          {/* <Route path="home-3" element={<HomePage3 />} />
           <Route path="home-4" element={<HomePage4 />} />
           <Route path="home-5" element={<HomePage5 />} />
           <Route path="home-6" element={<HomePage6 />} />
@@ -49,7 +50,7 @@ const AllRoute = () => {
           <Route path="privacy-policy" element={<PrivacyPage />} />
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog-single/:slug" element={<BlogDetails />} />
-          <Route path="contact" element={<ContactPage />} />  
+          <Route path="contact" element={<ContactPage />} />   */}
         </Routes>
       </BrowserRouter>
 

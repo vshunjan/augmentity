@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
+import { Fade } from "react-awesome-reveal";
 import icon2 from '../../images/icon/m_01.svg'
 import icon3 from '../../images/icon/m_02.svg'
 import icon4 from '../../images/icon/m_03.svg'
@@ -56,6 +57,7 @@ const Header4 = (props) => {
 
         <div id="xb-header-area" className="header-area header-style-three header-transparent">
             <div className={`xb-header stricky  ${isSticky ? 'stricked-menu stricky-fixed' : ''}`}>
+                 <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
                 <div className="container">
                     <div className="header__wrap ul_li_between">
                         <div className="header-logo">
@@ -95,6 +97,7 @@ const Header4 = (props) => {
                        
                     </div>
                 </div>
+                </Fade>
             </div>
         </div>
 

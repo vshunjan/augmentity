@@ -1,11 +1,12 @@
 import React from "react";
 import FaultyTerminal from './FaultyTerminal';
-
+import { Fade } from "react-awesome-reveal";
 
 
 const WorkFlow = (props) => {
   return (
     <section className="work">
+       <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
       <div className="container">
      
   <FaultyTerminal
@@ -23,13 +24,14 @@ const WorkFlow = (props) => {
     curvature={0}
     tint="#0d2b29"
     mouseReact={true}
-    mouseStrength={0.5}
+    mouseStrength={1}
     pageLoadAnimation={false}
     brightness={1}
   />
 
 
         <div className="work-content">
+           <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
           <h1
             className="work-content-title"
             data-wow-delay="000ms"
@@ -37,18 +39,21 @@ const WorkFlow = (props) => {
           >
             Under Attack?
           </h1>
+          </Fade>
           {/* <p className="work-content-p">
            
             Transform with Confidence in the AI Era
           </p> */}
-
+ <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
           <div className="hero-btn">
             <span>
               Explore solutions 
             </span>
           </div>
+          </Fade>
         </div>
       </div>
+      </Fade>
     </section>
   );
 };

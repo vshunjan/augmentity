@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Header2 from '../../components/Header2/Header2';
+import Header4 from '../../components/header4/Header4';
 import Hero2 from '../../components/hero2/hero2';
 import FeatureSection from '../../components/It-Services-Components/FeatureSection';
 import About from '../../components/It-Services-Components/about/about';
@@ -13,22 +13,19 @@ import ParallaxSection from '../../components/It-Services-Components/PerallaxSec
 import Testimonial from '../../components/It-Services-Components/Testimonial/Testimonial';
 import TeamSection from '../../components/It-Services-Components/TeamSection/TeamSection';
 import ContactSection from '../../components/It-Services-Components/ContactSection';
-import Footer from '../../components/It-Services-Components/Footer/Footer';
+import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
 import sIcon5 from '../../images/bg/parallax.jpg'
 
-const HomePage2 = () => {
+const AboutPage = () => {
 
     return (
         <Fragment>
             <div className='body_wrap it-services'>
-                <Header2 />
+                <Header4 />
                 <main className="page_content">
                     <Hero2 />
-                    <div className="bg-white">
-                        <FeatureSection />
-                        <About />
-                    </div>
-                    <ServiceSection />
+                   
+                    {/* <ServiceSection />
                     <BrandSection />
                     <FunFactSection />
                     <ProjectSection />
@@ -36,12 +33,12 @@ const HomePage2 = () => {
                     <ParallaxSection imageUrl={sIcon5} speed={0.5} offset={0} />
                     <Testimonial />
                     <TeamSection />
-                    <ContactSection />
+                    <ContactSection /> */}
                 </main>
                 <Footer />
-                <Scrollbar />
+                {/* <Scrollbar /> */}
             </div>
         </Fragment>
     )
 };
-export default HomePage2;
+export default AboutPage;

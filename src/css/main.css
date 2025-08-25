@@ -51,7 +51,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Righteous&display=swap");
 
 :root {
-  --font-body:  'Robert';
+  --font-body:  'josefin';
   --font-heading: 'Aeonik';
   --font-heading-two: 'TransducerTest';
   --font-heading-three: 'GT-Super-Text';
@@ -4320,8 +4320,8 @@ body[data-aos-easing=ease] [data-aos] {
 }
 
 .header-style-three .xb-header {
-        padding: 25px 3%;
-    width: 80%;
+        padding: 25px 0;
+    width: 100%;
 
 }
 
@@ -7158,24 +7158,24 @@ body[data-aos-easing=ease] [data-aos] {
   margin-top: 15px;
   margin-right: 35px;
   display: inline-block;
-  border-radius: 23px;
+  /* border-radius: 23px;
   -webkit-border-radius: 23px;
   -moz-border-radius: 23px;
   -ms-border-radius: 23px;
-  -o-border-radius: 23px;
-  background: linear-gradient(180deg, #23263c 0%, #010315 100%);
+  -o-border-radius: 23px; */
+  /* background: linear-gradient(180deg, #23263c 0%, #010315 100%); */
 }
 
 .cs-brand-item .xb-inner {
   height: 100%;
   width: 100%;
   background-color: #000000;
-  border-radius: 23px;
+  /* border-radius: 23px;
   -webkit-border-radius: 23px;
   -moz-border-radius: 23px;
   -ms-border-radius: 23px;
-  -o-border-radius: 23px;
-  padding: 19.5px 42px;
+  -o-border-radius: 23px; */
+  padding: 19.5px 10px;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -8220,13 +8220,15 @@ body[data-aos-easing=ease] [data-aos] {
 }
 
 .sa-process_left .process-item .xb-item--title {
-      font-size: 50px;
-    font-weight: 400;
+      font-size: 60px;
+    font-weight: 500;
+    letter-spacing: -2px;
     margin: 20px 0 20px;
 }
 
 .sa-process_left .process-item p.xb-item--contact  {
      width: 64%;
+     font-size: 22px;
 }
 section.service.pos-rel.z-1.pb-150 {
     margin-top: 100px;
@@ -18252,7 +18254,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 .hero-style-three .xb-hero .xb-item--title {
   font-weight: 500;
   font-size: 76px;
-  letter-spacing: 0px;
+  letter-spacing:-3px;
   /* margin-bottom: 46px; */
   display: inline-block;
   text-transform: none;
@@ -18262,7 +18264,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 .hero-style-three .xb-hero .xb-item--title span.c-suite{
   font-weight: 500;
   font-size: 76px;
-  letter-spacing: 0px;
+  letter-spacing: -3px;
   margin-bottom: 46px;
   display: inline-block;
   text-transform: none;
@@ -18279,9 +18281,9 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     height: 100%;
 }
 .hero-style-three .xb-hero .xb-item--title span.cyber{
-       font-weight: 400;
+       font-weight: 500;
     font-size: 76px;
-  letter-spacing: 0px;
+  letter-spacing: -3px;
   margin-bottom: 0px;
   display: inline-block;
   text-transform: none;
@@ -20061,6 +20063,7 @@ canvas.letter-glitch-canvas {
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
   transform: translateX(0%);
+      margin-top: -50px;
 }
 
 .xb-header-menu.active+.xb-header-menu-backdrop {
@@ -22186,12 +22189,12 @@ a.xb-logo {
  }
   
  p.content.about-sec.wow {
-       font-size: 34px;
+       font-size: 40px;
     line-height: 46px;
     text-align: center;
     font-weight: 300;
-    font-family: 'Inter', sans-serif;
-    letter-spacing: .6px;
+    font-family: 'josefin';
+    letter-spacing: -1px;
     width: 75%;
 }
 .brand-text {
@@ -22229,8 +22232,8 @@ rect{
 .evervault-card {
   position: relative;
 width: 100%;
-    height: 60%;
-    bottom: 26%;
+  height: 72%;
+    bottom: 21%;
   /* border-radius: 20px; */
   overflow: hidden;
   background: transparent;
@@ -22487,13 +22490,17 @@ img.card-logo {
 }
 h1.service-card-title {
     text-align: left;
-        font-size: 4rem;
-        width:58%;
+        font-size: 6rem;
+        letter-spacing: -4px;
+        width:100%;
     font-weight: 400;
-        font-family: 'Robert';
+        font-family: 'josefin';
     text-transform: none;
-        margin-top: 10px;
+        /* margin-top: 10px; */
     margin-bottom: 30px;
+}
+.service-head {
+    width: 70%;
 }
 h1.service-card-title span{
     color: #656363;
@@ -22504,8 +22511,8 @@ section.work {
 section.work .container {
         height: 600px;
     /* border-radius: 20px !important; */
-    border-radius: 20px;
-    position: relative;
+    /* border-radius: 20px; */
+    /* position: relative; */
 }
 .silk-canvas {
     position: absolute !important;
@@ -22587,7 +22594,7 @@ hr.header-hr {
     padding: 30px 0;
     border-top: 0.5px solid ;
     border-image: radial-gradient(circle, #ffffff 0%, #000000 100%) 1;
-    border-bottom: 0.5px solid ;
+    /* border-bottom: 0.5px solid ; */
 }
 p.privacy {
     display: flex;
@@ -22595,16 +22602,17 @@ p.privacy {
 }
 
 p.content.about-sec.wow.first {
-       font-size: 43px;
+       font-size: 50px;
     line-height: 1.3;
+    letter-spacing: -1px;
     width: 76%;
-    font-family: 'Inter', sans-serif;
+    font-family: "josefin";
     font-weight: 200;
 }
 h2.trusted-br {
-        font-weight: 600;
-    font-size: 25px;
-    letter-spacing: 0px;
+        font-weight: 500;
+    font-size: 30px;
+    letter-spacing: -1px;
     text-transform: capitalise;
     color: #565656;
 
@@ -22624,7 +22632,7 @@ h2.trusted-br {
 }
 h1.work-content-title {
     font-size: 56px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .nuber-card {
     display: flex;
@@ -22633,21 +22641,22 @@ h1.work-content-title {
     align-items: center;
 }
 .nuber-card h2 {
-    font-weight: 400;
-    
+    font-weight: 500;    
     text-transform: none;
-     font-family: 'inter',sanserif;
+    letter-spacing: -1px;
+     font-family: 'josefin';
 }
 p.sub-title-sec.heighlight-text {
       font-size: 1.125rem;
     line-height: 1.8;
 }
 p.srcCrd-title {
-  font-family: 'inter',sanserif;
-    font-size: 15px;
+  font-family: 'josefin';
+    font-size: 19px;
+    font-weight: 400;
 }
 p.card-para {
-    font-size: 12px;
+    font-size: 15px;
     font-style: italic;
 }
 .sc_hero_video::before{
@@ -22655,26 +22664,33 @@ p.card-para {
   position:absolute;
   height:100%;
   z-index:2;
-  WIDTH:100%;
-  background-color: #000000b3;
+      background-image: radial-gradient(circle, #00000045 0%, #000000 100%);
+    WIDTH: 100%;
+    background-color: #000000b3;
 }
 
 .sub-title-div {
     display: flex;
+    width: 60%;
+    flex-direction: column;
     gap: 20px;
-    justify-content: space-between;
+    padding-top:35px;
+}
+.text-left.sec-title--two.mb-90 {
+    display: flex;
 }
 p.sub-title-sec {
-    width: 40%;
-        font-family: 'Robert';
-            /* font-size: .9375rem; */
-            line-height: 1.8;
+  width: 100%;
+  font-family: 'josefin';
+  font-size: 22px;
+  line-height: 1.6;
 }
 
 
 .faulty-terminal-container {
   width: 100%;
-  height: 100%;
+  height: 600px;
+  left:0;
      position: absolute;
     border-radius: 20px;
   overflow: hidden;
@@ -22700,9 +22716,7 @@ p.sub-title-sec {
 .aug-ment-sub-div .content {
   color:grey;
 }
-.cs-about-wrap.pos-rel {
-    padding-bottom: 150px;
-}
+
 
 
 .text-left.xb-hero.video-banner {

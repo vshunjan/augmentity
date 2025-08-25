@@ -10,7 +10,11 @@ const menus = [
         title: 'Home2',
         link: '/home',
     },
-   
+    {
+        id: 2,
+        title: 'About',
+        link: '/about',
+    }
     
 
 
