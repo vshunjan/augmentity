@@ -3,7 +3,6 @@ import Header4 from '../../components/header4/Header4';
 import Hero2 from '../../components/hero2/hero2';
 import FeatureSection from '../../components/It-Services-Components/FeatureSection';
 import About from '../../components/It-Services-Components/about/about';
-import ServiceSection from '../../components/It-Services-Components/ServiceSection/ServiceSection';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import BrandSection from '../../components/It-Services-Components/BrandSection/BrandSection';
 import FunFactSection from '../../components/It-Services-Components/FunFact/FunFact';
@@ -16,24 +15,19 @@ import ContactSection from '../../components/It-Services-Components/ContactSecti
 import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
 import sIcon5 from '../../images/bg/parallax.jpg'
 
+
 const AboutPage = () => {
 
     return (
         <Fragment>
-            <div className='body_wrap it-services'>
+            <div className='bg-black body_wrap it-services'>
                 <Header4 />
                 <main className="page_content">
                     <Hero2 />
-                   
-                    {/* <ServiceSection />
-                    <BrandSection />
-                    <FunFactSection />
                     <ProjectSection />
+                    <BrandSection />
                     <WorkProcess />
-                    <ParallaxSection imageUrl={sIcon5} speed={0.5} offset={0} />
-                    <Testimonial />
-                    <TeamSection />
-                    <ContactSection /> */}
+                    
                 </main>
                 <Footer />
                 {/* <Scrollbar /> */}

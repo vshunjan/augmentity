@@ -1,14 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
-import icon from "../../../images/icon/magic02.svg";
-import about1 from "../../../images/about/img04.png";
-import about2 from "../../../images/bg/abt-cnt_bg.png";
-import about3 from "../../../images/bg/content_bg.png";
-import abicon1 from "../../../images/icon/frature-icon01.png";
-import abicon2 from "../../../images/icon/frature-icon02.png";
-import abicon3 from "../../../images/icon/frature-icon03.png";
-import abicon4 from "../../../images/icon/frature-icon04.png";
+import imagewhy from '../../../images/gallery/whyAugmentity.jpg'
 import RippleGrid from "./RippleGrid";
 
 const About = (props) => {
@@ -18,6 +11,7 @@ const About = (props) => {
 
   return (
     <section className="overflow-hidden about pt-60 pb-100">
+      {/* <div className='colour8'></div>   */}
       <div className="container">
    
   {/* <RippleGrid
@@ -32,9 +26,12 @@ const About = (props) => {
   /> */}
 
         <div className="cs-about-wrap pos-rel">
-          <div className="row mt-none-60">
+          <div className="row ">
             <div className="cs-about_left">
               <div className="sec-title--two sec-title--three double-text">
+                <div className="aument-img">
+                  <img src={imagewhy} />
+                </div>
                 <div className="aug-ment-sub-div">
                   <Fade
                     direction="up"
@@ -60,7 +57,7 @@ const About = (props) => {
                       </p>
                     </div>
                   </Fade>
-                </div>
+                
 
                 <div className="sub-para-main-text">
                   <Fade
@@ -87,6 +84,7 @@ const About = (props) => {
                       </p>
                     </div>
                   </Fade>
+                </div>
                 </div>
               </div>
             </div>

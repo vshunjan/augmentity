@@ -5745,7 +5745,7 @@ body[data-aos-easing=ease] [data-aos] {
 .sec-title .title {
   font-size: 48px;
   letter-spacing: -0.02em;
-  color: var(--color-heading);
+  color: white;
 }
 
 @media (max-width: 991px) {
@@ -7016,18 +7016,20 @@ body[data-aos-easing=ease] [data-aos] {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+      align-items: center;
+    justify-content: center;
   margin: 0 auto;
-  border: 1px solid #2F3037;
+  /* border: 1px solid #2F3037; */
 }
 
 .xb-brand-item {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 20%;
+  width: 100%;
   box-sizing: border-box;
   text-align: center;
+  gap:9%;
   background-color: transparent;
   position: relative;
   z-index: 2;
@@ -7055,10 +7057,10 @@ body[data-aos-easing=ease] [data-aos] {
   }
 }
 
-.xb-brand-item--big {
+/* .xb-brand-item--big {
   border-left: 1px solid #2F3037;
   border-right: 1px solid #2F3037;
-}
+} */
 
 @media (max-width: 767px) {
   .xb-brand-item--big {
@@ -7079,9 +7081,7 @@ body[data-aos-easing=ease] [data-aos] {
   z-index: 2;
 }
 
-.xb-brand-single:not(:last-child) {
-  border-bottom: 1px solid #2F3037;
-}
+
 
 .brand-sub_title {
   margin-top: 10px;
@@ -7182,7 +7182,8 @@ body[data-aos-easing=ease] [data-aos] {
 }
 
 .cs-brand_wrap.pt-60.pb-60.pos-rel {
-    gap: 50px;
+       gap: 22px;
+    padding: 96px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8108,13 +8109,9 @@ body[data-aos-easing=ease] [data-aos] {
   max-width: 470px;
   padding: 0 40px 40px;
   margin-bottom: 100px;
-  background: #eaeef0;
-  border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
-  box-shadow: 4px 4px 14px 0 #d5dbde;
+  background: #000000;
+    border: 1px solid #b2b2b245;;
+      box-shadow: 4px 4px 14px 0 #000000;
 }
 
 @media (max-width: 991px) {
@@ -8140,18 +8137,21 @@ body[data-aos-easing=ease] [data-aos] {
   padding-top: 12px;
   border-top: none;
   display: inline-block;
-  color: var(--color-heading);
-  border-radius: 0 0 27px 27px;
-  font-family: var(--font-heading);
-  border: 1px solid rgba(17, 17, 18, 0.1);
+color: #9f9d9d;
+    border-radius: 0 0 27px 27px;
+    font-family: var(--font-heading);
+    border: 1px solid rgb(255 255 255 / 20%);
 }
 
 .process-right .process-item .xb-item--title {
   font-size: 24px;
   letter-spacing: 0em;
+      color: white;
   margin-bottom: 10px;
 }
-
+span.xb-item--content {
+    color: white;
+}
 .process-right .process-item .xb-item--img {
   margin: 14px 0 25px;
 }
@@ -18258,7 +18258,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   /* margin-bottom: 46px; */
   display: inline-block;
   text-transform: none;
-      line-height: 1;
+      line-height: 1.1;
   font-family: 'josefin';
 }
 .hero-style-three .xb-hero .xb-item--title span.c-suite{
@@ -22232,8 +22232,8 @@ rect{
 .evervault-card {
   position: relative;
 width: 100%;
-  height: 72%;
-    bottom: 21%;
+  height: 69%;
+    bottom: 19%;
   /* border-radius: 20px; */
   overflow: hidden;
   background: transparent;
@@ -22492,7 +22492,7 @@ h1.service-card-title {
     text-align: left;
         font-size: 6rem;
         letter-spacing: -4px;
-        width:100%;
+        width:95%;
     font-weight: 400;
         font-family: 'josefin';
     text-transform: none;
@@ -22531,6 +22531,9 @@ section.work .container {
 .work-content .hero-btn  {
     padding: 26px 36px 26px 36px;
     border-radius: 50px;
+      color: white;
+    cursor:pointer;
+    font-size: 21px;
     background: rgba(255, 255, 255, 0.09);
     backdrop-filter: blur(10.7px);
     -webkit-backdrop-filter: blur(10.7px);
@@ -22540,6 +22543,8 @@ section.work .container {
     border-radius: 50px;
     width: fit-content;
     margin-top: 25px;
+    color: white;
+    cursor:pointer;
     background: rgba(255, 255, 255, 0.09);
     backdrop-filter: blur(10.7px);
     -webkit-backdrop-filter: blur(10.7px);
@@ -22632,6 +22637,7 @@ h2.trusted-br {
 }
 h1.work-content-title {
     font-size: 56px;
+        color: white;
     font-weight: 500;
 }
 .nuber-card {
@@ -22653,10 +22659,12 @@ p.sub-title-sec.heighlight-text {
 p.srcCrd-title {
   font-family: 'josefin';
     font-size: 19px;
+        width: 70%;
     font-weight: 400;
 }
 p.card-para {
     font-size: 15px;
+        font-family: 'Inter', sans-serif;
     font-style: italic;
 }
 .sc_hero_video::before{
@@ -22664,7 +22672,7 @@ p.card-para {
   position:absolute;
   height:100%;
   z-index:2;
-      background-image: radial-gradient(circle, #00000045 0%, #000000 100%);
+      background-image: radial-gradient(circle, #00000045 0%, #000000b0 100%);
     WIDTH: 100%;
     background-color: #000000b3;
 }
@@ -22692,13 +22700,14 @@ p.sub-title-sec {
   height: 600px;
   left:0;
      position: absolute;
-    border-radius: 20px;
+    /* border-radius: 20px; */
   overflow: hidden;
 }
 
 .sec-title--two.sec-title--three.double-text {
     display: flex;
     justify-content: space-between;
+        align-items: center;
     width:100%;
 }
 .sec-title--two.sec-title--three.double-text .content {
@@ -22708,10 +22717,11 @@ p.sub-title-sec {
     letter-spacing: 1px;
 }
 .sub-para-main-text {
-    width: 55%;
+    width: 100%;
+    margin-top: 35px;
 }
 .aug-ment-sub-div {
-    width: 40%;
+    width: 50%;
 }
 .aug-ment-sub-div .content {
   color:grey;
@@ -22729,3 +22739,7 @@ p.sub-title-sec {
 
 
 
+.aument-img {
+    width: 40%;
+    /* height: 700px; */
+}

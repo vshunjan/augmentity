@@ -1,3 +1,7 @@
+body{
+    font-family: 'josefin';
+}
+
 .about-banner .sc_hero_video::before {
   display: none;
 }
@@ -28,5 +32,67 @@ hr.crossed-line {
     flex-direction: row;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
+}
+.about-banner.hero-style-three .sc_hero_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+}
+section.project.pb-140.o-hidden {
+    /* margin-top: 100px; */
+    position: relative;
+    padding-top: 150px;
+    z-index: 999;
+    background-color: black;
+}
+section.project.pb-140.o-hidden .sec-title .title {
+    font-size: 28px;
+    letter-spacing: -0.02em;
+    color: #949494;
+     font-family: 'josefin';
+}
+section.project.pb-140.o-hidden .sec-title .content {
+    max-width: 70%;
+    color:white;
+    font-size: 40px;
+    line-height: 1;
+    display: inline-block;
+}
+h2.mb-40.title.wow.fadeInUp.scroll-card {
+    width: 69%;
+}
+.pro-top.ul_li_between.mb-65.swat-team .sec-title {
+    display: flex;
+    justify-content: space-between;
+}
+.pro-top.ul_li_between.mb-65.swat-team .sec-title .content {
+    max-width: 100%;
+    color: white;
+   font-size: 25px;
+    line-height: 1.3;
+       flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+.pro-top.ul_li_between.mb-65.swat-team .sec-title .title {
+    max-width: 100%;
+    color: white;
+    font-size: 42px;
+    line-height: 1;
+    display: inline-block;
+}
+.your-swat-title.css-zvi4ix {
+    width: 30%;
+}
+.your-swat-content.css-zvi4ix {
+    width: 60%;
+}
+.pro-top.ul_li_between.mb-65.swat-team {
+    margin: 100px 0;
+    margin-bottom: 0;
 }

@@ -53,7 +53,7 @@ const Process = [
 const WorkProcess = (props) => {
 
     return (
-        <section className="process pt-140 pb-40 pos-rel" style={{ backgroundColor: "#fff" }}>
+        <section className="pb-40 process pt-140 pos-rel" >
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-5 col-md-8">
@@ -61,29 +61,19 @@ const WorkProcess = (props) => {
                             <div className="sec-title">
                                 <Fade direction='down' triggerOnce={'false'} duration={1000} delay={9}>
                                     <div>
-                                        <h2 className="title mb-40 wow fadeInUp" data-wow-duration="600ms">Our 5-step workflow</h2>
+                                        <h2 className="mb-40 title wow fadeInUp scroll-card" data-wow-duration="600ms">
+                                             Who We Are
+                                      <span className='c-suite'> NOT   </span>
+                                        </h2>
                                     </div>
                                 </Fade>
-                                <Fade direction='up' triggerOnce={'false'} duration={1200} delay={9}>
+                                {/* <Fade direction='up' triggerOnce={'false'} duration={1200} delay={9}>
                                     <div>
                                         <span className="content wow fadeInUp" data-wow-delay="200ms" data-wow-duration="600ms">Our innomax Efficient Workflow in 5 Steps ensures streamlined IT solutions. We start by understanding your needs, then plan the project, design intuitive interfaces, build robust systems, and thoroughly test.</span>
                                     </div>
-                                </Fade>
+                                </Fade> */}
                             </div>
-                            <Fade direction='up' triggerOnce={'false'} duration={1200} delay={9}>
-                                <div>
-                                    <div className="xb-btn mt-55 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="600ms">
-                                        <Link to="/about" className="thm-btn thm-btn--fill_icon">
-                                            <div className="xb-item--hidden-text"><span className="text">Learn more about us</span></div>
-                                            <div className="xb-item--holder">
-                                                <span className="xb-item--text">Learn more about us</span>
-                                                <div className="xb-item--icon"><i className="far fa-long-arrow-right"></i></div>
-                                                <span className="xb-item--text">Learn more about us</span>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </Fade>
+                        
                         </div>
                     </div>
                     <div className="col-lg-7 col-md-8">
@@ -104,10 +94,7 @@ const WorkProcess = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="peocess-shape">
-                <div className="shape shape--one"><img src={pImg} alt="" /></div>
-                <div className="shape shape--two"><img src={pImg2} alt="" /></div>
-            </div>
+          
         </section>
     );
 }

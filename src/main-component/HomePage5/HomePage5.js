@@ -21,6 +21,7 @@ const HomePage5 = () => {
         <Fragment>
             <div className='cybersecurity body_wrap sco_agency'>
                 <main className=" page_content">
+                    <div className='colour8'></div> 
                     <Header4 />
                     <Hero44 />
                     <PartnerSection />

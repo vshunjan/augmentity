@@ -10,6 +10,8 @@ import fImg6 from '../../../images/fanfact/img06.png'
 import sIcon1 from '../../../images/icon/fun_icon01.png'
 import sIcon2 from '../../../images/icon/fun_icon02.png'
 import sIcon3 from '../../../images/icon/fun_icon03.png'
+import bgimg  from '../../../images/bg/scroll-lockimg.svg'
+
 
 const FunFact = [
     {
@@ -69,7 +71,7 @@ const FunFactSection = (props) => {
             <div className="container">
                 <div className="row mt-none-40 justify-content-center">
                     {FunFact.map((funfact, fitem) => (
-                        <div className="col-lg-4 col-md-8 mt-40" key={fitem}>
+                        <div className="mt-40 col-lg-4 col-md-8" key={fitem}>
                             <Fade direction='up' triggerOnce={'false'} duration={funfact.duration} delay={6}>
                                 <div>
                                     <div className="fanfact-item wow fadeInUp" data-wow-delay="300ms" data-wow-duration="600ms">

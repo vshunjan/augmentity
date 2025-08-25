@@ -22,7 +22,7 @@ const WorkFlow = (props) => {
     chromaticAberration={0}
     dither={0}
     curvature={0}
-    tint="#0d2b29"
+    tint="#0008FF"
     mouseReact={true}
     mouseStrength={1}
     pageLoadAnimation={false}

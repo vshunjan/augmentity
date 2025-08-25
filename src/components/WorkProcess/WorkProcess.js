@@ -8,6 +8,7 @@ import sIcon2 from '../../images/icon/user-icon.png'
 import sIcon3 from '../../images/icon/clipboar02.svg'
 import sIcon4 from '../../images/icon/medal-star.svg'
 import bgimg  from '../../images/bg/scroll-lockimg.svg'
+import ScrollStack, { ScrollStackItem } from './ScrollStack'
 // import DarkVeil from './scrollstack';
 
 const Process = [
@@ -47,7 +48,7 @@ const Process = [
 const WorkProcess = (props) => {
 
     return (
-        <section className="process pb-100 pos-rel" style={{ backgroundColor: "#000000" }}>
+        <section className="process pb-100 pos-rel" >
           {/* <DarkVeil /> */}
           <div className='colour6'></div>    
             <div className="container">
@@ -80,7 +81,7 @@ Our approach is built around four strategic pillars—Analyse, Govern, Insure, a
                         <div className="sa-process_left">
                         
                             {Process.map((process, pitem) => (
-                               
+  
                                 <div className={`process-item process-item--${process.direction}`} key={pitem}>  
                                                 <div className='folder-svg'>
                              <svg

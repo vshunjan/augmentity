@@ -130,11 +130,10 @@ const PartnerSection = () => {
             {partnersLeft.map((partner, index) => (
               <div className="cs-brand-item" key={index}>
                 <div className="xb-inner">
-                   <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
                   <div className="xb-img">
                     <img src={partner.pImg} alt={`Brand ${index + 1}`} />
                   </div>
-                  </Fade>
+                
                 </div>
               </div>
             ))}

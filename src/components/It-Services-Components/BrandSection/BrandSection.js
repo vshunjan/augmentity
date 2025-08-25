@@ -9,72 +9,38 @@ import brand5 from '../../../images/brand/logo05.png';
 import brand6 from '../../../images/brand/logo06.png';
 import brand7 from '../../../images/brand/logo07.png';
 import brand8 from '../../../images/brand/logo08.png';
+import bgimg  from '../../../images/bg/scroll-lockimg.svg'
+import bgimg2  from '../../../images/bg/scroll-lockimg.svg'
 
 const BrandSection = () => {
 
   return (
-    <section className="brand pt-135 pb-140" style={{ backgroundColor: "#111112" }}>
+    <section className="brand pt-135 pb-140" style={{ backgroundColor: "#000000" }}>
       <div className="container">
-        <div className="xb-brand-title mb-65">
-          <img src={flower} alt="" />
-          <span>Brand We Work With</span>
-          <img src={flower} alt="" />
-        </div>
+       
         <div className="xb-brand-wrap">
           <div className="xb-brand-item">
+           
             <div className="xb-brand-single xb-brand-hover">
               <Link to="/home-2">
-                <img src={brand1} alt="Shopify" />
+                <img src={bgimg} alt="Shopify" />
               </Link>
               <Link to="/home-2" className="xb-overlay"></Link>
             </div>
             <div className="xb-brand-single xb-brand-hover">
               <Link to="/home-2">
-                <img src={brand2} alt="Shopify" />
-              </Link>
-              <Link to="/home-2" className="xb-overlay"></Link>
-            </div>
-          </div>
-          <div className="xb-brand-item xb-brand-item--big xb-brand-hover">
-            <Link to="/home-2">
-              <img src={brand3} alt="Shopify" />
-            </Link>
-            <Link to="/home-2" className="xb-overlay"></Link>
-          </div>
-          <div className="xb-brand-item">
-            <div className="xb-brand-single xb-brand-hover">
-              <Link to="/home-2">
-                <img src={brand4} alt="Shopify" />
+                <img src={bgimg2} alt="Shopify" />
               </Link>
               <Link to="/home-2" className="xb-overlay"></Link>
             </div>
             <div className="xb-brand-single xb-brand-hover">
               <Link to="/home-2">
-                <img src={brand5} alt="Shopify" />
+                <img src={bgimg} alt="Shopify" />
               </Link>
               <Link to="/home-2" className="xb-overlay"></Link>
             </div>
           </div>
-          <div className="xb-brand-item xb-brand-item--big xb-brand-hover">
-            <Link to="/home-2">
-              <img src={brand6} alt="Shopify" />
-            </Link>
-            <Link to="/home-2" className="xb-overlay"></Link>
-          </div>
-          <div className="xb-brand-item">
-            <div className="xb-brand-single xb-brand-hover">
-              <Link to="/home-2">
-                <img src={brand7} alt="Shopify" />
-              </Link>
-              <Link to="/home-2" className="xb-overlay"></Link>
-            </div>
-            <div className="xb-brand-single xb-brand-hover">
-              <Link to="/home-2">
-                <img src={brand8} alt="Shopify" />
-              </Link>
-              <Link to="/home-2" className="xb-overlay"></Link>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
