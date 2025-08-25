@@ -1,9 +1,9 @@
 import { useRef, useEffect, useCallback, useState } from "react";
 import { gsap } from "gsap";
 import "./magicBento.css";
-// import bgimg1 from '../../../images/bg/grid2.jpg'
+import bgimg1 from '../../../images/bg/minitues.jpg'
 import bgimg2 from '../../../images/bg/gridcrime.jpg'
-// import bgimg3 from '../../../'
+import bgimg3 from '../../../images/bg/threats.jpg'
 import bgimg4 from '../../../images/bg/grid1.jpg'
 
 
@@ -43,12 +43,12 @@ const cardData = [
     title: 48 ,
     type:'Minutes',
     description: "is the average eCrime breakout time in 2024",
-    // img: bgimg1
+    img: bgimg1
   },
   {
     color: "#060010",
     rite:'$',
-    title: '4.45',
+    title: 4,
     type:"Million ",
     description: "The average global cost of a data breach in 2024.",
     para:'(IBM Cost of a Data Breach Report 2024)',
@@ -61,7 +61,7 @@ const cardData = [
     type:'% of Enterprises ',
     description: "deploying AI admit they haven’t fully assessed security risks.",
     para:'(Gartner, 2024)',
-  // img: bgimg3
+  img: bgimg3
   },
   {
     color: "#060010",
