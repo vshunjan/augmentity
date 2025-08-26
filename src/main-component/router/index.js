@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Homepage from '../HomePage/HomePage'
 import HomePage2 from '../aboutpage/About';
-import Servicepage from '../Services/Services';
+import Servicepage from '../HomePage3/Services';
 import HomePage4 from '../HomePage4/HomePage4';
 import HomePage5 from '../HomePage5/HomePage5';
 // import HomePage6 from '../HomePage6/HomePage6';
@@ -32,10 +32,10 @@ const AllRoute = () => {
           <Route path="home" element={<HomePage4/>} />
           <Route path="about" element={<HomePage2 />} />          
           <Route path="services" element={<Servicepage />} />
+          {/* <Route path="about12" element={<AboutUsPage />} /> */}
           {/* <Route path="home-6" element={<HomePage6 />} /> */}
           {/* <Route path="home-4" element={<HomePage4 />} />
           <Route path="home-5" element={<HomePage5 />} />
-          <Route path="about" element={<AboutUsPage />} />
           <Route path="service" element={<ServicePage />} />
           <Route path="service-single/:slug" element={<ServiceSinglePage />} />
           <Route path="pricing" element={<PricingPage />} />

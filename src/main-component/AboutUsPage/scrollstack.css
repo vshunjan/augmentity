@@ -27,11 +27,11 @@
   backface-visibility: hidden;
   transform-style: preserve-3d;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  height: 20rem;
-  width: 100%;
+  height: 500px;
+  background: #020723;
+  width: 70%;
   margin: 30px 0;
   padding: 3rem;
-  border-radius: 40px;
   box-sizing: border-box;
   /* Improve mobile performance */
   -webkit-transform: translateZ(0);
@@ -42,4 +42,39 @@
 .scroll-stack-end {
   width: 100%;
   height: 1px;
+}
+.scroll-stack-scroller {
+  overflow: hidden;   /* ✅ Lenis will handle the scroll */
+  height: 100vh;      /* ✅ Full viewport height */
+}
+
+.scroll-stack-inner {
+  min-height: 100%;   /* ✅ Provides scrollable content */
+}
+.scroll-stack-scroller {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.scroll-stack-inner {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+.scroll-stack-card {
+  position: relative;
+  will-change: transform, filter;
+  transform-origin: top center;
+}
+section.award {
+    margin-bottom: 550px;
+}
+.scroll-stack-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

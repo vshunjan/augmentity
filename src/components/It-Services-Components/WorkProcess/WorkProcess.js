@@ -2,46 +2,46 @@ import React from 'react';
 import { Fade } from "react-awesome-reveal";
 import pImg from '../../../images/shape/process-shape01.png'
 import pImg2 from '../../../images/shape/process-shape01.png'
-import sIcon1 from '../../../images/process/image01.png'
-import sIcon2 from '../../../images/process/image02.png'
-import sIcon3 from '../../../images/process/image03.png'
-import sIcon4 from '../../../images/process/image04.png'
-import sIcon5 from '../../../images/process/image05.png'
+import sIcon1 from '../../../images/gallery/Asset 28.svg'
+import sIcon2 from '../../../images/gallery/Asset 29.svg'
+import sIcon3 from '../../../images/gallery/Asset 30.svg'
+import sIcon4 from '../../../images/gallery/Asset 28.svg'
+import sIcon5 from '../../../images/gallery/Asset 29.svg'
 import { Link } from 'react-router-dom';
 
 const Process = [
     {
         id: "01",
-        title: 'Consultation & needs analysis',
-        subTitle: 'We first understand your challenges to tailor a solution that fits your needs.',
+        title: '',
+        subTitle: 'We are not specialist product consultants. Our team may be certified in most network products and security technologies but we offer unbiased advise on those, with no motivations to recommend a specific product or vendor - prioritising your strategic goals first.',
         icon: sIcon1,
         direction: 'one',
     },
     {
         id: "02",
         title: 'Planning & strategy development',
-        subTitle: 'Our team crafts a strategic plan, defining the project roadmap and setting timelines.',
+        subTitle: 'We are not a cybersecurity MSP. Our consultants are your trusted advisors, both for immediate risk assessment and long-term strategy. We are always in your corner, sometimes even challenging your current service provider - to bring out the best defence.',
         icon: sIcon2,
         direction: 'two',
     },
     {
         id: "03",
         title: 'Design & development',
-        subTitle: 'Our designers create intuitive interfaces, while developers build scalable, robust systems.',
+        subTitle: 'We are not penetration testers. Pen-testing is a thing of the past. We delve a lot, lot deeper, including multiple layers of social engineering and grey-team tabletop exercises.',
         icon: sIcon3,
         direction: 'three',
     },
     {
         id: "04",
         title: 'Testing & quality assurance',
-        subTitle: 'We rigorously test for security, performance resolving any issues before deployment.',
+        subTitle: 'We are not cyber insurance brokers. We help you get the best cyber premiums through strategic advisory and quantifiable reporting. Whilst we may be able to recommend some underwriters or brokers for you, we are not incentivised on these.',
         icon: sIcon4,
         direction: 'four',
     },
     {
         id: "05",
         title: 'Deployment & ongoing support',
-        subTitle: 'We first understand your challenges to tailor a solution that fits your needs.',
+        subTitle: '	We are not a SOC. How confident are you with your current Security Operations Centre? Whilst we are capable of offering a SOC service, we believe our real value lies fearlessly challenging every SOC to ensure they work to your expectations - increasing your cyber confidence.',
         icon: sIcon5,
         direction: 'four',
     },
@@ -85,7 +85,7 @@ const WorkProcess = (props) => {
                                         <img src={process.icon} alt="" />
                                     </div>
                                     <div className="xb-item--holder">
-                                        <h3 className="xb-item--title">{process.title}</h3>
+                                        {/* <h3 className="xb-item--title">{process.title}</h3> */}
                                         <span className="xb-item--content">{process.subTitle}</span>
                                     </div>
                                 </div>

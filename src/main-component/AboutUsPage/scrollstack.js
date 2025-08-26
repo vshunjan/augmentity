@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef, useCallback } from "react";
 import Lenis from "lenis";
-import "./ScrollStack.css";
+import "./scrollstack.css";
 
 export const ScrollStackItem = ({ children, itemClassName = "" }) => (
   <div className={`scroll-stack-card ${itemClassName}`.trim()}>{children}</div>
@@ -12,12 +12,12 @@ const ScrollStack = ({
   itemDistance = 100,
   itemScale = 0.03,
   itemStackDistance = 30,
-  stackPosition = "20%",
+  stackPosition = "35%",
   scaleEndPosition = "10%",
   baseScale = 0.85,
   scaleDuration = 0.5,
-  rotationAmount = 0,
-  blurAmount = 0,
+  rotationAmount = 1,
+  blurAmount = 10,
   onStackComplete,
 }) => {
   const scrollerRef = useRef(null);
@@ -47,8 +47,8 @@ const ScrollStack = ({
 
     isUpdatingRef.current = true;
 
-    const scrollTop = scroller.scrollTop;
-    const containerHeight = scroller.clientHeight;
+   const scrollTop = window.scrollY;
+    const containerHeight = window.innerHeight;
     const stackPositionPx = parsePercentage(stackPosition, containerHeight);
     const scaleEndPositionPx = parsePercentage(scaleEndPosition, containerHeight);
     const endElement = scroller.querySelector('.scroll-stack-end');
@@ -151,23 +151,13 @@ const ScrollStack = ({
     const scroller = scrollerRef.current;
     if (!scroller) return;
 
-    const lenis = new Lenis({
-      wrapper: scroller,
-      content: scroller.querySelector('.scroll-stack-inner'),
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-      touchMultiplier: 2,
-      infinite: false,
-      gestureOrientationHandler: true,
-      normalizeWheel: true,
-      wheelMultiplier: 1,
-      touchInertiaMultiplier: 35,
-      lerp: 0.1,
-      syncTouch: true,
-      syncTouchLerp: 0.075,
-      touchInertia: 0.6,
-    });
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smoothWheel: true,
+  touchMultiplier: 2,
+});
+
 
     lenis.on('scroll', handleScroll);
 
@@ -183,7 +173,7 @@ const ScrollStack = ({
 
   useLayoutEffect(() => {
     const scroller = scrollerRef.current;
-    if (!scroller) return;
+    if (!scroller) return;  
 
     const cards = Array.from(scroller.querySelectorAll(".scroll-stack-card"));
     cardsRef.current = cards;
@@ -196,7 +186,7 @@ const ScrollStack = ({
       card.style.willChange = 'transform, filter';
       card.style.transformOrigin = 'top center';
       card.style.backfaceVisibility = 'hidden';
-      card.style.transform = 'translateZ(0)';
+      card.style.willChange = 'transform, filter';
       card.style.webkitTransform = 'translateZ(0)';
       card.style.perspective = '1000px';
       card.style.webkitPerspective = '1000px';
@@ -234,16 +224,11 @@ const ScrollStack = ({
   ]);
 
   return (
-    <div
-      className={`scroll-stack-scroller ${className}`.trim()}
-      ref={scrollerRef}
-    >
-      <div className="scroll-stack-inner">
-        {children}
-        {/* Spacer so the last pin can release cleanly */}
-        <div className="scroll-stack-end" />
-      </div>
-    </div>
+   <div className={`scroll-stack-wrapper ${className}`.trim()} ref={scrollerRef}>
+  {children}
+  <div className="scroll-stack-end" />
+</div>
+
   );
 };
 

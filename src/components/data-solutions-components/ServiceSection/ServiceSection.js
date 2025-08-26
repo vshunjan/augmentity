@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Services from '../../../api/service'
 import { Link } from "react-router-dom";
+import CountUp, { useCountUp } from 'react-countup';
 import sIcon from '../../../images/icon/flower-icon-blue.svg'
 import Bg from '../../../images/bg/da-service_bg.jpg'
 
@@ -15,7 +16,12 @@ const ServiceSection = (props) => {
     setActiveIndex(index);
   };
 
-
+    useCountUp({
+        end: '56656',
+        ref: 'counter',
+        enableScrollSpy: true,
+        scrollSpyDelay: 1000,
+    });
 
   return (
     <section className="bg-black service pb-150 bg_img" >
@@ -23,12 +29,12 @@ const ServiceSection = (props) => {
         <div className="row justify-content-start">
           <div className="col-lg-8">
             <div className="text-left da-sec-titlte mb-30">
-              <p className="content">Turn your disparate data into a major asset – and realise the true potential of your business.</p>
+              <p className="content">Every smart transformation begins with understanding. In an environment where the attack surface is constantly expanding through cloud adoption, AI integration, and remote work, achieving clear visibility is the first principle of effective security. The ‘Analyse’ pillar is our foundation—a comprehensive discovery process designed to give you an unflinching, 360-degree view of your organisation's risk posture. We move beyond theoretical vulnerabilities to map how threats could manifest across your unique digital, human, and physical landscapes. This data-driven clarity allows us to create a prioritised, business-aware roadmap for remediation and resilience.</p>
             </div>
           </div>
         </div>
         <div className="da-service-wrapper">
-          {Services.slice(11, 14).map((service, index) => (
+          {Services.slice(0, 3).map((service, index) => (
             <div
               key={index}
               className={`da-service-item xb-mouseenter ${activeIndex === index ? 'active' : ''}`}
@@ -37,8 +43,10 @@ const ServiceSection = (props) => {
               onMouseEnter={() => handleMouseEnter(index)}
             >
               <div className="xb-item--holder">
-                <div className="xb-item--icon"><img src={service.sIcon} alt="" /></div>
-                <h3 className="xb-item--title">{service.title}</h3>
+                {/* <div className="xb-item--icon"><img src={service.sIcon} alt="" /></div> */}
+                <h3 className="xb-item--title">
+                  <span className="xbo" data-count="90"><CountUp end={service.Id} enableScrollSpy />{service.title}</span>
+                 </h3>
                 <span className="xb-item--arrow"><i className="fal fa-long-arrow-right"></i></span>
                 <p className="xb-item--content">{service.description}</p>
               </div>

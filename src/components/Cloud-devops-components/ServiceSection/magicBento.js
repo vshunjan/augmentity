@@ -68,7 +68,7 @@ const cardData = [
     rite:'',
     title: 52,
     type:'% of CEOs ',
-    description: "believe they’re cyber-resilient, while only 29% of their CISOs agree. ",
+    description: `believe they’re cyber-resilient, while only 29%   of their CISOs agree. `,
     para:'(PwC Digital Trust Survey, 2024)',
   img: bgimg4
   },

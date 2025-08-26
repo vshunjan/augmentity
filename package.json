@@ -9,7 +9,7 @@
     "@evervault/react": "^2.21.0",
     "@mui/material": "^5.11.0",
     "@mui/styled-engine-sc": "^5.11.0",
-    "@react-three/fiber": "^8.15.10",
+    "@react-three/fiber": "^8.18.0",
     "@studio-freight/react-lenis": "^0.0.37",
     "@tailwindcss/cli": "^4.1.12",
     "@tailwindcss/postcss": "^4.1.12",

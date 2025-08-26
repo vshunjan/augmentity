@@ -9,8 +9,9 @@ import brand5 from '../../../images/brand/logo05.png';
 import brand6 from '../../../images/brand/logo06.png';
 import brand7 from '../../../images/brand/logo07.png';
 import brand8 from '../../../images/brand/logo08.png';
-import bgimg  from '../../../images/bg/scroll-lockimg.svg'
-import bgimg2  from '../../../images/bg/scroll-lockimg.svg'
+import bgimg  from '../../../images/gallery/Asset 29.svg'
+import bgimg2  from '../../../images/gallery/Asset 28.svg'
+import bgimg3  from '../../../images/gallery/Asset 30.svg'
 
 const BrandSection = () => {
 
@@ -35,7 +36,7 @@ const BrandSection = () => {
             </div>
             <div className="xb-brand-single xb-brand-hover">
               <Link to="/home-2">
-                <img src={bgimg} alt="Shopify" />
+                <img src={bgimg3} alt="Shopify" />
               </Link>
               <Link to="/home-2" className="xb-overlay"></Link>
             </div>

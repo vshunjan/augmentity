@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Fade } from "react-awesome-reveal";
-import bgimg2  from '../../images/bg/scroll-lockimg.svg'
+import bgimg2  from '../../images/gallery/Asset 24.svg'
 import LetterGlitch from '../hero4/letter-glitch';
 
 const Hero3 = (props) => {
@@ -20,10 +20,10 @@ const Hero3 = (props) => {
                             <div className="xb-hero">
                                 <Fade direction='up' triggerOnce={'false'} duration={800} delay={6}>
                                     <div>
-                                        <h1 className="xb-item--title wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">Analytics </h1>
+                                        <h1 className="xb-item--title wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">Analyse </h1>
                                     </div>
                                     <div>
-                                        <p className="xb-item--content wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">Gain Visibility,Benchmark Your risk,Get ahead of threats </p>
+                                        <p className="xb-item--content wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">Gain visibility. Benchmark your risk. Get ahead of threats. </p>
                                     </div>
                                 </Fade>
                             </div>

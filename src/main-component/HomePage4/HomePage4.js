@@ -6,7 +6,7 @@ import ServiceSection from '../../components/Cloud-devops-components/ServiceSect
 import About from '../../components/Cyber-Security-Components/about/about';
 import WorkProcess from '../../components/WorkProcess/WorkProcess';
 import WorkFlow from '../../components/Cyber-Security-Components/WorkFlow/WorkFlow';
-import IndustrieSection from '../../components/Cyber-Security-Components/IndustrieSection/IndustrieSection';
+import AwardSection  from '../AboutUsPage/AwardSection';
 import TestimonialSection from '../../components/Cyber-Security-Components/TestimonialSection/TestimonialSection';
 import Achievements from '../../components/Cyber-Security-Components/Achievements/Achievements';
 import CyberBlogSection from '../../components/Cyber-Security-Components/CyberBlogSection/CyberBlogSection';
@@ -27,6 +27,7 @@ const HomePage4 = () => {
                     <PartnerSection />
                     <ServiceSection />
                      <WorkProcess />
+                     <AwardSection/>
                     <About />
                     <WorkFlow />
                     {/* <IndustrieSection /> */}

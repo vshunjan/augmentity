@@ -5,11 +5,14 @@ section.feature.pb-100.pt-100 {
     background-color: black;
     color: white;
 }
-.xb-img {
-    width: 70%;
+.cd-work-left .xb-img {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
 }
 .sec-title--five .title {
-    font-size: 64px;
+    font-size: 6rem !important;
     color: #ffffff !important;
 }
 .sec-title--four .title {
@@ -48,9 +51,10 @@ section.work {
     padding-bottom: 150px;
     background-color: black;
 }
-.row {
-    background-color: black;
-}
+
 .feature-right-item.mt-30{
     margin-bottom: 70px;
+}
+.feature-right-item.mt-30 h2{
+   font-size:48px;
 }
