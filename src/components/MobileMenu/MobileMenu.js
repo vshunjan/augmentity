@@ -5,15 +5,25 @@ import Collapse from "@mui/material/Collapse";
 import { Link } from "react-router-dom";
 
 const menus = [
-    {
+     {
         id: 1,
+        title: 'Home1',
+        link: '/',
+    },
+    {
+        id: 2,
         title: 'Home2',
         link: '/home',
     },
     {
-        id: 2,
+        id: 3,
         title: 'About',
         link: '/about',
+    },
+    {
+        id: 4,
+        title: 'Services',
+        link: '/services',
     }
     
 

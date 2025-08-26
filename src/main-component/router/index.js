@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Homepage from '../HomePage/HomePage'
 import HomePage2 from '../aboutpage/About';
-import HomePage3 from '../HomePage3/HomePage3';
+import Servicepage from '../Services/Services';
 import HomePage4 from '../HomePage4/HomePage4';
 import HomePage5 from '../HomePage5/HomePage5';
-import HomePage6 from '../HomePage6/HomePage6';
+// import HomePage6 from '../HomePage6/HomePage6';
 import ServicePage from '../ServicePage/ServicePage';
 import AboutUsPage from '../AboutUsPage/AboutUsPage';
 import ServiceSinglePage from '../ServiceSinglePage/ServiceSinglePage';
@@ -30,12 +30,11 @@ const AllRoute = () => {
         <Routes>
           <Route path="/" element={<HomePage5 />} />
           <Route path="home" element={<HomePage4/>} />
-          <Route path="about" element={<HomePage2 />} />
-          
-          {/* <Route path="home-3" element={<HomePage3 />} />
-          <Route path="home-4" element={<HomePage4 />} />
+          <Route path="about" element={<HomePage2 />} />          
+          <Route path="services" element={<Servicepage />} />
+          {/* <Route path="home-6" element={<HomePage6 />} /> */}
+          {/* <Route path="home-4" element={<HomePage4 />} />
           <Route path="home-5" element={<HomePage5 />} />
-          <Route path="home-6" element={<HomePage6 />} />
           <Route path="about" element={<AboutUsPage />} />
           <Route path="service" element={<ServicePage />} />
           <Route path="service-single/:slug" element={<ServiceSinglePage />} />

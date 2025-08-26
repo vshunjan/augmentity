@@ -29,10 +29,10 @@ const HomePage5 = () => {
                      <WorkProcess />
                     <About />
                     <WorkFlow />
-                    {/* <IndustrieSection /> */}
-                    {/* <TestimonialSection /> */}
-                    {/* <Achievements /> */}
-                    {/* <CyberBlogSection /> */}
+                    {/* <IndustrieSection />
+                    <TestimonialSection />
+                    <Achievements />
+                    <CyberBlogSection /> */}
                     {/* <ContactSection /> */}
                     {/* <Scrollbar /> */}
                 </main>

@@ -21,18 +21,18 @@ const HomePage6 = () => {
         <Fragment>
             <div className='help_desk'>
                 <main className="page_content">
-                    <Header6 />
+                    {/* <Header6 />
                     <Hero6 />
                     <PartnerSection />
                     <FeaturesService />
-                    <VideoService />
+                    <VideoService /> */}
                     <FeatureSection />
-                    <FunFactSection />
+                    {/* <FunFactSection />
                     <IntegrationSection />
                     <Testimonial />
                     <HelpDeskBlogSection />
                     <IndustrieSection />
-                    <CtaSection />
+                    <CtaSection /> */}
                     <Scrollbar />
                 </main>
                 <Footer/>

@@ -1,141 +1,322 @@
-import React, { useEffect, useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
-import { Link } from 'react-router-dom'
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import ticon1 from "../../../images/icon/flower-icon-blue.svg";
-import tImg1 from "../../../images/testimonial/da-tes-img.png";
-import tImg2 from "../../../images/testimonial/ixico-logo.png";
+import React, { useState } from "react";
+import { Fade } from "react-awesome-reveal";
+import bgimg2  from '../../../images/bg/scroll-lockimg.svg'
+import "./testimonial.css"
 
-
-
-const Testimonial = () => {
-
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
-    const swiperRef = useRef(null);
-
-    useEffect(() => {
-        if (swiperRef.current && prevRef.current && nextRef.current) {
-            swiperRef.current.params.navigation.prevEl = prevRef.current;
-            swiperRef.current.params.navigation.nextEl = nextRef.current;
-            swiperRef.current.navigation.init();
-            swiperRef.current.navigation.update();
-        }
-    }, []);
-
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
-    }
+const Testimonial = (props) => {
+    
+    const [activeIndex, setActiveIndex] = useState(0);
+    
+      const toggleAccordion = (index) => {
+        setActiveIndex(index === activeIndex ? null : index);
+      };
+    
+        const accordionData = [
+            {
+                title: "Improve time to value",
+                content:
+                    "Self-service and automation deflect 15% of agent contacts. Agents resolve remaining tickets faster with rich customer insights for better efficiency and service.",
+            },
+            {
+                title: "Reduce effort per ticket",
+                content:
+                    "Self-service and automation deflect 15% of agent contacts. Agents resolve remaining tickets faster with rich customer insights for better efficiency and service.",
+            },
+            {
+                title: "Keep costs low",
+                content:
+                    "Self-service and automation deflect 15% of agent contacts. Agents resolve remaining tickets faster with rich customer insights for better efficiency and service.",
+            },
+            {
+                title: "Boost Customer Satisfaction",
+                content:
+                    "Self-service and automation deflect 15% of agent contacts. Agents resolve remaining tickets faster with rich customer insights for better efficiency and service.",
+            },
+            {
+                title: "Keep costs low",
+                content:
+                    "Self-service and automation deflect 15% of agent contacts. Agents resolve remaining tickets faster with rich customer insights for better efficiency and service.",
+            },
+            {
+                title: "Boost Customer Satisfaction",
+                content:
+                    "Self-service and automation deflect 15% of agent contacts. Agents resolve remaining tickets faster with rich customer insights for better efficiency and service.",
+            },
+        ];
 
     return (
-        <section className="testimonial pt-150 pb-140">
-            <div className="container">
-                <div className="da-sec-titlte text-center mb-60">
-                    <span className="sub_title"><span><img src={ticon1} alt="" /></span>Case studies</span>
-                    <h2 className="title">Who we've helped</h2>
-                </div>
-                <div className="da-testimonial-wrap pos-rel">
-                    <div className="da-testimonial-slider swiper-container">
-                        <div className="swiper-wrapper">
-                            <Swiper
-                                // install Swiper modules
-                                modules={[Navigation]}
-                                spaceBetween={50}
-                                slidesPerView={1}
-                                loop={true}
-                                speed={1800}
-                                parallax={true}
-                                ref={swiperRef}
-                                onBeforeInit={(swiper) => {
-                                    swiperRef.current = swiper;
-                                }}
-                            >
-                                <SwiperSlide className="da-testimonial">
-                                    <div className="row align-items-center mt-none-30">
-                                        <div className="col-lg-6 mt-30">
-                                            <div className="da-tes-left">
-                                                <h2 className="xb-item--title">Transforming a leading medical imaging service provider with Microsoft Cloud</h2>
-                                                <p className="xb-item--content content--one">With the ambition to scale and further develop its AI-imaging  biomarker service offering to the global clinical trial market, IXICO  came to us for a secure and seamless cloud transformation.</p>
-                                                <div className="xb-item--holder ul_li align-items-start">
-                                                    <div className="xb-item--meta">
-                                                        <h3 className="xb-item--number">$3 Million</h3>
-                                                        <span className="xb-item--text">Annual cost savings achieved through optimized trial operations.</span>
-                                                    </div>
-                                                    <div className="xb-item--meta">
-                                                        <h3 className="xb-item--number">200+ Clinical Trials</h3>
-                                                        <span className="xb-item--text">Supported globally with IXICO's AI-enhanced imaging biomarkers.</span>
-                                                    </div>
-                                                </div>
-                                                <p className="xb-item--content content--two">IXICO is a premium, specialist neuroimaging services provider to the global biopharmaceutical industry.</p>
-                                                <p className="xb-item--content content--three">The company develops and deploys therapeutic specific AI <br /> (Artificial  Intelligence) algorithms designed to reduce clinical trial <br /> size and  costs whilst simultaneously improving insights to increase the  likelihood of approval in neurological clinical trials.</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 mt-30">
-                                            <div className="da-tes-right">
-                                                <div className="xb-item--author">
-                                                    <img src={tImg1} alt="" />
-                                                </div>
-                                                <div className="xb-item--avatar">
-                                                    <img src={tImg2} alt="" />
-                                                </div>
-                                            </div>
-                                        </div>
+        <section className="bg-black work pos-rel z-1 pt-150 pb-165">
+            <div className="container section-work">
+                <div className="row">
+                    <div className="col-lg-5">
+                        <div className="cd-work-left">
+                            <div className="sec-title--five">
+                                <Fade direction='down' triggerOnce={'false'} duration={1000} delay={9}>
+                                    <div>
+                                        <h2 className="title wow skewIn" data-wow-duration="600ms">Services</h2>
                                     </div>
-                                </SwiperSlide>
-                                <SwiperSlide className="da-testimonial">
-                                    <div className="row align-items-center mt-none-30">
-                                        <div className="col-lg-6 mt-30">
-                                            <div className="da-tes-left">
-                                                <h2 className="xb-item--title">Transforming a leading medical imaging service provider with Microsoft Cloud</h2>
-                                                <p className="xb-item--content content--one">With the ambition to scale and further develop its AI-imaging  biomarker service offering to the global clinical trial market, IXICO  came to us for a secure and seamless cloud transformation.</p>
-                                                <div className="xb-item--holder ul_li align-items-start">
-                                                    <div className="xb-item--meta">
-                                                        <h3 className="xb-item--number">$3 Million</h3>
-                                                        <span className="xb-item--text">Annual cost savings achieved through optimized trial operations.</span>
-                                                    </div>
-                                                    <div className="xb-item--meta">
-                                                        <h3 className="xb-item--number">200+ Clinical Trials</h3>
-                                                        <span className="xb-item--text">Supported globally with IXICO's AI-enhanced imaging biomarkers.</span>
-                                                    </div>
-                                                </div>
-                                                <p className="xb-item--content content--two">IXICO is a premium, specialist neuroimaging services provider to the global biopharmaceutical industry.</p>
-                                                <p className="xb-item--content content--three">The company develops and deploys therapeutic specific AI <br /> (Artificial  Intelligence) algorithms designed to reduce clinical trial <br /> size and  costs whilst simultaneously improving insights to increase the  likelihood of approval in neurological clinical trials.</p>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 mt-30">
-                                            <div className="da-tes-right">
-                                                <div className="xb-item--author">
-                                                    <img src={tImg1} alt="" />
-                                                </div>
-                                                <div className="xb-item--avatar">
-                                                    <img src={tImg2} alt="" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
+                                </Fade>
+                                
+                            </div>
+                                                                   <div className="xb-img"><img src={bgimg2} alt="" /></div>
+
                         </div>
                     </div>
-                    <div className="da-swiper-btn swiper-button-prev" ref={prevRef}><i className="fal fa-long-arrow-left"></i></div>
-                    <div className="da-swiper-btn swiper-button-next" ref={nextRef}><i className="fal fa-long-arrow-right"></i></div>
-                </div>
-                <div className="xb-btn text-center mt-55">
-                    <Link onClick={ClickHandler} to="/contact" className="thm-btn thm-btn--fill_icon thm-btn--data thm-btn--data-strock">
-                        <div className="xb-item--hidden"><span className="xb-item--hidden-text">View More Case Studies</span></div>
-                        <div className="xb-item--holder">
-                            <span className="xb-item--text xb-item--text1">View More Case Studies</span>
-                            <div className="xb-item--icon"><i className="fal fa-plus"></i></div>
-                            <span className="xb-item--text xb-item--text2">View More Case Studies</span>
+                    <div className="col-lg-7">
+                        <div className="cd-work-wrap">
+                             <div className="feature-right-item mt-30">
+                                                           <div className="mb-40 sec-title--two sec-title--four">
+                                                              
+                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                                   <div>
+                                                                       <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Maximize your ROI</h2>
+                                                                   </div>
+                                                               </Fade>
+                                                               <p>Save time and money with Innomax. According to Forrester's our Total Economic Impact™ (TEI) study, customers saw a 286% ROI over three years.</p>
+                                                           </div>
+                                                           <div className="xb-faq xb-faq-two">
+                                                               <ul className="clearfix accordion_box list-unstyled">
+                                                                   {accordionData.map((item, index) => (
+                                                                       <li
+                                                                           className={`accordion block ${activeIndex === index ? "active-block" : ""
+                                                                               }`}
+                                                                           key={index}
+                                                                       >
+                                                                           <div
+                                                                               className={`acc-btn ${activeIndex === index ? "active" : ""}`}
+                                                                               onClick={() => toggleAccordion(index)}
+                                                                           >
+                                                                               {item.title}
+                                                                               <span className="arrow"></span>
+                                                                           </div>
+                                                                           <div
+                                                                               className={`acc_body ${activeIndex === index ? "current" : ""
+                                                                                   }`}
+                                                                               style={{
+                                                                                   display: activeIndex === index ? "block" : "none",
+                                                                               }}
+                                                                           >
+                                                                               <div className="content">
+                                                                                   <p>{item.content}</p>
+                                                                               </div>
+                                                                           </div>
+                                                                       </li>
+                                                                   ))}
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                          <div className="feature-right-item mt-30">
+                                                           <div className="mb-40 sec-title--two sec-title--four">
+                                                              
+                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                                   <div>
+                                                                       <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Maximize your ROI</h2>
+                                                                   </div>
+                                                               </Fade>
+                                                               <p>Save time and money with Innomax. According to Forrester's our Total Economic Impact™ (TEI) study, customers saw a 286% ROI over three years.</p>
+                                                           </div>
+                                                           <div className="xb-faq xb-faq-two">
+                                                               <ul className="clearfix accordion_box list-unstyled">
+                                                                   {accordionData.map((item, index) => (
+                                                                       <li
+                                                                           className={`accordion block ${activeIndex === index ? "active-block" : ""
+                                                                               }`}
+                                                                           key={index}
+                                                                       >
+                                                                           <div
+                                                                               className={`acc-btn ${activeIndex === index ? "active" : ""}`}
+                                                                               onClick={() => toggleAccordion(index)}
+                                                                           >
+                                                                               {item.title}
+                                                                               <span className="arrow"></span>
+                                                                           </div>
+                                                                           <div
+                                                                               className={`acc_body ${activeIndex === index ? "current" : ""
+                                                                                   }`}
+                                                                               style={{
+                                                                                   display: activeIndex === index ? "block" : "none",
+                                                                               }}
+                                                                           >
+                                                                               <div className="content">
+                                                                                   <p>{item.content}</p>
+                                                                               </div>
+                                                                           </div>
+                                                                       </li>
+                                                                   ))}
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                         <div className="feature-right-item mt-30">
+                                                           <div className="mb-40 sec-title--two sec-title--four">
+                                                              
+                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                                   <div>
+                                                                       <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Maximize your ROI</h2>
+                                                                   </div>
+                                                               </Fade>
+                                                               <p>Save time and money with Innomax. According to Forrester's our Total Economic Impact™ (TEI) study, customers saw a 286% ROI over three years.</p>
+                                                           </div>
+                                                           <div className="xb-faq xb-faq-two">
+                                                               <ul className="clearfix accordion_box list-unstyled">
+                                                                   {accordionData.map((item, index) => (
+                                                                       <li
+                                                                           className={`accordion block ${activeIndex === index ? "active-block" : ""
+                                                                               }`}
+                                                                           key={index}
+                                                                       >
+                                                                           <div
+                                                                               className={`acc-btn ${activeIndex === index ? "active" : ""}`}
+                                                                               onClick={() => toggleAccordion(index)}
+                                                                           >
+                                                                               {item.title}
+                                                                               <span className="arrow"></span>
+                                                                           </div>
+                                                                           <div
+                                                                               className={`acc_body ${activeIndex === index ? "current" : ""
+                                                                                   }`}
+                                                                               style={{
+                                                                                   display: activeIndex === index ? "block" : "none",
+                                                                               }}
+                                                                           >
+                                                                               <div className="content">
+                                                                                   <p>{item.content}</p>
+                                                                               </div>
+                                                                           </div>
+                                                                       </li>
+                                                                   ))}
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                          <div className="feature-right-item mt-30">
+                                                           <div className="mb-40 sec-title--two sec-title--four">
+                                                              
+                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                                   <div>
+                                                                       <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Maximize your ROI</h2>
+                                                                   </div>
+                                                               </Fade>
+                                                               <p>Save time and money with Innomax. According to Forrester's our Total Economic Impact™ (TEI) study, customers saw a 286% ROI over three years.</p>
+                                                           </div>
+                                                           <div className="xb-faq xb-faq-two">
+                                                               <ul className="clearfix accordion_box list-unstyled">
+                                                                   {accordionData.map((item, index) => (
+                                                                       <li
+                                                                           className={`accordion block ${activeIndex === index ? "active-block" : ""
+                                                                               }`}
+                                                                           key={index}
+                                                                       >
+                                                                           <div
+                                                                               className={`acc-btn ${activeIndex === index ? "active" : ""}`}
+                                                                               onClick={() => toggleAccordion(index)}
+                                                                           >
+                                                                               {item.title}
+                                                                               <span className="arrow"></span>
+                                                                           </div>
+                                                                           <div
+                                                                               className={`acc_body ${activeIndex === index ? "current" : ""
+                                                                                   }`}
+                                                                               style={{
+                                                                                   display: activeIndex === index ? "block" : "none",
+                                                                               }}
+                                                                           >
+                                                                               <div className="content">
+                                                                                   <p>{item.content}</p>
+                                                                               </div>
+                                                                           </div>
+                                                                       </li>
+                                                                   ))}
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                                                       <div className="feature-right-item mt-30">
+                                                           <div className="mb-40 sec-title--two sec-title--four">
+                                                              
+                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                                   <div>
+                                                                       <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Maximize your ROI</h2>
+                                                                   </div>
+                                                               </Fade>
+                                                               <p>Save time and money with Innomax. According to Forrester's our Total Economic Impact™ (TEI) study, customers saw a 286% ROI over three years.</p>
+                                                           </div>
+                                                           <div className="xb-faq xb-faq-two">
+                                                               <ul className="clearfix accordion_box list-unstyled">
+                                                                   {accordionData.map((item, index) => (
+                                                                       <li
+                                                                           className={`accordion block ${activeIndex === index ? "active-block" : ""
+                                                                               }`}
+                                                                           key={index}
+                                                                       >
+                                                                           <div
+                                                                               className={`acc-btn ${activeIndex === index ? "active" : ""}`}
+                                                                               onClick={() => toggleAccordion(index)}
+                                                                           >
+                                                                               {item.title}
+                                                                               <span className="arrow"></span>
+                                                                           </div>
+                                                                           <div
+                                                                               className={`acc_body ${activeIndex === index ? "current" : ""
+                                                                                   }`}
+                                                                               style={{
+                                                                                   display: activeIndex === index ? "block" : "none",
+                                                                               }}
+                                                                           >
+                                                                               <div className="content">
+                                                                                   <p>{item.content}</p>
+                                                                               </div>
+                                                                           </div>
+                                                                       </li>
+                                                                   ))}
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                                                       <div className="feature-right-item mt-30">
+                                                           <div className="mb-40 sec-title--two sec-title--four">
+                                                              
+                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                                   <div>
+                                                                       <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Maximize your ROI</h2>
+                                                                   </div>
+                                                               </Fade>
+                                                               <p>Save time and money with Innomax. According to Forrester's our Total Economic Impact™ (TEI) study, customers saw a 286% ROI over three years.</p>
+                                                           </div>
+                                                           <div className="xb-faq xb-faq-two">
+                                                               <ul className="clearfix accordion_box list-unstyled">
+                                                                   {accordionData.map((item, index) => (
+                                                                       <li
+                                                                           className={`accordion block ${activeIndex === index ? "active-block" : ""
+                                                                               }`}
+                                                                           key={index}
+                                                                       >
+                                                                           <div
+                                                                               className={`acc-btn ${activeIndex === index ? "active" : ""}`}
+                                                                               onClick={() => toggleAccordion(index)}
+                                                                           >
+                                                                               {item.title}
+                                                                               <span className="arrow"></span>
+                                                                           </div>
+                                                                           <div
+                                                                               className={`acc_body ${activeIndex === index ? "current" : ""
+                                                                                   }`}
+                                                                               style={{
+                                                                                   display: activeIndex === index ? "block" : "none",
+                                                                               }}
+                                                                           >
+                                                                               <div className="content">
+                                                                                   <p>{item.content}</p>
+                                                                               </div>
+                                                                           </div>
+                                                                       </li>
+                                                                   ))}
+                                                               </ul>
+                                                           </div>
+                                                       </div>
                         </div>
-                    </Link>
+                    </div>
                 </div>
             </div>
+            
         </section>
-    );
-};
+    )
+}
 
 export default Testimonial;

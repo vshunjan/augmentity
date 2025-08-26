@@ -18,19 +18,17 @@ const ServiceSection = (props) => {
 
 
   return (
-    <section className="service pb-150 bg_img" style={{ backgroundImage: `url(${Bg})` }}>
+    <section className="bg-black service pb-150 bg_img" >
       <div className="container">
-        <div className="row justify-content-center">
+        <div className="row justify-content-start">
           <div className="col-lg-8">
-            <div className="da-sec-titlte text-center mb-30">
-              <span className="sub_title"><span><img src={sIcon} alt="" /></span>OUr Services</span>
-              <h2 className="title">AI and data analytics services to help you become greater</h2>
+            <div className="text-left da-sec-titlte mb-30">
               <p className="content">Turn your disparate data into a major asset – and realise the true potential of your business.</p>
             </div>
           </div>
         </div>
         <div className="da-service-wrapper">
-          {Services.slice(10, 14).map((service, index) => (
+          {Services.slice(11, 14).map((service, index) => (
             <div
               key={index}
               className={`da-service-item xb-mouseenter ${activeIndex === index ? 'active' : ''}`}
@@ -49,16 +47,7 @@ const ServiceSection = (props) => {
           ))}
 
         </div>
-        <div className="xb-btn text-center mt-55">
-          <Link onClick={ClickHandler} to="/service" className="thm-btn thm-btn--fill_icon thm-btn--data">
-            <div className="xb-item--hidden"><span className="xb-item--hidden-text">Book a Discover Call</span></div>
-            <div className="xb-item--holder">
-              <span className="xb-item--text xb-item--text1">Book a Discover Call</span>
-              <div className="xb-item--icon"><i className="fal fa-plus"></i></div>
-              <span className="xb-item--text xb-item--text2">Book a Discover Call</span>
-            </div>
-          </Link>
-        </div>
+       
       </div>
     </section>
   );
