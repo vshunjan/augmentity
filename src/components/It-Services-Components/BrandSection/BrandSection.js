@@ -12,6 +12,7 @@ import brand8 from '../../../images/brand/logo08.png';
 import bgimg  from '../../../images/gallery/Asset 29.svg'
 import bgimg2  from '../../../images/gallery/Asset 28.svg'
 import bgimg3  from '../../../images/gallery/Asset 30.svg'
+import bgimg4  from '../../../images/gallery/Asset 24.svg'
 
 const BrandSection = () => {
 
@@ -23,22 +24,24 @@ const BrandSection = () => {
           <div className="xb-brand-item">
            
             <div className="xb-brand-single xb-brand-hover">
-              <Link to="/home-2">
+         
                 <img src={bgimg} alt="Shopify" />
-              </Link>
-              <Link to="/home-2" className="xb-overlay"></Link>
+          
             </div>
             <div className="xb-brand-single xb-brand-hover">
-              <Link to="/home-2">
+           
                 <img src={bgimg2} alt="Shopify" />
-              </Link>
-              <Link to="/home-2" className="xb-overlay"></Link>
+              
             </div>
             <div className="xb-brand-single xb-brand-hover">
-              <Link to="/home-2">
+            
                 <img src={bgimg3} alt="Shopify" />
-              </Link>
-              <Link to="/home-2" className="xb-overlay"></Link>
+             
+            </div>
+            <div className="xb-brand-single xb-brand-hover">
+             
+                <img src={bgimg4} alt="Shopify" />
+           
             </div>
           </div>
           

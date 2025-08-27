@@ -13,6 +13,7 @@ import icon10 from '../../images/icon/m_09.svg'
 import icon11 from '../../images/icon/m_10.svg'
 import icon12 from '../../images/icon/m_11.svg'
 import logo from '../../images/logo/logo-white.svg'
+import menuimg from '../../images/gallery/burger-icon.png'
 import logo2 from '../../images/logo/logo-black.svg'
 import clogo1 from '../../images/logo/client-logo.svg'
 import clogo2 from '../../images/logo/client-logo2.svg'
@@ -70,7 +71,11 @@ const Header4 = (props) => {
                             <div className="xb-header-wrap">
                                 <div className={`xb-header-menu ${mobailActive ? "active" : ""}`}>
                                     <div className="xb-header-menu-scroll lenis lenis-smooth">
-                                        <div className="xb-menu-close xb-hide-xl xb-close" onClick={() => setMobailState(!mobailActive)}></div>
+                                        <div className="xb-menu-close xb-hide-xl xb-close icon menu-icon" onClick={() => setMobailState(!mobailActive)}>
+                                                                
+  <img src={menuimg} />
+
+                                        </div>
                                         <div className="xb-logo-mobile xb-hide-xl">
                                             <Link onClick={ClickHandler} to="/" rel="home"><img src={logo}
                                                 alt="" /></Link>
@@ -88,9 +93,8 @@ const Header4 = (props) => {
                         </div>
                         <div className="header-bar-mobile side-menu ">
                             <button className="xb-nav-mobile" onClick={() => setMobailState(!mobailActive)}>
-                               <div class="icon" align="center">
-  <div class="bar-1"></div>
-  <div class="bar-2"></div>
+                               <div class="icon menu-icon" align="center">
+  <img src={menuimg} />
 </div>
                             </button>
                         </div>

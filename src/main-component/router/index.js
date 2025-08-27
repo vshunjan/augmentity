@@ -32,6 +32,7 @@ const AllRoute = () => {
           <Route path="home" element={<HomePage4/>} />
           <Route path="about" element={<HomePage2 />} />          
           <Route path="services" element={<Servicepage />} />
+          <Route path="contact" element={<ContactPage />} /> 
           {/* <Route path="about12" element={<AboutUsPage />} /> */}
           {/* <Route path="home-6" element={<HomePage6 />} /> */}
           {/* <Route path="home-4" element={<HomePage4 />} />
@@ -48,8 +49,7 @@ const AllRoute = () => {
           <Route path="terms-conditions" element={<TermsPage />} />
           <Route path="privacy-policy" element={<PrivacyPage />} />
           <Route path="blog" element={<BlogPage />} />
-          <Route path="blog-single/:slug" element={<BlogDetails />} />
-          <Route path="contact" element={<ContactPage />} />   */}
+          <Route path="blog-single/:slug" element={<BlogDetails />} />*/}
         </Routes>
       </BrowserRouter>
 

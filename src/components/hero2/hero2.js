@@ -21,7 +21,7 @@ const Hero2 = () => {
                             <div>
                                 <h1 className="xb-item--title wow skewIn" data-wow-delay="000ms" data-wow-duration="900ms">
                                      Who We Are
-                                      <span className='c-suite'> NOT  <hr className='crossed-line'/> </span>
+                                      <span className='about c-suite'> NOT  </span>
                                </h1>
                             </div>
                         </Fade>

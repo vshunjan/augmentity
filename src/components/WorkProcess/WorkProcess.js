@@ -88,10 +88,7 @@ const WorkProcess = (props) => {
             >
               <p className="sub-title-sec heighlight-text">
                 We stand by you, as your trusted advisors - an extra layer of
-                confidence. Our approach is built around four strategic
-                pillars—Analyse, Govern, Insure, and Defend—designed to give you
-                full-spectrum protection, tailored to the realities of today’s
-                threat landscape.{" "}
+                confidence. 
               </p>
             </Fade>
           </div>

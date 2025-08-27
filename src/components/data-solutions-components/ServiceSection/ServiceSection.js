@@ -27,7 +27,7 @@ const ServiceSection = (props) => {
     <section className="bg-black service pb-150 bg_img" >
       <div className="container">
         <div className="row justify-content-start">
-          <div className="col-lg-8">
+          <div className="col-lg-8 service-content-two">
             <div className="text-left da-sec-titlte mb-30">
               <p className="content">Every smart transformation begins with understanding. In an environment where the attack surface is constantly expanding through cloud adoption, AI integration, and remote work, achieving clear visibility is the first principle of effective security. The ‘Analyse’ pillar is our foundation—a comprehensive discovery process designed to give you an unflinching, 360-degree view of your organisation's risk posture. We move beyond theoretical vulnerabilities to map how threats could manifest across your unique digital, human, and physical landscapes. This data-driven clarity allows us to create a prioritised, business-aware roadmap for remediation and resilience.</p>
             </div>

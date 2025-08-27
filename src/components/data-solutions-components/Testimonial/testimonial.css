@@ -12,6 +12,7 @@ section.feature.pb-100.pt-100 {
     justify-content: start;
 }
 .sec-title--five .title {
+        font-weight: 400;
     font-size: 6rem !important;
     color: #ffffff !important;
 }
@@ -56,5 +57,8 @@ section.work {
     margin-bottom: 70px;
 }
 .feature-right-item.mt-30 h2{
-   font-size:48px;
+   
+    font-size: 35px;
+    font-weight: 500;
+
 }

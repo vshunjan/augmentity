@@ -3,19 +3,14 @@ import React from "react";
 export default function BackgroundVideo() {
   return (
     <div className="video-container">
-      <video 
-        autoPlay 
-        muted 
-        loop 
-        playsInline 
-        style={{ width: "100%", height: "auto" }}
-      >
-        <source 
-          src="https://upcdn.io/kW2K8W4/raw/AdobeStock_1200676359_Video_HD_Preview.mov" 
-          type="video/mp4" 
-        />
-        Your browser does not support the video tag.
-      </video>
+  <iframe
+  src="https://player.mux.com/Qaxk1tMQJ5k6G00CPenQTkX011ZN6EayWc3VjPIyRpdtE?autoplay=1&muted=1&loop=1"
+  style={{ width: "100%", border: "none", aspectRatio: "16/9" }}
+  allow="autoplay; fullscreen; accelerometer; gyroscope; encrypted-media; picture-in-picture"
+  allowFullScreen
+  title="Mux Video"
+/>
+
     </div>
   );
 }

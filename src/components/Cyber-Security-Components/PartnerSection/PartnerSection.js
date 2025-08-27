@@ -2,24 +2,22 @@ import React, { useEffect, useRef } from "react";
 import { Fade } from "react-awesome-reveal";
 import EvervaultCard from '../../../ui/evervault-card'
 import icon from '../../../images/icon/magic02.svg';
-import pimg1 from "../../../images/brand/cs-brd01.png";
-import pimg2 from "../../../images/brand/cs-brd02.png";
-import pimg3 from "../../../images/brand/cs-brd03.png";
-import pimg4 from "../../../images/brand/cs-brd04.png";
-import pimg5 from "../../../images/brand/cs-brd05.png";
-import pimg6 from "../../../images/brand/cs-brd06.png";
-import pimg7 from "../../../images/brand/cs-brd07.png";
-import pimg8 from "../../../images/brand/cs-brd08.png";
-import pimg9 from "../../../images/brand/cs-brd09.png";
-import pimg10 from "../../../images/brand/cs-brd10.png";
-import pimg11 from "../../../images/brand/cs-brd11.png";
-import pimg12 from "../../../images/brand/cs-brd12.png";
-import pimg13 from "../../../images/brand/cs-brd13.png";
-import pimg14 from "../../../images/brand/cs-brd14.png";
-import pimg15 from "../../../images/brand/cs-brd15.png";
-import pimg16 from "../../../images/brand/cs-brd16.png";
-import pimg17 from "../../../images/brand/cs-brd17.png";
-import pimg18 from "../../../images/brand/cs-brd18.png";
+import pimg1 from "../../../images/gallery/bilf.png";
+import pimg2 from "../../../images/gallery/fst.png";
+import pimg3 from "../../../images/gallery/hil.png";
+import pimg4 from "../../../images/gallery/sgs.png";
+import pimg5 from "../../../images/gallery/bilf.png";
+import pimg6 from "../../../images/gallery/fst.png";
+import pimg7 from "../../../images/gallery/hil.png";
+import pimg8 from "../../../images/gallery/sgs.png";
+import pimg10 from "../../../images/gallery/bilf.png";
+import pimg11 from "../../../images/gallery/fst.png";
+import pimg12 from "../../../images/gallery/hil.png";
+import pimg13 from "../../../images/gallery/sgs.png";
+import pimg14 from "../../../images/gallery/bilf.png";
+import pimg15 from "../../../images/gallery/fst.png";
+import pimg16 from "../../../images/gallery/hil.png";
+import pimg17 from "../../../images/gallery/sgs.png";
 
 const partnersLeft = [
   { pImg: pimg1 },
@@ -30,7 +28,6 @@ const partnersLeft = [
   { pImg: pimg6 },
   { pImg: pimg7 },
   { pImg: pimg8 },
-  { pImg: pimg9 },
 ];
 
 const partnersRight = [
@@ -42,7 +39,6 @@ const partnersRight = [
   { pImg: pimg15 },
   { pImg: pimg16 },
   { pImg: pimg17 },
-  { pImg: pimg18 },
   { pImg: pimg10 },
   { pImg: pimg11 },
   { pImg: pimg12 },
@@ -51,7 +47,7 @@ const partnersRight = [
   { pImg: pimg15 },
   { pImg: pimg16 },
   { pImg: pimg17 },
-  { pImg: pimg18 },
+
 ];
 
 const PartnerSection = () => {
@@ -98,13 +94,7 @@ const PartnerSection = () => {
       <EvervaultCard />
           <div className="cs-service-item mt-30" >
                   <div className="xb-item--inner">
-                    
-                     <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
-                                              <div className="btn-brand">
-                                                  <span className="sub-title wow " data-wow-duration="600ms"><img src={icon} alt="" /><span>About us</span></span>
-                                              </div>
-                                              
-                                          </Fade>
+                   
                                          
                                           <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
                                               <div className="brand-text">

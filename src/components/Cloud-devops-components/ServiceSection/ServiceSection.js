@@ -7,6 +7,7 @@ import simg2 from '../../../images/shape/ser-shape02.png'
 import MagicBento from './magicBento'
 
 
+
 const ServiceSection = () => {
 
   const ClickHandler = () => {

@@ -24,16 +24,18 @@ const AwardSection = (props) => {
     };
     return (
         <section className="award" style={{ backgroundColor: "black" }}>
+          <div className='container'>
+            
+           <p className="sub-title-sec heighlight-text">
+                Our approach is built around four strategic
+                pillars—Analyse, Govern, Insure, and Defend—designed to give you
+                full-spectrum protection, tailored to the realities of today’s
+                threat landscape.
+              </p>
+          </div>
             <ScrollStack>
   <ScrollStackItem>
-    {/* <CanvasRevealEffect
-                animationSpeed={3}
-                containerClassName="bg-black"
-                colors={[
-                  [236, 72, 153],
-                  [232, 121, 249],
-                ]}
-                dotSize={2} /> */}
+   
        <div className="bg-img">
                           <img src={bgimg} alt="" />
                         </div>

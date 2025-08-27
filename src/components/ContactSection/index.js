@@ -16,16 +16,13 @@ const ContactSection = (props) => {
             <div className="contact pt-85">
                 <div className="container">
                     <div className="row pb-130 mt-none-30">
-                        <div className="col-lg-8 mt-30">
-                            <div className="cs-contact-wrap cs-contact-form cd-contact-form item-contact_form">
-                                <h2 className="xb-title">Send us a message</h2>
-                                <p className="xb-content">Give us a chance to serve and bring magic to your brand.</p>
-                                <ContactForm />
-                            </div>
-                        </div>
                         <div className="col-lg-4 mt-30">
                             <div className="item-contact_info">
                                 <div className="xb-item--inner">
+                                     <div className="contact-info_widget">
+                                        <h3 className="xb-title">United states office</h3>
+                                        <span className="xb-location">Sunshine example park, Floor <br /> No 05A,Sector-94,</span>
+                                    </div>
                                     <div className="xb-item--top">
                                         <h3 className="xb-item--title">Contact Info</h3>
                                         <span className="xb-item--hotline"><img src={icon1} alt="" /> +(1) 1230 452 8597</span>
@@ -40,28 +37,25 @@ const ContactSection = (props) => {
                                             <li><Link onClick={ClickHandler} to="/contact" aria-label="Linkedin"><i className="fab fa-linkedin-in"></i></Link></li>
                                         </ul>
                                     </div>
-                                    <div className="contact-info_widget">
-                                        <h3 className="xb-title">United states office</h3>
-                                        <span className="xb-location">Sunshine example park, Floor <br /> No 05A,Sector-94,</span>
-                                    </div>
-                                    <div className="contact-info_widget">
-                                        <h3 className="xb-title">United kingdom office</h3>
-                                        <span className="xb-location">12 Buckingham Rd, example <br /> Thwaite, HG3 4 TY, UK Contact</span>
-                                    </div>
-                                    <hr className="breack-line" />
-                                    <div className="contact-info_widget">
-                                        <h3 className="xb-title">our office open time</h3>
-                                        <span className="xb-location">Mon - Sat : 8.00-5.00 <br /> Sunday : Closed</span>
-                                    </div>
+                                   
+                                 
                                 </div>
                             </div>
                         </div>
+                        <div className="col-lg-8 mt-30">
+                            <div className="cs-contact-wrap cs-contact-form cd-contact-form item-contact_form">
+                                <h2 className="xb-title">Send us a message</h2>
+                                <p className="xb-content">Give us a chance to serve and bring magic to your brand.</p>
+                                <ContactForm />
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            <div className="gmap_canvas bg-light">
+            {/* <div className="gmap_canvas bg-light">
                 <iframe title='map' src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
-            </div>
+            </div> */}
         </div>
     )
 }

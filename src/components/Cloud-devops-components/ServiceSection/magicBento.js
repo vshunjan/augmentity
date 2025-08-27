@@ -1,11 +1,11 @@
 import { useRef, useEffect, useCallback, useState } from "react";
 import { gsap } from "gsap";
 import "./magicBento.css";
-import bgimg1 from '../../../images/bg/minitues.jpg'
-import bgimg2 from '../../../images/bg/gridcrime.jpg'
-import bgimg3 from '../../../images/bg/threats.jpg'
-import bgimg4 from '../../../images/bg/grid1.jpg'
-
+import bgimg1 from '../../../images/bg/min.jpg'
+import bgimg2 from '../../../images/bg/million.jpg'
+import bgimg3 from '../../../images/bg/ceo.jpg'
+import bgimg4 from '../../../images/bg/threats.jpg'
+import CountUp, { useCountUp } from 'react-countup';
 
 
 const CounterTitle = ({ target }) => {
@@ -38,6 +38,7 @@ const MOBILE_BREAKPOINT = 768;
 const cardData = [
  
   {
+    Id:48,
     color: "#060010",
     rite:'',
     title: 48 ,
@@ -46,32 +47,36 @@ const cardData = [
     img: bgimg1
   },
   {
+    Id:4,
     color: "#060010",
     rite:'$',
-    title: 4,
+    title: 4.2,
     type:"Million ",
     description: "The average global cost of a data breach in 2024.",
     para:'(IBM Cost of a Data Breach Report 2024)',
    img: bgimg2
   },
   {
-    color: "#060010",
-    title: 82,
-    rite:'',
-    type:'% of Enterprises ',
-    description: "deploying AI admit they haven’t fully assessed security risks.",
-    para:'(Gartner, 2024)',
-  img: bgimg3
-  },
-  {
+    Id:52,
     color: "#060010",
     rite:'',
     title: 52,
     type:'% of CEOs ',
     description: `believe they’re cyber-resilient, while only 29%   of their CISOs agree. `,
     para:'(PwC Digital Trust Survey, 2024)',
+  img: bgimg3
+  },
+  {
+    Id:82,
+    color: "#060010",
+    title: 82,
+    rite:'',
+    type:'% of Enterprises ',
+    description: "deploying AI admit they haven’t fully assessed security risks.",
+    para:'(Gartner, 2024)',
   img: bgimg4
   },
+  
  
 ];
 
@@ -742,7 +747,7 @@ const MagicBento = ({
               <div className="card__content">
                
                 <h2 className="card__title">
-                    <CounterTitle target={card.title} />
+                     <span className="xbo" data-count="90"><CountUp end={card.Id} enableScrollSpy />{card.type}</span>
                 </h2>
                 <p className="card__description">{card.description}</p>
               </div>

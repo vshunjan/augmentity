@@ -3,19 +3,18 @@ import React from "react";
 export default function BackgroundVideo() {
   return (
     <div className="video-container">
-      <video 
-        autoPlay 
-        muted 
-        loop 
-        playsInline 
-        style={{ width: "100%", height: "auto" }}
-      >
-        <source 
-          src="https://upcdn.io/kW2K8W4/raw/about-video.mp4" 
-          type="video/mp4" 
-        />
-        Your browser does not support the video tag.
-      </video>
+     <iframe
+  src="https://player.mux.com/01QIelPYt01hh84998dCl00iBWMtVNhkWxOHrtP7qnZfC00?autoplay=1&muted=1&loop=1"
+  style={{ width: "100%", border: "none", aspectRatio: "16/9" }}
+  allow="autoplay; fullscreen; accelerometer; gyroscope; encrypted-media; picture-in-picture"
+  allowFullScreen
+  title="a"
+></iframe>
     </div>
   );
 }
+
+
+
+
+  

@@ -61,10 +61,12 @@ const WorkProcess = (props) => {
                             <div className="sec-title">
                                 <Fade direction='down' triggerOnce={'false'} duration={1000} delay={9}>
                                     <div>
-                                        <h2 className="mb-40 title wow fadeInUp scroll-card" data-wow-duration="600ms">
-                                             Who We Are
-                                      <span className='c-suite'> NOT   </span>
-                                        </h2>
+                                        <h1 className="mb-40 title wow fadeInUp scroll-card card-why-f" data-wow-delay="000ms" data-wow-duration="900ms">
+                                     Who We Are
+                               </h1>
+                                        <h1 className="mb-40 title wow fadeInUp scroll-card card-why-s" data-wow-delay="000ms" data-wow-duration="900ms">
+                                   <span className='about c-suite'> NOT   </span>
+                               </h1>
                                     </div>
                                 </Fade>
                                 {/* <Fade direction='up' triggerOnce={'false'} duration={1200} delay={9}>
