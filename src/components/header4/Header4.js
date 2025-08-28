@@ -76,10 +76,10 @@ const Header4 = (props) => {
   <img src={menuimg} />
 
                                         </div>
-                                        <div className="xb-logo-mobile xb-hide-xl">
+                                        {/* <div className="xb-logo-mobile xb-hide-xl">
                                             <Link onClick={ClickHandler} to="/" rel="home"><img src={logo}
                                                 alt="" /></Link>
-                                        </div>
+                                        </div> */}
                                         <div className="xb-header-mobile-search xb-hide-xl">
                                           
                                         </div>
@@ -93,9 +93,7 @@ const Header4 = (props) => {
                         </div>
                         <div className="header-bar-mobile side-menu ">
                             <button className="xb-nav-mobile" onClick={() => setMobailState(!mobailActive)}>
-                               <div class="icon menu-icon" align="center">
-  <img src={menuimg} />
-</div>
+                                                                   <i className="far fa-bars"></i>
                             </button>
                         </div>
                        

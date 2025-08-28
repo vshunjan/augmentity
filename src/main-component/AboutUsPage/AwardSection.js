@@ -1,100 +1,80 @@
-import React from 'react';
-import { Fade } from "react-awesome-reveal";
-import { Link } from 'react-router-dom'
-import sIcon1 from '../../images/icon/ser-01.svg'
-import brand1 from '../../images/award/ap-brand01.jpg'
-import brand2 from '../../images/award/ap-brand02.jpg'
-import brand3 from '../../images/award/ap-brand03.jpg'
-import brand4 from '../../images/award/ap-brand04.jpg'
-import brand5 from '../../images/award/ap-brand05.jpg'
-import brand6 from '../../images/award/ap-brand06.jpg'
-import ScrollStack, { ScrollStackItem } from './scrollstack'
-import brand7 from '../../images/award/ap-brand07.jpg'
-import brand8 from '../../images/award/ap-brand08.jpg'
-import brand9 from '../../images/award/ap-brand09.jpg'
-import brand10 from '../../images/award/ap-brand10.jpg'
-import {CanvasRevealEffect} from './canvasEffect'
-import bgimg from "../../images/bg/scroll-lockimg.svg";
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
+const Process = [
+  {
+    id: "01",
+    subTitle: 'We are not specialist product consultants. Our team may be certified in most network products and security technologies but we offer unbiased advice prioritising your strategic goals first.',
+  },
+  {
+    id: "02",
+    subTitle: 'We are not a cybersecurity MSP. Our consultants are your trusted advisors, both for immediate risk assessment and long-term strategy.',
+  },
+  {
+    id: "03",
+    subTitle: 'We are not penetration testers. We go deeper, including multiple layers of social engineering and grey-team tabletop exercises.',
+  },
+  {
+    id: "04",
+    subTitle: 'We are not cyber insurance brokers. We help you get the best premiums through strategic advisory and quantifiable reporting.',
+  },
+  {
+    id: "05",
+    subTitle: 'We are not a SOC. Our real value lies in challenging every SOC to ensure they perform to your expectations.',
+  },
+];
 
-const AwardSection = (props) => {
+const AwardSection = () => {
+  const targetRef = useRef(null);
+  const { scrollY } = useScroll({ target: targetRef, offset: ["start start", "end end"] });
 
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
-    };
-    return (
-        <section className="award" style={{ backgroundColor: "black" }}>
-          <div className='container'>
-            
-           <p className="sub-title-sec heighlight-text">
-                Our approach is built around four strategic
-                pillars—Analyse, Govern, Insure, and Defend—designed to give you
-                full-spectrum protection, tailored to the realities of today’s
-                threat landscape.
-              </p>
+  // Generate transforms for all cards dynamically
+//   const cardHeight = window.innerHeight;
+//   const transforms = Process.map((_, i) => {
+//     const start = i * cardHeight;
+//     const end = (i + 1) * cardHeight;
+//     return {
+//       scale: useTransform(scrollY, [start, end], [1, 0.8]),
+//       opacity: useTransform(scrollY, [start, end], [1, 0]),
+//       y: useTransform(scrollY, [start, end], [0, -100]),
+//     };
+//   });
+
+  return (
+    <section className="award" style={{ backgroundColor: "black" }}>
+      <div className="container">
+        <p className="sub-title-sec heighlight-text">
+          Our approach is built around four strategic pillars—Analyse, Govern, Insure, and Defend—designed to give you full-spectrum protection, tailored to the realities of today’s threat landscape.
+        </p>
+      </div>
+
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-lg-7 index-scroll-card col-md-8">
+            {/* <div ref={targetRef} className="process-right f-right">
+              {Process.map((process, i) => (
+                <motion.div
+                  key={i}
+                  style={{
+                    scale: transforms[i].scale,
+                    opacity: transforms[i].opacity,
+                    y: transforms[i].y,
+                    zIndex: Process.length - i,
+                  }}
+                  className="process-item"
+                >
+                  <span className="xb-item--number">{process.id}</span>
+                  <div className="xb-item--holder">
+                    <span className="xb-item--content">{process.subTitle}</span>
+                  </div>
+                </motion.div>
+              ))}
+            </div> */}
           </div>
-            <ScrollStack>
-  <ScrollStackItem>
-   
-       <div className="bg-img">
-                          <img src={bgimg} alt="" />
-                        </div>
-                         <div className="process-content">
-                       <h4 className="xb-item--title">Analyse</h4>
-                     
-                      <p className="xb-item--contact">A clear picture of your risk profile and a prioritised roadmap for remediation—before attackers get there first.</p>
-                      <div className="hero-btn">
-                        <span>Discover more</span>
-                      </div>
-                    </div>
-                    <span className="xb-item--number">1</span>
-  </ScrollStackItem>
-  <ScrollStackItem>
-     <div className="bg-img">
-                          <img src={bgimg} alt="" />
-                        </div>
-                         <div className="process-content">
-                      
-                     <h4 className="xb-item--title">Govern</h4>
-                      <p className="xb-item--contact">A mature, future-ready security posture that inspires trust—from boardroom to regulator.</p>
-                      <div className="hero-btn">
-                        <span>Discover more</span>
-                      </div>
-                    </div>
-                    <span className="xb-item--number">2</span>
-  </ScrollStackItem>
-  <ScrollStackItem>
-     <div className="bg-img">
-                          <img src={bgimg} alt="" />
-                        </div>
-                         <div className="process-content">
-                      
-                      <h4 className="xb-item--title">Insure</h4>
-                      <p className="xb-item--contact">Lower cyber insurance premiums, faster underwriting, and better alignment between finance and security.</p>
-                      <div className="hero-btn">
-                        <span>Discover more</span>
-                      </div>
-                    </div>
-                    <span className="xb-item--number">3</span>
-  </ScrollStackItem>
-  {/* <ScrollStackItem>
-     <div className="bg-img">
-                          <img src={bgimg} alt="" />
-                        </div>
-                         <div className="process-content">
-                      
-                      <h4 className="xb-item--title">Defend</h4>
-                      <p className="xb-item--contact">Continuous verification, rapid recovery, minimal business disruption—powered by real-world threat engineering.</p>
-                      <div className="hero-btn">
-                        <span>Discover more</span>
-                      </div>
-                    </div>
-                    <span className="xb-item--number">4</span>
-  </ScrollStackItem> */}
- 
-</ScrollStack>
-        </section>
-    );
-}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default AwardSection;

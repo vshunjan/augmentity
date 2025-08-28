@@ -21,10 +21,10 @@ const HomePage = () => {
     return (
         <Fragment>
             <div className='body_wrap sco_agency'>
-                <Header />
+                {/* <Header /> */}
                 <main className="page_content">
-                    <Hero />
-                    <PartnerSection />
+                    {/* <Hero /> */}
+                    {/* <PartnerSection />
                     <About />
                     <ServiceSection />
                     <ProjectSection />
@@ -32,11 +32,11 @@ const HomePage = () => {
                     <IndustrieSection />
                     <Testimonial />
                     <FeaturesSection />
-                    <TeamSection />
-                    <FaqSection />
-                    <CtaSection /> 
+                    <TeamSection /> */}
+                    {/* <FaqSection /> */}
+                    {/* <CtaSection />  */}
                 </main>
-                <Footer />
+                {/* <Footer /> */}
                 <Scrollbar />
             </div>
         </Fragment>

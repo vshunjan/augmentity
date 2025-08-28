@@ -14,16 +14,7 @@ const About = (props) => {
       {/* <div className='colour8'></div>   */}
       <div className="container">
    
-  {/* <RippleGrid
-    enableRainbow={false}
-    gridColor="#21F5F5"
-    rippleIntensity={0.05}
-    gridSize={10}
-    gridThickness={15}
-    mouseInteraction={true}
-    mouseInteractionRadius={1.2}
-    opacity={0.8}
-  /> */}
+
 
         <div className="cs-about-wrap pos-rel">
           <div className="row ">

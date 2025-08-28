@@ -17,7 +17,7 @@ const menus = [
     },
     {
         id: 3,
-        title: 'About',
+        title: 'Who we are NOT',
         link: '/about',
     },
     {
@@ -27,7 +27,7 @@ const menus = [
     },
     {
         id: 5,
-        title: 'Contact',
+        title: 'Consult Us',
         link: '/Contact',
     }
     
@@ -54,8 +54,12 @@ const MobileMenu = () => {
                                                 </div>
                                                 <div className="xb-item--top">
                                                     <h3 className="xb-item--title">Contact Info</h3>
-                                                    <span className="xb-item--hotline"><img src={icon1} alt="" /> +(1) 1230 452 8597</span>
-                                                    <span className="xb-item--email"><img src={icon2} alt="" /> innomax@example.com</span>
+                                                    <span className="xb-item--hotline">
+                                                        {/* <img src={icon1} alt="" /> */}
+                                                     +(1) 1230 452 8597</span>
+                                                    <span className="xb-item--email">
+                                                        {/* <img src={icon2} alt="" /> */}
+                                                     augmentity@example.com</span>
                                                    
                                                 </div>
                                                

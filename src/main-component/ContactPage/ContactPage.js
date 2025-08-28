@@ -3,8 +3,9 @@ import React, { Fragment } from 'react';
 import ContactSection from '../../components/ContactSection';
 import Header4 from '../../components/header4/Header4';
 import Scrollbar from '../../components/scrollbar/scrollbar'
+import { Fade } from "react-awesome-reveal";
 import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
-import Bg from '../../images/bg/page_bg01.jpg'
+import Bg from '../../images/gallery/consultbanner.jpg'
 import CtaSection from '../../components/CtaSection/CtaSection';
 import icon from '../../images/icon/music-icon.svg'
 import bImg1 from '../../images/hero/contact-img.png'
@@ -16,15 +17,16 @@ const TeamPage = (props) => {
         <Fragment>
             <div className='body_wrap sco_agency'>
                 <Header4 />
-                <section className="page-title pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
+                <section className="page-title contact-banner pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
                     <div className="container">
                         <div className="page-title-wrap sd-title-wrap">
                             <div className="row mt-none-30 align-items-end">
                                 <div className="col-lg-9 mt-30">
-                                    <div className="page-title-box">
-                                        {/* <span className="sub-title"><img src={icon} alt="" /> Contact us</span> */}
-                                        <h2 className="title">Connect with our team for <br /> innovative solutions and <br /> your digital success</h2>
-                                    </div>
+                                    <Fade direction='up' triggerOnce={'false'} duration={800} delay={6}>
+                                                                        <div>
+                                                                            <h1 className="xb-item--title wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">Consult Us </h1>
+                                                                        </div>
+                                                                    </Fade>
                                 </div>
                                 <div className="col-lg-3 mt-30">
                                     <div className="sd-right-img pos-rel">

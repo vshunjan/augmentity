@@ -1,12 +1,11 @@
 import React from 'react';
 import { Fade } from "react-awesome-reveal";
-import pImg from '../../../images/shape/process-shape01.png'
-import pImg2 from '../../../images/shape/process-shape01.png'
-import sIcon1 from '../../../images/gallery/Asset 28.svg'
-import sIcon2 from '../../../images/gallery/Asset 29.svg'
-import sIcon3 from '../../../images/gallery/Asset 30.svg'
-import sIcon4 from '../../../images/gallery/Asset 28.svg'
-import sIcon5 from '../../../images/gallery/Asset 29.svg'
+
+import sIcon1 from '../../../images/gallery/1product.png'
+import sIcon2 from '../../../images/gallery/2MSP2.png'
+import sIcon3 from '../../../images/gallery/3test2.png'
+import sIcon4 from '../../../images/gallery/4brokers.png'
+import sIcon5 from '../../../images/gallery/5Soc.png'
 import { Link } from 'react-router-dom';
 
 const Process = [
@@ -53,7 +52,7 @@ const Process = [
 const WorkProcess = (props) => {
 
     return (
-        <section className="pb-40 process pt-140 pos-rel" >
+        <section className="pb-40 process pos-rel" >
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-5 col-md-8">
@@ -69,11 +68,7 @@ const WorkProcess = (props) => {
                                </h1>
                                     </div>
                                 </Fade>
-                                {/* <Fade direction='up' triggerOnce={'false'} duration={1200} delay={9}>
-                                    <div>
-                                        <span className="content wow fadeInUp" data-wow-delay="200ms" data-wow-duration="600ms">Our innomax Efficient Workflow in 5 Steps ensures streamlined IT solutions. We start by understanding your needs, then plan the project, design intuitive interfaces, build robust systems, and thoroughly test.</span>
-                                    </div>
-                                </Fade> */}
+                               
                             </div>
                         
                         </div>

@@ -12,12 +12,12 @@ import brand8 from '../../../images/brand/logo08.png';
 import bgimg  from '../../../images/gallery/Asset 29.svg'
 import bgimg2  from '../../../images/gallery/Asset 28.svg'
 import bgimg3  from '../../../images/gallery/Asset 30.svg'
-import bgimg4  from '../../../images/gallery/Asset 24.svg'
+import bgimg4  from '../../../images/bg/scroll-lockimg.svg'
 
 const BrandSection = () => {
 
   return (
-    <section className="brand pt-135 pb-140" style={{ backgroundColor: "#000000" }}>
+    <section className="brand pb-140" style={{ backgroundColor: "#000000" }}>
       <div className="container">
        
         <div className="xb-brand-wrap">

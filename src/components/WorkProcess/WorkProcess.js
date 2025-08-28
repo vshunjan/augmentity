@@ -47,7 +47,7 @@ const Process = [
 
 const WorkProcess = (props) => {
   return (
-    <section className="process pb-100 pos-rel">
+    <section className=" process pos-rel">
       {/* <DarkVeil /> */}
       <div className="colour6"></div>
       <div className="container">

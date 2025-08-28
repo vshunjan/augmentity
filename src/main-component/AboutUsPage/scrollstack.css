@@ -69,9 +69,9 @@
   will-change: transform, filter;
   transform-origin: top center;
 }
-section.award {
+/* section.award {
     margin-bottom: 550px;
-}
+} */
 .scroll-stack-wrapper {
     display: flex;
     flex-direction: column;

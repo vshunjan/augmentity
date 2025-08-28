@@ -56,6 +56,16 @@ const cardData = [
     para:'(IBM Cost of a Data Breach Report 2024)',
    img: bgimg2
   },
+    {
+    Id:82,
+    color: "#060010",
+    title: 82,
+    rite:'',
+    type:'% of Enterprises ',
+    description: "deploying AI admit they haven’t fully assessed security risks.",
+    para:'(Gartner, 2024)',
+  img: bgimg4
+  },
   {
     Id:52,
     color: "#060010",
@@ -66,17 +76,7 @@ const cardData = [
     para:'(PwC Digital Trust Survey, 2024)',
   img: bgimg3
   },
-  {
-    Id:82,
-    color: "#060010",
-    title: 82,
-    rite:'',
-    type:'% of Enterprises ',
-    description: "deploying AI admit they haven’t fully assessed security risks.",
-    para:'(Gartner, 2024)',
-  img: bgimg4
-  },
-  
+
  
 ];
 

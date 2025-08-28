@@ -21,6 +21,7 @@ import PrivacyPage from '../PrivacyPage/PrivacyPage';
 import BlogPage from '../BlogPage/BlogPage';
 import BlogDetails from '../BlogDetails/BlogDetails';
 import ContactPage from '../ContactPage/ContactPage';
+import HomePage from '../HomePage/HomePage';
 
 const AllRoute = () => {
 
@@ -32,8 +33,10 @@ const AllRoute = () => {
           <Route path="home" element={<HomePage4/>} />
           <Route path="about" element={<HomePage2 />} />          
           <Route path="services" element={<Servicepage />} />
+          <Route path="about12" element={<HomePage />} /> 
           <Route path="contact" element={<ContactPage />} /> 
-          {/* <Route path="about12" element={<AboutUsPage />} /> */}
+          
+          
           {/* <Route path="home-6" element={<HomePage6 />} /> */}
           {/* <Route path="home-4" element={<HomePage4 />} />
           <Route path="home-5" element={<HomePage5 />} />

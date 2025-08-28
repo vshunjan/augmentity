@@ -3144,7 +3144,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 1125px;
     right: -34%;
     bottom: 76%;
-    z-index: 2;;
+    z-index: 0;
 }
 .colour7{
      position: absolute;
@@ -3153,7 +3153,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 1125px;
     right: 16%;
     top: 50%;
-    z-index: 2;;
+    z-index: 0;
 }
 .colour8{
         position: absolute;
@@ -3162,7 +3162,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 1125px;
     right: -20%;
     bottom: 18%;
-    z-index: 1;
+    z-index: 0;
 }
 
 
@@ -3251,7 +3251,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   left: 50%;
 }
 
-.arrow {
+.hero-style-three .arrow {
   margin:0 ;
   margin-top: 0px;
   width: 22px;
@@ -3279,4 +3279,56 @@ section.overflow-hidden.about.pt-60.pb-100 .container{
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+@media (max-width:767px) {
+  .container {
+     padding-left: 4% !important;
+    padding-right: 4% !important;
+}
+  p.content.about-sec.wow.first {
+    text-align: left;
+    width: 100% !important;
+  }
+  p.content.about-sec.wow {
+        text-align: left !important;
+    width: 100% !important;
+  }
+  .brand-text {
+    align-items: start !important;
+}
+.cs-brand-inner.marquee-left {
+    width: 87%;
+}
+
+.text-left.sec-title--two.mb-90 {
+    flex-direction: column;
+   
+}
+
+h1.service-card-title {
+    text-align: left;
+    font-size: 54px !important;
+    letter-spacing: -4px;
+    width: 100% !important;
+}
+.service-head {
+    width: 100% !important;
+}
+.sub-title-div {
+   width: 100% !important;
+}
+section.award p.sub-title-sec.heighlight-text {
+    width: 100% !important;
+}
+.sec-title--two.sec-title--three.double-text {
+  flex-direction: column;
+  gap:50px
+}
+.aument-img {
+    width: 100% !important;
+}
+.aug-ment-sub-div {
+    width: 100% !important;
+}
 }
