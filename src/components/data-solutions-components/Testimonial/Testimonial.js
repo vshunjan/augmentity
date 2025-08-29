@@ -12,7 +12,7 @@ import {
 const Testimonial = (props) => {
     
 
-      const [open, setOpen] = useState('1');
+      const [open, setOpen] = useState('0');
         const toggle = (id) => {
             if (open === id) {
                 setOpen();
@@ -61,7 +61,7 @@ const Testimonial = (props) => {
                                                            <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
-                                                                <AccordionHeader targetId="1" className='acc-btn'> What it is:<span className="arrow"></span>
+                                                                <AccordionHeader targetId="1" className='acc-btn'> What it is<span className="arrow"></span>
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="1" className='acc_body'>
                                                                     <div className="content">

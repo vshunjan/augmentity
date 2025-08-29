@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Header3 from '../../components/header3/Header3';
-import Hero3 from '../../components/hero3/hero3';
+import Hero3 from '../../components/hero3/insureHed';
 import Header4 from '../../components/header4/Header4';
 import About from '../../components/data-solutions-components/about/about';
 import FeatureSection from '../../components/Help-Desk-Components/FeatureSection/FeatureSection';

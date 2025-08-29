@@ -22,8 +22,8 @@ const menus = [
     },
     {
         id: 4,
-        title: 'Services',
-        link: '/services',
+        title: 'Analyse',
+        link: '/analyse',
     },
     {
         id: 5,

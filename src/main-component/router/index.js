@@ -1,27 +1,30 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
-import Homepage from '../HomePage/HomePage'
+// import Homepage from '../HomePage/HomePage'
 import HomePage2 from '../aboutpage/About';
-import Servicepage from '../HomePage3/Services';
+import Analyse from '../HomePage3/analyse';
+import Govern from '../HomePage3/govern';
+import Insure from '../HomePage3/insure';
+import Defend from '../HomePage3/defend';
 import HomePage4 from '../HomePage4/HomePage4';
 import HomePage5 from '../HomePage5/HomePage5';
 // import HomePage6 from '../HomePage6/HomePage6';
-import ServicePage from '../ServicePage/ServicePage';
-import AboutUsPage from '../AboutUsPage/AboutUsPage';
-import ServiceSinglePage from '../ServiceSinglePage/ServiceSinglePage';
-import PricingPage from '../PricingPage/PricingPage';
-import CaseStudyPage from '../CaseStudyPage/CaseStudyPage';
-import CaseStudySingle from '../CaseStudySingle/CaseStudySingle';
-import PortfolioSingle from '../PortfolioSingle/PortfolioSingle';
-import CareerPage from '../CareerPage/CareerPage';
-import CareerSingle from '../CareerSingle/CareerSingle';
-import TeamPage from '../TeamPage/TeamPage';
-import TermsPage from '../TermsPage/TermsPage';
-import PrivacyPage from '../PrivacyPage/PrivacyPage';
-import BlogPage from '../BlogPage/BlogPage';
-import BlogDetails from '../BlogDetails/BlogDetails';
+// import ServicePage from '../ServicePage/ServicePage';
+// import AboutUsPage from '../AboutUsPage/AboutUsPage';
+// import ServiceSinglePage from '../ServiceSinglePage/ServiceSinglePage';
+// import PricingPage from '../PricingPage/PricingPage';
+// import CaseStudyPage from '../CaseStudyPage/CaseStudyPage';
+// import CaseStudySingle from '../CaseStudySingle/CaseStudySingle';
+// import PortfolioSingle from '../PortfolioSingle/PortfolioSingle';
+// import CareerPage from '../CareerPage/CareerPage';
+// import CareerSingle from '../CareerSingle/CareerSingle';
+// import TeamPage from '../TeamPage/TeamPage';
+// import TermsPage from '../TermsPage/TermsPage';
+// import PrivacyPage from '../PrivacyPage/PrivacyPage';
+// import BlogPage from '../BlogPage/BlogPage';
+// import BlogDetails from '../BlogDetails/BlogDetails';
 import ContactPage from '../ContactPage/ContactPage';
-import HomePage from '../HomePage/HomePage';
+// import HomePage from '../HomePage/HomePage';
 
 const AllRoute = () => {
 
@@ -32,8 +35,10 @@ const AllRoute = () => {
           <Route path="/" element={<HomePage5 />} />
           <Route path="home" element={<HomePage4/>} />
           <Route path="about" element={<HomePage2 />} />          
-          <Route path="services" element={<Servicepage />} />
-          <Route path="about12" element={<HomePage />} /> 
+          <Route path="analyse" element={<Analyse />} />
+          <Route path="govern" element={<Govern />} /> 
+          <Route path="defend" element={<Defend />} /> 
+          <Route path="insure" element={<Insure />} /> 
           <Route path="contact" element={<ContactPage />} /> 
           
           

@@ -3153,7 +3153,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 1125px;
     right: 16%;
     top: 50%;
-    z-index: 0;
+    z-index: 2;
 }
 .colour8{
         position: absolute;
@@ -3274,6 +3274,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 section.overflow-hidden.about.pt-60.pb-100 {
         padding: 100px 0;
     position: relative;
+        padding-bottom: 200px;
 }
 section.overflow-hidden.about.pt-60.pb-100 .container{
     height: 100%;
@@ -3331,4 +3332,9 @@ section.award p.sub-title-sec.heighlight-text {
 .aug-ment-sub-div {
     width: 100% !important;
 }
+}
+
+section.page-title.contact-banner.pt-200.pos-rel.bg_img {
+    background-color: black;
+    margin-bottom: 100px;
 }

@@ -216,9 +216,11 @@
 .card{
     align-items: start !important;
     padding: 30px !important;
-        padding-bottom: 50px !important;
+        padding-bottom: 85px !important;
     justify-content: flex-end !important;
 }
 .card-grid.bento-section {
     padding-top: 100px;
+        width: 100%;
+    max-width: 100%;
 }

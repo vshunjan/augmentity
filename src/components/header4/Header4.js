@@ -93,7 +93,7 @@ const Header4 = (props) => {
                         </div>
                         <div className="header-bar-mobile side-menu ">
                             <button className="xb-nav-mobile" onClick={() => setMobailState(!mobailActive)}>
-                                                                   <i className="far fa-bars"></i>
+                                    <div class="icon" align="center"><div class="bar-1"></div><div class="bar-2"></div></div>
                             </button>
                         </div>
                        

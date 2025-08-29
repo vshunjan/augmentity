@@ -1,80 +1,106 @@
-.scroll-stack-scroller {
-  position: relative;
+.pin-section {
+    background-color: #000000;
+    height: 100% !important;
+    max-height: 800px !important;
+    padding-top: 5% !important;
+    margin-bottom: 150px !important;
+}
+
+.pin-section .content {
   width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: visible;
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: scroll-position;
-}
-
-.scroll-stack-inner {
-  padding: 20vh 5rem 50rem;
-  min-height: 100vh;
-}
-
-.scroll-stack-card-wrapper {
-  position: relative;
-}
-
-.scroll-stack-card {
-  transform-origin: top center;
-  will-change: transform, filter;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  height: 500px;
-  background: #020723;
-  width: 70%;
-  margin: 30px 0;
-  padding: 3rem;
-  box-sizing: border-box;
-  /* Improve mobile performance */
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  position: relative;
-}
-
-.scroll-stack-end {
-  width: 100%;
-  height: 1px;
-}
-.scroll-stack-scroller {
-  overflow: hidden;   /* ✅ Lenis will handle the scroll */
-  height: 100vh;      /* ✅ Full viewport height */
-}
-
-.scroll-stack-inner {
-  min-height: 100%;   /* ✅ Provides scrollable content */
-}
-.scroll-stack-scroller {
-  overflow: hidden;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
-
-.scroll-stack-inner {
-  width: 100%;
-  min-height: 100%;
-  position: relative;
-}
-
-.scroll-stack-card {
-  position: relative;
-  will-change: transform, filter;
-  transform-origin: top center;
-}
-/* section.award {
-    margin-bottom: 550px;
-} */
-.scroll-stack-wrapper {
+  max-width: 100%;
+  margin: 0 ;
+      gap: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  padding: 0 0px;
+  position: relative;
+}
+
+.pin-section .content ul {
+  font-size: 34px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+      display: flex;
+    gap: 20px;
+        align-items: center;
+    justify-content: space-between;
+ width: 100%;
+  list-style: none;
+  flex-grow: 0;
+}
+.pin-section .content ul li{
+  font-size: 34px;
+  font-weight: 500;
+  color: #ffffff;
+      padding: 30px 40px;
+    border: 1px solid;
+  
+}
+
+.pin-section .content .fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 5px;
+  height: 100%;
+  background-color: #008080;
+}
+
+.pin-section .content .right {
+  flex-grow: 1;
+  height: 400px;
+    background-color: #000000;
+  color: #008080;
+  position: relative;
+}
+
+.right .slide {
+     justify-content: center;
+     gap: 30px;
+         padding-left: 50px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.right .slide p {
+    width: 59%;
+    font-size: 22px;
+    color: white;
+}
+.right .slide h1 {
+     font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin: 20px 0;
+}
+
+.right .slide .hero-btn {
+    margin-top: 25px;
+    padding: 20px 30px;
+    width: -webkit-fit-content;
+    width: fit-content;
+}
+.right .slide .hero-btn, .work-content .hero-btn {
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    background: #ffffff17;
+    border-radius: 50px;
+}
+.right .slide .hero-btn span{
+ color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 21px;
+    background: #
 }

@@ -1,234 +1,125 @@
-import { useLayoutEffect, useRef, useCallback } from "react";
-import Lenis from "lenis";
-import "./scrollstack.css";
+// src/main-component/AboutUsPage/AwardSection.js
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import bgImg  from '../../images/video/anlyse-2.mp4'
+import bgImg2  from '../../images/video/govern-2.mp4'
+import bgImg3  from '../../images/video/insure-2.mp4'
+import bgImg4  from '../../images/video/defend-2.mp4'
+import { Link } from "react-router-dom";
+import './scrollstack.css'
 
-export const ScrollStackItem = ({ children, itemClassName = "" }) => (
-  <div className={`scroll-stack-card ${itemClassName}`.trim()}>{children}</div>
-);
+gsap.registerPlugin(ScrollTrigger);
 
-const ScrollStack = ({
-  children,
-  className = "",
-  itemDistance = 100,
-  itemScale = 0.03,
-  itemStackDistance = 30,
-  stackPosition = "35%",
-  scaleEndPosition = "10%",
-  baseScale = 0.85,
-  scaleDuration = 0.5,
-  rotationAmount = 1,
-  blurAmount = 10,
-  onStackComplete,
-}) => {
-  const scrollerRef = useRef(null);
-  const stackCompletedRef = useRef(false);
-  const animationFrameRef = useRef(null);
-  const lenisRef = useRef(null);
-  const cardsRef = useRef([]);
-  const lastTransformsRef = useRef(new Map());
-  const isUpdatingRef = useRef(false);
+const sectionsData = [
+  {
+    list: ["Analyse", "Govern", "Insure", "Defend"],
+    slides: [
+      { title: "Analyse",bgImg:bgImg,link:'/analyse', className: "gradient-green" ,content: 'A clear picture of your risk profile and a prioritised roadmap for remediation—before attackers get there first.'},
+      { title: "Govern",bgImg:bgImg2, link:'/govern' ,className: "gradient-blue", content:'A mature, future-ready security posture that inspires trust—from boardroom to regulator.'},
+      { title: "Insure", bgImg:bgImg3,link:'/insure', className: "gradient-purple" , content:'Lower cyber insurance premiums, faster underwriting, and better alignment between finance and security.'},
+      { title: "Defend",bgImg:bgImg4, link:'/defend', className: "gradient-orange" ,content:'Continuous verification, rapid recovery, minimal business disruption—powered by real-world threat engineering.'},
+    ],
+  }
+];
 
-  const calculateProgress = useCallback((scrollTop, start, end) => {
-    if (scrollTop < start) return 0;
-    if (scrollTop > end) return 1;
-    return (scrollTop - start) / (end - start);
-  }, []);
+const ScrollStack = () => {
+  const containerRef = useRef(null);
 
-  const parsePercentage = useCallback((value, containerHeight) => {
-    if (typeof value === 'string' && value.includes('%')) {
-      return (parseFloat(value) / 100) * containerHeight;
-    }
-    return parseFloat(value);
-  }, []);
+  useEffect(() => {
+    const pinSections = gsap.utils.toArray(".pin-section");
+    const lists = gsap.utils.toArray(".list");
 
-  const updateCardTransforms = useCallback(() => {
-    const scroller = scrollerRef.current;
-    if (!scroller || !cardsRef.current.length || isUpdatingRef.current) return;
+    pinSections.forEach((section, i) => {
+      const list = lists[i];
+      const fill = section.querySelector(".fill");
+      const listItems = gsap.utils.toArray("li", list);
+      const slides = gsap.utils.toArray(".slide", section);
 
-    isUpdatingRef.current = true;
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: "top top",
+          end: "+=" + listItems.length * 50 + "%",
+          pin: true,
+          scrub: true,
+          id: i + 1,
+          // markers: { indent: 150 * i }, // enable for debugging
+        },
+      });
 
-   const scrollTop = window.scrollY;
-    const containerHeight = window.innerHeight;
-    const stackPositionPx = parsePercentage(stackPosition, containerHeight);
-    const scaleEndPositionPx = parsePercentage(scaleEndPosition, containerHeight);
-    const endElement = scroller.querySelector('.scroll-stack-end');
-    const endElementTop = endElement ? endElement.offsetTop : 0;
+      fill && gsap.set(fill, { scaleY: 0 });
 
-    cardsRef.current.forEach((card, i) => {
-      if (!card) return;
-
-      const cardTop = card.offsetTop;
-      const triggerStart = cardTop - stackPositionPx - (itemStackDistance * i);
-      const triggerEnd = cardTop - scaleEndPositionPx;
-      const pinStart = cardTop - stackPositionPx - (itemStackDistance * i);
-      const pinEnd = endElementTop - containerHeight / 2;
-
-      const scaleProgress = calculateProgress(scrollTop, triggerStart, triggerEnd);
-      const targetScale = baseScale + (i * itemScale);
-      const scale = 1 - scaleProgress * (1 - targetScale);
-      const rotation = rotationAmount ? i * rotationAmount * scaleProgress : 0;
-
-      let blur = 0;
-      if (blurAmount) {
-        let topCardIndex = 0;
-        for (let j = 0; j < cardsRef.current.length; j++) {
-          const jCardTop = cardsRef.current[j].offsetTop;
-          const jTriggerStart = jCardTop - stackPositionPx - (itemStackDistance * j);
-          if (scrollTop >= jTriggerStart) {
-            topCardIndex = j;
-          }
+      listItems.forEach((item, j) => {
+        if (listItems[j - 1]) {
+          tl.set(item, { color: "#008080" }, 0.5 * j)
+            .to(slides[j], { autoAlpha: 1, duration: 0.2 }, "<")
+            .set(listItems[j - 1], { color: "#ffffff"}, "<")
+            .to(slides[j - 1], { autoAlpha: 0, duration: 0.2 }, "<");
+        } else {
+          tl.set(item, { color: "#008080" }, 0.01).to(
+            slides[j],
+            { autoAlpha: 1, duration: 0.2 },
+            "<"
+          );
         }
-        
-        if (i < topCardIndex) {
-          const depthInStack = topCardIndex - i;
-          blur = Math.max(0, depthInStack * blurAmount);
-        }
-      }
+      });
 
-      let translateY = 0;
-      const isPinned = scrollTop >= pinStart && scrollTop <= pinEnd;
-      
-      if (isPinned) {
-        translateY = scrollTop - cardTop + stackPositionPx + (itemStackDistance * i);
-      } else if (scrollTop > pinEnd) {
-        translateY = pinEnd - cardTop + stackPositionPx + (itemStackDistance * i);
-      }
-
-      const newTransform = {
-        translateY: Math.round(translateY * 100) / 100,
-        scale: Math.round(scale * 1000) / 1000,
-        rotation: Math.round(rotation * 100) / 100,
-        blur: Math.round(blur * 100) / 100
-      };
-
-      const lastTransform = lastTransformsRef.current.get(i);
-      const hasChanged = !lastTransform || 
-        Math.abs(lastTransform.translateY - newTransform.translateY) > 0.1 ||
-        Math.abs(lastTransform.scale - newTransform.scale) > 0.001 ||
-        Math.abs(lastTransform.rotation - newTransform.rotation) > 0.1 ||
-        Math.abs(lastTransform.blur - newTransform.blur) > 0.1;
-
-      if (hasChanged) {
-        const transform = `translate3d(0, ${newTransform.translateY}px, 0) scale(${newTransform.scale}) rotate(${newTransform.rotation}deg)`;
-        const filter = newTransform.blur > 0 ? `blur(${newTransform.blur}px)` : '';
-
-        card.style.transform = transform;
-        card.style.filter = filter;
-        
-        lastTransformsRef.current.set(i, newTransform);
-      }
-
-      if (i === cardsRef.current.length - 1) {
-        const isInView = scrollTop >= pinStart && scrollTop <= pinEnd;
-        if (isInView && !stackCompletedRef.current) {
-          stackCompletedRef.current = true;
-          onStackComplete?.();
-        } else if (!isInView && stackCompletedRef.current) {
-          stackCompletedRef.current = false;
-        }
-      }
+      tl.to({}, {}).to(
+        fill,
+        {
+          scaleY: 1,
+          transformOrigin: "top left",
+          ease: "none",
+          duration: tl.duration() - 0.5,
+        },
+        0
+      );
     });
-
-    isUpdatingRef.current = false;
-  }, [
-    itemScale,
-    itemStackDistance,
-    stackPosition,
-    scaleEndPosition,
-    baseScale,
-    rotationAmount,
-    blurAmount,
-    onStackComplete,
-    calculateProgress,
-    parsePercentage,
-  ]);
-
-  const handleScroll = useCallback(() => {
-    updateCardTransforms();
-  }, [updateCardTransforms]);
-
-  const setupLenis = useCallback(() => {
-    const scroller = scrollerRef.current;
-    if (!scroller) return;
-
-const lenis = new Lenis({
-  duration: 1.2,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  smoothWheel: true,
-  touchMultiplier: 2,
-});
-
-
-    lenis.on('scroll', handleScroll);
-
-    const raf = (time) => {
-      lenis.raf(time);
-      animationFrameRef.current = requestAnimationFrame(raf);
-    };
-    animationFrameRef.current = requestAnimationFrame(raf);
-
-    lenisRef.current = lenis;
-    return lenis;
-  }, [handleScroll]);
-
-  useLayoutEffect(() => {
-    const scroller = scrollerRef.current;
-    if (!scroller) return;  
-
-    const cards = Array.from(scroller.querySelectorAll(".scroll-stack-card"));
-    cardsRef.current = cards;
-    const transformsCache = lastTransformsRef.current;
-
-    cards.forEach((card, i) => {
-      if (i < cards.length - 1) {
-        card.style.marginBottom = `${itemDistance}px`;
-      }
-      card.style.willChange = 'transform, filter';
-      card.style.transformOrigin = 'top center';
-      card.style.backfaceVisibility = 'hidden';
-      card.style.willChange = 'transform, filter';
-      card.style.webkitTransform = 'translateZ(0)';
-      card.style.perspective = '1000px';
-      card.style.webkitPerspective = '1000px';
-    });
-
-    setupLenis();
-
-    updateCardTransforms();
 
     return () => {
-      if (animationFrameRef.current) {
-        cancelAnimationFrame(animationFrameRef.current);
-      }
-      if (lenisRef.current) {
-        lenisRef.current.destroy();
-      }
-      stackCompletedRef.current = false;
-      cardsRef.current = [];
-      transformsCache.clear();
-      isUpdatingRef.current = false;
+      ScrollTrigger.getAll().forEach((t) => t.kill());
     };
-  }, [
-    itemDistance,
-    itemScale,
-    itemStackDistance,
-    stackPosition,
-    scaleEndPosition,
-    baseScale,
-    scaleDuration,
-    rotationAmount,
-    blurAmount,
-    onStackComplete,
-    setupLenis,
-    updateCardTransforms,
-  ]);
+  }, []);
 
   return (
-   <div className={`scroll-stack-wrapper ${className}`.trim()} ref={scrollerRef}>
-  {children}
-  <div className="scroll-stack-end" />
-</div>
+    <div ref={containerRef}>
+      <section className="section gradient-green"></section>
 
+      {sectionsData.map((section, i) => (
+        <section key={i} className="section pin-section">
+          <div className="content">
+            <ul className="list">
+              {section.list.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
+            <div className="fill"></div>
+            <div className="right">
+              {section.slides.map((slide, idx) => (
+                <div
+                  key={idx}
+                  className={`slide center ${slide.className}`}
+                  style={{ opacity: 0 }}
+                >
+                  <h1>{slide.title}</h1>
+                  <p>{slide.content}</p>
+                  <div class="hero-btn"><span>Discover more
+                    <Link className="active" to={slide.link}></Link>
+                    </span></div>
+                  
+                  <div class="bg-img">
+                      <video src={slide.bgImg} autoPlay muted loop playsInline />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ))}
+
+      <section className="section gradient-green"></section>
+    </div>
   );
 };
 
