@@ -15,6 +15,8 @@ const ProjectSection = (props) => {
     return (
         <section className="project pb-140 o-hidden">
             <div className="container">
+             
+                
                 <div className="pro-top ul_li_between mb-65 mission-te">
                     <div className="sec-title mission-sec">
                         
@@ -25,7 +27,7 @@ const ProjectSection = (props) => {
                         </Fade>
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
                             <div>
-                                <span className="content wow fadeInLeft" data-wow-duration="600ms">Our mission is to help every organisation create a digital safe-space for their business and people.</span>
+                                <span className="content wow fadeInLeft" data-wow-duration="600ms">Our mission is to help every organisation create a digital <br/> safe-space for their business and people.</span>
                             </div>
                         </Fade>
                     </div>
@@ -35,6 +37,7 @@ const ProjectSection = (props) => {
                          
                 </div>
                 <div className="pro-top ul_li_between mb-65 swat-team">
+                    <div class="colourab2"></div>
                     <div className="sec-title">
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9} className="your-swat-title" >
                             <div>

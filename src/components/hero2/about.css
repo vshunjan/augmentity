@@ -51,35 +51,38 @@ section.project.pb-140.o-hidden {
     background-color: black;
 }
 section.project.pb-140.o-hidden .sec-title .title {
-      font-size: 5rem;
+      font-size: 4rem;
     font-weight: 400;
-    letter-spacing: -0.02em;
+    letter-spacing: -4px;
     color: #949494;
+    margin-bottom: 7px;
      font-family: 'josefin';
 }
 section.project.pb-140.o-hidden .sec-title.mission-sec {
-    border-right: 1px solid #021ca1;
-        padding: 25px 40px;
-        width: 70%;
+    border-right: 2px solid #021ca1;
+        padding: 40px 40px;
+        width: 74%;
 }
 .pro-top.ul_li_between.mb-65.mission-te {
     display: flex;
-        border: 1px solid #021ca1;
+        border: 2px solid #021ca1;
+        margin-bottom: 200px;
+            width: 90%;
 }
 .mission-img {
-    width: 30%;
+    width: 26%;
         display: flex;
     align-items: center;
     justify-content: center;
 }
 .mission-img img{
-    width:52%;
+    width:70%;
 }
 section.project.pb-140.o-hidden .sec-title .content {
     max-width: 100%;
     color:white;
        font-size: 25px;
-    line-height: 1.6;
+    line-height: 1.4;
     display: inline-block;
 }
 h1.mb-40.title.wow.fadeInUp.scroll-card {
@@ -148,7 +151,7 @@ h1.mb-40.title.wow.fadeInUp.scroll-card.card-why-f {
     margin-bottom: 0;
 }
 .pro-top.ul_li_between.mb-65.independent {
-    margin-top: 100px;
+    margin-top: 200px;
     background: #021ca1;
     padding: 50px;
 }

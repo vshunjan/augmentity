@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import StickyScroll from "./scrollstack";
-import sampleVideo from "../../images/video/defend-2.mp4";
+// import sampleVideo from "../../images/video/defend-2.mp4";
 
 
 const content = [

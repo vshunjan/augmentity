@@ -3,34 +3,45 @@
   position: relative;
   display: flex;
   height: 30rem;
+      /* margin: 0 4%; */
   justify-content: center;
   column-gap: 2.5rem;
   overflow-y: auto;
-  border-radius: 0.375rem;
+      border-radius: 20px;
   padding: 2.5rem;
   transition: background-color 0.3s ease;
 }
-
+.sticky-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
 .sticky-scroll-content-wrapper {
   position: relative;
   display: flex;
+      width: 42%;
   align-items: flex-start;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .sticky-scroll-text-content {
-  max-width: 32rem;
+  max-width: 100%;
+  width: 100%;
+      display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .sticky-scroll-item {
   margin-top: 5rem;
+      flex-direction: column;
+    display: flex;
   margin-bottom: 5rem;
 }
 
 .sticky-scroll-title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 5rem;
+  font-weight: 400 !important;
   color: rgb(241, 245, 249); /* slate-100 */
   line-height: 1.25;
   transition: opacity 0.3s ease;
@@ -38,8 +49,8 @@
 
 .sticky-scroll-description {
   font-size: 1.125rem;
-  margin-top: 2.5rem;
-  max-width: 24rem;
+  margin-top: 20px;
+  max-width: 30rem;
   color: rgb(203, 213, 225); /* slate-300 */
   line-height: 1.5;
   transition: opacity 0.3s ease;
@@ -47,6 +58,7 @@
 
 .sticky-scroll-spacer {
   height: 10rem;
+  
 }
 
 .sticky-scroll-visual-content {
@@ -64,6 +76,8 @@
 @media (min-width: 1024px) {
   .sticky-scroll-visual-content {
     display: block;
+            width: 46%;
+    
   }
 }
 
@@ -131,9 +145,10 @@
 
 /* components/StickyScrollRevealDemo.css */
 .sticky-scroll-demo {
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  width: 100%;  
+    margin-top: 80px;
+    padding: 160px 7%;
+ position: relative;
 }
 
 .content-card {
@@ -164,13 +179,25 @@
 
 /* Gradient backgrounds */
 .gradient-cyan-emerald {
-  background: linear-gradient(to bottom right, #06b6d4, #10b981);
+  background: #010a26;
 }
 
 .gradient-orange-yellow {
-  background: linear-gradient(to bottom right, #f97316, #eab308);
+  background: #010a26;
 }
 
 .gradient-pink-indigo {
-  background: linear-gradient(to bottom right, #ec4899, #6366f1);
+  background: #010a26;
+}
+
+.sticky-scroll-item .hero-btn {
+    margin-top: 25px;
+    padding: 20px 30px;
+    width: -webkit-fit-content;
+    width: fit-content;
+        backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+    background: #ffffff17;
+    border-radius: 50px;
+    color: white;
 }

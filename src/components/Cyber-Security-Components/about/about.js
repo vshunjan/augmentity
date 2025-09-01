@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import imagewhy from '../../../images/gallery/whyAugmentity.jpg'
 import RippleGrid from "./RippleGrid";
+import img1 from '../../../images/gallery/Asset 234.png'
 
 const About = (props) => {
   const ClickHandler = () => {
@@ -31,7 +32,9 @@ const About = (props) => {
                     delay={9}
                   >
                     <div>
-                      <h1 className="service-card-title"> Why Augmentity</h1>
+                      <h1 className="service-card-title"> Why 
+                        <img src={img1} />
+                      </h1>
                     </div>
                   </Fade>
                   <Fade

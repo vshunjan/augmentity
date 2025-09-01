@@ -8202,8 +8202,12 @@ span.xb-item--content {
   margin-bottom: 80px;
 }
 .folder-svg {
-    position: relative;
-    margin-top: -356px;
+   position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    padding: 0 7%;
+    width: 100%;
 }
 .process-content {
     background: #020723;
@@ -18251,10 +18255,10 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   position: relative;
   z-index: 1;
 }
-section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
+/* section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
    min-height: 70vh;
     height: 70vh;
-}
+} */
 
 @media (max-width: 1199px) {
   .hero-style-three {
@@ -22541,7 +22545,7 @@ section.brand.mt-90.scecond {
 }
 .card-content h3{
        font-size: 70px;
-       margin-bottom:14px;
+       margin-bottom:0px;
     font-weight: 500;
     color: #21f5f5;
 }
@@ -22823,10 +22827,11 @@ p.srcCrd-title {
 }
 p.srcCrd-title span {
     display: flex;
-    gap: 6px;
+    gap: 12px;
 }
 .number-magic {
     color: #21f5f5;
+        font-size: 26px;
 }
 p.card-para {
     font-size: 12px;
@@ -22852,6 +22857,7 @@ p.card-para {
 }
 .text-left.sec-title--two.mb-90 {
     display: flex;
+        margin-bottom: 50px;
 }
 p.sub-title-sec {
   width: 100%;
@@ -22936,9 +22942,22 @@ position: relative;
     display: flex;
     align-items: end;
 }
+/* 
+.container.service-banner .hero_wrap .col-lg-6:before{
+    content:'';
+    position:absolute;
+    height: 100%;
+    z-index: 2;
+    left:0;
+      background: linear-gradient(271deg, #00000000 0%, #000000f2 100%);
+    WIDTH: 100%;
+    background-color: #801f1f7d;
+} */
+
 .border-col.col-lg-6 {
     /* border-left: 1px solid white; */
     display: block !important;
+    background-image: radial-gradient(circle, rgb(0 0 0), #000000eb, #00000000);
 }
 .letter-glitch-div {
     position: absolute;
@@ -22952,9 +22971,10 @@ position: relative;
   position:absolute;
     height: 50%;
     z-index: 2;
+    left:0;
     background: linear-gradient(3deg, #00000059 0%, #000000f2 100%);
     WIDTH: 100%;
-    background-color: #00000069;
+    background-color: #0000007d;
 }
 .letter-glitch-div::after {
     content:'';
@@ -22962,9 +22982,10 @@ position: relative;
     height: 50%;
     z-index: 2;
     bottom:0;
+    left:0;
     background: linear-gradient(179deg, #00000059 0%, #000000f2 100%);
     WIDTH: 100%;
-    background-color: #00000069;
+    background-color: #0000007d;
 }
 .hero-style-six .xb-hero {
       position: relative;
@@ -23065,3 +23086,8 @@ section.bg-back.pb-150.service.bg_img {
 }
 
 
+h1.service-card-title img{
+
+      width: 84%;
+    margin-top: -16px;
+}

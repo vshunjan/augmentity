@@ -28,17 +28,9 @@ import "./scrollstack.css";
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = [
-    "rgb(15, 23, 42)", // slate-900
-    "rgb(0, 0, 0)",    // black
-    "rgb(23, 23, 23)", // neutral-900
-  ];
+  const backgroundColors =  "#010a26";
 
-  const linearGradients = [
-    "linear-gradient(to bottom right, #06b6d4, #10b981)", // cyan-500 to emerald-500
-    "linear-gradient(to bottom right, #ec4899, #6366f1)", // pink-500 to indigo-500
-    "linear-gradient(to bottom right, #f97316, #eab308)", // orange-500 to yellow-500
-  ];
+  const linearGradients = '#010a26';
 
   const [backgroundGradient, setBackgroundGradient] = useState(linearGradients[0]);
 
@@ -49,15 +41,17 @@ import "./scrollstack.css";
   return (
     <motion.div
       animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+        backgroundColor: backgroundColors,
       }}
-      className={`sticky-scroll-container ${contentClassName || ''}`}
+      className={`sticky-scroll-container hi ${contentClassName || ''}`}
       ref={ref}
     >
       <div className="sticky-scroll-content-wrapper">
+        
         <div className="sticky-scroll-text-content">
           {content.map((item, index) => (
             <div key={item.title + index} className="sticky-scroll-item">
+              {/* <div class="colourab2"></div> */}
               <motion.h2
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
@@ -72,6 +66,9 @@ import "./scrollstack.css";
               >
                 {item.description}
               </motion.p>
+               <a href={item.link} className="hero-btn">
+        <span>Discover more</span>
+      </a>
             </div>
           ))}
           <div className="sticky-scroll-spacer" />

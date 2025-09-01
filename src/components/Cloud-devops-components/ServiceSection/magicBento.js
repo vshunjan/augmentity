@@ -1,7 +1,7 @@
 import { useRef, useEffect, useCallback, useState } from "react";
 import { gsap } from "gsap";
 import "./magicBento.css";
-import bgimg1 from '../../../images/bg/min.jpg'
+import bgimg1 from '../../../images/gallery/min1.jpg'
 import bgimg2 from '../../../images/bg/million.jpg'
 import bgimg3 from '../../../images/bg/ceo.jpg'
 import bgimg4 from '../../../images/bg/threats.jpg'
@@ -75,10 +75,10 @@ const cardData = [
     rite:'',
     title: 52,
     type:'% of CEOs ',
-    description: `believe they’re cyber-resilient,  `,
+    description: `believe they’re cyber-resilient,  while only  `,
     description2: (
   <>
-    while only <div className="number-magic">29%</div> of their CISOs agree.
+   <div className="number-magic">29%</div> of their CISOs agree.
   </>
 ),
     para:'(PwC Digital Trust Survey, 2024)',
