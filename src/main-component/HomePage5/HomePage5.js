@@ -7,6 +7,7 @@ import About from '../../components/Cyber-Security-Components/about/about';
 import WorkProcess from '../../components/WorkProcess/WorkProcess';
 import WorkFlow from '../../components/Cyber-Security-Components/WorkFlow/WorkFlow';
 import AwardSection from '../AboutUsPage/AwardSection';
+import StickyScrollRevealDemo from '../AboutUsPage/WhyChoose';
 import IndustrieSection from '../../components/Cyber-Security-Components/IndustrieSection/IndustrieSection';
 import TestimonialSection from '../../components/Cyber-Security-Components/TestimonialSection/TestimonialSection';
 import Achievements from '../../components/Cyber-Security-Components/Achievements/Achievements';
@@ -29,14 +30,10 @@ const HomePage5 = () => {
                     <ServiceSection />
                      <WorkProcess />
                      <AwardSection/>
+                     <StickyScrollRevealDemo/>
                     <About />
                     <WorkFlow />
-                    {/* <IndustrieSection />
-                    <TestimonialSection />
-                    <Achievements />
-                    <CyberBlogSection /> */}
-                    {/* <ContactSection /> */}
-                    {/* <Scrollbar /> */}
+                   
                 </main>
                 <Footer/>
             </div>

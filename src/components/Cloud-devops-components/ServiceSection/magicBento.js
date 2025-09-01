@@ -42,6 +42,7 @@ const cardData = [
     color: "#060010",
     rite:'',
     title: 48 ,
+     description2: ` `,
     type:'Minutes',
     description: "is the average eCrime breakout time in 2024",
     img: bgimg1
@@ -53,6 +54,7 @@ const cardData = [
     title: 4.2,
     type:"Million ",
     description: "The average global cost of a data breach in 2024.",
+     description2: ` `,
     para:'(IBM Cost of a Data Breach Report 2024)',
    img: bgimg2
   },
@@ -63,6 +65,7 @@ const cardData = [
     rite:'',
     type:'% of Enterprises ',
     description: "deploying AI admit they haven’t fully assessed security risks.",
+     description2: ` `,
     para:'(Gartner, 2024)',
   img: bgimg4
   },
@@ -72,7 +75,12 @@ const cardData = [
     rite:'',
     title: 52,
     type:'% of CEOs ',
-    description: `believe they’re cyber-resilient, while only 29%   of their CISOs agree. `,
+    description: `believe they’re cyber-resilient,  `,
+    description2: (
+  <>
+    while only <div className="number-magic">29%</div> of their CISOs agree.
+  </>
+),
     para:'(PwC Digital Trust Survey, 2024)',
   img: bgimg3
   },
@@ -538,7 +546,7 @@ const BentoCardGrid = ({ gridRef }) => (
           <CounterTitle target={card.title} />
           <h2>{card.type}</h2>
           </div>
-          <p className="srcCrd-title">{card.description}</p>
+          <p className="srcCrd-title">{card.description}<span>{card.description2}</span></p>
           <p className="card-para">{card.para}</p>
           
         </div>
@@ -621,7 +629,7 @@ const MagicBento = ({
                 </div>
                 <div className="card__content">
                   <h2 className="card__title">{card.title}</h2>
-                  <p className="card__description">{card.description}</p>
+                  <p className="card__description">{card.description}<span>{card.description2}</span></p>
                 </div>
               </ParticleCard>
             );
@@ -749,7 +757,7 @@ const MagicBento = ({
                 <h2 className="card__title">
                      <span className="xbo" data-count="90"><CountUp end={card.Id} enableScrollSpy />{card.type}</span>
                 </h2>
-                <p className="card__description">{card.description}</p>
+                <p className="card__description">{card.description} </p>
               </div>
             </div>
           );

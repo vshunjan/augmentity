@@ -8156,6 +8156,8 @@ span.xb-item--content {
     color: white;
         font-size: 21px;
     line-height: 1.6;
+        display: flex;
+    flex-direction: column;
 }
 .process-right .process-item .xb-item--img {
   margin: 0px 0 25px;
@@ -8201,7 +8203,7 @@ span.xb-item--content {
 }
 .folder-svg {
     position: relative;
-    margin-top: -119px;
+    margin-top: -356px;
 }
 .process-content {
     background: #020723;
@@ -8913,7 +8915,7 @@ section.service.pos-rel.z-1.pb-150 {
   position: relative;
   overflow: hidden;
   width: 32%;
-  background: linear-gradient(172deg, #33364b 0%, #000000 100%);
+  background: linear-gradient(172deg, #021ca4, #000c4b);
 }
 
 @media (max-width: 991px) {
@@ -8935,11 +8937,11 @@ section.service.pos-rel.z-1.pb-150 {
 }
 
 .da-service-item:nth-child(2) {
-  background: linear-gradient(164deg, #122a7f 0%, #000000 100%);
+  background: linear-gradient(164deg, #c87af2, #35034f);
 }
 
 .da-service-item:nth-child(3) {
-  background: linear-gradient(172deg, #306945 0%, #000000 100%);
+  background: linear-gradient(172deg, #21f7f7, #003b3b);
 }
 
 .da-service-item:nth-child(4) {
@@ -13293,6 +13295,7 @@ section.service.pos-rel.z-1.pb-150 {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
       border-left: 0;
+          background: transparent;
     border-right: 0;
 }
 
@@ -18244,9 +18247,13 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 }
 
 .hero-style-three {
-  min-height: 100vh;
+    min-height: 100vh;
   position: relative;
   z-index: 1;
+}
+section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
+   min-height: 70vh;
+    height: 70vh;
 }
 
 @media (max-width: 1199px) {
@@ -18267,7 +18274,19 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
   }
 }
 
-.hero-style-three::before {
+
+.home.hero-style-three::after {
+     content:'';
+  position:absolute;
+    height: 100%;
+    z-index: -1;
+    top:0;
+    background:linear-gradient(179deg, #40d8b126 0%, #34c9a900 100%);
+    WIDTH: 100%;
+    background-color: #00000008;
+}
+
+.about-banner.hero-style-three::before {
      content:'';
   position:absolute;
     height: 50%;
@@ -18277,7 +18296,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     WIDTH: 100%;
     background-color: #00000008;
 }
-.hero-style-three::after {
+.about-banner.hero-style-three::after {
      content:'';
   position:absolute;
     height: 50%;
@@ -18287,6 +18306,26 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
     WIDTH: 100%;
     background-color: #00000008;
 }
+/* section.project.pb-140.o-hidden::after {
+     content:'';
+  position:absolute;
+    height: 50%;
+    z-index: -1;
+    top:0;
+    background: linear-gradient(3deg, #00000059 0%, #000000f2 100%);
+    WIDTH: 100%;
+    background-color: #00000008;
+}
+section.project.pb-140.o-hidden::before {
+     content:'';
+   position:absolute;
+    height: 50%;
+    z-index: -1;
+    bottom:0;
+    background: linear-gradient(179deg, #00000059 0%, #000000f2 100%);
+    WIDTH: 100%;
+    background-color: #00000008; */
+/* } */
 
 .hero-style-three .xb-hero .xb-item--holder {
   /* padding: 0 107px 0 75px; */
@@ -20138,6 +20177,8 @@ canvas.letter-glitch-canvas {
 
 .xb-header-menu-scroll {
   padding: 50px 25px 40px;
+  position: relative;
+    z-index: 10000;
 }
 
 .xb-header-menu-scroll .xb-close {
@@ -22502,7 +22543,7 @@ section.brand.mt-90.scecond {
        font-size: 70px;
        margin-bottom:14px;
     font-weight: 500;
-    color: #e8460c;
+    color: #21f5f5;
 }
 
 .card-icon {
@@ -22774,8 +22815,18 @@ p.sub-title-sec.heighlight-text {
 p.srcCrd-title {
   font-family: 'josefin';
     font-size: 19px;
-        width: 90%;
+          display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 100%;
     font-weight: 400;
+}
+p.srcCrd-title span {
+    display: flex;
+    gap: 6px;
+}
+.number-magic {
+    color: #21f5f5;
 }
 p.card-para {
     font-size: 12px;
@@ -22868,7 +22919,7 @@ p.sub-title-sec {
     justify-content: center;
 }
 .banner-service-image .xb-img {
-    width: 60%;
+    width: 100%;
 }
 
 .container.service-banner {
@@ -22947,7 +22998,8 @@ position: relative;
 }
 
 .col-lg-8.service-content-two {
-    width: 70%;
+      width: 90%;
+    margin-bottom: 60px;
 }
 .contact.pt-85 {
     background-color: black;
@@ -22980,7 +23032,8 @@ section.award p.sub-title-sec.heighlight-text {
 
 span.xb--item-bold-sub {
     font-weight: 600;
-    font-size: 23px;
+       color: #EE3097;
+    font-size: 27px;
     margin-right: 5px;
 }
 
@@ -23007,3 +23060,8 @@ span.xb--item-bold-sub {
     width: 100% !important;
 }
 }
+section.bg-back.pb-150.service.bg_img {
+    padding-bottom: 70px;
+}
+
+

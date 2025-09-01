@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
 import "swiper/swiper-bundle.css";
 import { Fade } from "react-awesome-reveal";
+import itemImg from '../../../images/gallery/MISION.png'
 
 const ProjectSection = (props) => {
     const ClickHandler = () => {
@@ -14,8 +15,9 @@ const ProjectSection = (props) => {
     return (
         <section className="project pb-140 o-hidden">
             <div className="container">
-                <div className="pro-top ul_li_between mb-65">
-                    <div className="sec-title">
+                <div className="pro-top ul_li_between mb-65 mission-te">
+                    <div className="sec-title mission-sec">
+                        
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
                             <div>
                                 <h2 className="title mb-15 wow fadeInLeft" data-wow-duration="600ms">Mission</h2>
@@ -27,7 +29,10 @@ const ProjectSection = (props) => {
                             </div>
                         </Fade>
                     </div>
-                  
+                    <div className="mission-img">
+                        <img src={itemImg} alt="" />
+                    </div>
+                         
                 </div>
                 <div className="pro-top ul_li_between mb-65 swat-team">
                     <div className="sec-title">
@@ -44,9 +49,20 @@ const ProjectSection = (props) => {
 We are a team of elite security consultants, with a global threat-intel-ligence network, and a unique comprehensive framework to assess and transform your security strategy for tomorrow's demands.
 Our team have advised world-class organisations in investment bank-ing, financial services, retail and manufacturing, as well as cybersecurity product vendors - to build attack resilience at every layer.
 We are human and we understand nothing is perfect and therein lies Our strength in defending against the adversaries.
-        <span>'An independent technology consultant's Hippocratic oath is to always provide an unbiased vendor-agnostic advice'</span>
                                 </span>
                             </div>
+                        </Fade>
+                    </div>
+                  
+                </div>
+                <div className="pro-top ul_li_between mb-65 independent">
+                    <div className="sec-title">
+                        <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9} className="your-swat-content">
+                       
+                                <span className="content wow fadeInLeft" data-wow-duration="600ms">
+                                        'An independent technology consultant's Hippocratic oath is to always provide an unbiased vendor-agnostic advice'</span>
+
+                            
                         </Fade>
                     </div>
                   

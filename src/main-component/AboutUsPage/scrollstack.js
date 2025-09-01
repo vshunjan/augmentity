@@ -1,126 +1,91 @@
-// src/main-component/AboutUsPage/AwardSection.js
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import bgImg  from '../../images/video/anlyse-2.mp4'
-import bgImg2  from '../../images/video/govern-2.mp4'
-import bgImg3  from '../../images/video/insure-2.mp4'
-import bgImg4  from '../../images/video/defend-2.mp4'
-import { Link } from "react-router-dom";
-import './scrollstack.css'
+// components/ui/sticky-scroll-reveal.jsx
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import { useMotionValueEvent, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
+import "./scrollstack.css";
 
-gsap.registerPlugin(ScrollTrigger);
+ const StickyScroll = ({ content, contentClassName }) => {
+  const [activeCard, setActiveCard] = useState(0);
+  const ref = useRef(null);
+  
+  const { scrollYProgress } = useScroll({
+    container: ref,
+    offset: ["start start", "end start"],
+  });
 
-const sectionsData = [
-  {
-    list: ["Analyse", "Govern", "Insure", "Defend"],
-    slides: [
-      { title: "Analyse",bgImg:bgImg,link:'/analyse', className: "gradient-green" ,content: 'A clear picture of your risk profile and a prioritised roadmap for remediation—before attackers get there first.'},
-      { title: "Govern",bgImg:bgImg2, link:'/govern' ,className: "gradient-blue", content:'A mature, future-ready security posture that inspires trust—from boardroom to regulator.'},
-      { title: "Insure", bgImg:bgImg3,link:'/insure', className: "gradient-purple" , content:'Lower cyber insurance premiums, faster underwriting, and better alignment between finance and security.'},
-      { title: "Defend",bgImg:bgImg4, link:'/defend', className: "gradient-orange" ,content:'Continuous verification, rapid recovery, minimal business disruption—powered by real-world threat engineering.'},
-    ],
-  }
-];
+  const cardLength = content.length;
 
-const ScrollStack = () => {
-  const containerRef = useRef(null);
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    const cardsBreakpoints = content.map((_, index) => index / cardLength);
+    const closestBreakpointIndex = cardsBreakpoints.reduce((acc, breakpoint, index) => {
+      const distance = Math.abs(latest - breakpoint);
+      if (distance < Math.abs(latest - cardsBreakpoints[acc])) {
+        return index;
+      }
+      return acc;
+    }, 0);
+    setActiveCard(closestBreakpointIndex);
+  });
+
+  const backgroundColors = [
+    "rgb(15, 23, 42)", // slate-900
+    "rgb(0, 0, 0)",    // black
+    "rgb(23, 23, 23)", // neutral-900
+  ];
+
+  const linearGradients = [
+    "linear-gradient(to bottom right, #06b6d4, #10b981)", // cyan-500 to emerald-500
+    "linear-gradient(to bottom right, #ec4899, #6366f1)", // pink-500 to indigo-500
+    "linear-gradient(to bottom right, #f97316, #eab308)", // orange-500 to yellow-500
+  ];
+
+  const [backgroundGradient, setBackgroundGradient] = useState(linearGradients[0]);
 
   useEffect(() => {
-    const pinSections = gsap.utils.toArray(".pin-section");
-    const lists = gsap.utils.toArray(".list");
-
-    pinSections.forEach((section, i) => {
-      const list = lists[i];
-      const fill = section.querySelector(".fill");
-      const listItems = gsap.utils.toArray("li", list);
-      const slides = gsap.utils.toArray(".slide", section);
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: section,
-          start: "top top",
-          end: "+=" + listItems.length * 50 + "%",
-          pin: true,
-          scrub: true,
-          id: i + 1,
-          // markers: { indent: 150 * i }, // enable for debugging
-        },
-      });
-
-      fill && gsap.set(fill, { scaleY: 0 });
-
-      listItems.forEach((item, j) => {
-        if (listItems[j - 1]) {
-          tl.set(item, { color: "#008080" }, 0.5 * j)
-            .to(slides[j], { autoAlpha: 1, duration: 0.2 }, "<")
-            .set(listItems[j - 1], { color: "#ffffff"}, "<")
-            .to(slides[j - 1], { autoAlpha: 0, duration: 0.2 }, "<");
-        } else {
-          tl.set(item, { color: "#008080" }, 0.01).to(
-            slides[j],
-            { autoAlpha: 1, duration: 0.2 },
-            "<"
-          );
-        }
-      });
-
-      tl.to({}, {}).to(
-        fill,
-        {
-          scaleY: 1,
-          transformOrigin: "top left",
-          ease: "none",
-          duration: tl.duration() - 0.5,
-        },
-        0
-      );
-    });
-
-    return () => {
-      ScrollTrigger.getAll().forEach((t) => t.kill());
-    };
-  }, []);
+    setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
+  }, [activeCard]);
 
   return (
-    <div ref={containerRef}>
-      <section className="section gradient-green"></section>
-
-      {sectionsData.map((section, i) => (
-        <section key={i} className="section pin-section">
-          <div className="content">
-            <ul className="list">
-              {section.list.map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
-            </ul>
-            <div className="fill"></div>
-            <div className="right">
-              {section.slides.map((slide, idx) => (
-                <div
-                  key={idx}
-                  className={`slide center ${slide.className}`}
-                  style={{ opacity: 0 }}
-                >
-                  <h1>{slide.title}</h1>
-                  <p>{slide.content}</p>
-                  <div class="hero-btn"><span>Discover more
-                    <Link className="active" to={slide.link}></Link>
-                    </span></div>
-                  
-                  <div class="bg-img">
-                      <video src={slide.bgImg} autoPlay muted loop playsInline />
-                  </div>
-                </div>
-              ))}
+    <motion.div
+      animate={{
+        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+      }}
+      className={`sticky-scroll-container ${contentClassName || ''}`}
+      ref={ref}
+    >
+      <div className="sticky-scroll-content-wrapper">
+        <div className="sticky-scroll-text-content">
+          {content.map((item, index) => (
+            <div key={item.title + index} className="sticky-scroll-item">
+              <motion.h2
+                initial={{ opacity: 0 }}
+                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                className="sticky-scroll-title"
+              >
+                {item.title}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                className="sticky-scroll-description"
+              >
+                {item.description}
+              </motion.p>
             </div>
-          </div>
-        </section>
-      ))}
-
-      <section className="section gradient-green"></section>
-    </div>
+          ))}
+          <div className="sticky-scroll-spacer" />
+        </div>
+      </div>
+      <div
+        style={{ background: backgroundGradient }}
+        className="sticky-scroll-visual-content"
+      >
+        {content[activeCard].content ?? null}
+      </div>
+    </motion.div>
   );
 };
 
-export default ScrollStack;
+
+export default StickyScroll;

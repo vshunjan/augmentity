@@ -13,7 +13,7 @@ const ClickHandler = () => {
 
 const Hero44 = () => {
     return (
-        <section className="hero hero-style-three pos-rel pt-120 bg_img" >
+        <section className="hero home hero-style-three pos-rel pt-120 bg_img" >
             <div className="container">
                 <div className="hero_wrap pt-90">
                     <div className="text-left xb-hero video-banner">

@@ -1,106 +1,176 @@
-.pin-section {
-    background-color: #000000;
-    height: 100% !important;
-    max-height: 800px !important;
-    padding-top: 5% !important;
-    margin-bottom: 150px !important;
-}
-
-.pin-section .content {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 ;
-      gap: 100px;
-    display: flex;
-    flex-direction: column;
-  padding: 0 0px;
+/* components/ui/sticky-scroll-reveal.css */
+.sticky-scroll-container {
   position: relative;
+  display: flex;
+  height: 30rem;
+  justify-content: center;
+  column-gap: 2.5rem;
+  overflow-y: auto;
+  border-radius: 0.375rem;
+  padding: 2.5rem;
+  transition: background-color 0.3s ease;
 }
 
-.pin-section .content ul {
-  font-size: 34px;
-  font-weight: 500;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-      display: flex;
-    gap: 20px;
-        align-items: center;
-    justify-content: space-between;
- width: 100%;
-  list-style: none;
-  flex-grow: 0;
-}
-.pin-section .content ul li{
-  font-size: 34px;
-  font-weight: 500;
-  color: #ffffff;
-      padding: 30px 40px;
-    border: 1px solid;
-  
+.sticky-scroll-content-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.pin-section .content .fill {
-  position: absolute;
-  top: 0;
-  left: 0;
+.sticky-scroll-text-content {
+  max-width: 32rem;
+}
+
+.sticky-scroll-item {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.sticky-scroll-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(241, 245, 249); /* slate-100 */
+  line-height: 1.25;
+  transition: opacity 0.3s ease;
+}
+
+.sticky-scroll-description {
+  font-size: 1.125rem;
+  margin-top: 2.5rem;
+  max-width: 24rem;
+  color: rgb(203, 213, 225); /* slate-300 */
+  line-height: 1.5;
+  transition: opacity 0.3s ease;
+}
+
+.sticky-scroll-spacer {
+  height: 10rem;
+}
+
+.sticky-scroll-visual-content {
+  position: sticky;
+  top: 2.5rem;
+  height: 15rem;
+  width: 20rem;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  background: white;
   display: none;
-  width: 5px;
-  height: 100%;
-  background-color: #008080;
 }
 
-.pin-section .content .right {
-  flex-grow: 1;
-  height: 400px;
-    background-color: #000000;
-  color: #008080;
-  position: relative;
+/* Show on large screens (lg breakpoint - 1024px and up) */
+@media (min-width: 1024px) {
+  .sticky-scroll-visual-content {
+    display: block;
+  }
 }
 
-.right .slide {
-     justify-content: center;
-     gap: 30px;
-         padding-left: 50px;
-    position: absolute;
-    width: 100%;
-    display: flex;
+/* Responsive adjustments */
+@media (max-width: 1023px) {
+  .sticky-scroll-container {
+    height: auto;
     flex-direction: column;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-.right .slide p {
-    width: 59%;
-    font-size: 22px;
-    color: white;
-}
-.right .slide h1 {
-     font-size: 60px;
-    font-weight: 400;
-    letter-spacing: -2px;
-    margin: 20px 0;
+    gap: 2rem;
+  }
+  
+  .sticky-scroll-visual-content {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 12rem;
+    margin-top: 1rem;
+  }
+  
+  .sticky-scroll-item {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
-.right .slide .hero-btn {
-    margin-top: 25px;
-    padding: 20px 30px;
-    width: -webkit-fit-content;
-    width: fit-content;
+@media (max-width: 768px) {
+  .sticky-scroll-container {
+    padding: 1.5rem;
+    column-gap: 1.5rem;
+  }
+  
+  .sticky-scroll-title {
+    font-size: 1.25rem;
+  }
+  
+  .sticky-scroll-description {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .sticky-scroll-visual-content {
+    height: 10rem;
+  }
 }
-.right .slide .hero-btn, .work-content .hero-btn {
-    backdrop-filter: blur(10.7px);
-    -webkit-backdrop-filter: blur(10.7px);
-    background: #ffffff17;
-    border-radius: 50px;
+
+@media (max-width: 480px) {
+  .sticky-scroll-container {
+    padding: 1rem;
+  }
+  
+  .sticky-scroll-content-wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .sticky-scroll-title {
+    font-size: 1.125rem;
+  }
+  
+  .sticky-scroll-description {
+    font-size: 0.875rem;
+    max-width: 20rem;
+  }
 }
-.right .slide .hero-btn span{
- color: white;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 21px;
-    background: #
+
+/* components/StickyScrollRevealDemo.css */
+.sticky-scroll-demo {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.content-card {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.content-card-image {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.content-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Gradient backgrounds */
+.gradient-cyan-emerald {
+  background: linear-gradient(to bottom right, #06b6d4, #10b981);
+}
+
+.gradient-orange-yellow {
+  background: linear-gradient(to bottom right, #f97316, #eab308);
+}
+
+.gradient-pink-indigo {
+  background: linear-gradient(to bottom right, #ec4899, #6366f1);
 }

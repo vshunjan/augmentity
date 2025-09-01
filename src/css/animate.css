@@ -3164,6 +3164,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     bottom: 18%;
     z-index: 0;
 }
+.colourab1{
+        position: absolute;
+    background-image: radial-gradient(closest-side, rgb(33 245 245 / 16%), #00000000);
+    height: 719px;
+    width: 1125px;
+    left: -89%;
+    top: -146%;
+    z-index: 0;
+}
 
 
 

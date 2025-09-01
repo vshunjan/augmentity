@@ -2,8 +2,8 @@ import React from 'react';
 import { Fade } from "react-awesome-reveal";
 
 import sIcon1 from '../../../images/gallery/1product.png'
-import sIcon2 from '../../../images/gallery/2MSP2.png'
-import sIcon3 from '../../../images/gallery/3test2.png'
+import sIcon2 from '../../../images/gallery/cyber msp.png'
+import sIcon3 from '../../../images/gallery/penetration.png'
 import sIcon4 from '../../../images/gallery/4brokers.png'
 import sIcon5 from '../../../images/gallery/5Soc.png'
 import { Link } from 'react-router-dom';
@@ -58,13 +58,16 @@ const WorkProcess = (props) => {
 
     return (
         <section className="pb-40 process pos-rel" >
+            
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-5 col-md-8">
                         <div className="process-left pt-70">
                             <div className="sec-title">
+
                                 <Fade direction='down' triggerOnce={'false'} duration={1000} delay={9}>
                                     <div>
+                                                <div class="colourab1"></div>
                                         <h1 className="mb-40 title wow fadeInUp scroll-card card-why-f" data-wow-delay="000ms" data-wow-duration="900ms">
                                      Who We Are
                                </h1>
@@ -82,7 +85,7 @@ const WorkProcess = (props) => {
                         <div className="process-right f-right">
                             {Process.map((process, pitem) => (
                                 <div className="process-item" key={pitem}>
-                                    <span className="xb-item--number">{process.id}</span>
+                                    {/* <span className="xb-item--number">{process.id}</span> */}
                                     <div className="xb-item--img">
                                         <img src={process.icon} alt="" />
                                     </div>

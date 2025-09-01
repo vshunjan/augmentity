@@ -1,42 +1,64 @@
-import React from 'react';
-import sIcon1 from '../../images/icon/eye-icon.svg'
-import sIcon2 from '../../images/feature/ap-feature01.jpg'
-import sIcon3 from '../../images/feature/ap-feature02.jpg'
-import sIcon4 from '../../images/feature/ap-feature03.jpg'
+// components/StickyScrollRevealDemo.jsx
+"use client";
+import React from "react";
+import  StickyScroll  from "./scrollstack";
+import "./scrollstack.css";
 
+const content = [
+  {
+    title: "Collaborative Editing",
+    description:
+      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+    content: (
+      <div className="content-card gradient-cyan-emerald">
+        Collaborative Editing
+      </div>
+    ),
+  },
+  {
+    title: "Real time changes",
+    description:
+      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+    content: (
+      <div className="content-card-image">
+        <img
+          src="/linear.webp"
+          width={300}
+          height={300}
+          className="content-image"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Version control",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    content: (
+      <div className="content-card gradient-orange-yellow">
+        Version control
+      </div>
+    ),
+  },
+  {
+    title: "Running out of content",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    content: (
+      <div className="content-card gradient-cyan-emerald">
+        Running out of content
+      </div>
+    ),
+  },
+];
 
-const WhyChoose = (props) => {
-
-    return (
-        <section className="feature pt-130">
-                <div className="container">
-                    <div className="sec-title--two text-center mb-60">
-                        <div className="sub-title"><img src={sIcon1} alt=""/> Why choose us</div>
-                        <h2 className="title">Customer-Centric Approach</h2>
-                    </div>
-                    <div className="row mt-none-30">
-                        <div className="col-lg-4 col-md-6 mt-30">
-                            <div className="ap-fea-item pos-rel">
-                                <div className="xb-item--img"><img src={sIcon2} alt=""/></div>
-                                <h3 className="xb-item--content">We don’t make empty promises</h3>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mt-30">
-                            <div className="ap-fea-item pos-rel">
-                                <div className="xb-item--img"><img src={sIcon3} alt=""/></div>
-                                <h3 className="xb-item--content">If something goes wrong, we’ll quickly fix it.</h3>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mt-30">
-                            <div className="ap-fea-item pos-rel">
-                                <div className="xb-item--img"><img src={sIcon4} alt=""/></div>
-                                <h3 className="xb-item--content">We created our own SEO tools to fill in the gaps</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             </section>
-    );
+ function StickyScrollRevealDemo() {
+  return (
+    <div className="sticky-scroll-demo">
+      <StickyScroll content={content} />
+    </div>
+  );
 }
 
-export default WhyChoose;
+export default StickyScrollRevealDemo;

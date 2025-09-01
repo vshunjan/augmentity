@@ -24,7 +24,7 @@ const ServiceSection = (props) => {
     });
 
   return (
-    <section className="bg-black service pb-150 bg_img" >
+    <section className="bg-back pb-150 service bg_img" >
       <div className="container">
         <div className="row justify-content-start">
           <div className="col-lg-8 service-content-two">

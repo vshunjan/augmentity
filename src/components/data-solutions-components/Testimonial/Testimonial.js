@@ -52,13 +52,13 @@ const Testimonial = (props) => {
                              <div className="xb-faq wow fadeInUp" data-wow-delay="200ms" data-wow-duration="600ms">
                                 <div className="mt-40 sec-title--two sec-title--four">
                                                               
-                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                               <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
                                                                    <div className="faq-title">
                                                                        <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Cyber Risk Assessments</h2>
                                                                    </div>
                                                                </Fade>
                                                            </div>
-                                                           <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                           <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
                                                                 <AccordionHeader targetId="1" className='acc-btn'> What it is<span className="arrow"></span>
@@ -101,14 +101,14 @@ const Testimonial = (props) => {
                              <div className="xb-faq wow fadeInUp" data-wow-delay="200ms" data-wow-duration="600ms">
                                 <div className="mt-40 sec-title--two sec-title--four">
                                                               
-                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                               <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
                                                                    <div className="faq-title">
                                                                        <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Ransomware Readiness Audits</h2>
                                                                    </div>
                                                                 </Fade>
                                                                {/* <p>Save time and money with Innomax. According to Forrester's our Total Economic Impact™ (TEI) study, customers saw a 286% ROI over three years.</p> */}
                                                            </div>
-                                                          <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                          <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
                                                                 <AccordionHeader targetId="4" className='acc-btn'> What it is:<span className="arrow"></span>
@@ -150,14 +150,14 @@ const Testimonial = (props) => {
                              <div className="xb-faq wow fadeInUp" data-wow-delay="200ms" data-wow-duration="600ms">
                                 <div className="mt-40 sec-title--two sec-title--four">
                                                               
-                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                               <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
                                                                    <div className="faq-title">
                                                                        <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Cloud Security Assessments (AWS, Azure, GCP)</h2>
                                                                    </div>
                                                                </Fade>
                                                                {/* <p>Save time and money with Innomax. According to Forrester's our Total Economic Impact™ (TEI) study, customers saw a 286% ROI over three years.</p> */}
                                                            </div>
-                                                      <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                      <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
 
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
@@ -199,13 +199,13 @@ const Testimonial = (props) => {
                              <div className="xb-faq wow fadeInUp" data-wow-delay="200ms" data-wow-duration="600ms">
                                 <div className="mt-40 sec-title--two sec-title--four">
                                                               
-                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                               <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
                                                                    <div className="faq-title">
                                                                        <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">AI Security Posture ReviewsI</h2>
                                                                    </div>
                                                                </Fade>
                                                            </div>
-                                                           <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                           <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
 
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
@@ -247,13 +247,13 @@ const Testimonial = (props) => {
                              <div className="xb-faq wow fadeInUp" data-wow-delay="200ms" data-wow-duration="600ms">
                                 <div className="mt-40 sec-title--two sec-title--four">
                                                               
-                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                               <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
                                                                    <div className="faq-title">
                                                                        <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Social Engineering & Physical Intrusion Testing</h2>
                                                                    </div>
                                                                </Fade>
                                                            </div>
-                                                              <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                              <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
 
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
@@ -295,13 +295,13 @@ const Testimonial = (props) => {
                              <div className="xb-faq wow fadeInUp" data-wow-delay="200ms" data-wow-duration="600ms">
                                 <div className="mt-40 sec-title--two sec-title--four">
                                                               
-                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                               <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
                                                                    <div className="faq-title">
                                                                        <h2 className="title mb-15 wow skewIn" data-wow-duration="600ms">Breach & Incident Readiness Assessments</h2>
                                                                    </div>
                                                                </Fade>
                                                            </div>
-                                                               <Fade direction='down' triggerOnce={'false'} duration={1500} delay={9}>
+                                                               <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
 
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
