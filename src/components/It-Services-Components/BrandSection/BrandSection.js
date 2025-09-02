@@ -24,23 +24,32 @@ const BrandSection = () => {
           <div className="xb-brand-item">
            
             <div className="xb-brand-single xb-brand-hover">
-         
-                <img src={bgimg2} alt="Shopify" />
+         <Link  to="/analyse" >
+                           
+                <img  src={bgimg2} alt="Shopify" />
+                        </Link>
           
             </div>
             <div className="xb-brand-single xb-brand-hover">
-           
+             <Link  to="/govern" >
+                           
                 <img src={bgimg} alt="Shopify" />
+                        </Link>
               
             </div>
             <div className="xb-brand-single xb-brand-hover">
-            
+              <Link  to="/insure" >
+                           
                 <img src={bgimg3} alt="Shopify" />
+                        </Link>
              
             </div>
             <div className="xb-brand-single xb-brand-hover">
              
+               <Link  to="/defend" >
+                           
                 <img src={bgimg4} alt="Shopify" />
+                        </Link>
            
             </div>
           </div>

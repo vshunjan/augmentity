@@ -3178,7 +3178,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-image: radial-gradient(closest-side, rgb(33 245 245 / 16%), #00000000);
     height: 719px;
     width: 1125px;
-    right: 0%;
+    right: -19%;
     /* top: -146%; */
     z-index: 0;
 }
