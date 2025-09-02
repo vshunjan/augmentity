@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import StickyScroll from "./scrollstack";
+import { Fade } from "react-awesome-reveal";
 // import sampleVideo from "../../images/video/defend-2.mp4";
 
 
@@ -63,12 +64,14 @@ const AwardSection = () => {
 
   return (
     <section className="award" style={{ backgroundColor: "black" }}>
-      <div className="container">
+      <div className="container award-sec">
+         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
         <p className="sub-title-sec heighlight-text">
-          Our approach is built around four strategic pillars—Analyse, Govern,
-          Insure, and Defend—designed to give you full-spectrum protection,
+          Our approach is built around four strategic pillars <span className="award-servive-span">Analyse, Govern,
+          Insure,</span> and <span className="award-servive-span"> Defend </span> — designed to give you full-spectrum protection,
           tailored to the realities of today’s threat landscape.
         </p>
+        </Fade>
       </div>
 
       <div className="container">

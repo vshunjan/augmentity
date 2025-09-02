@@ -63,7 +63,7 @@ We are human and we understand nothing is perfect and therein lies Our strength 
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9} className="your-swat-content">
                        
                                 <span className="content wow fadeInLeft" data-wow-duration="600ms">
-                                        'An independent technology consultant's Hippocratic oath is to always provide an unbiased vendor-agnostic advice'</span>
+                                        "An independent technology consultant's Hippocratic oath is to always provide an unbiased vendor-agnostic advice"</span>
 
                             
                         </Fade>

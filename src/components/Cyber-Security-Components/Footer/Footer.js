@@ -28,19 +28,19 @@ const Footer = (props) => {
             <div className="footer-inner ul_li_between align-items-start">
                 <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
             <div className="footer-widget">
-             <Link onClick={ClickHandler} to="/home-4" className="xb-logo"><img src={logo} alt="" /></Link>
+             <Link onClick={ClickHandler} to="/" className="xb-logo"><img src={logo} alt="" /></Link>
             </div>
             </Fade>
             </div>
           <div className="social-link ul_li_between">
              <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
             <div className="social-item">
-              <Link onClick={ClickHandler} to="/home-4" className="xb-icon"><img src={icon2} alt="" /></Link>
+              <Link onClick={ClickHandler} to="/" className="xb-icon"><img src={icon2} alt="" /></Link>
             </div>
           </Fade>
             <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
             <div className="social-item">
-              <Link onClick={ClickHandler} to="/home-4" className="xb-icon"><img src={icon4} alt="" /></Link>
+              <Link onClick={ClickHandler} to="/" className="xb-icon"><img src={icon4} alt="" /></Link>
             </div>
            </Fade>
           </div>
@@ -50,7 +50,16 @@ const Footer = (props) => {
    
           <div className="footer-copyright ul_li_between"> 
               <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
-            <p className="copyright">Copyright © 2025 <Link onClick={ClickHandler} to="/home-4">AUGMENTITY</Link>. All rights reserved.</p>
+            <p className="copyright">Copyright © 2025 <Link onClick={ClickHandler} to="/">AUGMENTITY</Link>. All rights reserved.</p>
+            </Fade>
+              <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
+            <p className="copyright services">
+              <Link onClick={ClickHandler} to="/analyse">Analyse</Link>
+              <Link onClick={ClickHandler} to="/govern">Govern</Link>
+              <Link onClick={ClickHandler} to="/insure">Insure</Link>
+              <Link onClick={ClickHandler} to="/defend">Defend</Link>
+            
+            </p>
             </Fade>
               <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
             <p className="privacy">Privacy <span>Terms Of Use</span></p>

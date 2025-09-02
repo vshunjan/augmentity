@@ -25,12 +25,12 @@ const BrandSection = () => {
            
             <div className="xb-brand-single xb-brand-hover">
          
-                <img src={bgimg} alt="Shopify" />
+                <img src={bgimg2} alt="Shopify" />
           
             </div>
             <div className="xb-brand-single xb-brand-hover">
            
-                <img src={bgimg2} alt="Shopify" />
+                <img src={bgimg} alt="Shopify" />
               
             </div>
             <div className="xb-brand-single xb-brand-hover">

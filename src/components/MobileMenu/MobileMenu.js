@@ -12,27 +12,55 @@ import menuimg from '../../images/gallery/burger-icon.png'
 const menus = [
      {
         id: 1,
-        title: 'Home1',
-        link: '/',
-    },
-    {
-        id: 3,
-        title: 'Who we are NOT',
+         title: 'Who we are NOT',
         link: '/about',
     },
-    {
-        id: 4,
-        title: 'Analyse',
-        link: '/analyse',
-    },
+    // {
+    //     id: 3,
+    //     title: 'Who we are NOT',
+    //     link: '/about',
+    // },
+    // {
+    //     id: 4,
+    //     title: 'Analyse',
+    //     link: '/analyse',
+    // },
     {
         id: 5,
         title: 'Consult Us',
         link: '/Contact',
     }
     
-
-
+]
+const menus2 = [
+     {
+        id: 1,
+        title: 'Analyse',
+        link: '/analyse',
+    },
+    {
+        id: 2,
+        title: 'Govern',
+        link: '/govern',
+    },
+     {
+        id: 3,
+        title: 'Insure',
+        link: '/insure',
+    },
+    {
+        id: 4,
+        title: 'Defend',
+        link: '/defend',
+    },
+   
+]    
+const menus3 = [
+     {
+        id: 1,
+        title: 'Hotline',
+        link: '/hotline',
+    }
 ]
 
 const MobileMenu = () => {
@@ -44,31 +72,11 @@ const MobileMenu = () => {
     }
 
     return (
-        <ul className="clearfix xb-menu-primary">
-                <div className="col-lg-4 mt-30">
-                                        <div className="item-contact_info">
-                                            <div className="xb-item--inner">
-                                                 <div className="contact-info_widget">
-                                                    <h3 className="xb-title">United states office</h3>
-                                                    <span className="xb-location">Sunshine example park, Floor <br /> No 05A,Sector-94,</span>
-                                                </div>
-                                                <div className="xb-item--top">
-                                                    <h3 className="xb-item--title">Contact Info</h3>
-                                                    <span className="xb-item--hotline">
-                                                        {/* <img src={icon1} alt="" /> */}
-                                                     +(1) 1230 452 8597</span>
-                                                    <span className="xb-item--email">
-                                                        {/* <img src={icon2} alt="" /> */}
-                                                     augmentity@example.com</span>
-                                                   
-                                                </div>
-                                               
-                                             
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
+        <div className='container'>
+        <ul className="clearfix xb-menu-primary">                          
                                     <div className='menu-list-div'>
+                                        <div className='menu-sub-head'> <h1> Discover</h1></div>
+                                     <div className='menu-list-pages'>   
             {menus.map((item, mn) => {
                 return (
                     <ListItem className={item.id === openId ? 'active' : null} key={mn}>
@@ -99,7 +107,77 @@ const MobileMenu = () => {
                 )
             })}
             </div>
+            </div>
+                                    <div className='menu-list-div'>
+                                        <div className='menu-sub-head'> <h1> Secure</h1></div>
+                                        <div className='menu-list-pages'>
+            {menus2.map((item, mn) => {
+                return (
+                    <ListItem className={item.id === openId ? 'active' : null} key={mn}>
+                        {item.submenu ?
+                            <Fragment>
+                                <p onClick={() => setOpenId(item.id === openId ? 0 : item.id)}>{item.title}
+                                    <i className={item.id === openId ? 'fa fa-angle-up' : 'fa fa-angle-down'}></i>
+                                </p>
+                                <Collapse in={item.id === openId} timeout="auto" unmountOnExit>
+                                    <List className="menu-item menu-item-has-children active">
+                                        <Fragment>
+                                            {item.submenu.map((submenu, i) => {
+                                                return (
+                                                    <ListItem key={i}>
+                                                        <Link onClick={ClickHandler} className="active"
+                                                            to={submenu.link}>{submenu.title}</Link>
+                                                    </ListItem>
+                                                )
+                                            })}
+                                        </Fragment>
+                                    </List>
+                                </Collapse>
+                            </Fragment>
+                            : <Link className="active"
+                                to={item.link}>{item.title}</Link>
+                        }
+                    </ListItem>
+                )
+            })}
+            </div>
+            </div>
+                                    <div className='menu-list-div'>
+                                         <div className='menu-sub-head'> <h1> Under attack?</h1></div>
+                                         <div className='menu-list-pages'>
+            {menus3.map((item, mn) => {
+                return (
+                    <ListItem className={item.id === openId ? 'active' : null} key={mn}>
+                        {item.submenu ?
+                            <Fragment>
+                                <p onClick={() => setOpenId(item.id === openId ? 0 : item.id)}>{item.title}
+                                    <i className={item.id === openId ? 'fa fa-angle-up' : 'fa fa-angle-down'}></i>
+                                </p>
+                                <Collapse in={item.id === openId} timeout="auto" unmountOnExit>
+                                    <List className="menu-item menu-item-has-children active">
+                                        <Fragment>
+                                            {item.submenu.map((submenu, i) => {
+                                                return (
+                                                    <ListItem key={i}>
+                                                        <Link onClick={ClickHandler} className="active"
+                                                            to={submenu.link}>{submenu.title}</Link>
+                                                    </ListItem>
+                                                )
+                                            })}
+                                        </Fragment>
+                                    </List>
+                                </Collapse>
+                            </Fragment>
+                            : <Link className="active"
+                                to={item.link}>{item.title}</Link>
+                        }
+                    </ListItem>
+                )
+            })}
+            </div>
+            </div>
         </ul>
+        </div>
     )
 }
 

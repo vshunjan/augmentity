@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
-import imagewhy from '../../../images/gallery/whyAugmentity.jpg'
+import imgWhy from '../../../images/gallery/why-augmentity.svg'
 import RippleGrid from "./RippleGrid";
-import img1 from '../../../images/gallery/Asset 234.png'
+import img1 from '../../../images/logo/Asset a.png'
 
 const About = (props) => {
   const ClickHandler = () => {
@@ -22,7 +22,7 @@ const About = (props) => {
             <div className="cs-about_left">
               <div className="sec-title--two sec-title--three double-text">
                 <div className="aument-img">
-                  <img src={imagewhy} />
+                  <img src={imgWhy} />
                 </div>
                 <div className="aug-ment-sub-div">
                   <Fade

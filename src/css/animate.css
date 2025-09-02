@@ -3170,7 +3170,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     height: 719px;
     width: 1125px;
     left: -89%;
-    top: -146%;
+    top: -30%;
     z-index: 0;
 }
 .colourab2{
@@ -3375,6 +3375,7 @@ section.page-title.contact-banner.pt-200.pos-rel.bg_img {
   user-select: none;
   z-index: 99999;
   position:relative;
+    transform: rotate(179deg);
 }
 
 .hamRotate.active {
@@ -3390,22 +3391,30 @@ section.page-title.contact-banner.pt-200.pos-rel.bg_img {
 }
 
 .ham3 .top {
-  stroke-dasharray: 7 130;
+  stroke-dasharray: 30 130;
 }
 .ham3 .middle {
   stroke-dasharray: 40 140;
 }
 .ham3 .bottom {
-  stroke-dasharray: 30 205;
+  stroke-dasharray: 7 205;
 }
+
+
+
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+
 .ham3.active .top {
-  stroke-dasharray: 75 130;
-  stroke-dashoffset: -63px;
-}
-.ham3.active .middle {
-  stroke-dashoffset: -102px;
+  stroke-dashoffset: -98px;
 }
 .ham3.active .bottom {
-  stroke-dasharray: 110 205;
-  stroke-dashoffset: -86px;
+  stroke-dashoffset: -138px;
+  stroke-dasharray: 40 205;
 }

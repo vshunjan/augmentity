@@ -12,7 +12,7 @@ const Process = [
     {
         id: "01",
         
-        title:'We are not a cybersecurity MSP.',
+        title:'We are not specialist product consultants.',
         subTitle: 'We are not specialist product consultants. Our team may be certified in most network products and security technologies but we offer unbiased advise on those, with no motivations to recommend a specific product or vendor - prioritising your strategic goals first.',
         icon: sIcon1,
         direction: 'one',

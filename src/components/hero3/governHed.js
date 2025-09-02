@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Fade } from "react-awesome-reveal";
-import bgimg2  from '../../images/gallery/Asset 24.svg'
+import bgimg2  from '../../images/video/2.gif'
 import LetterGlitch from '../hero4/letter-glitch';
 
 const Hero3 = (props) => {
@@ -16,6 +16,14 @@ const Hero3 = (props) => {
                    
                 <div className="hero_wrap">
                     <div className="h-full row align-items-center">
+                          <div className='letter-glitch-div'>
+                                    <LetterGlitch
+  glitchSpeed={10}
+  centerVignette={true}
+  outerVignette={false}
+  smooth={true}
+/>
+                            </div>
                         <div className="col-lg-6">
                             <div className="xb-hero">
                                 <Fade direction='up' triggerOnce={'false'} duration={800} delay={6}>
@@ -27,14 +35,7 @@ const Hero3 = (props) => {
                                     </div>
                                 </Fade>
                             </div>
-                         <div className='letter-glitch-div'>
-                                    <LetterGlitch
-  glitchSpeed={10}
-  centerVignette={true}
-  outerVignette={false}
-  smooth={true}
-/>
-                            </div>
+                       
                         </div>
                         <div className="border-col col-lg-6">
                             <div className="xb-hero">

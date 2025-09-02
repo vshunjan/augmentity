@@ -6,9 +6,10 @@ import Analyse from '../HomePage3/analyse';
 import Govern from '../HomePage3/govern';
 import Insure from '../HomePage3/insure';
 import Defend from '../HomePage3/defend';
-import HomePage4 from '../HomePage4/HomePage4';
+import HotLine from '../Hotline/Hotline';
 import HomePage5 from '../HomePage5/HomePage5';
-// import HomePage6 from '../HomePage6/HomePage6';
+import PrivacyPage from '../PrivacyPage/PrivacyPage';
+
 // import ServicePage from '../ServicePage/ServicePage';
 // import AboutUsPage from '../AboutUsPage/AboutUsPage';
 // import ServiceSinglePage from '../ServiceSinglePage/ServiceSinglePage';
@@ -20,7 +21,6 @@ import HomePage5 from '../HomePage5/HomePage5';
 // import CareerSingle from '../CareerSingle/CareerSingle';
 // import TeamPage from '../TeamPage/TeamPage';
 // import TermsPage from '../TermsPage/TermsPage';
-// import PrivacyPage from '../PrivacyPage/PrivacyPage';
 // import BlogPage from '../BlogPage/BlogPage';
 // import BlogDetails from '../BlogDetails/BlogDetails';
 import ContactPage from '../ContactPage/ContactPage';
@@ -33,16 +33,16 @@ const AllRoute = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage5 />} />
-          <Route path="home" element={<HomePage4/>} />
+          <Route path="hotline" element={<HotLine/>} />
           <Route path="about" element={<HomePage2 />} />          
           <Route path="analyse" element={<Analyse />} />
           <Route path="govern" element={<Govern />} /> 
           <Route path="defend" element={<Defend />} /> 
           <Route path="insure" element={<Insure />} /> 
-          <Route path="contact" element={<ContactPage />} /> 
-          
-          
-          {/* <Route path="home-6" element={<HomePage6 />} /> */}
+          <Route path="contact" element={<ContactPage />} />  
+          <Route path="privecy" element={<PrivacyPage />} />
+
+
           {/* <Route path="home-4" element={<HomePage4 />} />
           <Route path="home-5" element={<HomePage5 />} />
           <Route path="service" element={<ServicePage />} />

@@ -71,7 +71,7 @@ import "./scrollstack.css";
       </a>
             </div>
           ))}
-          <div className="sticky-scroll-spacer" />
+          {/* <div className="sticky-scroll-spacer" /> */}
         </div>
       </div>
       <div

@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ContactForm from '../ContactFrom/ContactForm'
-import icon1 from '../../images/icon/call-calling.svg'
-import icon2 from '../../images/icon/icon-sms.svg'
 
 
 const ContactSection = (props) => {
@@ -25,8 +23,8 @@ const ContactSection = (props) => {
                                     </div>
                                     <div className="xb-item--top">
                                         <h3 className="xb-item--title">Contact Info</h3>
-                                        <span className="xb-item--hotline"><img src={icon1} alt="" /> +(1) 1230 452 8597</span>
-                                        <span className="xb-item--email"><img src={icon2} alt="" /> augmentity@example.com</span>
+                                        <span className="xb-item--hotline"> +(1) 1230 452 8597</span>
+                                        <span className="xb-item--email"> augmentity@example.com</span>
                                         <ul className="social_icons_block list-unstyled ul_li">
                                             <li>
                                                 <Link onClick={ClickHandler} to="/contact" aria-label="Twitter"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,9 +50,7 @@ const ContactSection = (props) => {
                     </div>
                 </div>
             </div>
-            {/* <div className="gmap_canvas bg-light">
-                <iframe title='map' src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
-            </div> */}
+           
         </div>
     )
 }

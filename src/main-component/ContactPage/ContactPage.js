@@ -6,10 +6,7 @@ import Scrollbar from '../../components/scrollbar/scrollbar'
 import { Fade } from "react-awesome-reveal";
 import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
 import Bg from '../../images/gallery/consultbanner.jpg'
-import CtaSection from '../../components/CtaSection/CtaSection';
-import icon from '../../images/icon/music-icon.svg'
-import bImg1 from '../../images/hero/contact-img.png'
-import bImg2 from '../../images/shape/brd_shape.png'
+
 
 const TeamPage = (props) => {
 

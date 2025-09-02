@@ -3,10 +3,10 @@
 import React from "react";
 import  StickyScroll  from "./scrollstack";
 import "./scrollstack.css";
-import bgImg1 from '../../images/video/1.mp4'
-import bgImg2 from '../../images/video/2.mp4'
-import bgImg3 from '../../images/video/3.mp4'
-import bgImg4 from '../../images/video/4.mp4'
+import bgImg1 from '../../images/video/1.gif'
+import bgImg2 from '../../images/video/2.gif'
+import bgImg3 from '../../images/video/3.gif'
+import bgImg4 from '../../images/video/7.gif'
 
 const content = [
   {
@@ -15,7 +15,8 @@ const content = [
       "A clear picture of your risk profile and a prioritised roadmap for remediation—before attackers get there first.",
     content: (
       <div className="content-card gradient-cyan-emerald">
-             <video src={bgImg1} autoPlay muted loop playsInline />
+        <img src={bgImg3} alt="" />
+     {/* <video src={bgImg1} autoPlay muted loop playsInline /> */}
       </div>
     ),
   },
@@ -25,8 +26,7 @@ const content = [
       "A mature, future-ready security posture that inspires trust—from boardroom to regulator.",
     content: (
       <div className="content-card-image">
-                     <video src={bgImg2} autoPlay muted loop playsInline />
-      </div>
+<img src={bgImg2} alt="" />      </div>
     ),
   },
   {
@@ -35,7 +35,7 @@ const content = [
       "Lower cyber insurance premiums, faster underwriting, and better alignment between finance and security.",
     content: (
       <div className="content-card gradient-orange-yellow">
-                    <video src={bgImg3} autoPlay muted loop playsInline />
+                 <img src={bgImg4} alt="" />
       </div>
     ),
   },
@@ -45,7 +45,7 @@ const content = [
       "Continuous verification, rapid recovery, minimal business disruption—powered by real-world threat engineering.",
     content: (
       <div className="content-card gradient-cyan-emerald">
-                    <video src={bgImg4} autoPlay muted loop playsInline />
+                 <img src={bgImg1} alt="" />
       </div>
     ),
   },

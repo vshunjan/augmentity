@@ -6,7 +6,10 @@ body{
   display: none;
 }
 .hero-style-three .xb-hero .xb-item--title {
-    color: white;
+   color: #21f7f7;
+}
+section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img  .xb-hero .xb-item--title {
+   color: #ffffff;
 }
 .hero-style-three .xb-hero .xb-item--title span.c-suite {
     position: relative;
@@ -44,10 +47,10 @@ hr.crossed-line {
     height: 100vh;
 }
 section.project.pb-140.o-hidden {
-    /* margin-top: 100px; */
+    margin-top: -200px;
     position: relative;
     padding-top: 150px;
-    z-index: 999;
+    z-index: 0;
     background-color: black;
 }
 section.project.pb-140.o-hidden .sec-title .title {
@@ -156,7 +159,7 @@ h1.mb-40.title.wow.fadeInUp.scroll-card.card-why-f {
     padding: 50px;
 }
 .pro-top.ul_li_between.mb-65.independent .content{
- font-size: 30px !important;
+ font-size: 33px !important;
 }
 .pro-top.ul_li_between.mb-65.independent .your-swat-content.css-zvi4ix {
     width: 80%;

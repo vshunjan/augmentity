@@ -8,13 +8,9 @@ import WorkProcess from '../../components/WorkProcess/WorkProcess';
 import WorkFlow from '../../components/Cyber-Security-Components/WorkFlow/WorkFlow';
 import AwardSection from '../AboutUsPage/AwardSection';
 import StickyScrollRevealDemo from '../AboutUsPage/WhyChoose';
-import IndustrieSection from '../../components/Cyber-Security-Components/IndustrieSection/IndustrieSection';
-import TestimonialSection from '../../components/Cyber-Security-Components/TestimonialSection/TestimonialSection';
-import Achievements from '../../components/Cyber-Security-Components/Achievements/Achievements';
-import CyberBlogSection from '../../components/Cyber-Security-Components/CyberBlogSection/CyberBlogSection';
-import ContactSection from '../../components/Cyber-Security-Components/ContactSection';
+
 import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
-import Scrollbar from '../../components/scrollbar/scrollbar';
+
 
 
 const HomePage5 = () => {
