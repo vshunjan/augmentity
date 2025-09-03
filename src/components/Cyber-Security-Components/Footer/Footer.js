@@ -62,7 +62,7 @@ const Footer = (props) => {
             </p>
             </Fade>
               <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
-            <p className="privacy">Privacy <span>Terms Of Use</span></p>
+            <p className="privacy"><Link onClick={ClickHandler} to="/privacy">Privacy</Link> <span>Terms Of Use</span></p>
             </Fade>
           </div>
           

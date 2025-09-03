@@ -40,12 +40,7 @@ const Hero44 = () => {
             </div>
             
             <div className="sc_hero_video">
-    {/* <LetterGlitch
-  glitchSpeed={10}
-  centerVignette={true}
-  outerVignette={false}
-  smooth={true}
-/> */}
+
 <BackgroundVideo />
             </div>
         </section>

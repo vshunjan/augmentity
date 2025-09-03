@@ -76,7 +76,7 @@
 @media (min-width: 1024px) {
   .sticky-scroll-visual-content {
     display: block;
-            width: 46%;
+     width: 46%;
     
   }
 }
@@ -100,6 +100,11 @@
   .sticky-scroll-item {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+}
+@media (max-width: 1023px) {
+  .sticky-scroll-content-wrapper {
+    width: 100%;
   }
 }
 

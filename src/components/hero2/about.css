@@ -40,6 +40,7 @@ hr.crossed-line {
 .about-banner.hero-style-three .sc_hero_video {
     position: absolute;
     top: 0;
+    mask-image: linear-gradient(to top, hsl(0 0% 0% / 0), hsl(0 0% 0% / 1) 20%, hsl(0 0% 0% / 1) 80%, hsl(0 0% 0% / 0));
     left: 0;
     z-index: -1;
     opacity: 1;

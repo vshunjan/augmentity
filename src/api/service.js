@@ -68,9 +68,10 @@ const Services = [
         description: 'increase in malicious phishing emails using Generative AI to hide code and evade traditional security scanners.',
     },
     {
-        Id: '4',
+        Id: 4.45 ,
         sImg: icon4,
-        title: 'Enterprise SEO',
+        title1: ' $',
+        title: ' million',
         slug: 'Enterprise-SEO',
         thumb1: 'Consultation',
         thumb2: 'solution',
