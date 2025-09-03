@@ -200,9 +200,14 @@
     padding: 20px 30px;
     width: -webkit-fit-content;
     width: fit-content;
-        backdrop-filter: blur(10.7px);
-    -webkit-backdrop-filter: blur(10.7px);
-    background: #ffffff17;
+    font-size: 18px;
+    font-weight: 500;
+        background: #21f5f5;
     border-radius: 50px;
+    color: rgb(0, 0, 0);
+}
+.sticky-scroll-item .hero-btn:hover {
+  background: #021ca2;
+    
     color: white;
 }

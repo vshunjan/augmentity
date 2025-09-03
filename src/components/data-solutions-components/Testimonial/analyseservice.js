@@ -129,7 +129,7 @@ const Testimonial = (props) => {
 
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
-                                                                <AccordionHeader targetId="7" className='acc-btn'> Cloud Security Assessments (AWS, Azure, GCP)<span className="arrow"></span>
+                                                                <AccordionHeader targetId="7" className='acc-btn'> Cloud Security Assessments <span className="arrow"></span>
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="7" className='acc_body'>
                                                                     <div className="content">
