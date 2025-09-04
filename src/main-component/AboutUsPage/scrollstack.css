@@ -33,10 +33,10 @@
 }
 
 .sticky-scroll-item {
-  margin-top: 5rem;
+  margin-top: 0;
       flex-direction: column;
     display: flex;
-  margin-bottom: 5rem;
+  margin-bottom: 12rem;
 }
 
 .sticky-scroll-title {
@@ -63,7 +63,7 @@
 
 .sticky-scroll-visual-content {
   position: sticky;
-  top: 2.5rem;
+  top: 0;
   height: 22rem;
   width: 20rem;
   overflow: hidden;

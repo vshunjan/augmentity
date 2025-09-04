@@ -17,10 +17,14 @@ const HotLine = () => {
                     <div className="container">
                         <div className="page-title-wrap sd-title-wrap">
                             <div className="row mt-none-30 align-items-end">
-                                <div className="col-lg-9 mt-30">
+                                <div className="col-lg-9 mt-30 hot-line">
                                     <Fade direction='up' triggerOnce={'false'} duration={800} delay={6}>
                                                                         <div>
                                                                             <h1 className="xb-item--title wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms"> Hotline </h1>
+                                                                        </div>
+                                                                         <div>
+                                                                            <p className="xb-item--content consult-bnr wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">If you think a security breach has occurred in your organisation, contact us on our hotline* </p>
+
                                                                         </div>
                                                                     </Fade>
                                 </div>

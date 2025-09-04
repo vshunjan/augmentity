@@ -41,7 +41,7 @@ const ProjectSection = (props) => {
                     <div className="sec-title">
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9} className="your-swat-title" >
                             <div>
-                                <h2 className="title mb-15 wow fadeInLeft" data-wow-duration="600ms">Your <br/> Swat Team on Standby</h2>
+                                <h2 className="title mb-15 wow fadeInLeft" data-wow-duration="600ms">Your <br/> <span className="swat-clr">Swat Team  </span>on Standby</h2>
                             </div>
                         </Fade>
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9} className="your-swat-content">

@@ -28,7 +28,14 @@ hr.crossed-line {
     transform: rotate(155deg);
 }
 .about-banner.hero-style-three .xb-hero .xb-item--title span.c-suite {
-    display: inline;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #A029ED;
+    padding-top: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 15px;
 }
 .about-banner.hero-style-three .text-left.xb-hero.video-banner {
     width: 100%;
@@ -50,6 +57,7 @@ hr.crossed-line {
 section.project.pb-140.o-hidden {
     margin-top: -200px;
     position: relative;
+        padding-bottom: 70px;
     padding-top: 150px;
     z-index: 0;
     background-color: black;
@@ -58,9 +66,12 @@ section.project.pb-140.o-hidden .sec-title .title {
       font-size: 4rem;
     font-weight: 400;
     letter-spacing: -4px;
-    color: #949494;
+    color: #21f7f7;
     margin-bottom: 7px;
      font-family: 'josefin';
+}
+span.swat-clr {
+    color: #21f7f7;
 }
 section.project.pb-140.o-hidden .sec-title.mission-sec {
     border-right: 2px solid #021ca1;
@@ -130,25 +141,34 @@ h1.mb-40.title.wow.fadeInUp.scroll-card {
 span.about::before{
     position: absolute;
     content: '';
-    width: 100%;
+    width: 92%;
     height: 5px;
-    transform: rotate(157deg);
+       transform: rotate(160deg);
     background-color: #ffffff;
-    top: 26px;
-    left: 18px;
+    top: 50px;
+    left: 12px;
 }
 h1.mb-40.title.wow.fadeInUp.scroll-card.card-why-s span.about::before{
     position: absolute;
     content: '';
-    width: 100%;
+   width: 92%;
     height: 5px;
-        transform: rotate(159deg);
+       transform: rotate(160deg);
     background-color: #ffffff;
-    top: 38px;
-    left: 0px;
+    top: 50px;
+    left: 12px;
 }
 span.c-suite{
     position: relative;
+   
+}
+section.pb-40.process.pos-rel span.c-suite{
+    position: relative;
+      background: #A029ED;
+       padding-top: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 15px;
 }
 
 h1.mb-40.title.wow.fadeInUp.scroll-card.card-why-f {

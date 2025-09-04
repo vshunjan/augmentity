@@ -19,6 +19,7 @@ const content = [
      {/* <video src={bgImg1} autoPlay muted loop playsInline /> */}
       </div>
     ),
+    link:'/analyse'
   },
   {
     title: "Govern",
@@ -28,6 +29,7 @@ const content = [
       <div className="content-card-image">
 <img src={bgImg2} alt="" />      </div>
     ),
+    link:'/govern'
   },
   {
     title: "Insure",
@@ -38,6 +40,7 @@ const content = [
                  <img src={bgImg4} alt="" />
       </div>
     ),
+    link:'/insure'
   },
   {
     title: "Defend",
@@ -48,6 +51,7 @@ const content = [
                  <img src={bgImg1} alt="" />
       </div>
     ),
+    link:'/defend'
   },
 ];
 

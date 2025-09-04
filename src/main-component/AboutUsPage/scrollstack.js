@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import "./scrollstack.css";
+import { Link } from 'react-router-dom'
 
  const StickyScroll = ({ content, contentClassName }) => {
   const [activeCard, setActiveCard] = useState(0);
@@ -67,7 +68,8 @@ import "./scrollstack.css";
                 {item.description}
               </motion.p>
                <a href={item.link} className="hero-btn">
-        <span>Discover more</span>
+                
+                 <span>Discover more</span>
       </a>
             </div>
           ))}

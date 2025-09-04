@@ -1,7 +1,7 @@
 import React from "react";
 import FaultyTerminal from './FaultyTerminal';
 import { Fade } from "react-awesome-reveal";
-
+import { Link } from 'react-router-dom'
 
 const WorkFlow = (props) => {
   return (
@@ -46,9 +46,11 @@ const WorkFlow = (props) => {
           </p> */}
  <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
           <div className="hero-btn">
+            <Link  to="/contact"> 
             <span>
-              Explore solutions 
+              Contact Us
             </span>
+             </Link>
           </div>
           </Fade>
         </div>

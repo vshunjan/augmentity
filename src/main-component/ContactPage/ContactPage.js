@@ -23,6 +23,10 @@ const TeamPage = (props) => {
                                                                         <div>
                                                                             <h1 className="xb-item--title wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">Consult Us </h1>
                                                                         </div>
+                                                                        <div>
+                                                                            <p className="xb-item--content consult-bnr wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">Looking to assess your current risks, securing your strategic AI transformation, ensuring compliance, or reducing cyber insurance premiums? </p>
+
+                                                                        </div>
                                                                     </Fade>
                                 </div>
                                 <div className="col-lg-3 mt-30">

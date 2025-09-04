@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import bgimg2  from '../../../images/video/4.gif'
+import bgimg2  from '../../../images/video/2.gif'
 import "./testimonial.css"
 import {
     Accordion,

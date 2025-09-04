@@ -44,7 +44,12 @@ const cardData = [
     title: 48 ,
      description2: ` `,
     type:'Minutes',
-    description: "is the average eCrime breakout time in 2024",
+    description: "is the average eCrime breakout time ",
+     description2: (
+  <>
+  in 2024.
+  </>
+),
     img: bgimg1
   },
   {

@@ -18,13 +18,13 @@ const ContactSection = (props) => {
                             <div className="item-contact_info">
                                 <div className="xb-item--inner">
                                      <div className="contact-info_widget">
-                                        <h3 className="xb-title">United states office</h3>
-                                        <span className="xb-location">Sunshine example park, Floor <br /> No 05A,Sector-94,</span>
+                                        <h3 className="xb-title">Augmentity Ltd.</h3>
+                                        <span className="xb-location">39 Park lane, Kemsing TN15 6NX <br /> Sevenoaks, United Kingdom</span>
                                     </div>
                                     <div className="xb-item--top">
                                         <h3 className="xb-item--title">Contact Info</h3>
-                                        <span className="xb-item--hotline"> +(1) 1230 452 8597</span>
-                                        <span className="xb-item--email"> augmentity@example.com</span>
+                                        <span className="xb-item--hotline"> +44 7557304343</span>
+                                        <span className="xb-item--email"> discover@Augmentity.com</span>
                                         <ul className="social_icons_block list-unstyled ul_li">
                                             <li>
                                                 <Link onClick={ClickHandler} to="/contact" aria-label="Twitter"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
