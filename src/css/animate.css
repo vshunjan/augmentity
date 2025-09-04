@@ -3340,6 +3340,9 @@ h1.service-card-title {
     font-size: 54px !important;
     letter-spacing: -4px;
     width: 100% !important;
+            gap: 34px;
+        display: flex;
+        flex-direction: column;
 }
 .service-head {
     width: 100% !important;
@@ -3355,7 +3358,10 @@ section.award p.sub-title-sec.heighlight-text {
   gap:50px
 }
 .aument-img {
-    width: 100% !important;
+    width: 50% !important;
+}
+section.overflow-hidden.about.pt-60.pb-100 {
+    padding: 00px 0;
 }
 .aug-ment-sub-div {
     width: 100% !important;
