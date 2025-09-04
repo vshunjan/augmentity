@@ -99,6 +99,7 @@
   
   .sticky-scroll-item {
     margin-top: 2rem;
+    background: #010a26;
     margin-bottom: 2rem;
   }
 }
@@ -197,7 +198,7 @@
 
 .sticky-scroll-item .hero-btn {
     margin-top: 25px;
-    padding: 20px 30px;
+    padding: 20px 40px;
     width: -webkit-fit-content;
     width: fit-content;
     font-size: 18px;

@@ -34,7 +34,7 @@ const ServiceSection = (props) => {
           </div>
         </div>
         <div className="da-service-wrapper">
-          {Services.slice(0, 3).map((service, index) => (
+          {Services.slice(7, 10).map((service, index) => (
             <div
               key={index}
               className={`da-service-item xb-mouseenter ${activeIndex === index ? 'active' : ''}`}

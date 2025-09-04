@@ -438,6 +438,7 @@ span {
 }
 
 .f-right {
+    
   float: right;
 }
 
@@ -8898,7 +8899,7 @@ section.service.pos-rel.z-1.pb-150 {
 .da-service-wrapper {
   gap: 24px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 @media (max-width: 991px) {
@@ -15556,10 +15557,10 @@ section.service.pos-rel.z-1.pb-150 {
 
 p.xb-item--content.consult-bnr.wow.fadeInUp {
     width: 80%;
-    font-size: 22px;
-    line-height: 1.6;
-    letter-spacing: 1.2px;
-    /* letter-spacing: 4px; */
+   font-weight: 400;
+    font-size: 27px;
+    line-height: 40px;
+    color: #ffffffd9;
 }
 
 .cp-img-slide {
@@ -20881,7 +20882,7 @@ nav.xb-header-nav {
 }
 
 .footer-widget .xb-item--list {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 37px;
   letter-spacing: 0em;
@@ -21332,6 +21333,9 @@ nav.xb-header-nav {
 .footer-style-two .footer-copyright a {
   color: var(--color-white);
 }
+.footer-style-two .footer-copyright a:hover  {
+  color: #021ca4;
+}
 
 .footer-style-two .footer-copyright a:hover {
   text-decoration: underline;
@@ -21340,6 +21344,16 @@ nav.xb-header-nav {
 .social-link {
   gap: 22px;
   flex-wrap: nowrap;
+  gap:15px;
+  flex-direction: column;
+}
+li.xb-item--list.social-item {
+    margin-top: 10px;
+}
+hr.footer-hrline {
+    margin: 0;
+    margin-top: 8px;
+    width: 70%;
 }
 
 @media (max-width: 767px) {
@@ -21466,6 +21480,7 @@ a.xb-logo {
 
 .footer-style-three .footer-widget .xb-item--sub-title {
       color: #ffffff;
+      font-weight: 500;
     font-family: 'josefin';
     margin-bottom: 20px;
     text-transform: capitalize;
@@ -21476,6 +21491,9 @@ a.xb-logo {
 .footer-style-three .footer-widget .xb-item--list {
   text-transform: capitalize;
   font-family: var(--font-heading-two);
+}
+.footer-style-three .footer-widget .xb-item--list:hover a{
+  color:#021ca4;
 }
 
 .footer-style-three .sa-newslatter .xb-item--sub-title {
@@ -22722,11 +22740,11 @@ section.work .container {
     gap: 5%;
 }
 .work-content .hero-btn  {
-    padding: 26px 36px 26px 36px;
+    padding: 23px 62px;
     border-radius: 50px;
       color: white;
     cursor:pointer;
-      font-size: 18px;
+      font-size: 20px;
     font-weight: 500;
         background: #21f5f5;
     border-radius: 50px;
@@ -23170,6 +23188,9 @@ section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
 
 
 @media (max-width: 1000px) {
+  .cs-service-item {
+    width: 100%;
+  }
   .hero_wrap.pt-90 {
   padding-bottom:0px;
 }
@@ -23336,7 +23357,7 @@ h3.acc-btn {
 
 section.brand.mt-90.scecond .container {
 max-width:100%;
-    padding: 0;
+    padding: 0 !important;
 }
 
 .work-content .hero-btn a{
@@ -23362,4 +23383,7 @@ max-width:100%;
 }
 .col-lg-9.mt-30.hot-line p.xb-item--content.consult-bnr.wow.fadeInUp {
    width: 100%;
+}
+.process-right.f-right {
+  width:100%;
 }

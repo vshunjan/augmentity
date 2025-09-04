@@ -27,6 +27,7 @@ const HomePage5 = () => {
                      <WorkProcess />
                      <AwardSection/>
                      <StickyScrollRevealDemo/>
+                     
                     <About />
                     <WorkFlow />
                    

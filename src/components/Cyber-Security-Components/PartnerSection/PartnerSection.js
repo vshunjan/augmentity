@@ -6,18 +6,19 @@ import pimg1 from "../../../images/gallery/bilf.png";
 import pimg2 from "../../../images/gallery/fst.png";
 import pimg3 from "../../../images/gallery/hil.png";
 import pimg4 from "../../../images/gallery/sgs.png";
-import pimg5 from "../../../images/gallery/bilf.png";
+import pimg5 from "../../../images/gallery/reptile.png";
 import pimg6 from "../../../images/gallery/fst.png";
 import pimg7 from "../../../images/gallery/hil.png";
 import pimg8 from "../../../images/gallery/sgs.png";
 import pimg10 from "../../../images/gallery/bilf.png";
-import pimg11 from "../../../images/gallery/fst.png";
-import pimg12 from "../../../images/gallery/hil.png";
-import pimg13 from "../../../images/gallery/sgs.png";
-import pimg14 from "../../../images/gallery/bilf.png";
-import pimg15 from "../../../images/gallery/fst.png";
-import pimg16 from "../../../images/gallery/hil.png";
-import pimg17 from "../../../images/gallery/sgs.png";
+import pimg11 from "../../../images/gallery/reptile.png";
+import pimg12 from "../../../images/gallery/fst.png";
+import pimg13 from "../../../images/gallery/hil.png";
+import pimg14 from "../../../images/gallery/sgs.png";
+import pimg15 from "../../../images/gallery/bilf.png";
+import pimg16 from "../../../images/gallery/fst.png";
+import pimg17 from "../../../images/gallery/hil.png";
+import pimg18 from "../../../images/gallery/sgs.png";
 
 const partnersLeft = [
   { pImg: pimg1 },
@@ -28,6 +29,8 @@ const partnersLeft = [
   { pImg: pimg6 },
   { pImg: pimg7 },
   { pImg: pimg8 },
+  { pImg: pimg11 },
+
 ];
 
 const partnersRight = [

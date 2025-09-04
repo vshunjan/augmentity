@@ -31,7 +31,7 @@ hr.crossed-line {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #A029ED;
+    background: #c87af2;
     padding-top: 18px;
     padding-right: 10px;
     padding-left: 10px;
@@ -55,7 +55,7 @@ hr.crossed-line {
     height: 100vh;
 }
 section.project.pb-140.o-hidden {
-    margin-top: -200px;
+    margin-top: -60px;
     position: relative;
         padding-bottom: 70px;
     padding-top: 150px;
@@ -164,7 +164,7 @@ span.c-suite{
 }
 section.pb-40.process.pos-rel span.c-suite{
     position: relative;
-      background: #A029ED;
+      background: #c87af2;
        padding-top: 18px;
     padding-right: 10px;
     padding-left: 10px;

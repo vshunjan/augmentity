@@ -35,7 +35,9 @@ const Footer = (props) => {
             
             <div className="col-lg-4 footer col-md-6">
                                    <div className="footer-widget">
-                                       <span className="xb-item--sub-title">Discover</span>
+                                       <span className="xb-item--sub-title">Discover
+                                        <hr className='footer-hrline'/>
+                                       </span>
                                        <ul className="xb-item--holder list-unstyled">
                                            <li className="xb-item--list"><Link onClick={ClickHandler} to="/about">Who we are Not</Link></li>
                                            <li className="xb-item--list"><Link onClick={ClickHandler} to="/Contact">Consult Us</Link></li>
@@ -44,7 +46,9 @@ const Footer = (props) => {
                                </div>
             <div className="footer col-lg-4 col-md-6">
                                    <div className="footer-widget">
-                                       <span className="xb-item--sub-title">Services</span>
+                                       <span className="xb-item--sub-title">Services
+                                        <hr className='footer-hrline'/>
+                                       </span>
                                        <ul className="xb-item--holder list-unstyled">
                                            <li className="xb-item--list"><Link  to="/analyse">Analyse</Link></li>
                                            <li className="xb-item--list"><Link  to="/govern">Govern</Link></li>
@@ -54,7 +58,21 @@ const Footer = (props) => {
                                        </ul>
                                    </div>
                                </div>
-          <div className="social-link ul_li_between">
+            <div className="footer col-lg-4 col-md-6">
+                                   <div className="footer-widget">
+                                       <span className="xb-item--sub-title">Social
+                                        <hr className='footer-hrline'/>
+                                       </span>
+                                       <ul className="xb-item--holder list-unstyled">
+                                           <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="/" className="xb-icon"><img src={icon2} alt="" /></Link></li>
+                                           <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="/" className="xb-icon"><img src={icon4} alt="" /></Link></li>
+                                           
+                                          
+                                       </ul>
+                                   </div>
+                               </div>
+          {/* <div className="social-link ">
+            <span className="xb-item--sub-title">Social </span>
              <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
             <div className="social-item">
               <Link onClick={ClickHandler} to="/" className="xb-icon"><img src={icon2} alt="" /></Link>
@@ -65,7 +83,7 @@ const Footer = (props) => {
               <Link onClick={ClickHandler} to="/" className="xb-icon"><img src={icon4} alt="" /></Link>
             </div>
            </Fade>
-          </div>
+          </div> */}
         
           </div>
           
