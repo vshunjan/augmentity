@@ -8905,8 +8905,11 @@ section.service.pos-rel.z-1.pb-150 {
 @media (max-width: 991px) {
   .da-service-wrapper {
     flex-wrap: wrap;
-    gap: 0;
+    
   }
+  section.brand.pb-140 {
+    padding-bottom: 50px;
+}
 }
 
 .da-service-item {

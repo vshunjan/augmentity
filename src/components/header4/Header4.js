@@ -42,7 +42,7 @@ const Header4 = (props) => {
 
         <div id="xb-header-area" className="header-area header-style-three header-transparent">
             <div className={`xb-header stricky  ${isSticky ? 'stricked-menu stricky-fixed' : ''}`}>
-                 <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
+                 
                 <div className="container">
                     <div className="header__wrap ul_li_between">
                         <div className="header-logo">
@@ -98,7 +98,7 @@ const Header4 = (props) => {
                        
                     </div>
                 </div>
-                </Fade>
+                
             </div>
         </div>
 

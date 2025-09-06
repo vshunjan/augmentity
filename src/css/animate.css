@@ -3309,7 +3309,7 @@ section.overflow-hidden.about.pt-60.pb-100 .container{
     align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width:991px) {
   .container {
      padding-left: 4% !important;
     padding-right: 4% !important;
@@ -3362,9 +3362,16 @@ section.award p.sub-title-sec.heighlight-text {
 }
 section.overflow-hidden.about.pt-60.pb-100 {
     padding: 00px 0;
+    padding-bottom: 140px;
 }
 .aug-ment-sub-div {
     width: 100% !important;
+}
+section.award.back-blue {
+    padding-top: 80px;
+}
+section.service.pos-rel.z-1.pb-150 {
+    padding-bottom: 0;
 }
 }
 
