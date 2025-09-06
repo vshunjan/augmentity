@@ -9,6 +9,7 @@ import Defend from '../HomePage3/defend';
 import HotLine from '../Hotline/Hotline';
 import HomePage5 from '../HomePage5/HomePage5';
 import PrivacyPage from '../PrivacyPage/PrivacyPage';
+import TermsPage from '../PrivacyPage/Terms';
 
 // import ServicePage from '../ServicePage/ServicePage';
 // import AboutUsPage from '../AboutUsPage/AboutUsPage';
@@ -41,6 +42,7 @@ const AllRoute = () => {
           <Route path="insure" element={<Insure />} /> 
           <Route path="contact" element={<ContactPage />} />  
           <Route path="privacy" element={<PrivacyPage />} />
+          <Route path="terms" element={<TermsPage />} />
 
 
           {/* <Route path="home-4" element={<HomePage4 />} />

@@ -100,15 +100,15 @@ const ContactForm = (props) => {
                                 type="text"
                                 name="message"
                                 className="form-control"
-                                placeholder="How can we help you?">
+                                placeholder="A quick summary of your breach">
                             </textarea>
                             {validator.message('message', forms.message, 'required')}
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="cp-det-btn mt-20 d-grid">
-                <button className="cp-btn" type='submit'>Send us a message <i className="fal fa-arrow-right"></i></button>
+            <div className="mt-20 cp-det-btn d-grid">
+                <button className="cp-btn" type='submit'>Security Brief <i className="fal fa-arrow-right"></i></button>
             </div>
         </form>
     )

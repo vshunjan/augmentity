@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const WorkFlow = (props) => {
   return (
-    <section className="work">
+    <section className="work ">
        <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
       <div className="container">
      

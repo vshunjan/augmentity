@@ -31,7 +31,8 @@ hr.crossed-line {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #c87af2;
+    /* background: #c87af2; */
+    color: #f03099;
     padding-top: 18px;
     padding-right: 10px;
     padding-left: 10px;
@@ -52,7 +53,20 @@ hr.crossed-line {
     z-index: -1;
     opacity: 1;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
+}
+section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img .container {
+    height: 100%;
+}
+section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img .container .hero_wrap.pt-90 {
+    padding-top: 0px;
+    display: flex;
+    padding-bottom: 0vh;
+    height: 100%;
+}
+section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
+    min-height: 70vh !important;
+    height: 70vh;
 }
 section.project.pb-140.o-hidden {
     margin-top: -60px;
@@ -164,7 +178,9 @@ span.c-suite{
 }
 section.pb-40.process.pos-rel span.c-suite{
     position: relative;
-      background: #c87af2;
+      /* background: #c87af2; */
+          color: #f03099;
+          font-weight: 500;
        padding-top: 18px;
     padding-right: 10px;
     padding-left: 10px;
@@ -183,5 +199,5 @@ h1.mb-40.title.wow.fadeInUp.scroll-card.card-why-f {
  font-size: 41px !important;
 }
 .pro-top.ul_li_between.mb-65.independent .your-swat-content.css-zvi4ix {
-    width: 80%;
+    width: 93%;
 }

@@ -124,14 +124,13 @@ const PrivacyPage = (props) => {
                                      
                                         <p> Any data subject may, at any time, contact our Data Protection Officer directly with all questions and suggestions concerning data protection.
                                         <p>The Data Protection Officer of the controller is:</p>
-                                          <p> Paul White	
-                                          Augmentity Ltd.
+                                          <p> Paul Whit  Augmentity Ltd.
                                           39 Park lane, Kemsing TN15 6NX
                                           Sevenoaks, United Kingdom</p>
                                             
                                               <a href="Phoneto:+44 7557304343">Phone: +44 7557304343</a>
-                                            <br/>  <a href="mailto:discover@Augmentity.com">Email: discover@Augmentity.com</a>
-                                            <br/> <a href=" www.augmentity.net">Website: www.augmentity.net</a>
+                                            <br/> <a href="mailto:discover@Augmentity.com">Email: discover@Augmentity.com</a>
+                                            <br/><a href="www.augmentity.net">Website: www.augmentity.net</a>
                                            </p> 
                                     </div>
                                      <div className="item-details-widget">
@@ -143,7 +142,7 @@ const PrivacyPage = (props) => {
                                         <p>The data subject may, at any time, prevent the setting of cookies through our website by means of a corresponding setting of the Internet browser used, and may thus permanently deny the setting of cookies. Furthermore, already set cookies may be deleted at any time via an Internet browser or other software programs. This is possible in all popular Internet browsers. If the data subject deactivates the setting of cookies in the Internet browser used, not all functions of our website may be entirely usable.</p>
                                     </div>
                                      <div className="item-details-widget">
-                                        <h1 className="item_details_info_title"> Cookies</h1>
+                                        <h1 className="item_details_info_title"> Collection of general data and information</h1>
                                         <p>The website of Augmentity collects a series of general data and information when a data subject or automated system calls up the website. This general data and information are stored in the server log files. Collected may be (1) the browser types and versions used, (2) the operating system used by the accessing system, (3) the website from which an accessing system reaches our website (so-called referrers), (4) the sub-websites, (5) the date and time of access to the Internet site, (6) an Internet protocol address (IP address), (7) the Internet service provider of the accessing system, and (8) any other similar data and information that may be used in the event of attacks on our information technology systems.</p>
                                         <p>When using these general data and information, Augmentity does not draw any conclusions about the data subject. Rather, this information is needed to (1) deliver the content of our website correctly, (2) optimize the content of our website as well as its advertisement, (3) ensure the long-term viability of our information technology systems and website technology, and (4) provide law enforcement authorities with the information necessary for criminal prosecution in case of a cyber-attack. Therefore, Augmentity analyses anonymously collected data and information statistically, with the aim of increasing the data protection and data security of our enterprise, and to ensure an optimal level of protection for the personal data we process. The anonymous data of the server log files are stored separately from all personal data provided by a data subject.</p>
                                     </div>

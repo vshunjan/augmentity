@@ -24,7 +24,7 @@ const ContactSection = (props) => {
                                     <div className="xb-item--top">
                                         <h3 className="xb-item--title">Contact Info</h3>
                                         <span className="xb-item--hotline"> +44 7557304343</span>
-                                        <span className="xb-item--email"> discover@Augmentity.com</span>
+                                        <span className="xb-item--email"> discover@augmentity.net</span>
                                         <ul className="social_icons_block list-unstyled ul_li">
                                             <li>
                                                 <Link onClick={ClickHandler} to="/contact" aria-label="Twitter"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">

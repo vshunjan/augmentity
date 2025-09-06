@@ -3425,3 +3425,9 @@ section.page-title.contact-banner.pt-200.pos-rel.bg_img {
   stroke-dashoffset: -138px;
   stroke-dasharray: 40 205;
 }
+
+.black-blue {
+    background-color: #010a26;
+mask-image: linear-gradient(to top, hsl(233.54deg 92% 35.18% / 19%), hsl(230.27deg 98.23% 22.16%) 15%, hsl(230deg 98.18% 21.57%) 80%, hsl(238.46deg 89.22% 49.38% / 4%));    position: relative;
+  padding-top: 400px;
+      }

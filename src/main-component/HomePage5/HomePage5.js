@@ -24,11 +24,12 @@ const HomePage5 = () => {
                     <Hero44 />
                     <PartnerSection />
                     <ServiceSection />
+                    <div className='black-blue'>
                      <WorkProcess />
                      <AwardSection/>
-                     <StickyScrollRevealDemo/>
-                     
+                     <StickyScrollRevealDemo/>  
                     <About />
+                    </div>
                     <WorkFlow />
                    
                 </main>

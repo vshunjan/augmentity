@@ -11,7 +11,7 @@ const About = (props) => {
   };
 
   return (
-    <section className="overflow-hidden about pt-60 pb-100">
+    <section className="overflow-hidden about back-blue pt-60 pb-100">
       {/* <div className='colour8'></div>   */}
       <div className="container">
    

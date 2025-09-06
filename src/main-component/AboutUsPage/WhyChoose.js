@@ -20,7 +20,8 @@ const content = [
      {/* <video src={bgImg1} autoPlay muted loop playsInline /> */}
       </div>
     ),
-    link:'/analyse'
+    link:'/analyse',
+    ttlclr:'rgb(220, 220, 70)',
   },
   {
     title: "Govern",
@@ -30,7 +31,8 @@ const content = [
       <div className="content-card-image">
 <img src={bgImg2} alt="" />      </div>
     ),
-    link:'/govern'
+    link:'/govern',
+    ttlclr:'rgb(62, 156, 94)',
   },
   {
     title: "Insure",
@@ -41,7 +43,8 @@ const content = [
                  <img src={bgImg4} alt="" />
       </div>
     ),
-    link:'/insure'
+    link:'/insure',
+    ttlclr:'rgb(161, 40, 237)',
   },
   {
     title: "Defend",
@@ -52,18 +55,20 @@ const content = [
                  <img src={bgImg1} alt="" />
       </div>
     ),
-    link:'/defend'
+    link:'/defend',
+     ttlclr:'rgb(246, 97, 72)',
   },
 ];
 
  function StickyScrollRevealDemo() {
   return (
-    <section>
+    <section className="back-blue">
+      <div className="container">
     <div className="sticky-scroll-demo">
-    
             <div class="folder-svg">
-              <svg class="svg-folder-decor" viewBox="0 0 940 227" xmlns="http://www.w3.org/2000/svg"><path d="M1.3042e-06 20C1.37396e-06 8.95431 8.95431 0 20 0H303.176C314.41 0 325.419 3.15428 334.949 9.10375L388.306 42.4135C396.248 47.3714 405.422 50 414.784 50H768.23H920C931.046 50 940 58.9543 940 70V206.5C940 217.546 931.046 226.5 920 226.5H20C8.9543 226.5 5.65529e-08 217.546 1.26314e-07 206.5L1.3042e-06 20Z" fill="#010a26"></path></svg></div>
+              <svg class="svg-folder-decor" viewBox="0 0 940 227" xmlns="http://www.w3.org/2000/svg"><path d="M1.3042e-06 20C1.37396e-06 8.95431 8.95431 0 20 0H303.176C314.41 0 325.419 3.15428 334.949 9.10375L388.306 42.4135C396.248 47.3714 405.422 50 414.784 50H768.23H920C931.046 50 940 58.9543 940 70V206.5C940 217.546 931.046 226.5 920 226.5H20C8.9543 226.5 5.65529e-08 217.546 1.26314e-07 206.5L1.3042e-06 20Z" fill="#0d286b"></path></svg></div>
       <StickyScroll content={content} />
+    </div>
     </div>
    {/* <RoadmapSlider/> */}
     </section>

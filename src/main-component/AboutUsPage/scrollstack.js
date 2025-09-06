@@ -29,9 +29,9 @@ import { Link } from 'react-router-dom'
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors =  "#010a26";
+  const backgroundColors =  "#0d286b";
 
-  const linearGradients = '#010a26';
+  const linearGradients = '#0d286b';
 
   const [backgroundGradient, setBackgroundGradient] = useState(linearGradients[0]);
 
@@ -57,6 +57,7 @@ import { Link } from 'react-router-dom'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
                 className="sticky-scroll-title"
+                style={{ color: item.ttlclr }}
               >
                 {item.title}
               </motion.h2>

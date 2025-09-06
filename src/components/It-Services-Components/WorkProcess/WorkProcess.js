@@ -1,11 +1,11 @@
 import React from 'react';
 import { Fade } from "react-awesome-reveal";
 
-import sIcon1 from '../../../images/gallery/1product.png'
-import sIcon2 from '../../../images/gallery/cyber msp.png'
-import sIcon3 from '../../../images/gallery/penetration.png'
-import sIcon4 from '../../../images/gallery/4brokers.png'
-import sIcon5 from '../../../images/gallery/5Soc.png'
+import sIcon1 from '../../../images/gallery/product1.png'
+import sIcon2 from '../../../images/gallery/cybersecurity.png'
+import sIcon3 from '../../../images/gallery/penetration2.png'
+import sIcon4 from '../../../images/gallery/insurance1.png'
+import sIcon5 from '../../../images/gallery/soc1.png'
 import { Link } from 'react-router-dom';
 
 const Process = [

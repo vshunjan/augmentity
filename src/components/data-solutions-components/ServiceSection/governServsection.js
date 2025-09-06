@@ -41,6 +41,7 @@ const ServiceSection = (props) => {
               data-wow-delay={`${index * 150}ms`}
               data-wow-duration="600ms"
               onMouseEnter={() => handleMouseEnter(index)}
+              style={{background:' #0B7A55'}}
             >
               <div className="xb-item--holder">
                 {/* <div className="xb-item--icon"><img src={service.sIcon} alt="" /></div> */}

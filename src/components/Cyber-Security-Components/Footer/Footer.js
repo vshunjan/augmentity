@@ -8,7 +8,7 @@ import icon2 from '../../../images/footer/social-link02.png'
 import icon3 from '../../../images/footer/social-link03.png'
 import icon4 from '../../../images/footer/social-link04.png'
 import icon5 from '../../../images/footer/social-link05.png'
-import logo from '../../../images/footer/Asset 4.svg'
+import logo from '../../../images/gallery/Asset 6.svg'
 
 const ClickHandler = () => {
   window.scrollTo(10, 0);
@@ -64,8 +64,8 @@ const Footer = (props) => {
                                         <hr className='footer-hrline'/>
                                        </span>
                                        <ul className="xb-item--holder list-unstyled">
-                                           <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="/" className="xb-icon"><img src={icon2} alt="" /></Link></li>
-                                           <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="/" className="xb-icon"><img src={icon4} alt="" /></Link></li>
+                                           <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="https://x.com/augmentitynet" className="xb-icon"><img src={icon2} alt="" /></Link></li>
+                                           <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="https://www.linkedin.com/company/augmentity-network/" className="xb-icon"><img src={icon4} alt="" /></Link></li>
                                            
                                           
                                        </ul>
@@ -90,11 +90,11 @@ const Footer = (props) => {
    
           <div className="footer-copyright ul_li_between"> 
               <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
-            <p className="copyright">Copyright © 2025 <Link onClick={ClickHandler} to="/">AUGMENTITY</Link>. All rights reserved.</p>
+            <p className="copyright">Copyright © 2025 AUGMENTITY. All rights reserved.</p>
             </Fade>
            
               <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
-            <p className="privacy"><Link onClick={ClickHandler} to="/privacy">Privacy</Link> <span>Terms Of Use</span></p>
+            <p className="privacy"><Link onClick={ClickHandler} to="/privacy">Privacy</Link> <Link onClick={ClickHandler} to="/terms"><span>Terms Of Use</span></Link> </p>
             </Fade>
           </div>
           

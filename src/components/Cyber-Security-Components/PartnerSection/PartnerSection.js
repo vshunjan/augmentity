@@ -101,7 +101,7 @@ const PartnerSection = () => {
                                          
                                           <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
                                               <div className="brand-text">
-                                                  <p className="content about-sec wow first" data-wow-delay="300ms" data-wow-duration="600ms">Secure your cyber and AI transformation by augmenting your team with our elite consultants to detect risks, architect resilience, and build a bulletproof strategy.</p>
+                                                  <p className="content about-sec wow first" data-wow-delay="300ms" data-wow-duration="600ms"> <span>Secure</span> your cyber and AI <span>transformation</span>  by augmenting your team with our elite consultants to <span>detect</span>  risks, <span>architect</span> resilience, and build a bulletproof <span>strategy.</span></p>
                                                   <p className="content about-sec wow " data-wow-delay="300ms" data-wow-duration="600ms"> In today's world, cyber confidence is a true business advantage.</p>
                                               </div>
                                              

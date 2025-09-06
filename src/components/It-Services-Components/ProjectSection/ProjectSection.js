@@ -50,8 +50,8 @@ const ProjectSection = (props) => {
                                     
                                     Whilst you focus on transforming your digital organisation with Al and automation, we help you to stay confident about cyber risk.
 We are a team of elite security consultants, with a global threat-intel-ligence network, and a unique comprehensive framework to assess and transform your security strategy for tomorrow's demands.
-Our team have advised world-class organisations in investment bank-ing, financial services, retail and manufacturing, as well as cybersecurity product vendors - to build attack resilience at every layer.
-We are human and we understand nothing is perfect and therein lies Our strength in defending against the adversaries.
+Our team have advised world-class organisations in investment banking, financial services, retail and manufacturing, as well as cybersecurity product vendors - to build attack resilience at every layer.
+We are human and we understand nothing is perfect and therein lies our strength in defending against the adversaries.
                                 </span>
                             </div>
                         </Fade>

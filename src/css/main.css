@@ -8213,7 +8213,7 @@ span.xb-item--content {
     top: 0;
     height: 100%;
     right: 0;
-    padding: 0 7%;
+    padding: 0%;
     width: 100%;
 }
 .process-content {
@@ -8948,13 +8948,13 @@ section.service.pos-rel.z-1.pb-150 {
   }
 }
 
-.da-service-item:nth-child(2) {
+/* .da-service-item:nth-child(2) {
   background: #0B7A55;
 }
 
 .da-service-item:nth-child(3) {
   background: #3B2447;
-}
+} */
 
 .da-service-item:nth-child(4) {
   background: linear-gradient(159deg, #145f45 0%, #000000 100%);
@@ -14534,6 +14534,7 @@ section.service.pos-rel.z-1.pb-150 {
 
 .cd-contact-form .xb-content {
   color: #c1c1c1;
+      width: 96%;
       font-size: 19px;
   line-height: 30px;
 }
@@ -16650,6 +16651,7 @@ h2.item_details_info_title {
 h1.item_details_info_title {
   font-size: 35px;
   font-weight: 700;
+      color: #21f7f7;
   margin-bottom: 25px;
 }
 
@@ -18800,7 +18802,7 @@ section.project.pb-140.o-hidden::before {
 
 
 .hero-style-six .xb-hero .xb-item--title {
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 90px;
       letter-spacing: -3px;
       text-transform: uppercase;
@@ -21332,9 +21334,11 @@ nav.xb-header-nav {
 
 .footer-style-two .footer-copyright a {
   color: var(--color-white);
+      font-size: 20px;
 }
 .footer-style-two .footer-copyright a:hover  {
   color: #021ca4;
+      font-size: 20px;
 }
 
 .footer-style-two .footer-copyright a:hover {
@@ -21454,7 +21458,7 @@ a.xb-logo {
 }
 @media (max-width: 1199px) {
   .footer-style-three .social-item .xb-icon {
-    padding: 20px 30px;
+    /* padding: 20px 30px; */
     min-height: 77px;
   }
 }
@@ -21483,7 +21487,8 @@ a.xb-logo {
       font-weight: 500;
     font-family: 'josefin';
     margin-bottom: 20px;
-    text-transform: capitalize;
+       text-transform: uppercase;
+    color: #21f7f7;
     font-size: 23px;
     letter-spacing: 1.4px;
 }
@@ -21494,6 +21499,7 @@ a.xb-logo {
 }
 .footer-style-three .footer-widget .xb-item--list:hover a{
   color:#021ca4;
+      font-size: 21px;
 }
 
 .footer-style-three .sa-newslatter .xb-item--sub-title {
@@ -22509,7 +22515,7 @@ section.brand.mt-90.scecond {
         background: black;
     z-index: 2;
         margin-top: 0;
-    padding-top: 57px;
+    padding-top: 28px;
 }
 
 
@@ -22603,7 +22609,7 @@ section.brand.mt-90.scecond {
        font-size: 70px;
        margin-bottom:0px;
     font-weight: 500;
-    color: #21f5f5;
+    color: #f03099;
 }
 
 .card-icon {
@@ -22703,6 +22709,7 @@ h1.service-card-title {
         font-size: 6rem;
         letter-spacing: -4px;
         width:95%;
+            color: #21f7f7;
     font-weight: 400;
         font-family: 'josefin';
     text-transform: none;
@@ -22833,6 +22840,11 @@ p.content.about-sec.wow.first {
     font-family: "josefin";
     font-weight: 200;
 }
+p.content.about-sec.wow.first span {
+     color: #93e2e6;
+    position: relative;
+    font-weight: 400;
+}
 h2.trusted-br {
         font-weight: 400;
     font-size: 30px;
@@ -22891,10 +22903,10 @@ p.srcCrd-title {
 }
 p.srcCrd-title span {
     display: flex;
-    gap: 12px;
+    gap: 5px;
 }
 .number-magic {
-    color: #21f5f5;
+    color: #f03099;
         font-size: 26px;
 }
 p.card-para {
@@ -22933,7 +22945,7 @@ p.sub-title-sec {
 
 .faulty-terminal-container {
   width: 100%;
-      mask-image: linear-gradient(to top, hsl(0 0% 0% / 0), hsl(0 0% 0% / 1) 20%, hsl(0 0% 0% / 1) 80%, hsl(0 0% 0% / 0));
+mask-image: linear-gradient(to top, hsl(233.54deg 92% 35.18% / 19%), hsl(230.27deg 98.23% 22.16%) 15%, hsl(230deg 98.18% 21.57%) 80%, hsl(238.46deg 89.22% 49.38% / 4%));    position: relative;
   height: 600px;
   left:0;
      position: absolute;
@@ -22994,8 +23006,8 @@ p.sub-title-sec {
 }
 
 .container.service-banner {
-    width: 100%;
-    max-width: 100%;
+    /* width: 100%;
+    max-width: 100%; */
     padding: 0%;
     /* border: 1px solid white; */
 }
@@ -23118,7 +23130,7 @@ section.award p.sub-title-sec.heighlight-text {
 
 span.xb--item-bold-sub {
     font-weight: 600;
-           color: #c87af2;
+           color: #21f7f7;
     font-size: 27px;
     margin-right: 5px;
 }
@@ -23138,15 +23150,26 @@ span.xb--item-bold-sub {
 @media (max-width: 992px) {
  
     .container.service-banner .hero_wrap .col-lg-6 {
-    height: auto;
+    height: 50%;
     }
-    
+    .banner-service-image {
+         justify-content:flex-start
+    }
+    .container.service-banner .xb-hero {
+      padding-bottom: 0;
+    }
+   
 }
 @media (max-width: 1600px) {
  
    .hero-style-three .container {
     height: auto;
     padding-top: 250px;
+}
+
+section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img .container {
+    height: 100%;
+    padding-top:0;
 }
 section.hero.home.hero-style-three.pos-rel.pt-120.bg_img {
     min-height: auto;
@@ -23183,6 +23206,12 @@ section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
 }
 
 }
+@media (max-width: 900px) {
+ .xb-footer {
+    flex-direction: column;
+    gap: 15px;
+ }
+}
 
 
 
@@ -23193,6 +23222,12 @@ section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
   }
   .hero_wrap.pt-90 {
   padding-bottom:0px;
+}
+.about-banner.hero-style-three .text-left.xb-hero.video-banner {
+  justify-content: flex-start;
+}
+section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
+    padding-top: 0;
 }
   .page-title {
         padding-top: 269px;
@@ -23332,7 +23367,9 @@ span.award-servive-span {
     justify-content: center;
 }
 .menu-sub-head h1{
-  color:white;
+font-weight: 500;
+    color: white;
+    text-transform: uppercase;
 }
 p.copyright.services {
     font-size: 20px;
@@ -23386,4 +23423,29 @@ max-width:100%;
 }
 .process-right.f-right {
   width:100%;
+}
+
+.hot-fade.css-x0199w {
+    width: 100%;
+}
+.pro-top.ul_li_between.hot-line.mb-65.independent {
+    width: 100%;
+    margin-top: 90px;
+}
+.pro-top.ul_li_between.hot-line.mb-65.independent .sec-title .content {
+  max-width:100%;
+      flex-direction: column;
+    gap: 10px;
+    line-height: 1.3;
+    display: flex;
+  font-size:35px !important;
+}
+span.hot-nb-desc {
+    font-size: 28px;
+}
+.pro-top.ul_li_between.hot-line.mb-65.independent .your-swat-content.css-zvi4ix {
+  width: 100%;
+}
+.pro-top.ul_li_between.hot-line.mb-65.independent .sec-title {
+  width: 100%;
 }

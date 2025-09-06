@@ -17,8 +17,8 @@ const ContactSection = (props) => {
                      
                         <div className="col-lg-8 mt-30 hotline">
                             <div className="cs-contact-wrap cs-contact-form cd-contact-form item-contact_form">
-                                <h2 className="xb-title">Send us a message</h2>
-                                <p className="xb-content">Give us a chance to serve and bring magic to your brand.</p>
+                                <h2 className="xb-title">Security Brief</h2>
+                                <p className="xb-content">You will be assigned an Incident Response co-ordinator who will liaise with your team to identify, understand and advise on an action plan to contain the breach, expediting your return to business.</p>
                                 <ContactForm />
                             </div>
                         </div>

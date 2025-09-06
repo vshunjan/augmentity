@@ -63,8 +63,8 @@ const AwardSection = () => {
   
 
   return (
-    <section className="award" style={{ backgroundColor: "black" }}>
-      <div className="container award-sec">
+    <section className="award back-blue" >
+      <div className="container ">
          <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
         <p className="sub-title-sec heighlight-text">
           Our approach is built around four strategic pillars <span className="award-servive-span">Analyse, Govern,
