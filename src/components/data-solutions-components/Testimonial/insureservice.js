@@ -61,7 +61,7 @@ const Testimonial = (props) => {
                                                            <Fade direction='up' triggerOnce={'false'} duration={1500} delay={9}>
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
-                                                                <AccordionHeader targetId="1" className='acc-btn'>Cybersecurity Ratings Analysis (NIST CSF, BitSight, SecurityScorecard) <span className="arrow"></span>
+                                                                <AccordionHeader targetId="1" className='acc-btn'>Cybersecurity Ratings Analysis  <span className="arrow"></span>
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="1" className='acc_body'>
                                                                     <div className="content">

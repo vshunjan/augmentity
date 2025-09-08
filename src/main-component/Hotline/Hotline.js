@@ -13,7 +13,7 @@ const HotLine = () => {
             <div className='cybersecurity body_wrap sco_agency'>
                 <main className=" page_content">                    
                     <Header4 />
-                     <section className="page-title contact-banner pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
+                     <section className="page-title hot-line contact-banner pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
                     <div className="container">
                         <div className="page-title-wrap sd-title-wrap">
                             <div className="row mt-none-30 align-items-end">
@@ -32,7 +32,7 @@ const HotLine = () => {
                                                                                                 
                                                                                                          <span className="content wow fadeInLeft" data-wow-duration="600ms">
                                                                                                         <span>  Contact us on our hotline</span> 
-                                                                                                        <span>  UK - +44 7810790018  |     UAE - +971 524710069 </span>
+                                                                                                        <span>  UK  +44 7810790018  |     UAE  +971 524710069 </span>
                                                                                                        <span className='hot-nb-desc'> Please note the hotline is for urgent assistance only. Alternatively, please fill out the form below.</span>
                                                                                                         
                                                                                                          </span>

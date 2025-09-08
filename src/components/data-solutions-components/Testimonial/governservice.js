@@ -122,7 +122,7 @@ const Testimonial = (props) => {
 
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
-                                                                <AccordionHeader targetId="7" className='acc-btn'> Regulatory Compliance Readiness (GDPR, DORA, HIPAA, etc.)<span className="arrow"></span>
+                                                                <AccordionHeader targetId="7" className='acc-btn'> Regulatory Compliance Readiness <span className="arrow"></span>
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="7" className='acc_body'>
                                                                     <div className="content">
@@ -156,7 +156,7 @@ const Testimonial = (props) => {
 
                                                         <Accordion open={open} toggle={toggle} className='clearfix accordion_box list-unstyled'>
                                                             <AccordionItem className='block'>
-                                                                <AccordionHeader targetId="10" className='acc-btn'> AI Risk Governance (incl. EU AI Act, ISO 42001)<span className="arrow"></span>
+                                                                <AccordionHeader targetId="10" className='acc-btn'> AI Risk Governance <span className="arrow"></span>
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="10" className='acc_body'>
                                                                     <div className="content">

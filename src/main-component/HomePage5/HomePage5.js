@@ -8,7 +8,7 @@ import WorkProcess from '../../components/WorkProcess/WorkProcess';
 import WorkFlow from '../../components/Cyber-Security-Components/WorkFlow/WorkFlow';
 import AwardSection from '../AboutUsPage/AwardSection';
 import StickyScrollRevealDemo from '../AboutUsPage/WhyChoose';
-
+import Scrollbar from '../../components/scrollbar/scrollbar';
 import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
 
 
@@ -34,6 +34,7 @@ const HomePage5 = () => {
                    
                 </main>
                 <Footer/>
+                <Scrollbar/>
             </div>
         </Fragment>
     )

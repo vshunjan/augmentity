@@ -13,7 +13,7 @@ const Process = [
         id: "01",
         
         title:'We are not specialist product consultants.',
-        subTitle: 'We are not specialist product consultants. Our team may be certified in most network products and security technologies but we offer unbiased advise on those, with no motivations to recommend a specific product or vendor - prioritising your strategic goals first.',
+        subTitle: ' Our team may be certified in most network products and security technologies but we offer unbiased advise on those, with no motivations to recommend a specific product or vendor - prioritising your strategic goals first.',
         icon: sIcon1,
         direction: 'one',
     },
@@ -69,11 +69,9 @@ const WorkProcess = (props) => {
                                     <div>
                                                 <div class="colourab1"></div>
                                         <h1 className="mb-40 title wow fadeInUp scroll-card card-why-f" data-wow-delay="000ms" data-wow-duration="900ms">
-                                     Who We Are
+                                     Who We Are <span className='about c-suite'> NOT   </span>
                                </h1>
-                                        <h1 className="mb-40 title wow fadeInUp scroll-card card-why-s" data-wow-delay="000ms" data-wow-duration="900ms">
-                                   <span className='about c-suite'> NOT   </span>
-                               </h1>
+                                     
                                     </div>
                                 </Fade>
                                

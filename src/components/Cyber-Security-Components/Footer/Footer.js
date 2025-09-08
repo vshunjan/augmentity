@@ -58,14 +58,14 @@ const Footer = (props) => {
                                        </ul>
                                    </div>
                                </div>
-            <div className="footer col-lg-4 col-md-6">
-                                   <div className="footer-widget">
+            <div className="footer socialmed col-lg-4 col-md-6">
+                                   <div className="footer-widget ">
                                        <span className="xb-item--sub-title">Social
                                         <hr className='footer-hrline'/>
                                        </span>
                                        <ul className="xb-item--holder list-unstyled">
-                                           <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="https://x.com/augmentitynet" className="xb-icon"><img src={icon2} alt="" /></Link></li>
-                                           <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="https://www.linkedin.com/company/augmentity-network/" className="xb-icon"><img src={icon4} alt="" /></Link></li>
+                                           <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="https://x.com/augmentitynet" target="_blank"  rel="noopener noreferrer" className="xb-icon"><img src={icon2} alt="" /></Link></li>
+                                           <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="https://www.linkedin.com/company/augmentity-network/" target="_blank"  rel="noopener noreferrer" className="xb-icon"><img src={icon4} alt="" /></Link></li>
                                            
                                           
                                        </ul>

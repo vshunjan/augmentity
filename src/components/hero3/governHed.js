@@ -31,7 +31,7 @@ const Hero3 = (props) => {
                                         <h1 className="xb-item--title wow fadeInUp" style={{color:'#3E9C5E'}}  data-wow-delay="0ms" data-wow-duration="600ms">Govern </h1>
                                     </div>
                                     <div>
-                                        <p className="xb-item--content wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">Build strong policy. Lead with security. Be regulation-ready. </p>
+                                        <p className="xb-item--content wow fadeInUp" data-wow-delay="0ms" data-wow-duration="600ms">Build strong policy. Lead with security. <br/>  Be regulation-ready. </p>
                                     </div>
                                 </Fade>
                             </div>

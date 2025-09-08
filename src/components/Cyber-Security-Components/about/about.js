@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import imgWhy from '../../../images/gallery/why-augmentity.svg'
 import RippleGrid from "./RippleGrid";
-import img1 from '../../../images/logo/Asset a.png'
+import img1 from '../../../images/logo/Asset 234.png'
 
 const About = (props) => {
   const ClickHandler = () => {
@@ -72,9 +72,11 @@ const About = (props) => {
                         approach that encompasses cloud, on-premise,
                         applications, networks and human factors. Our
                         independent counsel is tailored to meet the unique needs
-                        of your business. We believe that human intelligence is
-                        greater. Attacks are the norm, how you respond sets you
-                        apart.
+                        of your business.
+                      </p>
+                      <p className="sub-title-sec highlit-21 heighlight-text" >
+                     
+                       Attacks are inevitable - your response sets you apart.
                       </p>
                     </div>
                   </Fade>

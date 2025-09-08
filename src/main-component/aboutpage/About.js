@@ -30,7 +30,7 @@ const AboutPage = () => {
                     
                 </main>
                 <Footer />
-                {/* <Scrollbar /> */}
+                <Scrollbar />
             </div>
         </Fragment>
     )

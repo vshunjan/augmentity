@@ -14,7 +14,7 @@ const PrivacyPage = (props) => {
         <Fragment>
             <div className='body_wrap sco_agency'>
                 <Header4 />
-                 <section className="page-title contact-banner pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
+                 <section className="page-title contact-banner privacy pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
                     <div className="container">
                         <div className="page-title-wrap sd-title-wrap">
                             <div className="row mt-none-30 align-items-end">
@@ -103,7 +103,7 @@ const PrivacyPage = (props) => {
                                         <h1 className="item_details_info_title">Contact Us</h1>
                                         <p>If you have questions about these Terms, please contact us at</p>
                                      <div className="item-details-widget">
-                                        <h2 className="item_details_info_title">AUGMENTITY</h2>
+                                        <h2 className="item_details_info_title">AUGMENTiTY</h2>
                                         <p>137 Repton road, London BR6 9HT</p>
                                         <p>discover@augmentity.net</p>
                                     </div>

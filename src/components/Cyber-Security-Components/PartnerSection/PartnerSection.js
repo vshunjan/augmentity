@@ -21,28 +21,28 @@ import pimg17 from "../../../images/gallery/hil.png";
 import pimg18 from "../../../images/gallery/sgs.png";
 
 const partnersLeft = [
-  { pImg: pimg1 },
+  // { pImg: pimg1 },
   { pImg: pimg2 },
-  { pImg: pimg3 },
+  // { pImg: pimg3 },
   { pImg: pimg4 },
   { pImg: pimg5 },
   { pImg: pimg6 },
-  { pImg: pimg7 },
+  // { pImg: pimg7 },
   { pImg: pimg8 },
   { pImg: pimg11 },
 
 ];
 
 const partnersRight = [
-  { pImg: pimg10 },
+  // { pImg: pimg10 },
   { pImg: pimg11 },
   { pImg: pimg12 },
   { pImg: pimg13 },
   { pImg: pimg14 },
-  { pImg: pimg15 },
+  // { pImg: pimg15 },
   { pImg: pimg16 },
   { pImg: pimg17 },
-  { pImg: pimg10 },
+  // { pImg: pimg10 },
   { pImg: pimg11 },
   { pImg: pimg12 },
   { pImg: pimg13 },
@@ -101,7 +101,7 @@ const PartnerSection = () => {
                                          
                                           <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
                                               <div className="brand-text">
-                                                  <p className="content about-sec wow first" data-wow-delay="300ms" data-wow-duration="600ms"> <span>Secure</span> your cyber and AI <span>transformation</span>  by augmenting your team with our elite consultants to <span>detect</span>  risks, <span>architect</span> resilience, and build a bulletproof <span>strategy.</span></p>
+                                                  <p className="content about-sec wow first" data-wow-delay="300ms" data-wow-duration="600ms"> <span>Secure</span> your cyber and AI <span>transformation</span>  by augmenting your team with our elite consultants to <span>detect</span>  risks, <span>architect</span> resilience, and build a  <span>bulletproof </span>strategy.</p>
                                                   <p className="content about-sec wow " data-wow-delay="300ms" data-wow-duration="600ms"> In today's world, cyber confidence is a true business advantage.</p>
                                               </div>
                                              

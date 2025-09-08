@@ -5,7 +5,7 @@ import Header4 from '../../components/header4/Header4';
 
 import ServiceSection from '../../components/data-solutions-components/ServiceSection/governServsection';
 import Testimonial from '../../components/data-solutions-components/Testimonial/governservice';
-
+import Scrollbar from '../../components/scrollbar/scrollbar';
 import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
 
 
@@ -24,7 +24,8 @@ const servicepage = () => {
                 </main>
             </div>
                 <Footer/>
+                <Scrollbar/>
         </Fragment>
     )
-};
+}
 export default servicepage;

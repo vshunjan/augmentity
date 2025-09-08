@@ -46,7 +46,7 @@ const WorkFlow = (props) => {
           </p> */}
  <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
           <div className="hero-btn">
-            <Link  to="/contact"> 
+            <Link  to="/hotline"> 
             <span>
               Contact Us
             </span>

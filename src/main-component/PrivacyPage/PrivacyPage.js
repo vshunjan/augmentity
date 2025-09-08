@@ -14,7 +14,7 @@ const PrivacyPage = (props) => {
         <Fragment>
             <div className='body_wrap sco_agency'>
                 <Header4 />
-                 <section className="page-title contact-banner pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
+                 <section className="page-title contact-banner privacy pt-200 pos-rel bg_img" style={{ backgroundImage: `url(${Bg})` }}>
                     <div className="container">
                         <div className="page-title-wrap sd-title-wrap">
                             <div className="row mt-none-30 align-items-end">
@@ -107,16 +107,12 @@ const PrivacyPage = (props) => {
                                     <div className="item-details-widget">
                                         <h1 className="item_details_info_title">Name and Address of the controller</h1>
                                         <p> Controller for the purposes of the General Data Protection Regulation (GDPR), other data protection laws applicable in Member states of the European Union and other provisions related to data protection is:
-                                         <br/> 
-                                         <p>The Data Protection Controller Is:</p>
-                                         <p>Paul White	
-                                          Augmentity Ltd.
-                                          39 Park lane, Kemsing TN15 6NX
-                                          Sevenoaks, United Kingdom</p>
+                                         <br/><p>The Data Protection Controller Is:</p>
+                                         <p>Paul White, Augmentity Ltd. 39 Park lane, Kemsing TN15 6NX Sevenoaks, United Kingdom</p>
                                             
-                                              <a href="Phoneto:+44 7557304343">Phone: +44 7557304343</a>
-                                            <br/>  <a href="mailto:discover@Augmentity.com">Email: discover@Augmentity.com</a>
-                                            <br/> <a href=" www.augmentity.net">Website: www.augmentity.net</a>
+                                             <p><a href="Phoneto:+44 7557304343">Phone: +44 7557304343</a></p>
+                                            <p><a href="mailto:discover@Augmentity.com">Email: discover@Augmentity.net</a></p>
+                                            <p> <a href=" www.augmentity.net">Website: www.augmentity.net</a></p>
                                             </p>
                                     </div>
                                     <div className="item-details-widget">
@@ -124,13 +120,11 @@ const PrivacyPage = (props) => {
                                      
                                         <p> Any data subject may, at any time, contact our Data Protection Officer directly with all questions and suggestions concerning data protection.
                                         <p>The Data Protection Officer of the controller is:</p>
-                                          <p> Paul Whit  Augmentity Ltd.
-                                          39 Park lane, Kemsing TN15 6NX
-                                          Sevenoaks, United Kingdom</p>
+                                        <p> Paul White, Augmentity Ltd.39 Park lane, Kemsing TN15 6NX  Sevenoaks, United Kingdom</p>
                                             
-                                              <a href="Phoneto:+44 7557304343">Phone: +44 7557304343</a>
-                                            <br/> <a href="mailto:discover@Augmentity.com">Email: discover@Augmentity.com</a>
-                                            <br/><a href="www.augmentity.net">Website: www.augmentity.net</a>
+                                            <p><a href="Phoneto:+44 7557304343">Phone: +44 7557304343</a></p>
+                                            <p><a href="mailto:discover@Augmentity.com">Email: discover@Augmentity.net</a></p>
+                                            <p> <a href=" www.augmentity.net">Website: www.augmentity.net</a></p>
                                            </p> 
                                     </div>
                                      <div className="item-details-widget">

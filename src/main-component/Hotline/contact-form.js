@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ContactForm from '../../components/ContactFrom/ContactForm'
+import ContactForm from './form'
 
 
 const ContactSection = (props) => {

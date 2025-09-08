@@ -27,7 +27,7 @@ const ProjectSection = (props) => {
                         </Fade>
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
                             <div>
-                                <span className="content wow fadeInLeft" data-wow-duration="600ms">Our mission is to help every organisation create a digital <br/> safe-space for their business and people.</span>
+                                <span className="content wow fadeInLeft" data-wow-duration="600ms">Our mission is to help every organisation create a digital  safe-space for their business and people.</span>
                             </div>
                         </Fade>
                     </div>

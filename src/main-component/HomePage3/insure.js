@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import Hero3 from '../../components/hero3/insureHed';
 import Header4 from '../../components/header4/Header4';
-
+import Scrollbar from '../../components/scrollbar/scrollbar';
 import ServiceSection from '../../components/data-solutions-components/ServiceSection/insuresevsection';
 import Testimonial from '../../components/data-solutions-components/Testimonial/insureservice';
 
@@ -24,6 +24,7 @@ const servicepage = () => {
                 </main>
             </div>
                 <Footer/>
+                <Scrollbar/>
         </Fragment>
     )
 };

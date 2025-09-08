@@ -41,9 +41,11 @@
 
 .sticky-scroll-title {
   font-size: 5rem;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   color: rgb(241, 245, 249); /* slate-100 */
   line-height: 1.25;
+    text-transform: uppercase !important;
+    letter-spacing: -3px;
   transition: opacity 0.3s ease;
 }
 
@@ -224,4 +226,17 @@
   background: #021ca2;
     
     color: white;
+}
+span.award-servive-span.anlyse-1 {
+    color: rgb(220, 220, 70);
+}
+span.award-servive-span.govern-1 {
+    color: rgb(62, 156, 94);
+}
+
+span.award-servive-span.insure-1 {
+    color: rgb(161, 40, 237);
+}
+span.award-servive-span.defend-1 {
+  color: rgb(246, 97, 72);
 }

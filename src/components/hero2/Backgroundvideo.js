@@ -2,15 +2,26 @@ import React from "react";
 
 export default function BackgroundVideo() {
   return (
-    <div className="video-container">
-     <iframe
-  src="https://player.mux.com/01QIelPYt01hh84998dCl00iBWMtVNhkWxOHrtP7qnZfC00?autoplay=1&muted=1&loop=1"
-  style={{ width: "100%", border: "none", aspectRatio: "16/9" }}
-  allow="autoplay; fullscreen; accelerometer; gyroscope; encrypted-media; picture-in-picture"
+ <div className="video-container">
+  <iframe
+  src="https://www.youtube.com/embed/0hui9QIzxZQ?autoplay=1&mute=1&loop=1&playlist=0hui9QIzxZQ&controls=0&modestbranding=1&rel=0"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="autoplay; encrypted-media; picture-in-picture"
   allowFullScreen
-  title="a"
-></iframe>
-    </div>
+  referrerPolicy="no-referrer-when-downgrade"
+  style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    zIndex: 11, // background
+  }}
+/>
+
+</div>
+
   );
 }
 

@@ -100,7 +100,7 @@ const ContactForm = (props) => {
                                 type="text"
                                 name="message"
                                 className="form-control"
-                                placeholder="">
+                                placeholder="A quick summary of your breach">
                             </textarea>
                             {validator.message('message', forms.message, 'required')}
                         </div>

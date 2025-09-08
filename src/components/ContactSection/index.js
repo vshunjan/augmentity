@@ -22,7 +22,7 @@ const ContactSection = (props) => {
                                         <span className="xb-location">39 Park lane, Kemsing TN15 6NX <br /> Sevenoaks, United Kingdom</span>
                                     </div>
                                     <div className="xb-item--top">
-                                        <h3 className="xb-item--title">Contact Info</h3>
+                                        <h3 className="xb-item--title">Contact </h3>
                                         <span className="xb-item--hotline"> +44 7557304343</span>
                                         <span className="xb-item--email"> discover@augmentity.net</span>
                                         <ul className="social_icons_block list-unstyled ul_li">
@@ -41,8 +41,8 @@ const ContactSection = (props) => {
                         </div>
                         <div className="col-lg-8 mt-30">
                             <div className="cs-contact-wrap cs-contact-form cd-contact-form item-contact_form">
-                                <h2 className="xb-title">Send us a message</h2>
-                                <p className="xb-content">Give us a chance to serve and bring magic to your brand.</p>
+                                <h2 className="xb-title">Get In Touch</h2>
+                               
                                 <ContactForm />
                             </div>
                         </div>
