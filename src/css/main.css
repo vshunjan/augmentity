@@ -7435,7 +7435,7 @@ body[data-aos-easing=ease] [data-aos] {
 
 @media (max-width: 767px) {
   .pro-top .sec-title {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 }
 
@@ -18438,7 +18438,12 @@ section.project.pb-140.o-hidden::before {
   .hero-style-three .xb-hero .xb-item--title {
             font-size: 60px;
         width: 100%;
+         
   }
+  section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img .xb-hero .xb-item--title {
+    color: #ffffff;
+    margin-top: -58px;
+}
   .about-banner.hero-style-three .xb-hero .xb-item--title span.c-suite {
     margin-left:0;
       font-size: 60px;
@@ -20201,7 +20206,7 @@ canvas.letter-glitch-canvas {
   -ms-transform: translateX(0%);
   -o-transform: translateX(0%);
   transform: translateX(0%);
-      margin-top: -50px;
+      /* margin-top: -50px; */
 }
 
 .xb-header-menu.active+.xb-header-menu-backdrop {
@@ -21490,13 +21495,18 @@ a.xb-logo {
     font-size: 4rem !important;
   }
   .pro-top.ul_li_between.mb-65.independent .content {
-    font-size: 28px !important;
+    font-size: 30px !important;
   }
+  .pro-top.ul_li_between.mb-65.independent {
+    margin-top: 200px;
+    background: #021ca1;
+    padding: 33px 25px;
+}
 }
 
 .footer-style-three .social-item .xb-icon img {
      opacity: .7;
-    width: 100px;
+    width: 90px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;

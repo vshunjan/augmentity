@@ -50,10 +50,10 @@ const Footer = (props) => {
                                         <hr className='footer-hrline'/>
                                        </span>
                                        <ul className="xb-item--holder list-unstyled">
-                                           <li className="xb-item--list"><Link  to="/analyse">Analyse</Link></li>
-                                           <li className="xb-item--list"><Link  to="/govern">Govern</Link></li>
-                                           <li className="xb-item--list"><Link  to="/insure">Insure</Link></li>
-                                           <li className="xb-item--list"><Link  to="/defend">Defend</Link></li>
+                                           <li className="xb-item--list"><Link onClick={ClickHandler} to="/analyse">Analyse</Link></li>
+                                           <li className="xb-item--list"><Link onClick={ClickHandler} to="/govern">Govern</Link></li>
+                                           <li className="xb-item--list"><Link onClick={ClickHandler}  to="/insure">Insure</Link></li>
+                                           <li className="xb-item--list"><Link onClick={ClickHandler} to="/defend">Defend</Link></li>
                                           
                                        </ul>
                                    </div>

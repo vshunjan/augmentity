@@ -14,6 +14,10 @@ import bgimg2  from '../../../images/gallery/Asset 28.svg'
 import bgimg3  from '../../../images/gallery/Asset 30.svg'
 import bgimg4  from '../../../images/bg/scroll-lockimg.svg'
 
+const ClickHandler = () => {
+  window.scrollTo(10, 0);
+}
+
 const BrandSection = () => {
 
   return (
@@ -24,21 +28,21 @@ const BrandSection = () => {
           <div className="xb-brand-item">
            
             <div className="xb-brand-single xb-brand-hover">
-         <Link  to="/analyse" >
+         <Link onClick={ClickHandler}  to="/analyse" >
                            
                 <img  src={bgimg2} alt="Shopify" />
                         </Link>
           
             </div>
             <div className="xb-brand-single xb-brand-hover">
-             <Link  to="/govern" >
+             <Link onClick={ClickHandler} to="/govern" >
                            
                 <img src={bgimg} alt="Shopify" />
                         </Link>
               
             </div>
             <div className="xb-brand-single xb-brand-hover">
-              <Link  to="/insure" >
+              <Link onClick={ClickHandler}  to="/insure" >
                            
                 <img src={bgimg3} alt="Shopify" />
                         </Link>
@@ -46,7 +50,7 @@ const BrandSection = () => {
             </div>
             <div className="xb-brand-single xb-brand-hover">
              
-               <Link  to="/defend" >
+               <Link onClick={ClickHandler} to="/defend" >
                            
                 <img src={bgimg4} alt="Shopify" />
                         </Link>

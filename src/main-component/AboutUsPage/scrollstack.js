@@ -6,6 +6,10 @@ import { motion } from "framer-motion";
 import "./scrollstack.css";
 import { Link } from 'react-router-dom'
 
+const ClickHandler = () => {
+  window.scrollTo(10, 0);
+}
+
  const StickyScroll = ({ content, contentClassName }) => {
   const [activeCard, setActiveCard] = useState(0);
   const ref = useRef(null);
@@ -68,7 +72,7 @@ import { Link } from 'react-router-dom'
               >
                 {item.description}
               </motion.p>
-               <a href={item.link} className="hero-btn">
+               <a onClick={ClickHandler} href={item.link} className="hero-btn">
                 
                  <span>Discover more</span>
       </a>
