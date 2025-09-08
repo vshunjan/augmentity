@@ -18,12 +18,16 @@ const ContactSection = (props) => {
                             <div className="item-contact_info">
                                 <div className="xb-item--inner">
                                      <div className="contact-info_widget">
-                                        <h3 className="xb-title">Augmentity Ltd.</h3>
-                                        <span className="xb-location">39 Park lane, Kemsing TN15 6NX <br /> Sevenoaks, United Kingdom</span>
+                                        <h3 className="xb-title">UK Office</h3>
+                                        <span className="xb-location">5 Bickels Yard, 151-153  <br /> Bermondsey St. London SE1 3HA</span>
+                                    </div>
+                                     <div className="contact-info_widget">
+                                        <h3 className="xb-title">UAE Office</h3>
+                                        <span className="xb-location">2403, The Prism Tower  <br />Business Bay, Dubai</span>
                                     </div>
                                     <div className="xb-item--top">
                                         <h3 className="xb-item--title">Contact </h3>
-                                        <span className="xb-item--hotline"> +44 7557304343</span>
+                                        <span className="xb-item--hotline">+44 7884479884</span>
                                         <span className="xb-item--email"> discover@augmentity.net</span>
                                         <ul className="social_icons_block list-unstyled ul_li">
                                             <li>
