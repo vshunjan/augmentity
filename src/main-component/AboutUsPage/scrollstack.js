@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import "./scrollstack.css";
+import { Fade } from "react-awesome-reveal";
 import { Link } from 'react-router-dom'
 
 const ClickHandler = () => {
@@ -44,6 +45,7 @@ const ClickHandler = () => {
   }, [activeCard]);
 
   return (
+    
     <motion.div
       animate={{
         backgroundColor: backgroundColors,
@@ -52,7 +54,7 @@ const ClickHandler = () => {
       ref={ref}
     >
       <div className="sticky-scroll-content-wrapper">
-        
+         <Fade direction='up' triggerOnce={'false'} duration={800} delay={6}>
         <div className="sticky-scroll-text-content">
           {content.map((item, index) => (
             <div key={item.title + index} className="sticky-scroll-item">
@@ -80,6 +82,7 @@ const ClickHandler = () => {
           ))}
           {/* <div className="sticky-scroll-spacer" /> */}
         </div>
+        </Fade>
       </div>
       <div
         style={{ background: backgroundGradient }}
