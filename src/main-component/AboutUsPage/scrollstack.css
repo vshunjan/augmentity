@@ -155,11 +155,11 @@
   }
   
   .sticky-scroll-title {
-    font-size: 1.125rem;
+    font-size: 52px;
   }
   
   .sticky-scroll-description {
-    font-size: 0.875rem;
+    font-size: 21px;
     max-width: 20rem;
   }
 }

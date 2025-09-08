@@ -32,7 +32,7 @@ const HotLine = () => {
                                                                                                 
                                                                                                          <span className="content wow fadeInLeft" data-wow-duration="600ms">
                                                                                                         <span>  Contact us on our hotline</span> 
-                                                                                                        <span>  UK  +44 7810790018  |     UAE  +971 524710069 </span>
+                                                                                                        <span className='locate-nmbr'>  UK  +44 7810790018  |     UAE  +971 524710069 </span>
                                                                                                        <span className='hot-nb-desc'> Please note the hotline is for urgent assistance only. Alternatively, please fill out the form below.</span>
                                                                                                         
                                                                                                          </span>

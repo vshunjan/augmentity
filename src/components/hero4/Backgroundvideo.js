@@ -3,22 +3,22 @@ import React from "react";
 export default function BackgroundVideo() {
   return (
     <div className="video-container index-page">
-<iframe
-  src="https://www.youtube.com/embed/5_fK8x0AZUc?autoplay=1&mute=1&loop=1&playlist=5_fK8x0AZUc&controls=0&modestbranding=1&rel=0"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="autoplay; encrypted-media; picture-in-picture"
+ <iframe
+  src="https://player.mux.com/rcaeAjdyzHffzOys9gH025XcBatj7j6wDGkcvqWwGHPM?autoplay=1&muted=true&loop=true&metadata-video-title=AdobeStock_1200676359_FHD&video-title=AdobeStock_1200676359_FHD&accent-color=%23040101"
+  style={{ width: "100%", border: "none", aspectRatio: "16/9" }}
+  allow="autoplay; fullscreen; accelerometer; gyroscope; encrypted-media; picture-in-picture"
   allowFullScreen
-  referrerPolicy="no-referrer-when-downgrade"
-  style={{
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    zIndex: 11, // background
-  }}
+  title="Mux Video"
+  className="desktop-vdo"
 />
+ {/* <iframe
+  src="https://player.mux.com/NqrRxGMICbSMVqKLo02qTKOE02oSTPaL3X01l5snA8fdx4?metadata-video-title=AdobeStock_1200676359_FHD+Vertical&video-title=AdobeStock_1200676359_FHD+Vertical&accent-color=%23040101"
+  style={{ width: "100%", border: "none", aspectRatio: "16/9" }}
+  allow="autoplay; fullscreen; accelerometer; gyroscope; encrypted-media; picture-in-picture"
+  allowFullScreen
+  title="Mux Video"
+  className="mobile-vdo"
+/> */}
 
 
     </div>

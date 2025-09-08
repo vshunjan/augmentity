@@ -18437,7 +18437,7 @@ section.project.pb-140.o-hidden::before {
 @media (max-width: 767px) {
   .hero-style-three .xb-hero .xb-item--title {
             font-size: 60px;
-        width: 90%;
+        width: 100%;
   }
   .about-banner.hero-style-three .xb-hero .xb-item--title span.c-suite {
     margin-left:0;
@@ -18837,6 +18837,7 @@ section.project.pb-140.o-hidden::before {
 .hero-style-six .xb-hero .xb-item--content {
     font-weight: 400;
     font-size: 27px;
+        width: 85%;
   line-height: 40px; 
   color: #ffffffd9;
 }
@@ -21474,11 +21475,22 @@ a.xb-logo {
     min-height: 77px;
   }
 }
+@media (max-width: 510px) {
+  span.locate-nmbr {
+    font-size: 29px;
+}
+}
 
 @media (max-width: 767px) {
   .footer-style-three .social-item .xb-icon {
-    padding: 16px 15px;
+    /* padding: 16px 15px; */
     min-height: 62px;
+  }
+  .pro-top.ul_li_between.mb-65.swat-team .sec-title .title {
+    font-size: 4rem !important;
+  }
+  .pro-top.ul_li_between.mb-65.independent .content {
+    font-size: 28px !important;
   }
 }
 
@@ -23194,9 +23206,9 @@ section.hero.home.hero-style-three.pos-rel.pt-120.bg_img {
 }
 
 @media (max-width: 600px) {
-   section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
+   /* section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
     height: 50%;
-}
+} */
 section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img .container {
     height: 100%;
 }
@@ -23213,8 +23225,10 @@ section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img .container {
     height: auto;
 }
 section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
-    height: 50vh;
+    /* height: 50vh; */
             padding-top: 0;
+                    display: flex;
+        flex-direction: column-reverse;
     min-height: 500px;
 }
 .hero_wrap.pt-90 {
@@ -23290,6 +23304,7 @@ section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
     height: auto;
     padding-bottom: 0;
     padding-top: 0;
+            background: black;
 }
 .sc_hero_video {
     position: relative;
@@ -23298,8 +23313,10 @@ section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
    padding-bottom: 0;
 }
 .hero-style-three {
-    
-    min-height: 700px;
+            display: flex;
+        flex-direction: column-reverse;
+        padding-top: 0;
+    min-height: 750px;
    height: auto;
 }
 .about-banner.hero-style-three .sc_hero_video {
