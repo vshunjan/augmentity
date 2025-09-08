@@ -4218,7 +4218,7 @@ body[data-aos-easing=ease] [data-aos] {
       display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 25px;
+    /* padding-top: 25px; */
   left: 0;
   right: 0;
   width: 100%;
@@ -4321,7 +4321,7 @@ body[data-aos-easing=ease] [data-aos] {
 }
 
 .header-style-three .xb-header {
-        padding: 25px 0;
+        padding: 20px 0;
     width: 100%;
 
 }

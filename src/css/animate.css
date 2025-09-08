@@ -3480,3 +3480,46 @@ mask-image: linear-gradient(to top, hsl(233.54deg 92% 35.18% / 19%), hsl(230.27d
   padding-top: 400px;
   margin-top: -350px;
   }
+
+
+
+
+
+
+
+
+  /* sticky-menu */
+
+  /* Base header style */
+.header-area {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+/* Sticky state */
+.header-area.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+ /* From https://css.glass */
+background: rgba(0, 0, 0, 0.69);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
+  animation: slideDown 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
