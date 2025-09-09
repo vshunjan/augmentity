@@ -14,7 +14,7 @@ const ClickHandler = () => {
 const Hero44 = () => {
     return (
         <section className="hero home hero-style-three pos-rel pt-120 bg_img" >
-            <div className="container">
+            <div className="container hero-start">
                 <div className="hero_wrap pt-90">
                     <div className="text-left xb-hero video-banner">
                         <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>

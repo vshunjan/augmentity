@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Fade } from "react-awesome-reveal";
 import bgImg  from '../../images/video/6.gif'
+import bgImg2  from '../../images/gallery/Asset 24.svg'
 import LetterGlitch from '../hero4/letter-glitch';
 
 const Hero3 = (props) => {
@@ -41,8 +42,11 @@ const Hero3 = (props) => {
                             <div className="xb-hero">
                                 <Fade direction='up' triggerOnce={'false'} duration={800} delay={6}>
                                    <div className='banner-service-image'>
-                                     <div className="xb-img">
+                                     <div className="xb-img desktop">
                                          <img src={bgImg} alt="" />
+                                        </div>
+                                     <div className="xb-img mobile">
+                                         <img src={bgImg2} alt="" />
                                         </div>
                                     </div>
                                 </Fade>

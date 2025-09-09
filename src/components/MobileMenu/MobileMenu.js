@@ -119,13 +119,13 @@ const MobileMenu = () => {
                       </Collapse>
                     </Fragment>
                   ) : (
-                    <Link className="active" to={item.link}>
+                    <Link  onClick={ClickHandler} className="active" to={item.link}>
                       {" "}
                       <DecryptedText
                         text={item.title}
                         speed={70}
                         maxIterations={10}
-                        characters="augmentity"
+                        characters="iSYAAiLYNLiSENAiSUGMENTiTYiOVGGiRENRiOCNGiiSUiiiRULRiSEii"
                         className="revealed"
                         parentClassName="all-letters"
                         encryptedClassName="encrypted"
@@ -190,13 +190,13 @@ const MobileMenu = () => {
                       </Collapse>
                     </Fragment>
                   ) : (
-                    <Link className="active" to={item.link}>
+                    <Link  onClick={ClickHandler} className="active" to={item.link}>
                       {" "}
                       <DecryptedText
                         text={item.title}
                         speed={70}
                         maxIterations={10}
-                        characters="ABCD1234!?"
+                        characters="iSYAAiLYNLiSENAiSUGMENTiTYiOVGGiRENRiOCNGiiSUiiiRULRiSEii"
                         className="revealed"
                         parentClassName="all-letters"
                         encryptedClassName="encrypted"
@@ -261,12 +261,12 @@ const MobileMenu = () => {
                       </Collapse>
                     </Fragment>
                   ) : (
-                    <Link className="active" to={item.link}>
+                    <Link  onClick={ClickHandler} className="active" to={item.link}>
                       <DecryptedText
                         text={item.title}
                         speed={70}
                         maxIterations={10}
-                        characters="ABCD1234!?"
+                        characters="iSYAAiLYNLiSENAiSUGMENTiTYiOVGGiRENRiOCNGiiSUiiiRULRiSEii"
                         className="revealed"
                         parentClassName="all-letters"
                         encryptedClassName="encrypted"

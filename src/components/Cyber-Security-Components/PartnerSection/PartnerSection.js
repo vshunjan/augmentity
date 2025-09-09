@@ -2,16 +2,22 @@ import React, { useEffect, useRef } from "react";
 import { Fade } from "react-awesome-reveal";
 import EvervaultCard from '../../../ui/evervault-card'
 import icon from '../../../images/icon/magic02.svg';
-import pimg1 from "../../../images/gallery/bilf.png";
+
+import pimg1 from "../../../images/logo/growth.png";
 import pimg2 from "../../../images/gallery/fst.png";
-import pimg3 from "../../../images/gallery/hil.png";
+import pimg3 from "../../../images/logo/plume.png";
 import pimg4 from "../../../images/gallery/sgs.png";
 import pimg5 from "../../../images/gallery/reptile.png";
-import pimg6 from "../../../images/gallery/fst.png";
-import pimg7 from "../../../images/gallery/hil.png";
+import pimg6 from "../../../images/logo/ansio.png";
+import pimg61 from "../../../images/logo/co-ideation.png";
+
+
+import pimg7 from "../../../images/gallery/fst.png";
 import pimg8 from "../../../images/gallery/sgs.png";
 import pimg10 from "../../../images/gallery/bilf.png";
 import pimg11 from "../../../images/gallery/reptile.png";
+
+
 import pimg12 from "../../../images/gallery/fst.png";
 import pimg13 from "../../../images/gallery/hil.png";
 import pimg14 from "../../../images/gallery/sgs.png";
@@ -21,13 +27,14 @@ import pimg17 from "../../../images/gallery/hil.png";
 import pimg18 from "../../../images/gallery/sgs.png";
 
 const partnersLeft = [
-  // { pImg: pimg1 },
+  { pImg: pimg1 },
   { pImg: pimg2 },
-  // { pImg: pimg3 },
+  { pImg: pimg3 },
   { pImg: pimg4 },
   { pImg: pimg5 },
   { pImg: pimg6 },
-  // { pImg: pimg7 },
+  { pImg: pimg61 },
+  { pImg: pimg7 },
   { pImg: pimg8 },
   { pImg: pimg11 },
 
@@ -60,7 +67,7 @@ const PartnerSection = () => {
   useEffect(() => {
     const animateMarquee = (marqueeRef) => {
       const marquee = marqueeRef.current;
-      const speed = 0.2; // Adjust speed as needed
+      const speed = 0.8; // Adjust speed as needed
       let offset = 0;
 
       if (!marquee) return;

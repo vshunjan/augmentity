@@ -3309,9 +3309,17 @@ section.overflow-hidden.about.pt-60.pb-100 .container{
     align-items: center;
 }
 
-/* @media (max-width:601px) {
+@media (max-width:601px) {
   iframe.desktop-vdo {
-display: none;
+    width: unset !important;
+    height: 510px;
+}
+
+.hero-style-three .container {
+    height: auto;
+    padding-bottom: 0;
+      padding-top: 100px !important;
+            /* background: black; */
 }
 }
 @media (min-width:601px) {
@@ -3319,26 +3327,76 @@ display: none;
 display: block;
 }
 iframe.mobile-vdo {
+  display: none;
 }
-} */
+ .cs-brand-inner.marquee-left {
+    width: 67% !important;
+ }
+ .xb-img.desktop {
+  display: block;
+}
+.xb-img.mobile {
+  display: none !important;
+}
+}
+
+@media (max-width:601px) {
+.hero-style-six .xb-hero .xb-item--content {
+  width: 100% !important;
+}
+  .xb-img.mobile {
+            display: flex;
+        align-items: center;
+        justify-content: center;
+}
+  .xb-img.mobile img{
+            width: 98% !important;
+    max-width: 79% !important;
+}
+ .xb-img.desktop {
+  display: none !important;
+}
+.sec-title--five {
+    margin-bottom: 61px;
+}
+.cd-work-left {
+    margin-bottom: 64px;
+}
+}
+
+@media (min-width:601px) {
+  iframe.desktop-vdo {
+display: block;
+}
+iframe.mobile-vdo {
+  display: none;
+}
+
+ .cs-brand-inner.marquee-left {
+    width: 67% !important;
+ }
+}
 
 @media (max-width: 437px) {
     .hero-style-three .xb-hero .xb-item--title {
         font-size: 54px !important;
         width: 100%;
     }
+    h1.work-content-title {
+    font-size: 52px !important;
+    }
 }
 
 @media (max-width: 768px) {
    .encircle.bounce.animated {
     position: absolute;
-    bottom: -12%;
+    bottom: -2%;
     z-index: 9999;
 }
 section.brand.mt-90.scecond {
   
-    margin-top: 81px;
-   
+    margin-top: 81px !important;
+   padding-top: 0 !important;
 }
 }
 
@@ -3476,7 +3534,7 @@ section.page-title.contact-banner.pt-200.pos-rel.bg_img {
 
 .black-blue {
     background-color: #010a26;
-mask-image: linear-gradient(to top, hsl(233.54deg 92% 35.18% / 19%), hsl(230.27deg 98.23% 22.16%) 15%, hsl(230deg 98.18% 21.57%) 80%, hsl(238.46deg 89.22% 49.38% / 4%));    position: relative;
+        mask-image: linear-gradient(to top, hsl(359deg 92% 35.18% / 6%), hsl(230.27deg 98.23% 22.16%) 3%, hsl(230deg 98.18% 21.57%) 80%, hsl(238.46deg 89.22% 49.38% / 4%));
   padding-top: 400px;
   margin-top: -350px;
   }

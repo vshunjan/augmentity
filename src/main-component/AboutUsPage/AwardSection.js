@@ -68,7 +68,7 @@ const AwardSection = () => {
          <Fade direction='up' triggerOnce={'false'} duration={1000} delay={9}>
         <p className="sub-title-sec heighlight-text">
           Our approach is built around four strategic pillars <span className="award-servive-span anlyse-1">Analyse, </span> <span className="award-servive-span govern-1"> Govern,</span>
-          <span className="award-servive-span insure-1">Insure,</span> and <span className="award-servive-span defend-1"> Defend </span> — designed to give you full-spectrum protection,
+          <span className="award-servive-span insure-1"> Insure</span> and <span className="award-servive-span defend-1"> Defend </span> — designed to give you full-spectrum protection,
           tailored to the realities of today’s threat landscape.
         </p>
         </Fade>

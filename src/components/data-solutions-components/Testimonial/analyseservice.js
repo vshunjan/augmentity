@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import bgimg2  from '../../../images/video/3.gif'
+import bgi  from '../../../images/gallery/Asset 28.svg'
 import "./testimonial.css"
 import {
     Accordion,
@@ -43,7 +44,8 @@ const Testimonial = (props) => {
                                 </Fade>
                                 
                             </div>
-                            <div className="xb-img"><img src={bgimg2} alt="" /></div>
+                            <div className="xb-img desktop"><img src={bgimg2} alt="" /></div>
+                              <div className="xb-img mobile"><img src={bgi} alt="" /></div>
 
                         </div>
                     </div>
