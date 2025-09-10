@@ -45,9 +45,7 @@ const Hero3 = (props) => {
                                      <div className="xb-img desktop">
                                          <img src={bgImg} alt="" />
                                         </div>
-                                     <div className="xb-img mobile">
-                                         <img src={bgImg2} alt="" />
-                                        </div>
+                                    
                                     </div>
                                 </Fade>
                             </div>

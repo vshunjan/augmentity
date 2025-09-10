@@ -45,7 +45,6 @@ const Testimonial = (props) => {
                                 
                             </div>
                             <div className="xb-img desktop"><img src={bgimg2} alt="" /></div>
-                              <div className="xb-img mobile"><img src={bgi} alt="" /></div>
 
                         </div>
                     </div>

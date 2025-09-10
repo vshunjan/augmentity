@@ -8193,7 +8193,7 @@ span.xb-item--content {
 
 .sa-process_left .process-item {
      max-width: 80%;
-    min-height: 460px;
+    min-height: 360px;
   background: #020723;
   padding: 40px 0px;
   margin-left: 10%;
@@ -8208,14 +8208,7 @@ span.xb-item--content {
   -o-border-radius: 20px;
   margin-bottom: 80px;
 }
-.folder-svg {
-   position: absolute;
-    top: 0;
-    height: 100%;
-    right: 0;
-    padding: 0%;
-    width: 100%;
-}
+
 .process-content {
     background: #020723;
         padding: 0 30px;
@@ -8225,33 +8218,43 @@ span.xb-item--content {
 }
 @media (max-width: 991px) {
   .sa-process_left .process-item {
-    position: relative;
-    margin-bottom: 0;
-    top: 0;
-    margin: 0 auto 30px;
+            /* position: relative; */
+        margin-bottom: 0;
+        top: 150px;
+        margin: 0;
+                margin-bottom: 150px;
+        max-width: 100%;
   }
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .sa-process_left .process-item:last-child {
     margin-bottom: 0;
   }
-}
+} */
 
 .sa-process_left .process-item .xb-item--icon {
-  height: 41px;
-  width: 41px;
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.sa-process_left .process-item .xb-item--icon img{
+  height: auto;
+  width: 61%;
+  position: relative;
 }
 
 .sa-process_left .process-item .xb-item--title {
       font-size: 60px;
     font-weight: 500;
     letter-spacing: -2px;
+    position: relative;
     margin: 20px 0 20px;
 }
 
 .sa-process_left .process-item p.xb-item--contact  {
-     width: 64%;
+     width: 100%;
      font-size: 22px;
 }
 section.service.pos-rel.z-1.pb-150 {
@@ -8280,34 +8283,34 @@ section.service.pos-rel.z-1.pb-150 {
 }
 
 .sa-process_left .process-item--two {
-  top: 235px;
+  top: 150px;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .sa-process_left .process-item--two {
     top: 0;
   }
-}
+} */
 
 .sa-process_left .process-item--three {
-  top: 320px;
+  top: 150px;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .sa-process_left .process-item--three {
     top: 0;
   }
-}
+} */
 
 .sa-process_left .process-item--four {
-  top: 500px;
+  top: 160px;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .sa-process_left .process-item--four {
     top: 0;
   }
-}
+} */
 
 .sa-process_right {
   display: flex;
@@ -22968,7 +22971,7 @@ p.card-para {
 }
 .text-left.sec-title--two.mb-90 {
     display: flex;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
 }
 p.sub-title-sec {
   width: 100%;

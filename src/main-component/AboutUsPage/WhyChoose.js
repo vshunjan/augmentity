@@ -7,7 +7,7 @@ import bgImg1 from '../../images/video/1.gif'
 import bgImg2 from '../../images/video/2.gif'
 import bgImg3 from '../../images/video/3.gif'
 import bgImg4 from '../../images/video/7.gif'
-import RoadmapSlider  from "./Roadmap";
+import WorkProcess  from "./Roadmap";
 
 const content = [
   {
@@ -70,7 +70,7 @@ const content = [
       <StickyScroll content={content} />
     </div>
     </div>
-   {/* <RoadmapSlider/> */}
+   <WorkProcess/>
     </section>
   );
 }

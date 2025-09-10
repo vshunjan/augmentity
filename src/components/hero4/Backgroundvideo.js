@@ -11,14 +11,15 @@ export default function BackgroundVideo() {
   title="Mux Video"
   className="desktop-vdo"
 />
- {/* <iframe
-  src="https://player.mux.com/NqrRxGMICbSMVqKLo02qTKOE02oSTPaL3X01l5snA8fdx4?metadata-video-title=AdobeStock_1200676359_FHD+Vertical&video-title=AdobeStock_1200676359_FHD+Vertical&accent-color=%23040101"
+<iframe
+  src="https://player.mux.com/NqrRxGMICbSMVqKLo02qTKOE02oSTPaL3X01l5snA8fdx4?metadata-video-title=AdobeStock_1200676359_FHD+Vertical&video-title=AdobeStock_1200676359_FHD+Vertical&accent-color=%23040101&autoplay=1&muted=1&loop=1"
   style={{ width: "100%", border: "none", aspectRatio: "16/9" }}
   allow="autoplay; fullscreen; accelerometer; gyroscope; encrypted-media; picture-in-picture"
   allowFullScreen
   title="Mux Video"
   className="mobile-vdo"
-/> */}
+/>
+
 
 
     </div>
