@@ -49,12 +49,17 @@ const ProjectSection = (props) => {
                                 <span className="content wow fadeInLeft" data-wow-duration="600ms">
                                     
                                     Whilst you focus on transforming your digital organisation with Al and automation, we help you to stay confident about cyber risk.
-We are a team of elite security consultants, with a global threat-intel-ligence network, and a unique comprehensive framework to assess and transform your security strategy for tomorrow's demands.
+We are a team of elite security consultants, with a global threat intelligence network, and a unique comprehensive framework to assess and transform your security strategy for tomorrow's demands.
 Our team have advised world-class organisations in investment banking, financial services, retail and manufacturing, as well as cybersecurity product vendors - to build attack resilience at every layer.
+
+                                </span>
+                                 <span className="content wow fadeInLeft" data-wow-duration="600ms" style={{marginTop: "15px"}}>
+                                    
 We are human and we understand nothing is perfect and therein lies our strength in defending against the adversaries.
                                 </span>
                             </div>
                         </Fade>
+                        
                     </div>
                   
                 </div>

@@ -13,6 +13,7 @@ import bgimg  from '../../../images/gallery/Asset 29.svg'
 import bgimg2  from '../../../images/gallery/Asset 28.svg'
 import bgimg3  from '../../../images/gallery/Asset 30.svg'
 import bgimg4  from '../../../images/bg/scroll-lockimg.svg'
+import { color } from 'framer-motion';
 
 const ClickHandler = () => {
   window.scrollTo(10, 0);
@@ -28,10 +29,8 @@ const BrandSection = () => {
           <div className="xb-brand-item">
            
             <div className="xb-brand-single xb-brand-hover">
-         <Link onClick={ClickHandler}  to="/analyse" >
-                           
-                <img  src={bgimg2} alt="Shopify" />
-                        </Link>
+         <Link onClick={ClickHandler}  to="/analyse" ><img  src={bgimg2} alt="Shopify" /></Link>
+         <span className="xb-item--sub-title" style={{color:'rgb(220, 220, 70)'}} >Analyse</span>
           
             </div>
             <div className="xb-brand-single xb-brand-hover">
@@ -39,6 +38,7 @@ const BrandSection = () => {
                            
                 <img src={bgimg} alt="Shopify" />
                         </Link>
+                        <span className="xb-item--sub-title" style={{color:'rgb(62, 156, 94)'}} >Govern</span>
               
             </div>
             <div className="xb-brand-single xb-brand-hover">
@@ -46,6 +46,7 @@ const BrandSection = () => {
                            
                 <img src={bgimg3} alt="Shopify" />
                         </Link>
+                        <span className="xb-item--sub-title" style={{color:'rgb(161, 40, 237)'}} >Insure</span>
              
             </div>
             <div className="xb-brand-single xb-brand-hover">
@@ -54,7 +55,7 @@ const BrandSection = () => {
                            
                 <img src={bgimg4} alt="Shopify" />
                         </Link>
-           
+           <span className="xb-item--sub-title" style={{color:'rgb(246, 97, 72)'}}>Defend</span>
             </div>
           </div>
           

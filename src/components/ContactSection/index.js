@@ -19,16 +19,17 @@ const ContactSection = (props) => {
                                 <div className="xb-item--inner">
                                      <div className="contact-info_widget">
                                         <h3 className="xb-title">UK Office</h3>
-                                        <span className="xb-location">5 Bickels Yard, 151-153  <br /> Bermondsey St. London SE1 3HA</span>
+                                        <span className="xb-location">5 Bickels Yard <br/> 151-153  Bermondsey St. London SE1 3HA</span>
                                     </div>
                                      <div className="contact-info_widget">
                                         <h3 className="xb-title">UAE Office</h3>
-                                        <span className="xb-location">2403, The Prism Tower  <br />Business Bay, Dubai</span>
+                                        <span className="xb-location">2403, The Prism Tower  <br />Business Bay, Dubai</span>
                                     </div>
                                     <div className="xb-item--top">
                                         <h3 className="xb-item--title">Contact </h3>
                                         <span className="xb-item--hotline">+44 7884479884</span>
-                                        <span className="xb-item--email"> discover@augmentity.net</span>
+                                        <span className="xb-item--hotline">+971 524710069</span>
+                                        <span className="xb-item--email"> secure@augmentity.net</span>
                                         <ul className="social_icons_block list-unstyled ul_li">
                                             <li>
                                                 <Link onClick={ClickHandler} to="/contact" aria-label="Twitter"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">

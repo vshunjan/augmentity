@@ -65,16 +65,16 @@ const Testimonial = (props) => {
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="1" className='acc_body'>
                                                                     <div className="content">
-                                                                    <h3 className='acc-btn'>What it is</h3>
+                                                                    <h3 className='acc-btn'>Overview</h3>
                                                                         <p>An in-depth analysis of your external security ratings from platforms like BitSight and SecurityScorecard, combined with an internal assessment against frameworks like the NIST CSF. We identify the specific factors driving your score and create a plan to address them.</p> 
                                                                     </div>
                                                                      <div className="content">
-                                                                        <h3 className='acc-btn'>Why it matters </h3>
+                                                                        <h3 className='acc-btn'>Business Impact </h3>
                                                                         <p>Underwriters increasingly rely on these external ratings as a primary data point in their risk calculations. Actively managing and improving your score is a direct way to demonstrate your security commitment and positively influence your premium.</p>
                                                                       
                                                                     </div>
                                                                        <div className="content">
-                                                                          <h3 className='acc-btn'>Key deliverables</h3>
+                                                                          <h3 className='acc-btn'>outcomes</h3>
                                                                         <ul className="list-unstyled">
                                                                             <li>  	A detailed analysis of your current security ratings.</li>
                                                                             <li> A Ratings Improvement Plan with prioritised actions.</li>
@@ -99,16 +99,16 @@ const Testimonial = (props) => {
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="4" className='acc_body'>
                                                                     <div className="content">
-                                                                     <h3 className='acc-btn'> What it is </h3>
+                                                                     <h3 className='acc-btn'> Overview </h3>
                                                                 <p> The creation of your "Underwriter-Ready Dossier." This is a comprehensive package of documentation that proactively answers the questions underwriters will ask. It includes evidence of your controls, findings from our assessments, policy documents, and a clear narrative of your security journey.</p>     
                                                                     </div>
                                                                        <div className="content">
-                                                                <h3 className='acc-btn'>Why it matters</h3>
+                                                                <h3 className='acc-btn'>Business Impact</h3>
                                                                         <p>Handing an underwriter a complete, professional dossier instead of just a renewal application fundamentally changes the dynamic. It demonstrates maturity, reduces their workload, and builds the confidence needed to offer more favourable terms.</p> 
                                                                       
                                                                     </div>
                                                                       <div className="content">
-                                                                <h3 targetId="6" className='acc-btn'>Key deliverables </h3>
+                                                                <h3 targetId="6" className='acc-btn'>Outcomes </h3>
                                                                         <ul className="list-unstyled">
                                                                             <li> The complete Underwriter-Ready Dossier.</li>
                                                                             <li> Executive summaries tailored for brokers and insurance carriers.</li>
@@ -133,15 +133,15 @@ const Testimonial = (props) => {
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="7" className='acc_body'>
                                                                     <div className="content">
-                                                                        <h3 className='acc-btn'> What it is:</h3>
+                                                                        <h3 className='acc-btn'> Overview </h3>
                                                                         <p>A quantitative risk analysis that translates abstract cyber risks into concrete financial terms. Using methodologies like Factor Analysis of Information Risk (FAIR), we calculate the probable financial impact of key risk scenarios (e.g., a ransomware attack, a major data breach) in pounds and pence.</p> 
                                                                     </div>
                                                                      <div className="content">
-                                                                <h3 className='acc-btn'>Why it matters</h3>
+                                                                <h3 className='acc-btn'>Business Impact</h3>
                                                                         <p>  Speaking in financial terms is the language of the C-suite and the insurance industry. An ALE report allows you to have a data-driven conversation about risk, justify security investments based on ROI, and make informed decisions about how much risk to accept, mitigate, or transfer via insurance.</p>                                                                  
                                                                     </div>
                                                                       <div className="content">
-                                                                <h3 className='acc-btn'>Key deliverables</h3>
+                                                                <h3 className='acc-btn'>Outcomes</h3>
                                                                         <ul className="list-unstyled">
                                                                             <li> 	A detailed ALE Report for 3-5 critical risk scenarios.</li>
                                                                             <li> A presentation explaining the methodology and findings to leadership.</li>
@@ -167,15 +167,15 @@ const Testimonial = (props) => {
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="10" className='acc_body'>
                                                                     <div className="content">
-                                                                        <h3 className='acc-btn'> What it is: </h3>
+                                                                        <h3 className='acc-btn'> Overview </h3>
                                                                         <p>A thorough review of your existing or proposed cyber insurance policy documents. We analyse the terms, conditions, exclusions, and sub-limits to identify potential gaps between your coverage and your actual risk profile as determined by our assessments.</p> 
                                                                     </div>
                                                                      <div className="content">
-                                                                <h3 className='acc-btn'>Why it matters</h3>
+                                                                <h3 className='acc-btn'>Business Impact</h3>
                                                                         <p> Many policies contain subtle exclusions that can leave you dangerously exposed during a real incident. Our advisory ensures you understand what you are really buying and helps you negotiate for coverage that truly meets your needs.</p>                                                                  
                                                                     </div>
                                                                      <div className="content">
-                                                                <h3 className='acc-btn'>Key deliverables </h3>
+                                                                <h3 className='acc-btn'>Outcomes </h3>
                                                                         <ul className="list-unstyled">
                                                                             <li>	A Policy Gap Analysis Report.</li>
                                                                             <li> 	A list of recommended changes or endorsements to your policy.</li>
@@ -201,15 +201,15 @@ const Testimonial = (props) => {
                                                                  </AccordionHeader>
                                                                 <AccordionBody accordionId="13" className='acc_body'>
                                                                     <div className="content">
-                                                                        <h3 className='acc-btn'> What it is:</h3>
+                                                                        <h3 className='acc-btn'> Overview</h3>
                                                                         <p>The culmination of our work, this service directly links the findings from the 'Analyse' pillar to the outcomes of the 'Insure' pillar. We create a strategic roadmap of security improvements, prioritised by their likely impact on reducing your insurance premiums.</p> 
                                                                     </div>
                                                                        <div className="content">
-                                                                <h3 className='acc-btn'>Why it matters </h3>
+                                                                <h3 className='acc-btn'>Business Impact </h3>
                                                                         <p> This provides your organisation with a clear, financially motivated plan for security investment. You can confidently allocate resources knowing that each step not only improves your security but also contributes to a tangible reduction in your fixed insurance costs.</p>                                                                  
                                                                     </div>
                                                                       <div className="content">
-                                                                <h3 className='acc-btn'>Key deliverables </h3>
+                                                                <h3 className='acc-btn'>Outcomes </h3>
                                                                         <ul className="list-unstyled">
                                                                             <li>A prioritised, multi-year Risk Mitigation Roadmap.</li>
                                                                             <li> Projected premium impact analysis for key initiatives.</li>
@@ -234,15 +234,15 @@ const Testimonial = (props) => {
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="16" className='acc_body'>
                                                                     <div className="content">
-                                                                         <h3 className='acc-btn'> What it is:</h3>
+                                                                         <h3 className='acc-btn'> Overview</h3>
                                                                         <p>An evaluation of your organisation's ability to effectively respond to a security incident. We review your incident response (IR) plan, conduct tabletop exercises with key stakeholders, and assess the "people, process, and technology" triad of your response capabilities.</p> 
                                                                     </div>
                                                                      <div className="content">
-                                                                <h3 className='acc-btn'>Why it matters</h3>
+                                                                <h3 className='acc-btn'>Business Impact</h3>
                                                                         <p> In a breach, a swift and coordinated response is critical to minimising financial and reputational damage. This assessment ensures your team is prepared, your plan is viable, and your technology can provide the necessary visibility when it matters most.</p>                                                                  
                                                                     </div>
                                                                      <div className="content">
-                                                                <h3 className='acc-btn'>Key deliverables </h3>
+                                                                <h3 className='acc-btn'>Outcomes </h3>
                                                                         <ul className="list-unstyled">
                                                                             <li>Incident Response Plan Gap Analysis.</li>
                                                                             <li> Tabletop Exercise Report with key findings and recommendations.</li>

@@ -58,16 +58,16 @@ const Testimonial = (props) => {
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="1" className='acc_body'>
                                                                     <div className="content">
-                                                                    <h3 className='acc-btn'>What it is</h3>
+                                                                    <h3 className='acc-btn'>Overview</h3>
                                                                         <p>Immediate access to our elite incident response team. We offer two models: on-demand emergency support for organisations facing an active crisis, and a proactive retainer service that guarantees response times (SLAs), pre-establishes terms, and allows our team to familiarise themselves with your environment before an incident.</p> 
                                                                     </div>
                                                                      <div className="content">
-                                                                        <h3 className='acc-btn'>Why it matters </h3>
+                                                                        <h3 className='acc-btn'>Business Impact  </h3>
                                                                         <p>A retainer dramatically reduces the time from detection to effective response. By handling contractuals and onboarding in advance, we can begin active containment and investigation within hours, not days, saving you critical time and money.</p>
                                                                       
                                                                     </div>
                                                                        <div className="content">
-                                                                          <h3 className='acc-btn'>Key deliverables</h3>
+                                                                          <h3 className='acc-btn'>Outcomes</h3>
                                                                         <ul className="list-unstyled">
                                                                             <li> 	An Incident Response Retainer agreement with a guaranteed SLA.</li>
                                                                             <li>  	24/7/365 access to our IR hotline.</li>
@@ -92,16 +92,16 @@ const Testimonial = (props) => {
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="4" className='acc_body'>
                                                                     <div className="content">
-                                                                     <h3 className='acc-btn'> What it is </h3>
+                                                                     <h3 className='acc-btn'> Overview </h3>
                                                                 <p>A meticulous, court-admissible process of collecting, preserving, and analysing digital evidence to determine the scope and root cause of an incident. We investigate how attackers gained entry, what systems they accessed, what data they exfiltrated, and what tools they used.</p>     
                                                                     </div>
                                                                        <div className="content">
-                                                                <h3 className='acc-btn'>Why it matters</h3>
+                                                                <h3 className='acc-btn'>Business Impact</h3>
                                                                         <p>A thorough forensic investigation is essential for ensuring complete threat eradication, meeting regulatory and legal obligations, and providing the necessary evidence for law enforcement and insurance claims.</p> 
                                                                       
                                                                     </div>
                                                                       <div className="content">
-                                                                <h3 targetId="6" className='acc-btn'>Key deliverables </h3>
+                                                                <h3 targetId="6" className='acc-btn'>Outcomes </h3>
                                                                         <ul className="list-unstyled">
                                                                             <li> 	A detailed Digital Forensics Report.</li>
                                                                             <li> 	A timeline of the attack (attack chain analysis).</li>
@@ -126,15 +126,15 @@ const Testimonial = (props) => {
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="7" className='acc_body'>
                                                                     <div className="content">
-                                                                        <h3 className='acc-btn'> What it is:</h3>
+                                                                        <h3 className='acc-btn'> Overview</h3>
                                                                         <p>The active, hands-on process of stopping the attack and surgically removing the adversary from your network. Our responders work alongside your team to isolate affected systems, block malicious communications, revoke compromised credentials, and ensure the threat cannot return.</p> 
                                                                     </div>
                                                                      <div className="content">
-                                                                <h3 className='acc-btn'>Why it matters</h3>
-                                                                        <p> : Simply "pulling the plug" can often do more harm than good. Our methodical approach ensures the threat is fully contained without unnecessarily disrupting business operations, and that all backdoors are closed to prevent re-infection.</p>                                                                  
+                                                                <h3 className='acc-btn'>Business Impact</h3>
+                                                                        <p>  Simply "pulling the plug" can often do more harm than good. Our methodical approach ensures the threat is fully contained without unnecessarily disrupting business operations, and that all backdoors are closed to prevent re-infection.</p>                                                                  
                                                                     </div>
                                                                       <div className="content">
-                                                                <h3 className='acc-btn'>Key deliverables</h3>
+                                                                <h3 className='acc-btn'>Outcomes</h3>
                                                                         <ul className="list-unstyled">
                                                                             <li> Real-time guidance and hands-on support for your technical teams.</li>
                                                                             <li> 	A Post-Incident Containment Report detailing actions taken.</li>
@@ -160,15 +160,15 @@ const Testimonial = (props) => {
                                                                 </AccordionHeader>
                                                                 <AccordionBody accordionId="10" className='acc_body'>
                                                                     <div className="content">
-                                                                        <h3 className='acc-btn'> What it is: </h3>
+                                                                        <h3 className='acc-btn'> Overview </h3>
                                                                         <p>Clear, concise, and regular communication tailored for your leadership team, board, and other non-technical stakeholders throughout a crisis. We translate complex technical findings into business-impact statements, providing the clarity needed for effective decision-making.</p> 
                                                                     </div>
                                                                      <div className="content">
-                                                                <h3 className='acc-btn'>Why it matters</h3>
+                                                                <h3 className='acc-btn'>Business Impact</h3>
                                                                         <p>During a crisis, controlling the narrative and ensuring leadership is informed is paramount. Our briefings eliminate confusion, build confidence, and enable your executive team to manage the broader business implications of the incident effectively.</p>                                                                  
                                                                     </div>
                                                                      <div className="content">
-                                                                <h3 className='acc-btn'>Key deliverables </h3>
+                                                                <h3 className='acc-btn'>Outcomes </h3>
                                                                         <ul className="list-unstyled">
                                                                             <li>	Regularly scheduled incident status briefings</li>
                                                                             <li> A final Executive Summary Report outlining the incident, business impact, and lessons learned.</li>
@@ -194,15 +194,15 @@ const Testimonial = (props) => {
                                                                  </AccordionHeader>
                                                                 <AccordionBody accordionId="13" className='acc_body'>
                                                                     <div className="content">
-                                                                        <h3 className='acc-btn'> What it is:</h3>
+                                                                        <h3 className='acc-btn'> Overview</h3>
                                                                         <p>Acting as the primary technical liaison for the other functions of your crisis management team. We provide your legal counsel, public relations firm, and insurance carrier with accurate, vetted technical information, ensuring all external communications are consistent and precise.</p> 
                                                                     </div>
                                                                        <div className="content">
-                                                                <h3 className='acc-btn'>Why it matters </h3>
+                                                                <h3 className='acc-btn'>Business impact </h3>
                                                                         <p>  Misinformation during a crisis can have severe legal and reputational consequences. By serving as the single source of technical truth, we help you maintain a coordinated and defensible response posture across all fronts</p>                                                                  
                                                                     </div>
                                                                       <div className="content">
-                                                                <h3 className='acc-btn'>Key deliverables </h3>
+                                                                <h3 className='acc-btn'>Outcomes </h3>
                                                                         <ul className="list-unstyled">
                                                                             <li>Technical summaries for legal and insurance teams</li>
                                                                             <li> Expert witness statements and technical affidavits if required.</li>

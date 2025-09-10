@@ -7055,7 +7055,14 @@ body[data-aos-easing=ease] [data-aos] {
   opacity: .5;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
+  width:100%;
+  height:100%;
+      /* margin-bottom: 41px; */
   transition: 0.3s;
+}
+.xb-brand-item a  {
+      margin-bottom: 41px;
+     height: 218px;
 }
 
 @media (max-width: 991px) {
@@ -7084,6 +7091,9 @@ body[data-aos-easing=ease] [data-aos] {
 
 .xb-brand-single {
   width: 100%;
+  gap: 15px;
+      display: flex;
+    flex-direction: column;
   padding: 35px 0;
   position: relative;
   z-index: 2;
@@ -23539,4 +23549,15 @@ section.page-title.contact-banner.privacy.pt-200.pos-rel.bg_img {
 p.sub-title-sec.highlit-21.heighlight-text {
   color:#c87af2;
   margin-top:25px;
+}
+
+.xb-brand-single .xb-item--sub-title {
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'josefin';
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #21f7f7;
+    font-size: 23px;
+    letter-spacing: 1.4px;
 }

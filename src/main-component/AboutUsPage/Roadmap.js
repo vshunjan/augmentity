@@ -68,7 +68,7 @@ const WorkProcess = (props) => {
                                     </div>
                                 </div> */}
                             </Fade>
-                            <div className="process_shape"><img src={pImg2} alt="" /></div>
+                            {/* <div className="process_shape"><img src={pImg2} alt="" /></div> */}
                         </div>
                     </div>
                     <div className="col-lg-6">
@@ -82,7 +82,7 @@ const WorkProcess = (props) => {
                                     <p className="xb-item--contact">{process.subTitle}</p>
                                          <a onClick={ClickHandler} href={process.link} className="hero-btn">
                 
-                 <span>Discover more</span>
+                 <span>Discover more </span>
       </a>
                                     <div className="xb-item--icon">
                                         <img src={process.icon} alt="" />

@@ -76,7 +76,7 @@ const WorkProcess = (props) => {
                 As digital transformation accelerates and AI reshapes the
                 enterprise, cyber risk has become a top boardroom priority.
                 Expert consultants at Augmentity empower forward-thinking
-                organizations to move fast without compromising security,
+                organisations to move fast without compromising security,
                 trust, or compliance.
               </p>
             </Fade>

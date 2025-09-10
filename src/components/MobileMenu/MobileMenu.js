@@ -7,6 +7,7 @@ import icon1 from "../../images/icon/call-calling.svg";
 import icon2 from "../../images/icon/icon-sms.svg";
 import menuimg from "../../images/gallery/burger-icon.png";
 import DecryptedText from "./decryptedText";
+import logo from '../../images/logo/logo-png.png';
 
 const menus = [
   {
@@ -65,6 +66,11 @@ const MobileMenu = () => {
 
   return (
     <div className="container">
+       <div className="header-logo mobile-heder">
+              <Link onClick={ClickHandler} to="/">
+                <img src={logo} alt="Logo" />
+              </Link>
+            </div>
       <ul className="clearfix xb-menu-primary">
         <div className="menu-list-div">
           <div className="menu-sub-head">

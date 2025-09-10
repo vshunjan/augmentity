@@ -44,7 +44,8 @@ const cardData = [
     title: 48 ,
      description2: ` `,
     type:'Minutes',
-    description: "is the average eCrime breakout time ",
+    para:'(Crowdstrike Global Threat Report 2025)',
+    description: "average eCrime breakout time ",
      description2: (
   <>
   in 2024.
@@ -58,7 +59,7 @@ const cardData = [
     rite:'$',
     title: 4,
     type:"Million",
-    description: "The average global cost of a data breach in 2024.",
+    description: " average global cost of a data breach in 2024.",
      description2: ` `,
     para:'(IBM Cost of a Data Breach Report 2024)',
    img: bgimg2
