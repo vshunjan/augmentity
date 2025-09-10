@@ -23407,9 +23407,9 @@ section.project.pb-140.o-hidden {
 }
 
 @media (max-width: 600px) {
-    section.hero.home.hero-style-three.pos-rel.pt-120.bg_img  .container{
-        height: auto;
-        padding-top: 212px !important;
+    section.hero.home.hero-style-three.pos-rel.pt-120.bg_img .container{
+        height: 100%;
+        padding-top: 2px !important;
     }
 }
 
