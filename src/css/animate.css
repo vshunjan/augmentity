@@ -3611,13 +3611,11 @@ section.page-title.contact-banner.pt-200.pos-rel.bg_img {
   top: 0;
   left: 0;
   width: 100%;
-  
  /* From https://css.glass */
-background: rgba(0, 0, 0, 0.69);
-
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10.6px);
--webkit-backdrop-filter: blur(10.6px);
+    background: rgb(0 0 0 / 50%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
   animation: slideDown 0.3s ease-in-out;
 }
 

@@ -3,6 +3,12 @@ import FaultyTerminal from './FaultyTerminal';
 import { Fade } from "react-awesome-reveal";
 import { Link } from 'react-router-dom'
 
+
+
+const ClickHandler = () => {
+  window.scrollTo(10, 0);
+}
+
 const WorkFlow = (props) => {
   return (
     <section className="work ">
@@ -46,7 +52,7 @@ const WorkFlow = (props) => {
           </p> */}
  <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
           <div className="hero-btn">
-            <Link  to="/hotline"> 
+            <Link onClick={ClickHandler} to="/hotline"> 
             <span>
               Contact Us
             </span>
