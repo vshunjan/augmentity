@@ -188,6 +188,16 @@ section.pb-40.process.pos-rel span.c-suite{
     padding-left: 10px;
     /* margin-top: 15px; */
 }
+section.pb-40.process.pos-rel span.c-suite::before{
+    position: absolute;
+    content: '';
+    width: 92%;
+    height: 5px;
+       transform: rotate(160deg);
+    background-color: #ffffff;
+    top: 40%;
+    left: 12px;
+}
 
 h1.mb-40.title.wow.fadeInUp.scroll-card.card-why-f {
     margin-bottom: 0;
