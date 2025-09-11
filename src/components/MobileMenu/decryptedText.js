@@ -25,7 +25,7 @@ export default function DecryptedText({
   sequential = false,
   revealDirection = 'start',
   useOriginalCharsOnly = false,
-  characters = 'iSYAAiLYNLiSENAiSUGMENTiTYiOVGGiRENRiOCNGiiSUiiiRULRiSEii',
+  characters = 'SYAALYNLSENASUGMENTTYOVGGRENROCNGSURULRSE',
   className = '',
   parentClassName = '',
   encryptedClassName = '',

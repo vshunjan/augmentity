@@ -20358,16 +20358,16 @@ nav.xb-header-nav {
   font-weight: 500;
     border-bottom: 1px solid #ffffff5c;
 }
-.xb-menu-primary li a:hover ,.xb-menu-primary a:hover,
+/* .xb-menu-primary li a:hover ,.xb-menu-primary a:hover,
 .xb-menu-primary p:hover{
       display: block;
     line-height: 1.6;
     color: #21f5f5;
-    /* font-size: 64px; */
+    font-size: 64px;
     padding-left: 30px;
     font-weight: 600;
     border-bottom: 1px solid #21f5f5;
-}
+} */
 
 .xb-menu-primary li>a:hover,
 .xb-menu-primary li>a.current,
@@ -23297,6 +23297,9 @@ section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
 
 
 @media (max-width: 1000px) {
+  p.sub-title-sec.highlit-21.heighlight-text {
+    font-weight: 500;
+}
   .cs-service-item {
     width: 100%;
   }
@@ -23411,6 +23414,11 @@ section.project.pb-140.o-hidden {
         height: 100%;
         padding-top: 2px !important;
     }
+    .black-blue {
+    padding-top: 480px !important;
+    margin-top: -400px !important;
+}
+
 }
 
 
@@ -23455,9 +23463,9 @@ span.award-servive-span {
     justify-content: center;
 }
 .menu-sub-head h1{
-font-weight: 500;
+font-weight: 400;
     color: white;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 p.copyright.services {
     font-size: 20px;

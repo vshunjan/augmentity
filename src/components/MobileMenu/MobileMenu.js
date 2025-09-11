@@ -131,7 +131,7 @@ const MobileMenu = () => {
                         text={item.title}
                         speed={70}
                         maxIterations={10}
-                        characters="iSYAAiLYNLiSENAiSUGMENTiTYiOVGGiRENRiOCNGiiSUiiiRULRiSEii"
+                        characters="SYAALYNLSENASUGMENTTYOVGGRENROCNGSURULRSE"
                         className="revealed"
                         parentClassName="all-letters"
                         encryptedClassName="encrypted"
@@ -202,7 +202,7 @@ const MobileMenu = () => {
                         text={item.title}
                         speed={70}
                         maxIterations={10}
-                        characters="iSYAAiLYNLiSENAiSUGMENTiTYiOVGGiRENRiOCNGiiSUiiiRULRiSEii"
+                        characters="SYAALYNLSENASUGMENTTYOVGGRENROCNGSURULRSE"
                         className="revealed"
                         parentClassName="all-letters"
                         encryptedClassName="encrypted"
@@ -272,7 +272,7 @@ const MobileMenu = () => {
                         text={item.title}
                         speed={70}
                         maxIterations={10}
-                        characters="iSYAAiLYNLiSENAiSUGMENTiTYiOVGGiRENRiOCNGiiSUiiiRULRiSEii"
+                        characters="SYAALYNLSENASUGMENTTYOVGGRENROCNGSURULRSE"
                         className="revealed"
                         parentClassName="all-letters"
                         encryptedClassName="encrypted"
