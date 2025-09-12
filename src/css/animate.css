@@ -3444,6 +3444,28 @@ section.brand.mt-90.scecond {
 }
 }
 
+
+@media (min-width: 1000px) {
+    .mobile-noise {
+    
+    display: none;
+}
+    .dektop-noise {
+    
+    display: flex;
+}
+}
+@media (max-width: 1000px) {
+    .mobile-noise {
+    
+    display: flex;
+}
+    .dektop-noise{
+    
+    display: none;
+}
+}
+
 @media (max-width:991px) {
   .header-logo.mobile-heder {
     position: absolute;

@@ -67,13 +67,24 @@ const MobileMenu = () => {
 
   return (
     <div className="container">
-               <Noise
-    patternSize={250}
-    patternScaleX={1}
-    patternScaleY={1}
-    patternRefreshInterval={2}
+        <div className='mobile-noise'>
+                                        <Noise
+    patternSize={500}
+    patternScaleX={5}
+    patternScaleY={5}
+    patternRefreshInterval={5}
     patternAlpha={25}
+    
   />
+           <Noise
+      patternSize={500}
+      patternScaleX={5}
+      patternScaleY={5}
+      patternRefreshInterval={5}
+      patternAlpha={25}
+     
+    />
+                  </div>
        <div className="header-logo mobile-heder">
               <Link onClick={ClickHandler} to="/">
                 <img src={logo} alt="Logo" />
