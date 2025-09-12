@@ -20353,8 +20353,9 @@ nav.xb-header-nav {
 .xb-menu-primary p {
   display: block;
       line-height: 1.6;
+       text-transform: uppercase;
     color: white;
-  font-size: 26px;
+    font-size: 27px;
   font-weight: 500;
     border-bottom: 1px solid #ffffff5c;
 }
@@ -23414,11 +23415,14 @@ section.project.pb-140.o-hidden {
         height: 100%;
         padding-top: 2px !important;
     }
-    .black-blue {
-    padding-top: 480px !important;
-    margin-top: -400px !important;
+   
 }
 
+@media (max-width: 991px) {
+    .black-blue {
+        padding-top: 1080px !important;
+        margin-top: -1000px !important;
+    }
 }
 
 
@@ -23465,6 +23469,7 @@ span.award-servive-span {
 .menu-sub-head h1{
 font-weight: 400;
     color: white;
+        font-size: 35px;
     /* text-transform: uppercase; */
 }
 p.copyright.services {

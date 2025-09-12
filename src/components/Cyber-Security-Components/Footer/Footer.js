@@ -71,26 +71,14 @@ const Footer = (props) => {
                                        </ul>
                                    </div>
                                </div>
-          {/* <div className="social-link ">
-            <span className="xb-item--sub-title">Social </span>
-             <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
-            <div className="social-item">
-              <Link onClick={ClickHandler} to="/" className="xb-icon"><img src={icon2} alt="" /></Link>
-            </div>
-          </Fade>
-            <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
-            <div className="social-item">
-              <Link onClick={ClickHandler} to="/" className="xb-icon"><img src={icon4} alt="" /></Link>
-            </div>
-           </Fade>
-          </div> */}
+         
         
           </div>
           
    
           <div className="footer-copyright ul_li_between"> 
               <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
-            <p className="copyright">Copyright © 2025 AUGMENTITY. All rights reserved.</p>
+            <p className="copyright">Copyright © 2025 AUGMENTiTY : We Stand Guard. All rights reserved.</p>
             </Fade>
            
               <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
