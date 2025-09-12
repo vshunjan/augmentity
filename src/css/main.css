@@ -20361,6 +20361,12 @@ nav.xb-header-nav {
   border-bottom: 1px solid #ffffff5c;
 }
 
+.xb-menu-primary a:hover {
+
+  color: #010a26;
+border-bottom: 1px solid #010a26;
+}
+
 
 .xb-menu-primary li>a:hover,
 .xb-menu-primary li>a.current,
@@ -23462,7 +23468,7 @@ span.award-servive-span {
 font-weight: 400;
     color: white;
         font-size: 32px;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 p.copyright.services {
     font-size: 20px;
