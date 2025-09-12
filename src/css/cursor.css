@@ -230,3 +230,13 @@
       transition: box-shadow 0.2s;
       transition: box-shadow 0.2s, -webkit-box-shadow 0.2s, -moz-box-shadow 0.2s;
 }
+
+
+.noise-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}

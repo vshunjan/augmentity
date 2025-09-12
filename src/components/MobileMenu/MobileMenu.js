@@ -8,6 +8,7 @@ import icon2 from "../../images/icon/icon-sms.svg";
 import menuimg from "../../images/gallery/burger-icon.png";
 import DecryptedText from "./decryptedText";
 import logo from '../../images/logo/logo-png.png';
+import Noise from '../header4/Noice'
 
 const menus = [
   {
@@ -66,6 +67,13 @@ const MobileMenu = () => {
 
   return (
     <div className="container">
+               <Noise
+    patternSize={250}
+    patternScaleX={1}
+    patternScaleY={1}
+    patternRefreshInterval={2}
+    patternAlpha={25}
+  />
        <div className="header-logo mobile-heder">
               <Link onClick={ClickHandler} to="/">
                 <img src={logo} alt="Logo" />

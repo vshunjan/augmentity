@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from "react-awesome-reveal";
-
+// import Noise from './Noice'
 import logo from '../../images/logo/logo-png.png';
 import MobileMenu from '../MobileMenu/MobileMenu';
 
@@ -50,13 +50,13 @@ const Header4 = () => {
             {/* Desktop Menu */}
             <div className="main-menu__wrap ul_li navbar navbar-expand-xl">
               <div className="xb-header-wrap">
-                <div className={`xb-header-menu ${mobailActive ? "active" : ""}`}>
+                <div className={`xb-header-menu  ${mobailActive ? "active" : ""}`}>
                   <div className="xb-header-menu-scroll lenis lenis-smooth">
                     <nav className="xb-header-nav">
                       <MobileMenu />
                     </nav>
                   </div>
-                </div>
+                 </div>
                 <div className="xb-header-menu-backdrop"></div>
               </div>
             </div>
