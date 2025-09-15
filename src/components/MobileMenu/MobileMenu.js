@@ -148,8 +148,8 @@ const MobileMenu = () => {
                       {" "}
                       <DecryptedText
                         text={item.title}
-                        speed={70}
-                        maxIterations={10}
+                        speed={10}
+                        maxIterations={1222}
                         characters="SYAALYNLSENASUGMENTTYOVGGRENROCNGSURULRSE"
                         className="revealed"
                         parentClassName="all-letters"
