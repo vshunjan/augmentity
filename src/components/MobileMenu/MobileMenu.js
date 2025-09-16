@@ -18,9 +18,14 @@ const menus = [
   },
   
   {
-    id: 5,
+    id: 2,
     title: "Consult Us",
     link: "/Contact",
+  },
+  {
+    id: 3,
+    title: "Blog",
+    link: "/blog",
   },
 ];
 const menus2 = [

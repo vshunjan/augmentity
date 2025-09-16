@@ -10,7 +10,8 @@ import HotLine from '../Hotline/Hotline';
 import HomePage5 from '../HomePage5/HomePage5';
 import PrivacyPage from '../PrivacyPage/PrivacyPage';
 import TermsPage from '../PrivacyPage/Terms';
-
+import BlogPage from '../BlogPage/BlogPage'
+import BlogDetail from '../BlogDetails/BlogDetails'
 import ContactPage from '../ContactPage/ContactPage';
 
 
@@ -30,6 +31,8 @@ const AllRoute = () => {
           <Route path="contact" element={<ContactPage />} />  
           <Route path="privacy" element={<PrivacyPage />} />
           <Route path="terms" element={<TermsPage />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="blog-single/:slug" element={<BlogDetail />} />
 
         </Routes>
       </BrowserRouter>
