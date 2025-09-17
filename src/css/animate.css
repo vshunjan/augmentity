@@ -3428,6 +3428,9 @@ iframe.mobile-vdo {
     /* bottom: -2%; */
     z-index: 9999;
 }
+span.blog-bnr-head.sub-title {
+    font-size: 4rem !important;
+}
 .blog-details_wrap {
     margin-bottom: 55px;
 }
@@ -3485,9 +3488,7 @@ section.page-title.pt-200.pos-rel.bg_img.single-blog {
     width: 90% !important;
     margin-bottom: 17px;
 }
-span.blog-bnr-head.sub-title {
-    font-size: 4rem;
-}
+
 }
 
 @media (max-width:991px) {
