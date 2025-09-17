@@ -22,7 +22,7 @@ const BlogPage = (props) => {
                             <div className="row mt-none-30 align-items-end">
                                 <div className="col-lg-9 mt-30">
                                     <div className="page-title-box">
-                                        <span className=" blog-bnr-head sub-title"> Blog</span>
+                                        <span className=" blog-bnr-head sub-title"> Threat Intelligence</span>
                                     </div>
                                 </div>
                                

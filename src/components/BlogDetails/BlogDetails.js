@@ -25,7 +25,7 @@ const BlogSingle = () => {
     return (
         <section className="blog_details_section pt-70">
             <div className="container">
-                <div className="item_details_content pb-80">
+                <div className="item_details_content">
                     <ul className="post_meta ul_li list-unstyled">
                         <li>
                             <Link onClick={ClickHandler} to="/blog">
@@ -43,15 +43,15 @@ const BlogSingle = () => {
                 </div>
 
                 <div className="row mt-none-30 g-0 blog-detail-content align-items-start">
-                    <div className="col-lg-8 mt-30">
+                    <div className=" col-lg">
                         <div className="blog_details_content">
-                            <div className="mb-4 row">
+                            {/* <div className="mb-4 row">
                                 <div className="col-md-6 col-sm-6">
                                     <div className="image_block">
                                         <img src={BlogDetails.screens || bImg} alt={BlogDetails.title} />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div
                                 className="row mb-90 align-items-center mt-none-30 blog-content-html"

@@ -3651,4 +3651,17 @@ section.page-title.contact-banner.pt-200.pos-rel.bg_img {
   }
 }
 
+/* 
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.da-brand_marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  will-change: transform;
+} */
+
+
 

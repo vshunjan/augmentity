@@ -41,7 +41,7 @@ const Footer = (props) => {
                                        <ul className="xb-item--holder list-unstyled">
                                            <li className="xb-item--list"><Link onClick={ClickHandler} to="/about">Who we are Not</Link></li>
                                            <li className="xb-item--list"><Link onClick={ClickHandler} to="/Contact">Consult Us</Link></li>
-                                           <li className="xb-item--list"><Link onClick={ClickHandler} to="/blog">Blog</Link></li>
+                                           <li className="xb-item--list"><Link onClick={ClickHandler} to="/blog">Threat Intelligence</Link></li>
                                        </ul>
                                    </div>
                                </div>
@@ -79,7 +79,7 @@ const Footer = (props) => {
    
           <div className="footer-copyright ul_li_between"> 
               <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>
-            <p className="copyright">Copyright © 2025 AUGMENTiTY : We Stand Guard. All rights reserved.</p>
+            <p className="copyright">Copyright © 2025 AUGMENTiTY . All rights reserved.</p>
             </Fade>
            
               <Fade direction='up' triggerOnce={'false'} duration={1400} delay={9}>

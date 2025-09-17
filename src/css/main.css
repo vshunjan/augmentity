@@ -16664,6 +16664,7 @@ p.xb-item--content.consult-bnr.wow.fadeInUp {
 
 .blog-details_item .item_details_info_heading a {
   color: rgb(255 255 255);
+      font-weight: 400;
 }
 
 .blog-details_item:hover .xb-item--img img {
@@ -23607,4 +23608,32 @@ span.blog-bnr-head.sub-title {
 
 .row.mb-90.align-items-center.mt-none-30.blog-content-html {
     margin-top: 50px;
+}
+
+.menu-sub-head {
+    margin-bottom: 20px;
+}
+
+section.page-title.pt-200.pos-rel.bg_img.single-blog {
+    object-fit: cover;
+    background-attachment: fixed;
+    height: 450px;
+}
+
+
+
+.brand-logo.xb-inner {
+    background-color: #000;
+    height: 100%;
+    overflow: hidden;
+    margin-right:67px;
+    margin-top:15px;
+    padding: 19.5px 10px;
+    position: relative;
+    width: 155px !important;
+    z-index: 1;
+}
+
+.blog_details_section p{
+   font-size: 18px;
 }

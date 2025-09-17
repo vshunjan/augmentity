@@ -24,7 +24,7 @@ const menus = [
   },
   {
     id: 3,
-    title: "Blog",
+    title: "Threat Intelligence",
     link: "/blog",
   },
 ];
@@ -153,8 +153,8 @@ const MobileMenu = () => {
                       {" "}
                       <DecryptedText
                         text={item.title}
-                        speed={10}
-                        maxIterations={1222}
+                        speed={70}
+                        maxIterations={10}
                         characters="SYAALYNLSENASUGMENTTYOVGGRENROCNGSURULRSE"
                         className="revealed"
                         parentClassName="all-letters"

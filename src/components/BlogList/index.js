@@ -33,7 +33,7 @@ const BlogList = (props) => {
                 <div className="container">
                     <div className="row mt-none-30 g-0 align-items-start">
                          <div className="related-blog pt-130 pb-130">
-                    <h2 className="related-blog-title">Browse  blog</h2>
+                    {/* <h2 className="related-blog-title">Browse  blog</h2> */}
                     <div className="row mt-none-30">
                         {blogs.slice(1, 3).map((blog, Bitem) => (
                             <div className="col-lg-4 col-md-6 mt-30" key={Bitem}>
