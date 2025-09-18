@@ -32,11 +32,11 @@ const BlogSingle = () => {
                                 <span className="meta_label1">{BlogDetails.thumb}</span>
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link onClick={ClickHandler} to="/blog">
                                 <span className="meta_label">Last Update: {BlogDetails.create_at}</span>
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                     <h2 className="item_details_heading">{BlogDetails.title}</h2>
                     <p className="mb-40">{BlogDetails.description}</p>

@@ -10,7 +10,6 @@ import pimg4 from "../../../images/gallery/sgs.png";
 import pimg5 from "../../../images/gallery/reptile.png";
 import pimg6 from "../../../images/logo/ansio.png";
 import pimg7 from "../../../images/logo/co-ideation.png";
-import pimg8 from "../../../images/gallery/hil.png";
 
 
 const partners = [
@@ -21,7 +20,6 @@ const partners = [
   { pImg: pimg5 },
   { pImg: pimg6 },
   { pImg: pimg7 },
-  { pImg: pimg8 },
 
 ];
 

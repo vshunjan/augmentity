@@ -26,7 +26,7 @@ const blogs = [
   title: "The Unseen Threat: How Your Employees' Social Media is a Golden Ticket for Hackers",
   slug: "the-unseen-threat-how-your-employees-social-media-is-a-golden-ticket-for-hackers",
   screens: blogImg2, 
-  description: "In today's hyper-connected world, a strong social media presence is often seen as an asset. For individuals, it’s a way to build a personal brand. For companies, it’s a vital marketing tool. But beneath the surface lies a growing security risk: the human element. Employees are leaving a trail of digital breadcrumbs that hackers can exploit.",
+  description: "In today's hyper-connected world, a strong social media presence is often seen as an asset. For individuals, it’s a way to build a personal brand. For companies, it’s a vital marketing tool. But beneath the surface of shared vacation photos, professional milestones, and casual check-ins lies a burgeoning threat vector that many organizations fail to address: the human element. Your employees, from the summer intern to the CEO, are creating a trail of digital breadcrumbs that can lead attackers right to your company’s front door.",
   author: "Augmentity.net",
   authorTitle: "Cybersecurity Insights",
   create_at: "September 15, 2025",
@@ -34,7 +34,7 @@ const blogs = [
   thumb: "Cybersecurity",
   blClass: "format-standard-image",
   content: `
-<p>In today's hyper-connected world, a strong social media presence is often seen as an asset. For individuals, it’s a way to build a personal brand. For companies, it’s a vital marketing tool. But beneath the surface of shared vacation photos, professional milestones, and casual check-ins lies a burgeoning threat vector that many organizations fail to address: the human element. Your employees, from the summer intern to the CEO, are creating a trail of digital breadcrumbs that can lead attackers right to your company’s front door.</p>
+
 
 <p>A recent interview with social engineering expert Rachel Tobac highlighted a chilling reality: there is no longer a reasonable expectation of privacy in public. Every Instagram story, every LinkedIn update, every geotagged photo is a piece of open-source intelligence that can be gathered and weaponised.</p>
 
@@ -84,7 +84,7 @@ const blogs = [
   title: "Anatomy of a Social Engineering Hack: A Step-by-Step Guide to Infiltration",
   slug: "anatomy-of-a-social-engineering-hack-a-step-by-step-guide-to-infiltration",
   screens: blogImg4, 
-  description: "A tactical breakdown of how social engineers turn public information into unauthorised access — from OSINT to pretexts, delivery vectors, and exfiltration.",
+  description: "In our last post, we discussed how an employee's social media presence creates a significant threat vector. Now, we're taking you deeper into the mind of an attacker. This isn't theoretical; this is a tactical breakdown of how social engineers turn public information into unauthorised access. By understanding their playbook, you can better defend your organisation and yourself against these pervasive threats.",
   author: "Augmentity.net",
   authorTitle: "Cybersecurity Insights",
   create_at: "September 16, 2025",
@@ -92,7 +92,6 @@ const blogs = [
   thumb: "Cybersecurity",
   blClass: "format-standard-image",
   content: `
-<p>In our last post, we discussed how an employee's social media presence creates a significant threat vector. Now, we're taking you deeper into the mind of an attacker. This isn't theoretical; this is a tactical breakdown of how social engineers turn public information into unauthorised access. By understanding their playbook, you can better defend your organisation and yourself against these pervasive threats.</p>
 
 <p>The goal of a social engineer is simple: to gain your trust and manipulate you into taking an action you shouldn't. This could be revealing a password, plugging in a USB drive, or granting physical access to a secure area. Here is a step-by-step look at how they achieve this.</p>
 
