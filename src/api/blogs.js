@@ -7,20 +7,7 @@ import blogImg4 from "../images/blog/blog-img2.jpg";
 
 
 const blogs = [
-    {
-        id: '1',
-        title: 'AI in Neuroimaging: IXICO’s Cloud Transformation',
-        slug:'AI-in-Neuroimaging-IXICOs-Cloud-Transformation',
-        screens: blogImg1,
-        description: 'Embark on an enlightening journey through the realm.',
-        author: 'farugia',
-        authorTitle:'Sineor Consultant',
-        create_at: 'October 4, 2022',
-        comment:'35',
-        thumb:'Technology',
-        blClass:'format-standard-image',
-
-    },
+   
   {
   id: "2",
   title: "The Unseen Threat: How Your Employees' Social Media is a Golden Ticket for Hackers",

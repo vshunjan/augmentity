@@ -18,7 +18,7 @@ const BlogDetails = (props) => {
         <Fragment>
             <Header />
             <main className="page_content blog-page">
-                <section className="page-title pt-200 pos-rel single-blog bg_img" style={{ backgroundImage: `url(${BlogDetails.screens})` }}>
+                <section className="page-title pt-200 pos-rel single-blog bg_img" style={{ backgroundImage: `url(${BlogDetails.img})` }}>
                     <div className="container">
                         <div className="page-title-wrap sd-title-wrap">
                             <div className="row mt-none-30 align-items-end">

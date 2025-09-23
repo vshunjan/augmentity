@@ -155,7 +155,7 @@ const MobileMenu = () => {
                         text={item.title}
                         speed={70}
                         maxIterations={10}
-                        characters="SYAALYNLSENASUGMENTTYOVGGRENROCNGSURULRSE"
+                        characters="SYAASUGENTTYOVGGRENNGSU"
                         className="revealed"
                         parentClassName="all-letters"
                         encryptedClassName="encrypted"

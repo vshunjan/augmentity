@@ -1,12 +1,8 @@
 import { useRef, useEffect } from 'react';
-import { Navigation } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { Link } from 'react-router-dom'
 import blogs from '../../api/blogs'
-import BlogSidebar from '../BlogSidebar';
-import icon1 from '../../images/icon/prev-icon.png'
-import icon2 from '../../images/icon/next-icon.png'
-import bImg from '../../images/blog/b-img01.jpg'
+
 
 const BlogList = (props) => {
     const prevRef = useRef(null);
@@ -29,13 +25,13 @@ const BlogList = (props) => {
     return (
         <div>
            
-            <section className="blog_details_section pb-130 mt-120">
+            <section className="blog_details_section mt-120">
                 <div className="container">
                     <div className="row mt-none-30 g-0 align-items-start">
-                         <div className="related-blog pt-130 pb-130">
+                         <div className="related-blog pb-130">
                     {/* <h2 className="related-blog-title">Browse  blog</h2> */}
                     <div className="row mt-none-30">
-                        {blogs.slice(1, 3).map((blog, Bitem) => (
+                        {blogs.slice(0, 2).map((blog, Bitem) => (
                             <div className="col-lg-4 col-md-6 mt-30" key={Bitem}>
                                 <div className="blog-details_wrap">
                                     <div className="blog-details_item">
@@ -57,7 +53,7 @@ const BlogList = (props) => {
                         ))}
                     </div>
                 </div>
-                        {/* <BlogSidebar /> */}
+                  
                     </div>
                 </div>
             </section>
