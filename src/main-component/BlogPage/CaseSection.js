@@ -49,7 +49,7 @@ const CaseStudySection = () => {
                         
                         <div className="content_wrap">
                           <h3 className="item_title">{study.title}</h3>
-                          <span className="item_tag">Read More</span>
+                          <span className="item_tag"><Link onClick={ClickHandler} to={study.slug} >  Read More </Link></span>
                         </div>
                       </div>
                       {/* <Link onClick={ClickHandler} to={`/blog-single/${study.slug}`} className="xb-overlay"></Link> */}

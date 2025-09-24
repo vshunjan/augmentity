@@ -32,11 +32,7 @@ const BlogSingle = () => {
                                 <span className="meta_label1">{BlogDetails.thumb}</span>
                             </Link>
                         </li>
-                        {/* <li>
-                            <Link onClick={ClickHandler} to="/blog">
-                                <span className="meta_label">Last Update: {BlogDetails.create_at}</span>
-                            </Link>
-                        </li> */}
+                       
                     </ul>
                     <h2 className="item_details_heading">{BlogDetails.title}</h2>
                     <p className="mb-40">{BlogDetails.description}</p>
@@ -45,13 +41,7 @@ const BlogSingle = () => {
                 <div className="row mt-none-30 g-0 blog-detail-content align-items-start">
                     <div className=" col-lg">
                         <div className="blog_details_content">
-                            {/* <div className="mb-4 row">
-                                <div className="col-md-6 col-sm-6">
-                                    <div className="image_block">
-                                        <img src={BlogDetails.screens || bImg} alt={BlogDetails.title} />
-                                    </div>
-                                </div>
-                            </div> */}
+                           
 
                             <div
                                 className="row mb-90 align-items-center mt-none-30 blog-content-html"
@@ -69,7 +59,7 @@ const BlogSingle = () => {
                         {blogs.slice(1, 3).map((blog, Bitem) => (
                             <div className="col-lg-4 col-md-6 mt-30" key={Bitem}>
                                 <div className="blog-details_wrap">
-                                    <div className="blog-details_item">
+                                    <div className="blog-details_item single-blog-page">
                                         <div className="xb-item--img">
                                             <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>
                                                 <img src={blog.screens || bImg} alt={blog.title} />

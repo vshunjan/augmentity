@@ -1,6 +1,6 @@
-import cImg1 from '../images/casestudy/theret-img1.jpg'
-import cImg2 from '../images/casestudy/threat-img2.jpg'
-import cImg3 from '../images/casestudy/threat-img3.jpg'
+import cImg1 from '../images/blog/report-1.jpg'
+import cImg2 from '../images/blog/report2.avif'
+import cImg3 from '../images/blog/report3.webp'
 import cImg4 from '../images/casestudy/threat-img4.jpg'
 import cImg5 from '../images/casestudy/threat-img5.jpg'
 import cImg6 from '../images/casestudy/theret-img1.jpg'
@@ -9,11 +9,11 @@ import cImg6 from '../images/casestudy/theret-img1.jpg'
 
 
 const caseStudies = [
-    { id: 1, category: "cat1", img: cImg1, title: "SEO tracking analysis..", slug: "Branding" },
-    { id: 2, category: "cat1", img: cImg2, title: "Online media management..", slug: "Marketing" },
-    { id: 3, category: "cat1", img: cImg3, title: "Cloud infrastructure..", slug: "Branding" },
-    { id: 4, category: "cat1", img: cImg4, title: "Design system & UI kit..", slug: "Design" },
-    { id: 5, category: "cat1", img: cImg5, title: "Offline SEO marketing..", slug: "Development" },
-    { id: 6, category: "cat1", img: cImg6, title: "IT security enhancement..", slug: "Support" },
+    { id: 1, category: "cat1", img: cImg1, title: "2025 Unit 42 Global Incident Response Report: Social Engineering Edition", slug: "https://unit42.paloaltonetworks.com/2025-unit-42-global-incident-response-report-social-engineering-edition/" },
+    { id: 2, category: "cat1", img: cImg2, title: "CrowdStrike 2025 Global Threat Report", slug: "https://www.crowdstrike.com/en-us/global-threat-report/" },
+    { id: 3, category: "cat1", img: cImg3, title: "Fortinet 2025 Global Threat Landscape..", slug: "https://www.fortinet.com/uk/resources/reports/threat-landscape-report" },
+    // { id: 4, category: "cat1", img: cImg4, title: "Design system & UI kit..", slug: "Design" },
+    // { id: 5, category: "cat1", img: cImg5, title: "Offline SEO marketing..", slug: "Development" },
+    // { id: 6, category: "cat1", img: cImg6, title: "IT security enhancement..", slug: "Support" },
    ];
 export default caseStudies;

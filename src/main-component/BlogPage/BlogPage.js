@@ -5,9 +5,10 @@ import Scrollbar from '../../components/scrollbar/scrollbar'
 import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
 import BlogList from '../../components/BlogList';
 import CaseStudySection from './CaseSection';
+import Whitepapers from './whitePaper';
 
 const BlogPage = () => {
-    const [activeFilter, setActiveFilter] = useState("caseStudy");
+    const [activeFilter, setActiveFilter] = useState("blog");
 
     const handleFilter = (category) => {
         setActiveFilter(category);
@@ -15,8 +16,11 @@ const BlogPage = () => {
     };
 
     const filters = [
-        { key: "caseStudy", label: "Threat Research" },
-        { key: "blog", label: "Blogs" },
+        { key: "blog", label: "Insights" },
+        { key: "caseStudy", label: "Report" },
+        { key: "Whitepapers", label: "Whitepapers" },
+        { key: "News", label: "In the News" },
+        { key: "Videos", label: "Videos" },
     ];
 
     const ClickHandler = () => {
@@ -65,6 +69,7 @@ const BlogPage = () => {
                 <div className="container threat-page-main">
                     {activeFilter === "caseStudy" && <CaseStudySection />}
                     {activeFilter === "blog" && <BlogList />}
+                    {activeFilter === "Whitepapers" && <Whitepapers />}
                 </div>
             </main>
 
