@@ -23697,3 +23697,6 @@ section.page-title.pt-200.pos-rel.bg_img.single-blog {
 .blog-details_item.single-blog-page .xb-item--img  {
     width: 100%;
 }
+.threat-filter.row.justify-content-center.mt-50.mb-50 .col-lg-8 {
+    width: 100% !important;
+}
