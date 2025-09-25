@@ -1,5 +1,5 @@
 import React from "react";
-import Project from '../../../api/project'
+import Project from '../../../api/videio'
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";

@@ -6,18 +6,20 @@ import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
 import BlogList from '../../components/BlogList';
 import CaseStudySection from './CaseSection';
 import Whitepapers from './whitePaper';
+import News from './News';
+import Videos from './videos'
 
 const BlogPage = () => {
     const [activeFilter, setActiveFilter] = useState("blog");
 
     const handleFilter = (category) => {
         setActiveFilter(category);
-        ClickHandler();
+        // ClickHandler();
     };
 
     const filters = [
         { key: "blog", label: "Insights" },
-        { key: "caseStudy", label: "Report" },
+        { key: "caseStudy", label: "Reports" },
         { key: "Whitepapers", label: "Whitepapers" },
         { key: "News", label: "In the News" },
         { key: "Videos", label: "Videos" },
@@ -67,9 +69,12 @@ const BlogPage = () => {
 
                 {/* ✅ Conditional Rendering */}
                 <div className="container threat-page-main">
+                    <div class="colourab2blog-page"></div>
                     {activeFilter === "caseStudy" && <CaseStudySection />}
                     {activeFilter === "blog" && <BlogList />}
                     {activeFilter === "Whitepapers" && <Whitepapers />}
+                    {activeFilter === "News" && <News />}
+                    {activeFilter === "Videos" && <Videos />}
                 </div>
             </main>
 
