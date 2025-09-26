@@ -12929,7 +12929,7 @@ section.service.pos-rel.z-1.pb-150 {
 }
 
 .da-blog-item:hover .xb-item--img img {
-  transform: scale(1.1) rotate(2deg);
+  transform: scale(1.1);
 }
 
 .da-blog-item:hover .xb-item--arrow span {
@@ -16909,7 +16909,7 @@ h1.item_details_info_title {
 }
 
 .casestudy-menu {
-  margin: 0 15px;
+  margin: 0 0px;
 }
 
 .casestudy-item {
@@ -16951,7 +16951,7 @@ h1.item_details_info_title {
     -o-transition: 0.3s;
     object-fit: cover;
     background-size: 100% 100%;
-    height: 350px;
+    /* height: 350px; */
 }
 
 .casestudy-item .casestudy-img .content_wrap {
@@ -17017,7 +17017,7 @@ h1.item_details_info_title {
 }
 
 .casestudy-item:hover .casestudy-img img {
-  transform: scale(1.09) rotate(3deg);
+  transform: scale(1.09) ;
 }
 
 .casestudy-item:hover .casestudy-img .content_wrap .item_title,
@@ -23714,7 +23714,7 @@ section.blog.videos-post.pos-rel.pb-150.bg_img .row {
 }
 section.blog.videos-post.pos-rel.pb-150.bg_img .row .da-blog-item {
       display: flex;
-    border-top: 1px solid #ffffff57;
+    /* border-top: 1px solid #ffffff57; */
     padding-top: 40px;
     border-bottom: 1px solid #ffffff57;
     padding-bottom: 40px;
@@ -23733,11 +23733,9 @@ section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--img {
 }
 section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--holder {
    display:flex;
-    
        width: 100%;
-     
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--title {
   display:flex;
@@ -23751,21 +23749,29 @@ section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--title a {
     font-size: 25px;
     width: 80%;
 }
-section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--arrow  {
+/* section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--arrow  {
     width:50px;
     height:50px;
-}
+} */
 section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--arrow i {
    font-size: 21px;
-    width: 50px;
-    height: 50px;
+    width: 69px;
+    height: 69px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: #ee3097;
 }
+/* .da-blog-item .xb-item--holder {
+  padding-left: 0 !important;
+} */
 section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item  {
     background:#00000000;
     border-radius: 0;
+}
+
+h2.xb-item--title.border-effect{
+  color:white;
+  margin-bottom: 20px;
 }

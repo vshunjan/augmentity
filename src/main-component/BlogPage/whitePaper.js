@@ -50,21 +50,21 @@ const BlogList = (props) => {
                                         <div className="blog-details_wrap">
                                             <div className="blog-details_item">
                                                 <div className="xb-item--img">
-                                                    <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>
+                                                    
                                                         <img src={blog.screens} alt="" />
-                                                    </Link>
+                                                   
                                                 </div>
                                                 <div className="xb-item--holder">
                                                     
                                                     <h3 className="item_details_info_heading border-effect">
-                                                        <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>{blog.title}</Link>
+                                                      {blog.title}
                                                     </h3>
                                                     <p className="item_details_info_heading border-effect">
                                                         {blog.description}
                                                     </p>
-                                                    <Link onClick={ClickHandler} to={blog.slug} className="xb-item--det-btn">
+                                                    <a onClick={ClickHandler} target="_blank" rel="noopener noreferrer" href={blog.slug} className="xb-item--det-btn">
                                                         Read more <i className="far fa-long-arrow-right"></i>
-                                                    </Link>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

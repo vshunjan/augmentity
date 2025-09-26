@@ -18,16 +18,16 @@ const DataSolutioBlogSection = (props) => {
                             <div className="mt-40 col-lg-4 col-md-6" key={Bitem}>
                                 <div className="da-blog-item">
                                     <div className="xb-item--img">
-                                        <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}><img src={blog.img} alt=""/></Link>
+                                        <img src={blog.img} alt=""/>
                                     </div>
                                     <div className="xb-item--holder">
                                         <h2 className="xb-item--title border-effect">
-                                            <Link onClick={ClickHandler} to={`/blog-single/${blog.slug}`}>{blog.title}</Link>
+                                           <a href={''}> {blog.title} </a> 
                                         </h2>
-                                        <Link onClick={ClickHandler} to={`${blog.slug}`} className="xb-item--arrow">
+                                        <a onClick={ClickHandler} target="_blank" rel="noopener noreferrer" href={`${blog.slug}`} className="xb-item--arrow">
                                            
                                            <i className="fal fa-play" ></i>
-                                        </Link>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

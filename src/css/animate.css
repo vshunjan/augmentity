@@ -3491,7 +3491,107 @@ section.page-title.pt-200.pos-rel.bg_img.single-blog {
 
 }
 
+
+@media (max-width: 991px) {
+ .threat-filter.row.justify-content-center.mt-50.mb-50 {
+  width: 100% !important;
+  margin: 0 !important;
+ }
+ .team-menu button:not(:last-child) {
+    margin-right: 0px !important;
+}
+
+}
+
+
+@media (max-width: 601px) {
+.blog-slider.swiper-container.pos-rel {
+    padding: 0px !important;
+   
+}
+
+}
+
+@media (max-width: 661px) {
+.casestudy-menu {
+  margin: 0;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 12px;
+  align-items: center !important;
+  justify-content: flex-start !important;
+
+  overflow-x: auto;   /* horizontal scroll */
+  overflow-y: hidden; /* prevent vertical scroll */
+  width: max-content;        /* take full width of parent */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+  scrollbar-width: thin; /* Firefox: thin scrollbar */
+}
+
+.threat-filter.row.justify-content-center.mt-50.mb-50 {
+        width: auto !important;
+        overflow: auto;
+        /* padding-right: 80px !important; */
+        margin: 0 !important;
+    }
+
+
+.casestudy-menu::-webkit-scrollbar {
+  height: 6px; /* horizontal scrollbar height */
+}
+.casestudy-menu::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+
+ /* .casestudy-menu button{
+    width: 200px;
+} */
+
+}
+
 @media (max-width:991px) {
+section.blog.videos-post.pos-rel.pb-150.bg_img .row .da-blog-item {
+  flex-direction: column;
+}
+section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--img img {
+    width: 100% !important;
+    height: auto !important;
+   
+}
+section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--title a {
+   
+    width: 100%;
+}
+
+section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--title {
+    display: flex;
+    align-items: center;
+    /* width: 90%; */
+    margin-bottom: 0;
+    justify-content: flex-start !important;
+}
+section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--holder {
+    display: flex;
+    width: 100%;
+    gap: 34px;
+    flex-direction: column;
+    align-items: flex-start !important;
+    /* justify-content: space-between; */
+}
+  .blog-details_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.blog-details_item .xb-item--img {
+  width: 100% !important;
+}
+.blog-details_item .xb-item--holder {
+    width: 100% !important;
+}
   .header-logo.mobile-heder {
     position: absolute;
     top: 50px;
@@ -3694,7 +3794,7 @@ section.page-title.contact-banner.pt-200.pos-rel.bg_img {
     position: absolute;
     background-image: radial-gradient(closest-side, rgb(33 245 245 / 16%), #00000000);
     height: 719px;
-    width: 1125px;
+    width: 86%;
     left: 13% !important;
     /* top: -146%; */
     z-index: 0;
