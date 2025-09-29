@@ -8,6 +8,7 @@ import CaseStudySection from './CaseSection';
 import Whitepapers from './whitePaper';
 import News from './News';
 import Videos from './videos'
+import RippleGrid from './ripple';
 
 const BlogPage = () => {
     const [activeFilter, setActiveFilter] = useState("blog");
@@ -51,6 +52,7 @@ const BlogPage = () => {
                 </section>
 
                 {/* ✅ Filter Buttons */}
+                <div className='container'>
                 <div className=" threat-filter row justify-content-center mt-50 mb-50">
                     <div className="col-lg-8">
                         <div className="team-menu casestudy-menu">
@@ -66,10 +68,25 @@ const BlogPage = () => {
                         </div>
                     </div>
                 </div>
+                </div>
 
                 {/* ✅ Conditional Rendering */}
                 <div className="container threat-page-main">
-                    <div class="colourab2blog-page"></div>
+            
+  
+
+                    <div class="colourab2blog-page">
+                        <RippleGrid
+    enableRainbow={false}
+    gridColor="#021ca1"
+    rippleIntensity={0.05}
+    gridSize={10}
+    gridThickness={10}
+    mouseInteraction={true}
+    mouseInteractionRadius={1.2}
+    opacity={0.8}
+  />
+                    </div>
                     {activeFilter === "caseStudy" && <CaseStudySection />}
                     {activeFilter === "blog" && <BlogList />}
                     {activeFilter === "Whitepapers" && <Whitepapers />}

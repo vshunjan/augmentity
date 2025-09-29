@@ -1,4 +1,4 @@
-import cImg1 from '../images/blog/report-1.jpg'
+import cImg1 from '../images/blog/close-up-notebook-used-by-employees-developing-ai-systems-tech-startup.jpg'
 import cImg2 from '../images/blog/report2.jpg'
 import cImg3 from '../images/blog/report3.jpg'
 
