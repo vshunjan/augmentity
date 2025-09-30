@@ -3674,7 +3674,16 @@ section.work {
     padding-bottom: 10px !important;
     /* margin-top: 100px; */
 }
+section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--img {
+  width: 100% !important;
 }
+section.blog.videos-post.pos-rel.pb-150.bg_img .da-blog-item .xb-item--title a {
+    width: 100%;
+}
+
+}
+
+
 
 section.page-title.contact-banner.pt-200.pos-rel.bg_img {
     background-color: black;
@@ -3791,11 +3800,80 @@ section.page-title.contact-banner.pt-200.pos-rel.bg_img {
 
 
  .colourab2blog-page {
+       position: absolute;
+    /* background-image: radial-gradient(closest-side, rgb(33 245 245 / 16%), #00000000); */
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0% !important;
+    /* top: -146%; */
+    z-index: 0;
+}
+
+.iridescence-container {
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent), linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+  -webkit-mask-composite: intersect; /* Chrome/Safari */
+  mask-composite: intersect; /* Firefox */
+  height: 100%;
+}
+
+.iridescence-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.colourab2.blog-bg-grey22 {
+  
     position: absolute;
     background-image: radial-gradient(closest-side, rgb(33 245 245 / 16%), #00000000);
     height: 719px;
-    width: 86%;
-    left: 13% !important;
-    /* top: -146%; */
+    width: 1125px;
+    left: -10%;
+    bottom: 26%;
     z-index: 0;
+}
+ 
+
+.grid-item.btm-sec.cat1.mt-30 a:hover::before {
+    background: #ffffff;
+}
+.grid-item.btm-sec.cat1.mt-30 a::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 20px;
+    height: 2px;
+    width: 80%;
+    transition: 0.3s;
+    /* background: var(--color-default); */
+}
+.casestudy-item .casestudy-img .content_wrap .item_tag a:hover::before {
+    background: #ffffff;
+}
+.casestudy-item .casestudy-img .content_wrap .item_tag a::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0px;
+    height: 2px;
+    width: 80%;
+    transition: 0.3s;
+    /* background: var(--color-default); */
+}
+
+
+.da-blog-item a.xb-item--arrow:hover::before {
+    background: #ffffff;
+}
+.da-blog-item a.xb-item--arrow::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0px;
+    height: 2px;
+    width: 80%;
+    transition: 0.3s;
+    /* background: var(--color-default); */
 }

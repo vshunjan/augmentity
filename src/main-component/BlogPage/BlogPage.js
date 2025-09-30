@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import Bg from '../../images/gallery/consultbanner.jpg'
+import Bg from '../../images/gallery/threat-banner3.jpeg';
 import Header from '../../components/header4/Header4';
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
@@ -8,7 +8,7 @@ import CaseStudySection from './CaseSection';
 import Whitepapers from './whitePaper';
 import News from './News';
 import Videos from './videos'
-import RippleGrid from './ripple';
+import Iridescence from './ripple'
 
 const BlogPage = () => {
     const [activeFilter, setActiveFilter] = useState("blog");
@@ -76,18 +76,15 @@ const BlogPage = () => {
   
 
                     <div class="colourab2blog-page">
-                        <RippleGrid
-    enableRainbow={false}
-    gridColor="#021ca1"
-    rippleIntensity={0.05}
-    gridSize={10}
-    gridThickness={10}
-    mouseInteraction={true}
-    mouseInteractionRadius={1.2}
-    opacity={0.8}
-  />
+             <Iridescence
+  color={[0, 0, 0.5]}
+  mouseReact={false}
+  amplitude={0.1}
+  speed={1.0}
+/>
                     </div>
-                    {activeFilter === "caseStudy" && <CaseStudySection />}
+                    
+                    {activeFilter === "caseStudy" && <CaseStudySection/>}
                     {activeFilter === "blog" && <BlogList />}
                     {activeFilter === "Whitepapers" && <Whitepapers />}
                     {activeFilter === "News" && <News />}

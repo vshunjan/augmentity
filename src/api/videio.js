@@ -1,9 +1,5 @@
-import cImg1 from '../images/blog/news-1.jpeg'
-import cImg2 from '../images/blog/news-2.jpg'
-import cImg3 from '../images/blog/news-3.avif'
-import cImg4 from '../images/casestudy/threat-img4.jpg'
-import cImg5 from '../images/casestudy/threat-img5.jpg'
-import cImg6 from '../images/casestudy/theret-img1.jpg'
+import cImg1 from '../images/blog/video-thumb.jpeg'
+
 
 
 

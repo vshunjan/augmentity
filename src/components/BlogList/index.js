@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom'
 import blogs from '../../api/blogs'
 
+
 const BlogList = (props) => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
@@ -131,11 +132,7 @@ const BlogList = (props) => {
                     border-color: #2196F3;
                 }
 
-                {/* .radio-checkmark:after {
-                    content: "";
-                    position: absolute;
-                    display: none;
-                } */}
+               
 
                 .radio-btn-container input:checked ~ .radio-checkmark:after {
                     display: block;

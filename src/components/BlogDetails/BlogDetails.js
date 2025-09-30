@@ -24,6 +24,9 @@ const BlogSingle = () => {
 
     return (
         <section className="blog_details_section pt-70">
+                <div class="colourab2 blog-bg-grey"></div>
+                <div class="colourab2 blog-bg-grey22"></div>
+                
             <div className="container">
                 <div className="item_details_content">
                     <ul className="post_meta ul_li list-unstyled">
@@ -39,6 +42,7 @@ const BlogSingle = () => {
                 </div>
 
                 <div className="row mt-none-30 g-0 blog-detail-content align-items-start">
+                    
                     <div className=" col-lg">
                         <div className="blog_details_content">
                            

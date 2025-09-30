@@ -23,7 +23,7 @@ const DataSolutioBlogSection = (props) => {
                                    <div className="xb-item--img" style={{ position: "relative" }}>
       {!play ? (
         <div
-          style={{ cursor: "pointer", position: "relative" }}
+          style={{ cursor: "pointer", position: "relative" ,borderRadius:'10px'}}
           onClick={() => setPlay(true)}
         >
           {/* Custom thumbnail */}
