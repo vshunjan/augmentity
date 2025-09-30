@@ -41,7 +41,7 @@ const Footer = (props) => {
                                        <ul className="xb-item--holder list-unstyled">
                                            <li className="xb-item--list"><Link onClick={ClickHandler} to="/about">Who we are Not</Link></li>
                                            <li className="xb-item--list"><Link onClick={ClickHandler} to="/Contact">Consult Us</Link></li>
-                                           <li className="xb-item--list"><Link onClick={ClickHandler} to="/blog">Threat Intelligence</Link></li>
+                                           <li className="xb-item--list"><Link onClick={ClickHandler} to="/threat">Threat Intelligence</Link></li>
                                        </ul>
                                    </div>
                                </div>

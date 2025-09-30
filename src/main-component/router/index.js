@@ -31,7 +31,7 @@ const AllRoute = () => {
           <Route path="contact" element={<ContactPage />} />  
           <Route path="privacy" element={<PrivacyPage />} />
           <Route path="terms" element={<TermsPage />} />
-          <Route path="blog" element={<BlogPage />} />
+          <Route path="threat" element={<BlogPage />} />
           <Route path="blog-single/:slug" element={<BlogDetail />} />
 
         </Routes>

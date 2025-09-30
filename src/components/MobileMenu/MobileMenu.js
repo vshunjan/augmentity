@@ -25,7 +25,7 @@ const menus = [
   {
     id: 3,
     title: "Threat Intelligence",
-    link: "/blog",
+    link: "/threat",
   },
 ];
 const menus2 = [
