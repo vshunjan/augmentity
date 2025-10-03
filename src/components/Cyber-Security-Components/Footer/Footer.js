@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Services from '../../../api/service'
+
 import { Fade } from "react-awesome-reveal";
 // import Bg from '../../../images/bg/footer_overly.png'
-import icon1 from '../../../images/footer/social-link01.png'
+
 import icon2 from '../../../images/footer/social-link02.png'
-import icon3 from '../../../images/footer/social-link03.png'
+
 import icon4 from '../../../images/footer/social-link04.png'
-import icon5 from '../../../images/footer/social-link05.png'
+
 import logo from '../../../images/gallery/Asset 6.svg'
 
 const ClickHandler = () => {
@@ -64,7 +64,7 @@ const Footer = (props) => {
                                        <span className="xb-item--sub-title">Social
                                         <hr className='footer-hrline'/>
                                        </span>
-                                       <ul className="xb-item--holder list-unstyled">
+                                       <ul className="xb-item--holder list-unstyled footer-social">
                                            <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="https://x.com/augmentitynet" target="_blank"  rel="noopener noreferrer" className="xb-icon"><img src={icon2} alt="" /></Link></li>
                                            <li className="xb-item--list social-item"><Link onClick={ClickHandler} to="https://www.linkedin.com/company/augmentity-network/" target="_blank"  rel="noopener noreferrer" className="xb-icon"><img src={icon4} alt="" /></Link></li>
                                            

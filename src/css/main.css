@@ -21569,7 +21569,7 @@ a.xb-logo {
 
 .footer-style-three .social-item .xb-icon img {
      opacity: .7;
-    width: 90px;
+    width: 35px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -23329,7 +23329,12 @@ section.about-banner.hero.hero-style-three.pos-rel.pt-120.bg_img {
  .col-lg-8.mt-30.hotline {
     width: 100% !important;
 }
+.footer.col-lg-4.col-md-6 {
+    width: 100% !important;
 }
+}
+
+
 @media (max-width: 992px) {
 .process-right .process-item .xb-item--img img {
     width: 100%;
@@ -23884,3 +23889,14 @@ section.blog.videos-post.pos-rel.pb-150.bg_img .row .da-blog-item  iframe {
   position:relative;
   overflow: hidden;
 }
+
+ul.xb-item--holder.list-unstyled.footer-social {
+    display: flex;
+    gap: 25px;
+}
+
+@media (max-width: 451px) {
+    .casestudy-menu {
+       
+        gap: 48px !important;
+    }}
