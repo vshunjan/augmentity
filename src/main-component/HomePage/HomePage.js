@@ -1,43 +1,40 @@
 import React, { Fragment } from 'react';
-import Header from '../../components/header/Header';
-import Hero from '../../components/hero/hero';
-import PartnerSection from '../../components/PartnerSection';
-import About from '../../components/about/about';
-import ServiceSection from '../../components/ServiceSection/ServiceSection';
-import ProjectSection from '../../components/ProjectSection/ProjectSection';
+import Header4 from '../../components/header4/Header4';
+import Hero44 from '../../components/hero4/hero44';
+import PartnerSection from '../../components/Cyber-Security-Components/PartnerSection/PartnerSection';
+import ServiceSection from '../../components/Cloud-devops-components/ServiceSection/ServiceSection';
+import About from '../../components/Cyber-Security-Components/about/about';
 import WorkProcess from '../../components/WorkProcess/WorkProcess';
-import IndustrieSection from '../../components/IndustrieSection/IndustrieSection';
-import FeaturesSection from '../../components/FeaturesSection/FeaturesSection';
-import Testimonial from '../../components/Testimonial/Testimonial';
-import TeamSection from '../../components/TeamSection/TeamSection';
-import CtaSection from '../../components/CtaSection/CtaSection';
-import FaqSection from '../../components/FaqSection/FaqSection';
-import Footer from '../../components/footer/Footer';
+import WorkFlow from '../../components/Cyber-Security-Components/WorkFlow/WorkFlow';
+import AwardSection from '../AboutUsPage/AwardSection';
+import StickyScrollRevealDemo from '../AboutUsPage/WhyChoose';
 import Scrollbar from '../../components/scrollbar/scrollbar';
+import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
+
 
 
 const HomePage = () => {
 
     return (
         <Fragment>
-            <div className='body_wrap sco_agency'>
-                {/* <Header /> */}
-                <main className="page_content">
-                    {/* <Hero /> */}
-                    {/* <PartnerSection />
-                    <About />
+            <div className='cybersecurity body_wrap sco_agency'>
+                <main className=" page_content">
+                    <div className='colour8'></div> 
+                    <Header4 />
+                    <Hero44 />
+                    <PartnerSection />
                     <ServiceSection />
-                    <ProjectSection />
-                    <WorkProcess />
-                    <IndustrieSection />
-                    <Testimonial />
-                    <FeaturesSection />
-                    <TeamSection /> */}
-                    {/* <FaqSection /> */}
-                    {/* <CtaSection />  */}
+                    <div className='black-blue'>
+                     <WorkProcess />
+                     <AwardSection/>
+                     <StickyScrollRevealDemo/>  
+                    <About />
+                    </div>
+                    <WorkFlow />
+                   
                 </main>
-                {/* <Footer /> */}
-                <Scrollbar />
+                <Footer/>
+                <Scrollbar/>
             </div>
         </Fragment>
     )

@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 
-import Hero3 from '../../components/hero3/anlyseHed';
-import Header4 from '../../components/header4/Header4';
-import Scrollbar from '../../components/scrollbar/scrollbar';
-import ServiceSection from '../../components/data-solutions-components/ServiceSection/ServiceSection';
+import Hero3 from '../../components/hero3/anlyseHed.js';
+import Header4 from '../../components/header4/Header4.js';
+import Scrollbar from '../../components/scrollbar/scrollbar.js';
+import ServiceSection from '../../components/data-solutions-components/ServiceSection/ServiceSection.js';
 import Testimonial from '../../components/data-solutions-components/Testimonial/analyseservice.js';
 
-import Footer from '../../components/Cyber-Security-Components/Footer/Footer';
+import Footer from '../../components/Cyber-Security-Components/Footer/Footer.js';
 
 
 const servicepage = () => {

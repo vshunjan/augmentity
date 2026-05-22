@@ -74,10 +74,9 @@ const ClickHandler = () => {
               >
                 {item.description}
               </motion.p>
-               <a onClick={ClickHandler} href={item.link} className="hero-btn">
-                
-                 <span>Discover more</span>
-      </a>
+              <Link to={item.link} onClick={ClickHandler} className="hero-btn">
+                <span>Discover more</span>
+              </Link>
             </div>
           ))}
           {/* <div className="sticky-scroll-spacer" /> */}
